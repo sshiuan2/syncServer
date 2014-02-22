@@ -1,0 +1,17 @@
+world:
+  -6,66,-74:
+    CoolDown: 0
+    Script:
+    - '@CMD plotme home'
+  -6,66,-75:
+    CoolDown: 0
+    Script:
+    - '@CMD plotme auto'
+  -6,66,-76:
+    CoolDown: 0
+    Script:
+    - '@CMD plotme help'
+  -6,66,-73:
+    CoolDown: 0
+    Script:
+    - '@CMDOP kill'

@@ -1,0 +1,92 @@
+Scripts:
+  var:
+    Script:
+    - '@PLAYER 載入OrePoint全域變數'
+    - '@CMDOP vt delobj OrePoint'
+    - '@SETINT $OrePoint.arrayindex 1'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex> -95,82,258'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>id 16:0'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>name COAL_ORE'
+    - '@ADDINT $OrePoint.arrayindex 1'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex> -873,73,267'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>id 16:0'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>name COAL_ORE'
+    - '@ADDINT $OrePoint.arrayindex 1'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex> 430,71,164'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>id 16:0'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>name COAL_ORE'
+    - '@ADDINT $OrePoint.arrayindex 1'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex> -94,82,258'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>id 15:0'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>name IRON_ORE'
+    - '@ADDINT $OrePoint.arrayindex 1'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex> -881,79,263'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>id 15:0'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>name IRON_ORE'
+    - '@ADDINT $OrePoint.arrayindex 1'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex> 431,71,164'   
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>id 15:0'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>name IRON_ORE'
+    - '@ADDINT $OrePoint.arrayindex 1'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex> -93,82,258'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>id 14:0'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>name GOLD_ORE'
+    - '@ADDINT $OrePoint.arrayindex 1'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex> -92,82,258'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>id 56:0'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>name DIAMOND_ORE'
+    - '@ADDINT $OrePoint.arrayindex 1'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex> -91,82,258'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>id 73:0'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>name REDSTONE_ORE'
+    - '@ADDINT $OrePoint.arrayindex 1'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex> -90,82,258'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>id 21:0'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>name LAPIS_ORE'
+    - '@ADDINT $OrePoint.arrayindex 1'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex> -89,82,258'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>id 129:0'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>name EMERALD_ORE'
+    - '@ADDINT $OrePoint.arrayindex 1'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex> -88,82,258'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>id 153:0'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>name QUARTZ_ORE'
+    - '@ADDINT $OrePoint.arrayindex 1'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex> END'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>id END'
+    - '@SETSTR $OrePoint.P<var:$OrePoint.arrayindex>name END'
+    - '@ADDINT $OrePoint.arrayindex 1'
+  COAL_ORE:
+    Script:
+    - '@SETSTR $<this>.P1 -95,82,258'
+    - '@SETSTR $<this>.P2 -873,73,267'
+    - '@SETSTR $<this>.P3 END'
+  IRON_ORE:
+    Script:
+    - '@SETSTR $<this>.P1 -94,82,258'
+    - '@SETSTR $<this>.P2 -881,79,263'
+    - '@SETSTR $<this>.P3 END'
+  GOLD_ORE:
+    Script:
+    - '@SETSTR $<this>.P1 -93,82,258'
+    - '@SETSTR $<this>.P2 END'
+  DIAMOND_ORE:
+    Script:
+    - '@SETSTR $<this>.P1 -92,82,258'
+    - '@SETSTR $<this>.P2 END'
+  REDSTONE_ORE:
+    Script:
+    - '@SETSTR $<this>.P1 -91,82,258'
+    - '@SETSTR $<this>.P2 END'
+  LAPIS_ORE:
+    Script:
+    - '@SETSTR $<this>.P1 -90,82,258'
+    - '@SETSTR $<this>.P2 END'
+  EMERALD_ORE:
+    Script:
+    - '@SETSTR $<this>.P1 -89,82,258'
+    - '@SETSTR $<this>.P2 END'
+  QUARTZ_ORE:
+    Script:
+    - '@SETSTR $<this>.P1 -88,82,258'
+    - '@SETSTR $<this>.P2 END'

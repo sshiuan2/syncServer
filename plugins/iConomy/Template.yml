@@ -1,0 +1,45 @@
+# 
+# Messaging Template
+tag:
+  money: '<green>[<white>經濟<green>] '
+personal:
+  balance: '<green>帳戶餘額: <white>+balance'
+  reset: <rose>你的帳戶已重置
+  set: <green>你的帳戶餘額已設定為 <white>+amount
+  debit: <rose>你的帳戶尚有 <white>+amount<rose> 額度
+  credit: <green>你的帳戶增加 <white>+amount<green> 額度
+  status: <green>帳戶狀態為 <white>+status<green>.
+player:
+  set: <green>+name 的帳戶餘額變為 <white>+amount
+  balance: '<green>+name 帳戶餘額: <white>+balance'
+  reset: <white>+name <rose>帳戶已重置
+  credit: <white>+name <green>帳戶增加 <white>+amount<green> 額度
+  debit: <white>+name <rose>帳戶尚有 <white>+amount<rose> 額度
+  status: <white>+name <green>帳戶狀態為 <white>+status<green>.
+payment:
+  self: <rose>不能自己給自己錢
+  to: <green> 付給 <white>+name<green> 共 <white>+amount<green>
+  from: <white>+name<green> 給你 <white>+amount<green>
+statistics:
+  opening: <green>-----[ <white>iConomy Stats <green>]-----
+  total: '<gray>總額 +currency: <white>+amount'
+  average: '<gray>平均 +currency: <white>+amount'
+  accounts: '<gray>帳戶總額: <white>+amount'
+interest:
+  announcement: <green>收到 <white> +amount
+accounts:
+  empty: <rose>已刪除 <white>所有<rose> 帳戶
+  purge: <rose>已清除所有閒置的帳戶
+  create: '<green>已建立帳戶: <white>+name'
+  remove: '<green>已刪除帳戶: <white>+name'
+  status: <green>帳戶狀態為 <white>+status
+top:
+  opening: <green>-----[ <white>Wealthiest Accounts <green>]-----
+  item: <gray>+i. <green>+name <gray>- <white>+amount
+error:
+  online: <rose>無人在線上
+  exists: <rose>帳戶重複
+  create: <rose>無法建立 <white>+name<rose> 帳戶
+  remove: <rose>無法刪除 <white>+name<rose> 帳戶
+  account: '<rose>無此帳戶: <white>+name'
+  funds: <rose>你的額度不夠

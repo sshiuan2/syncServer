@@ -1,0 +1,21 @@
+world:
+  0,65,4:
+    CoolDown: 0
+    Script:
+    - '@CMD is'
+    - '@COOLDOWN 2'
+  -3,65,4:
+    CoolDown: 0
+    Script:
+    - '@CMD is delete'
+    - '@COOLDOWN 2'
+  -1,65,4:
+    CoolDown: 0
+    Script:
+    - '@CMD is create'
+    - '@COOLDOWN 2'
+  -2,65,4:
+    CoolDown: 0
+    Script:
+    - '@CMD is home'
+    - '@COOLDOWN 2'

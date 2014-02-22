@@ -1,0 +1,58 @@
+Scripts:
+  var:
+    Script:
+    - '@SETSTR $VAR.this VAR'
+    - '@CALL var:preDo'
+    - '@SETSTR $VAR.subfix 全域變數...'
+    - '@SETSTR $VAR.prefix 設置'
+  all:
+    Script:
+    - '@CALL var:var'
+    - '@CALL var:MSG'
+    - '@CALL var:VOTE'
+    - '@CALL var:WARP'
+    - '@CALL var:SIGNTEXT'
+    - '@CALL var:CD'
+  preDo:
+    Script:
+    - '@PLAYER $VAR.prefix $VAR.this $VAR.subfix'
+    - '@CMDOP vt delobj $VAR.this'
+    - '@PAUSE 3'
+    - '//wait for delobj completed'
+  MSG:
+    Script:
+    - '@SETSTR $VAR.this MSG'
+    - '@CALL var:preDo'
+    - '@SETSTR $<var:$VAR.this>.NoPermission 你沒有權限，再亂用射射你喔！'
+  VOTE:
+    Script:
+    - '@SETSTR $VAR.this VOTE'
+    - '@CALL var:preDo'
+    - '@SETINT $<var:$VAR.this>.VoteKillall_tBase 0'
+    - '@SETINT $<var:$VAR.this>.VoteKillall_fBase 30'
+  WARP:
+    Script:
+    - '@SETSTR $VAR.this WARP'
+    - '@CALL var:preDo'
+  SIGNTEXT:
+    Script:
+    - '@SETSTR $VAR.this SIGNTEXT'
+    - '@CALL var:preDo'
+    - '@SETSTR $SIGNTEXT.ore1 &f&l測試獎勵'
+    - '@SETSTR $SIGNTEXT.ore4 &0'
+    - '@SETSTR $SIGNTEXT.newbieBook1 &f&l免費領取！'
+    - '@SETSTR $SIGNTEXT.newbieBook2 &0'
+    - '@SETSTR $SIGNTEXT.newbieBook3 &0共發出'
+    - '@SETSTR $SIGNTEXT.newbieBook4 &0'
+  CD:
+    Script:
+    - '@SETSTR $VAR.this CD'
+    - '@CALL var:preDo'
+    - '@SETINT $CD.COAL_ORE 300'
+    - '@SETINT $CD.IRON_ORE 900'
+    - '@SETINT $CD.GOLD_ORE 1800'
+    - '@SETINT $CD.DIAMOND_ORE 7200'
+    - '@SETINT $CD.REDSTONE_ORE 3600'
+    - '@SETINT $CD.LAPIS_ORE 4800'
+    - '@SETINT $CD.EMERALD_ORE 36000'
+    - '@SETINT $CD.QUARTZ_ORE 600'

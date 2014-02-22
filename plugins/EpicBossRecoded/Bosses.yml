@@ -1,0 +1,377 @@
+# 
+#    - bossmsg 20:&c[恭喜]_&f$player_&2成功擊殺了_&f$boss_&2獲得獎勵金_&f10.00_&2元 =0 1
+Bosses:
+  新手殭屍:
+    Type: zombie
+    Health: 10
+    Showhp: false
+    Damage: 4
+    Skills:
+    - swarm zombiebaby:2 =0 1
+    - bossmsg 25:&a$boss_&r臨死前招換出_&c殭屍屁孩_&rx2 =0 1
+    - 367:0:1 1
+    - 367:0:1 0.8
+    - 367:0:1 0.6
+    - 367:0:1 0.4
+    - 367:0:1 0.2
+  成年殭屍:
+    Type: zombie
+    Health: 20
+    Showhp: true
+    Damage: 8
+    Skills:
+    - swarm $新手殭屍:2 =0 1
+    - bossmsg 25:&a$boss_&r臨死前招換出_&c新手殭屍_&rx2 =0 1
+    Drops:
+    - 268:0:1:0 0.05
+    - 301:0:1:1 0.05
+    - 300:0:1:2 0.05
+    - 299:0:1:3 0.05
+    - 298:0:1:4 0.05
+    - 367:0:2 1
+    - 367:0:2 0.8
+    - 367:0:1 0.6
+    - 367:0:1 0.4
+    - 367:0:1 0.2
+  殭屍隊長:
+    Type: zombie
+    Health: 40
+    Showhp: true
+    Damage: 16
+    Skills:
+    - swarm $成年殭屍:1 =0 1
+    - bossmsg 25:&a$boss_&r臨死前招換出_&c成年殭屍_&rx1 =0 1
+    Drops:
+    - 272:0:1:0 0.05
+    - 305:0:1:1 0.05
+    - 304:0:1:2 0.05
+    - 303:0:1:3 0.05
+    - 302:0:1:4 0.05
+    - 367:0:3 1
+    - 367:0:3 0.8
+    - 367:0:1 0.6
+    - 367:0:1 0.4
+    - 367:0:1 0.2
+  殭屍長老:
+    Type: zombie
+    Health: 80
+    Showhp: true
+    Damage: 32
+    Skills:
+    - swarm $殭屍隊長:1 =0 1
+    - bossmsg 25:&a$boss_&r臨死前招換出_&c殭屍隊長_&rx1 =0 1
+    Drops:
+    - 267:0:1:0 0.1 DAMAGE_ALL:2,DURABILITY:1 &f殭屍長老之劍
+    - 305:0:1:1 0.1 PROTECTION_ENVIRONMENTAL:1,DURABILITY:1 &f殭屍長老靴子
+    - 304:0:1:2 0.1 PROTECTION_ENVIRONMENTAL:1,DURABILITY:1 &f殭屍長老護腿
+    - 303:0:1:3 0.1 PROTECTION_ENVIRONMENTAL:1,DURABILITY:1 &f殭屍長老胸甲
+    - 302:0:1:4 0.1 PROTECTION_ENVIRONMENTAL:1,DURABILITY:1 &f殭屍長老頭盔
+    - 367:0:4 1
+    - 367:0:4 0.8
+    - 367:0:1 0.6
+    - 367:0:1 0.4
+    - 367:0:1 0.2
+  殭屍教主:
+    Type: zombie
+    Health: 320
+    Showhp: true
+    Damage: 64
+    Skills:
+    - swarm $殭屍長老:1 =0 1
+    - bossmsg 25:&a$boss_&r臨死前招換出_&c殭屍長老_&rx1 =0 1
+    Drops:
+    - 276:0:1:0 0.5 DAMAGE_ALL:4,FIRE_ASPECT:1,DURABILITY:2 &9殭屍教主之劍
+    - 309:0:1:1 0.2 PROTECTION_ENVIRONMENTAL:2,DURABILITY:2 &9殭屍教主靴子
+    - 308:0:1:2 0.2 PROTECTION_ENVIRONMENTAL:2,DURABILITY:2 &9殭屍教主護腿
+    - 307:0:1:3 0.2 PROTECTION_ENVIRONMENTAL:2,DURABILITY:2 &9殭屍教主胸甲
+    - 306:0:1:4 0.2 PROTECTION_ENVIRONMENTAL:2,DURABILITY:2 &9殭屍教主頭盔
+    - 367:0:5 1
+    - 367:0:5 0.8
+    - 367:0:1 0.6
+    - 367:0:1 0.4
+    - 367:0:1 0.2
+  殭屍巨人王:
+    Type: giant
+    Health: 1600
+    Showhp: true
+    Damage: 128
+    Skills:
+    - swarm $新手殭屍:1 /1600-1280 0.01
+    - swarm $成年殭屍:1 <1280 0.01
+    - swarm $殭屍隊長:1 <960 0.01
+    - potionboss SPEED:4:5 <960 0.2
+    - swarm $殭屍長老:1 <640 0.05
+    - swarm $殭屍教主:1 <320 0.1
+    - swarm $殭屍教主:2 =0 1
+    - bossmsg 25:&a$boss_&r臨死前招換出_&c殭屍教主_&rx2 =0 1
+    - potion 25:SPEED:4:4 <160 1
+    - command ebroadcast_&c恭喜!_&f$player_&2成功擊殺了_&f$boss_&2獲得獎勵金_&f10.00_&2元 =0 1
+    - command money_give_$player_10 =0 1
+    Drops:
+    - 276:0:1:0 0.4 KNOCKBACK:2,DAMAGE_ALL:8,FIRE_ASPECT:2,DURABILITY:4 $&5進擊的巨劍
+    - 313:0:1:1 0.2 PROTECTION_ENVIRONMENTAL:4,DURABILITY:3 $&5殭屍王靴子
+    - 312:0:1:2 0.2 PROTECTION_ENVIRONMENTAL:4,DURABILITY:3 $&5殭屍王護腿
+    - 311:0:1:3 0.2 PROTECTION_ENVIRONMENTAL:4,DURABILITY:3 $&5殭屍王胸甲
+    - 310:0:1:4 0.2 PROTECTION_ENVIRONMENTAL:4,DURABILITY:3 $&5殭屍王頭盔
+    - 367:0:20 1
+    - 367:0:10 0.8
+    - 367:0:5 0.6
+    - 367:0:3 0.4
+    - 367:0:2 0.2
+  殭屍巨人首領:
+    Type: giant
+    Health: 3200
+    Showhp: true
+    Damage: 256
+    Skills:
+    - bossmsg 20:&4[$boss]說：_&2別想要逃跑！ <3200 0.1
+    - potionboss SPEED:5:2 <3200 0.1
+    - swarm $殭屍長老:1 <2500 0.01
+    - potionboss SPEED:5:3 <2000 0.1
+    - swarm $殭屍教主:1 <1500 0.01
+    - potionboss SPEED:5:4 <1000 0.1
+    - potionboss SPEED:5:5 <500 0.2
+    - swarm $殭屍巨人王:1 <250 0.01
+    - potion 25:SPEED:5:4 <250 0.3
+    - bossmsg 25:&a$boss_&r臨死前招換出一堆殭屍 =0 1
+    - swarm zombie:1 =0 0.5
+    - swarm zombie:1 =0 0.5
+    - swarm zombie:1 =0 0.5
+    - swarm zombie:1 =0 0.5
+    - swarm zombiebaby:1 =0 0.5
+    - swarm zombiebaby:1 =0 0.5
+    - swarm zombiebaby:1 =0 0.5
+    - swarm zombiebaby:1 =0 0.5
+    - command ebroadcast_&c恭喜!_&f$player_&2成功擊殺了_&f$boss_&2獲得獎勵金_&f32.00_&2元 =0 1
+    - command money_give_$player_32 =0 1
+    Drops:
+    - 276:0:1:0 0.3 KNOCKBACK:10,DAMAGE_ALL:10,FIRE_ASPECT:10,DURABILITY:8 $&6進擊的雙手巨劍
+    - 313:0:1:1 0.2 PROTECTION_ENVIRONMENTAL:10,DURABILITY:5 $&6殭屍首領靴子
+    - 312:0:1:2 0.2 PROTECTION_ENVIRONMENTAL:10,DURABILITY:5 $&6殭屍首領護腿
+    - 311:0:1:3 0.2 PROTECTION_ENVIRONMENTAL:10,DURABILITY:5 $&6殭屍首領胸甲
+    - 310:0:1:4 0.2 PROTECTION_ENVIRONMENTAL:10,DURABILITY:5 $&6殭屍首領頭盔
+    - 367:0:40 1
+    - 367:0:10 0.8
+    - 367:0:5 0.6
+    - 367:0:3 0.4
+    - 367:0:2 0.2
+  史萊姆首領:
+    Type: slime
+    Health: 5000
+    Showhp: true
+    Damage: 10
+    Skills:
+    - potion 6:POISON:5:3 <5000 0.2
+    - bossmsg 20:&a$boss_&f噴出一堆黏黏的東西 <5000 0.05
+    - potion 6:CONFUSION:10:5 <4000 0.1
+    - bossmsg 20:&a$boss_&f散發出暈眩的氣息 <4000 0.05
+    - potion 6:SLOW:10:5 <3000 0.1
+    - bossmsg 20:&a$boss_&f讓周圍的空氣變黏 <3000 0.05
+    - potion 6:BLINDNESS:5:5 <2000 0.2
+    - bossmsg 20:&a$boss_&f開始吸收周圍的光線 <2000 0.05
+    - potionboss SPEED:5:5 <1000 0.3
+    - bossmsg 20:&a$boss_&f血變少，身體變輕盈了 <1000 0.05
+    - potionboss INVISIBILITY:1:5 <500 0.3
+    - bossmsg 20:&a$boss_&f血變少，身體變更透明了 <500 0.05
+    - swarm slime:1 <500 0.6
+    - bossmsg 20:&a$boss_&f似乎想要分身逃跑 <500 0.1
+    - command ebroadcast_&c恭喜!_&f$player_&2成功擊殺了_&f$boss_&2獲得獎勵金_&f50.00_&2元 =0 1
+    - command money_give_$player_50 =0 1
+    Drops:
+    - 276:0:1:0 0.3 DAMAGE_ALL:5,LOOT_BONUS_MOBS:1,DURABILITY:10 &a很有彈性之劍
+    - 397:3:1:4 0.8 $&a黏呼呼的頭
+    - 383:55:1 0.8
+    - 383:55:1 0.2
+    - 378:0:1 0.5
+    - 420:0:1 0.5
+    - 29:0:1 0.5
+    - 29:0:1 0.4
+    - 29:0:1 0.3
+    - 29:0:1 0.2
+    - 29:0:1 0.1
+    - 341:0:10 1
+    - 341:0:5 0.8
+    - 341:0:4 0.6
+    - 341:0:3 0.4
+    - 341:0:2 0.2
+  史萊姆女首領:
+    Type: magmacube
+    Health: 5000
+    Showhp: true
+    Damage: 12
+    Skills:
+    - fire 10:3 <5000 0.3
+    - bossmsg 20:&a$boss_&f熱力四射！ <5000 0.05
+    - potion 6:POISON:5:3 <5000 0.2
+    - bossmsg 20:&a$boss_&f噴出一堆黏黏的東西 <5000 0.05
+    - potion 6:CONFUSION:10:5 <4000 0.1
+    - bossmsg 20:&a$boss_&f散發出暈眩的氣息 <4000 0.05
+    - potion 6:SLOW:10:5 <3000 0.1
+    - bossmsg 20:&a$boss_&f讓周圍的空氣變黏 <3000 0.05
+    - potion 6:BLINDNESS:5:5 <2000 0.2
+    - bossmsg 20:&a$boss_&f開始吸收周圍的光線 <2000 0.05
+    - potionboss SPEED:5:5 <1000 0.3
+    - bossmsg 20:&a$boss_&f血變少，身體變輕盈了 <1000 0.05
+    - potionboss INVISIBILITY:1:5 <500 0.3
+    - bossmsg 20:&a$boss_&f血變少，身體變更透明了 <500 0.05
+    - swarm magmacube:1 <500 0.6
+    - bossmsg 20:&a$boss_&f似乎想要分身逃跑 <500 0.1
+    - command ebroadcast_&c恭喜!_&f$player_&2成功擊殺了_&f$boss_&2獲得獎勵金_&f50.00_&2元 =0 1
+    - command money_give_$player_50 =0 1
+    Drops:
+    - 276:0:1:0 0.5 DAMAGE_ALL:3,FIRE_ASPECT:10,DAMAGE_UNDEAD:2,LOOT_BONUS_MOBS:1,DURABILITY:2 $&5史萊姆火焰刀
+    - 313:0:1:1 0.0 PROTECTION_FIRE:10,PROTECTION_EXPLOSIONS:10,DURABILITY:2
+    - 312:0:1:2 0.0 PROTECTION_FIRE:10,PROTECTION_EXPLOSIONS:10,DURABILITY:2
+    - 311:0:1:3 0.0 PROTECTION_FIRE:10,PROTECTION_EXPLOSIONS:10,DURABILITY:2
+    - 397:3:1:4 0.9 $&a黏呼呼的頭
+    - 383:62:1 0.8
+    - 383:62:1 0.2
+    - 378:0:5 0.5
+    - 378:0:4 0.4
+    - 378:0:3 0.3
+    - 378:0:2 0.2
+    - 378:0:1 0.1
+    - 385:0:1 0.5
+    - 385:0:1 0.3
+    - 378:0:1 0.5
+  水母王手下甲:
+    Type: witherskeleton
+    Health: 100
+    Showhp: false
+    Damage: 5
+    Skills:
+    - bossmsg 20:&a$boss_&f我來幫您了，大大！ <100 0.2
+    Drops:
+    - 272:0:1:0 0.0
+  水母王手下乙:
+    Type: skeleton
+    Health: 100
+    Showhp: false
+    Damage: 5
+    Skills:
+    - bossmsg 20:&a$boss_&f我來幫您了，大大！ <100 0.2
+    Drops:
+    - 261:0:1:0 0.0 ARROW_KNOCKBACK:1
+  飛天水母王:
+    Type: ghast
+    Health: 2500
+    Showhp: true
+    Damage: 20
+    Skills:
+    - bossmsg 20:&a$boss_&f我也是有幫手的！ <2500 0.1
+    - bossmsg 20:&a$boss_&f都去死吧！ <2500 0.1
+    - potionboss SPEED:3:3 <2500 0.2
+    - potionboss INVISIBILITY:1:5 <2500 0.5
+    - swarm ghast:3 <2500 0.1
+    - swarm $水母王手下甲:1 <2500 0.1
+    - swarm $水母王手下甲:2 <1500 0.2
+    - swarm $水母王手下甲:3 <500 0.3
+    - swarm $水母王手下乙:4 <2500 0.2
+    - swarm $水母王手下乙:6 <1500 0.3
+    - swarm $水母王手下乙:8 <500 0.4
+    - bossmsg 25:&a$boss_&r臨死前招換出一堆骷髏 =0 1
+    - swarm $水母王手下甲:1 =0 0.5
+    - swarm $水母王手下甲:1 =0 0.5
+    - swarm $水母王手下甲:2 =0 0.5
+    - swarm $水母王手下甲:2 =0 0.5
+    - swarm $水母王手下乙:1 =0 0.5
+    - swarm $水母王手下乙:1 =0 0.5
+    - swarm $水母王手下乙:2 =0 0.5
+    - swarm $水母王手下乙:2 =0 0.5
+    - command ebroadcast_&c恭喜!_&f$player_&2成功擊殺了_&f$boss_&2獲得獎勵金_&f25.00_&2元 =0 1
+    - command money_give_$player_25 =0 1
+    Drops:
+    - 261:0:1:0 0.5 DURABILITY:2,ARROW_DAMAGE:9,ARROW_INFINITE:1,ARROW_KNOCKBACK:1,ARROW_FIRE:1,LOOT_BONUS_BLOCKS:1 $&5飛天水母之弓
+    - 397:3:1:4 0.9 $&a黏呼呼的頭
+    - 370:0:1 1
+    - 370:0:1 0.5
+    - 370:0:1 0.5
+    - 385:0:1 1
+    - 385:0:1 0.9
+    - 385:0:1 0.8
+    - 385:0:1 0.7
+    - 385:0:1 0.6
+    - 385:0:1 0.5
+    - 385:0:1 0.4
+    - 385:0:1 0.3
+    - 385:0:1 0.2
+    - 385:0:1 0.1
+  強化鐵巨人:
+    Type: irongolem
+    Health: 2000
+    Showhp: true
+    Damage: 5
+    Skills:
+    - swarm cavespider:1 <1500 0.1
+    - swarm $毒蜘蛛他媽:1 <1000 0.1
+    - swarm silverfish:20 =0 1
+    - potionboss DAMAGE_RESISTANCE:5:10 <200 0.5
+    - potionboss REGENERATION:5:10 <200 0.5
+    - potionboss INVISIBILITY:5:10 <200 0.5
+  毒蜘蛛他媽:
+    Type: spider
+    Health: 500
+    Showhp: true
+    Damage: 5
+    Skills:
+    - swarm cavespider:2 <500 0.2
+    - swarm cavespider:3 =0 0.1
+    - swarm cavespider:3 =0 0.1
+    - swarm cavespider:3 =0 0.1
+    - swarm cavespider:3 =0 0.1
+    - swarm cavespider:3 =0 0.1
+    - swarm cavespider:3 =0 0.1
+    - swarm cavespider:3 =0 0.1
+    - swarm cavespider:3 =0 0.1
+    - swarm cavespider:3 =0 0.1
+    - swarm cavespider:3 =0 0.1
+  噴火牛:
+    Type: mushroomcowbaby
+    Health: 100
+    Showhp: true
+    Damage: 1
+    Skills:
+    - fire 10:2 >0 1
+    - bossmsg 10:&c噴火牛_&2周圍燃起了火焰 >0 1
+    Drops:
+    - 282:0:1 1 $很燙的蘑菇湯
+    - 364:0:1 1 $燒焦的牛肉
+    - 383:96:1 0.005
+  農場小雞:
+    Type: chicken
+    Health: 10
+    Showhp: false
+    Damage: 0
+    Skills:
+    - swarm $農場小雞:1 =0 0.9
+  年:
+    Type: pigzombie
+    Health: 1000
+    Showhp: true
+    Skills:
+    - bossmsg 10:give_$player_397_3_1_player_%player =0 1
+    - bossmsg 20:&c[恭喜]_&f$player_&2成功擊殺了_&f$boss_&2獲得獎勵金_&f50.00_&2元 =0 1
+    - command money_give_$player_50 =0 1
+    Drops:
+    - 397:3:1:4 0.0
+    - 276:0:1:0 0.0
+    - 313:0:1:1 0.0
+    - 312:0:1:2 0.0
+    - 311:0:1:3 0.0
+    - 310:0:1:4 0.0
+  測試:
+    Type: pig
+    Health: 10
+    Showhp: true
+    Damage: 0
+    Skills:
+    - bossmsg 10:give_$player_397_3_1_player_O0oO0o0Oo0O =0 1
+    - bossmsg 20:&c[恭喜]_&f$player_&2成功擊殺了_&f$boss_&2獲得獎勵金_&f60.00_&2元 =0 1
+    - command money_give_$player_60 =0 1
+    Drops:
+    - 397:3:1:4 0.0 $&a黏呼呼的頭
+    - 276:0:1:0 0.0 KNOCKBACK:10,DAMAGE_ALL:32767,FIRE_ASPECT:10 $&6神之武
+    - 313:0:1:1 0.0 PROTECTION_ENVIRONMENTAL:10 $&6殭屍首領靴子
+    - 312:0:1:2 0.0 PROTECTION_ENVIRONMENTAL:10 $&6殭屍首領護腿
+    - 311:0:1:3 0.0 PROTECTION_ENVIRONMENTAL:10 $&6殭屍首領胸甲
+    - 310:0:1:4 0.0 PROTECTION_ENVIRONMENTAL:10 $&6殭屍首領頭盔

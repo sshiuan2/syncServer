@@ -1,0 +1,13 @@
+天界:
+  1,171,39:
+    CoolDown: 0
+    Script:
+    - '@CMD warp 天界-東天門看板'
+  0,170,39:
+    CoolDown: 0
+    Script:
+    - '@CMD warp 天界-南天門看板'
+  -1,171,39:
+    CoolDown: 0
+    Script:
+    - '@CMD warp 天界-西天門看板'

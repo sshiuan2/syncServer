@@ -1,0 +1,15 @@
+Homes:
+##The default values of the groups set. Any groups used must be set here
+  Defaults:
+    default: 1
+    member: 1
+    memberplus: 2
+    diamond: 3
+##Per server homes any values here will overwrite the defaults.
+  Servers:
+    天界:
+      default: 0
+    人界:
+      member: 1
+      memberplus: 3
+      diamond: 5

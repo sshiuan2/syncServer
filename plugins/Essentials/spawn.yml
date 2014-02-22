@@ -1,0 +1,8 @@
+spawns: 
+  default: 
+    world: '天界'
+    x: '0.5'
+    y: '135.5'
+    z: '56'
+    yaw: '-180'
+    pitch: '6.5'

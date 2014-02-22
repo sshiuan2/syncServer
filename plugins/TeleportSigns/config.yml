@@ -1,0 +1,86 @@
+offline-message: '&c伺服器離線或未開放！'
+show-offline-message: true
+interval: 5
+sign-updates: 20
+timeout: 1500
+cooldown: 2000
+servers:
+  天界:
+    address: 10.0.0.1:25565
+    displayname: '&6&l<天界>'
+  auth:
+    address: 10.0.0.1:25566
+    displayname: '&6&l<驗證>'
+  creative:
+    address: 10.0.0.1:25567
+    displayname: '&a&l[創造]'
+  人界:
+    address: 10.0.0.200:25565
+    displayname: '&3&l<人界>'
+  空島生存:
+    address: 10.0.0.2:25565
+    displayname: '&b&l[空島生存]'
+  流沙:
+    address: 10.0.0.2:25566
+    displayname: '&d&l[流沙]'
+  pvp_bb:
+    address: 10.0.0.2:25567
+    displayname: '&4&l[小CS]'
+  tPC:
+    address: 10.0.0.2:25568
+    displayname: '&7&l[tPC跑酷]'
+  Bomb:
+    address: 10.0.0.2:25569
+    displayname: '&7&l[TNT落下]'
+  trade:
+    address: 10.0.0.3:25565
+    displayname: '&e&l<OP服>'
+  打殭屍:
+    address: 10.0.0.3:25567
+    displayname: '&c&l[打殭屍]'
+  music:
+    address: 10.0.0.3:25599
+    displayname: '&f&l<音樂>'
+  原味:
+    address: 10.0.0.4:25565
+    displayname: '&f&l<原味>'
+  zoo:
+    address: 10.0.0.4:25566
+    displayname: '&a&l[動物園]'
+  test:
+    address: 10.0.0.3:25600
+    displayname: '&7&l[測試]'
+  in91andy:
+    address: 10.0.0.3:25566
+    displayname: '&7&l[in91andy]'
+layouts:
+  default:
+    teleport: true
+    layout:
+      - '&l↓㊣傳送至㊣↓'
+      - '&l%displayname%'
+      - '&f&l%numpl%/%maxpl%'
+      - '%isonline%'
+    online: '&a&l點我可傳送'
+    offline: '&c&l離線'
+    offline-int: '-'
+  info:
+    teleport: false
+    layout:
+      - '&8&l伺服器狀態：'
+      - '%displayname%'
+      - '&c%numpl%&a/&c%maxpl%'
+      - '&6&f%isonline%'
+    online: '正常運作中'
+    offline: '離線'
+    offline-int: '-'
+  pvp:
+    teleport: true
+    layout:
+      - '&n&f&lPVP-死鬥場'
+      - '%motd%'
+      - '&1%numpl%&a/&1%maxpl%'
+      - '%isonline%'
+    online: '&a點擊進入'
+    offline: '&c未開放'
+    offline-int: '-'

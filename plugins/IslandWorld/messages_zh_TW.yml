@@ -1,0 +1,160 @@
+# Language File : EN - English
+error-no-perms: 你沒有權限
+error-no-perms-biome: 你沒有此生態的權限
+error-regen: Regen in progress, try again later.
+error-start: IslandWorld 沒有正確的啟動，請查看 logs!
+error-world: Cannot determine correct world.
+error-have-island: 你已有空島
+error-no-island: 沒有屬於你的空島
+error-schematic: You don't have permission to use that schematic (%name%).
+error-schematic-not-exists: Choosen schematic (%name%) doesn't exists!
+error-current-world: 無法在這個世界使用此指令
+error-delay: 使用刪除指令需要間隔 %time% 分鐘
+error-calc-delay: 使用計算指令需要間隔 %time% 分鐘
+error-no-free: 空島不足，請洽管理者
+error-get-free: 取得空島錯誤，請洽管理者
+error-helping: 無法在幫忙模式下創造空島
+error-wg-region: WG保護出錯，請洽管理者
+error-no-island-party: 沒有屬於你的空島，且沒有組隊
+error-outside: 無法在你空島範圍之外設置-家-
+error-expell: 沒有玩家在空島上
+error-expell-outside: 該玩家不在你空島範圍內
+error-add-have-island: 該玩家已擁有空島，無法加入
+error-add-have-party: 該玩家已加入其他空島，無法加入
+error-add-limit: 已達組隊上限，無法加入
+error-add-already: 玩家 %name% 已加入你的空島隊伍
+error-not-online: 玩家 %name% 不在線上，或無此玩家
+error-remove-not-added: 玩家 %name% 未被加入你的空島隊伍
+error-tp-have-island: 擁有空島時，無法使用傳送
+error-tp-no-party: 你沒有權限傳送至 %name% 的空島
+error-tp-no-island: 沒有屬於玩家 %name% 的空島
+error-no-player: 你嘗試傳送至錯誤的玩家
+error-leave: 無法離開，你沒有隊伍
+error-fixhome: 座標錯誤，請洽管理者
+error-cha: challenge錯誤
+error-cha-id: 無效的 challenge ID.
+error-cha-order: 無法完成 %id%，你需要先完成前置的 challenges.
+error-no-visit: Visit指令被禁止
+error-visit-no-island: 沒有屬於玩家 %name% 的空島
+error-visit-owner-wait: 玩家 %name% 無回應，無法使用 visit 請求
+error-visit-visitor-wait: 尚在等候回應，無法使用 visit 請求
+error-visit-no-player: 該玩家不在線上，或無此玩家
+error-visit-owner-no-reply: 你已拒絕回應 %name% 的請求
+error-visit-visitor-no-reply: '%name% 未回應你的請求'
+error-visit-request-you-deny: 你已拒絕 %name% 的請求
+error-visit-request-deny: '%name% 已拒絕你的請求'
+error-visit-spawn: spawn錯誤，無法拜訪 %name% 的空島
+error-visit-your-spawn: 玩家 %name% 嘗試拜訪你的空島，但 spawn 錯誤
+error-visit-self: Cannot visit own island.
+error-delete-respond: 你未回應，請求已刪除
+error-delete-comm: 無法使用此指令，需等待請求刪除
+error-no-region-here: 你不在任何空島的範圍內
+error-tp-while-falling: 無法在掉落狀態下使用傳送
+error-teleport-break: 移動中無法傳送
+error-home-limit: 無法儲存超過 %count% 個-家-
+error-no-home: '%name% -家-未儲存'
+error-outside-island: 你在你的空島範圍外
+error-invalid-biome: '無效的環境: %biome%'
+error-rank-not-updated: Error, rank not updated, check your (mysql) configuration.
+error-tp-not-safe: There is problem with your island spawn. Try to use /is fixhome or inform administrator
+error-sethome-loc: Cannot sethome here. You need to have solid block under point.
+info-biome: '環境: %biome%'
+info-biomes: '環境清單:'
+info-biome-changed: Biome on island changed to %biome%.
+info-biome-chunk-changed: Biome in current chunk changed to %biome%.
+info-visit-visitor-tp: '%name% 傳送至你的空島'
+info-visit-visitor: 傳送至 %name% 的空島
+info-created: 空島已創建
+info-deleted: 空島已刪除
+info-loc-changed: 位置已改變
+info-expell: 你已驅逐 %count% 位玩家
+info-expelled: 你已從 %name% 的空島被驅逐
+info-add-ok: 玩家 %name% 已加入你的空島
+info-added-ok: 你已被加入玩家 %name% 的空島
+info-remove-ok: 玩家 %name% 已從你空島移除
+info-removed-ok: 你已從玩家 %name% 的空島被移除
+info-leave-ok: 已離開 %name% 的空島
+info-tele-spawn: 傳送至重生點
+info-fixhome: -家-座標已修復
+info-lock-disabled: Lock is not available on our server.
+info-lock-ok: Your island is now locked.
+info-unlock-ok: Your island is now unlocked!
+info-lock-move: Island is locked, you cannot enter.
+info-cha-header: 'Challenge [%id%] : '
+info-cha-already: 已完成
+info-cha-completed: 已完成
+info-cha-reward-added: 獎勵已放置在背包內
+info-cha-item-missing: 需要物品遺失，無法完成
+info-cha-no-req-item: 該 challenge 不需要此物品
+info-cha-list-header: '--------- Challenges: %from%/%max% ---------'
+info-cha-reward-global: '完成此 Challenge 的獎勵: %count% 個 %item%'
+info-cha-reward: '獎勵: %count% 個 %item%'
+info-visit-request: 你發出拜訪 %name% 空島的請求
+info-visit-need-answer: '%name% 請求拜訪你的空島。同意請輸入 /island accept ，不同意則輸入 /island deny'
+info-delete-added: 請再次輸入 /is delete 確定刪除
+info-teleported: 已傳送
+info-teleport-after: '%time% 秒後傳送，請勿移動'
+info-telporting: 傳送中...
+info-tp-wait: Already waiting for teleport.
+info-tp-to-island: 傳送至 %name% 的空島
+info-home-set: -家-已設定
+info-home-deleted: -家- %name% 已刪除
+info-entered: 已進入 %name% 的空島
+info-quitted: Leaved island.
+info-points: '你空島的分數: %points%'
+info-for-points: '%name% 空島的分數: %points%.'
+info-rank: '最佳空島排行:'
+info-rank-last: '排行榜更新:'
+info-rank-island: 請輸入 /island calc 計算你空島的分數
+com-command: island
+com-usage: '用法:'
+com-pcreate: create
+com-create: 創造一個新的空島
+com-pdelete: delete
+com-delete: 刪除自己的空島
+com-pinfo: info
+com-info: 查看自己空島的資訊
+com-psethome: sethome [name]
+com-sethome: 改變-家-傳送點
+com-pdelhome: delhome [name]
+com-delhome: 刪除-家-傳送點
+com-phome: home [name|list]
+com-home: 傳送至你空島的-家-傳送點
+com-pfixhome: fixhome
+com-fixhome: 嘗試修復-家-座標
+com-pspawn: spawn
+com-spawn: 傳送至重生點
+com-pexpell: expell [playerName]
+com-expell: teleport out players without perms from island.
+com-padd: add <playerName>
+com-add: 將玩家加入你的空島隊伍
+com-premove: remove <playerName>
+com-remove: 將玩家移出你的空島隊伍
+com-ptp: tp <playerName>
+com-tp: 傳送至玩家的空島
+com-pvisit: visit <playerName>
+com-visit: 送出拜訪請求
+com-pleave: leave
+com-leave: 離開空島隊伍
+com-plock: lock
+com-lock: lock your island.
+com-punlock: unlock
+com-unlock: unlock your island.
+com-pcalc: calc
+com-calc: 計算你空島的分數
+com-prank: rank
+com-rank: 查看空島排行榜
+com-cha-list: 查看 challenges
+com-cha-complete: 完成 challenge
+sign-perm-create: 沒有創造該告示牌的權限
+sign-perm-use: 你沒有權限使用此告示牌
+sign-second: 第二行必須是 challenge 數字或 all
+sign-created: Challenge 告示牌已建立
+sign-unknown: 未知的告示牌種類
+eco-failed: You don't have enough funds (%cost%) to use that command.
+info-protect-disabled: 此伺服器沒有開啟保護狀態
+info-protect-ok: 你的空島已在保護狀態下
+info-unprotect-ok: 你的空島已不在保護狀態
+info-protect-move: 空島處於保護狀態，無法進入
+com-protect: 開啟保護狀態
+com-unprotect: 關閉保護狀態

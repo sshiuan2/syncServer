@@ -1,0 +1,246 @@
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# About Plugin/Author #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+# Plugin Name: Death Messages
+# Author: Goty
+# Bukkit Profile: http://dev.bukkit.org/profiles/Mayhem777/
+# Description: Change the Default Bukkit Death Messages as you Wish, including colors, victim name, killer name and weapon/material/name...  also other General messages as Join/Kick/Leave.
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# About Plugin/Author #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Plugin Version #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+# Don't change this or your config will be renamed to "old_config.yml" and the correct config.yml version will be created.
+Version: 2.6.1
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Plugin Version #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Debugging #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+### Enabling this option will BROADCAST useful data about the Death Process, which will be useful to find plugins conflicting with Bukkit normal events.
+# You'll be able to check: Victim Name, World Name, Last Damage Cause Type, Last Damage Cause (Reason), and Damager.
+Debug: false
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Debugging #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+#====================================== PvP Messages ======================================#
+### What to do with PvP Death Messages?
+# 1 = Don't Show any of Them.
+# 2 = Show them as Usual.
+# 3 = ONLY show PvP Death Messages.
+PvP_Death_Messages_Handling: 2
+
+#====================================== World Settings ======================================#
+### Disable ALL Death and Generic messages to those worlds, total silence, no message comming from the world itself or from any other.
+Silenced_Worlds:
+- TooManyDeaths_world
+- NoSpam_world
+
+### Linking worlds allows worlds to share death/generic messages, worlds out if this list will ONLY see it's own messages.
+# Example: as you can see in this list, the worlds "world", "world_nether" and "world_the_end" are linked, so Death and Generic messages will be shared, if we have another world called "new_world", will only be able to see it's own Death and Generic Messages.
+Linked_Worlds:
+  Enable: false
+  World_List:
+  - world
+  - world_nether
+  - world_the_end
+
+#====================================== Generic Messages ======================================#
+### Enable/Disable all Generic Messages; if disabled, will totally turn off the listeners, so this part will not affect performance.
+# (YOU HAVE TO RELOAD or STOP/START THE SERVER FOR THIS OPTION TO HAVE EFFECT)
+Generic_Messages: true
+
+### On Player FIRST Join Message:
+Player_First_Join: '&d&l✿✿✿&r %player &d&l✿✿✿ &c&l第一次&r來本伺服器！'
+
+### On Player Join Message:
+Player_Join: '&e%player &e進入伺服器。'
+
+### On Player Leave/Disconnect Message:
+Player_Disconect: '&7%player &7離開伺服器...'
+
+### On Player Kick Message:
+Player_Kick: '&b%player &8被自動移出伺服器。'
+
+#====================================== Death Messages ======================================#
+### Change those TAGS as you wish.
+# %player = Player (victim) name
+# %killer = Player Assasin name (only for player kills, PvP)
+# %weapon_material = Material name of the weapon wielded by the killer(only for player kills, PvP)
+# %weapon_name = Meta display name of the weapon, instead of the material one, if there's no name it'll show the material one.
+# %world = World name in which the player died, can be used in any message.
+
+### Don't forget to use bukkit colors if you want ===>    http://dev.bukkit.org/media/images/42/45/Colors.png
+# And other Bukkit Formats ===>    &n = Underlined   ||   &o = Italic   ||   &m = Strike-through   ||   &l = Bold   ||   &k = Magic   ||   &r = Reset Format
+
+### Some Examples:
+# Example for Creeper Message = '&2%player &Elikes to hug &CCreepers&E, he is a pill of dust now...'
+# Example for PvP Message = '&2%player &Ewas slain by &Ckiller&E, wielding his mighty &C%weapon'
+
+### TAKE CARE ABOUT SPECIAL CHARACTERS OR NON-ENGLISH ONES! THE BUKKIT YAML PARSER DON'T ALLOWS THEM! CHECK THE PLUGIN PAGE TO USE VARIABLES INSTEAD TO SHOW THEM!
+
+### Finally, you can add/modify/remove all the random messages you wish, when a death occurs, a random message from the list will be chosen.
+# REMEMBER, THERE'RE NOT ONLY 2 POSSIBLE RANDOM MESSAGES, ADD/REMOVE ALL YOU WISH! INFINITE POSSIBILITIES!
+
+### Mob Causes
+Blaze:
+- '&2%player &E被 &C烈焰神 &E的&2火球&E打臉，不幸掛了...'
+- '&2%player &E被 &C烈焰神 燒成炭渣'
+- '&2%player &E跟 &C烈焰神 &E玩得很開心'
+CaveSpider:
+- '&2%player &E被 &C毒蜘蛛 &E咬成碎肉'
+- '&2%player &E跟 &C毒蜘蛛 &E搏鬥，不幸往生...'
+- '&2%player &E跟 &C毒蜘蛛 &E玩得很開心'
+Creeper:
+- '&2%player &E嘗試跟 &C苦力帕 &E做好朋友，不幸掛了...'
+- '&2%player &E被 &C苦力帕 &E炸死'
+- '&C苦力帕 &E用溫馨的眼神讓 &2%player &E不忍心離開身邊'
+- '&2%player &E跟 &C苦力帕 &E玩得很開心'
+EnderDragon:
+- '&2%player &E被 &C終界龍 &E給終結！'
+- '&2%player &E與 &C終界龍 &E玩耍，鑽石裝散落一地。'
+- '&2%player &E跟 &C終界龍 &E玩得很開心'
+Enderman:
+- '&2%player &E受到 &C終界使者 &E背刺致命的一擊。'
+- '&2%player &E呆滯看著 &C終界使者 &E被活活嚇死！'
+- '&2%player &E跟 &C終界人 &E玩得很開心'
+Ghast:
+- '&2%player &E被 &C地獄水母 &E的&2火球&E燙死'
+- '&2%player &E想馴服 &C地獄水母 &E不成，還賠上自己的性命！'
+- '&2%player &E跟 &C地獄水母 &E玩得很開心'
+Giant:
+- '&2%player &E被路過的 &C殭屍巨人 &E踩扁'
+- '&2%player &E受不了 &C殭屍巨人 &E的雄壯威武，往生了...'
+- '&C殭屍巨人 &E輕輕的摸了 &2%player &E一把'
+- '&2%player &E跟 &C殭屍大大 &E玩得很開心'
+IronGolem:
+- '&2%player &E用他的肉身擋了 &C鐵巨人 &E一下，就掛了...'
+- '&C鐵巨人 &E用拳頭對玩家表示好感，將 &2%player 變成一地碎肉'
+- '&2%player &E跟 &C鐵巨人 &E玩得很開心'
+MagmaCube:
+- '&2%player &E被 &C熔岩史萊姆 &E當成烤吐司，燒焦了。'
+- '&C熔岩史萊姆 &E搞到 &2%player &E只剩下灰燼...'
+- '&2%player &E跟 &C熔岩史萊姆 &E玩得很開心'
+PigZombie:
+- '&2%player &E欺負 &C僵屍豬人 &E不成反被殺'
+- '&2%player &E被 &C僵屍豬人 &E當成午餐'
+- '&2%player &E跟 &C僵屍豬人 &E玩得很開心'
+Silverfish:
+- '&C蠹魚 &E成功佔領了 &2%player 的腦'
+- '&2%player &E被 &C蠹魚 &E啃食乾淨'
+- '&2%player &E跟 &C蠹魚 &E玩得很開心'
+SkeletonArcher:
+- '&C骷髏弓箭手 &E使用瞄準射擊，成功擊殺了 &2%player'
+- '&2%player &E被 &C骷髏弓箭手 射得滿臉，失血過多而死...'
+- '&2%player &E跟 &C骷髏弓箭手 &E玩得很開心'
+SkeletonMelee:
+- '&C骷髏弓箭手 &E連弓箭都沒用，近距離殺死了 &2%player'
+Slime:
+- '&2%player &E被 &C史萊姆 &E壓扁'
+- '&C史萊姆 &E讓 &2%player &E整個人都黏黏的窒息而死'
+- '&2%player &E跟 &C史萊姆 &E玩得很開心'
+Spider:
+- '&2%player &E在蒐集香辣 &C蜘蛛 &E眼食材的途中，不幸被咬死'
+- '&C蜘蛛 &E成功擊殺了 &2%player'
+- '&2%player &E跟 &C蜘蛛 &E玩得很開心'
+Witch:
+- '&2%player &E被 &C巫婆 &E玩弄至死。'
+- '&2%player &E被 &C巫婆 &E殘忍的殺害！'
+- '&2%player &E跟 &C巫婆 &E玩得很開心'
+Wolf:
+- '&2%player &E嘗試跟 &C狼 &E接吻，一口被咬死'
+- '&2%player &E想變成狼人，捨己餵 &C狼'
+- '&2%player &E跟 &C狼 &E玩得很開心'
+Zombie:
+- '&2%player &E跟 &C殭屍 &E乞討不成反被殺'
+- '&C殭屍 &E把 &2%player &E變成了腐肉塊'
+- '&2%player &E跟 &C殭屍 &E玩得很開心'
+### Wither
+Wither:
+- '&2%player &E被凋零，看不見自己的血條'
+WitherEffect:
+- '&2%player &E被凋零，看不見自己的血條'
+### Wither Skeleton
+WitherSkeleton:
+- '&2%player &E被 &C凋零骷顱 &E狠狠殺害'
+#====# PvP Causes #====#
+PvPWeapon:
+- '&2%player &E被 &C%killer &E拿&r %weapon_name &E擊殺'
+# Weapon Tag NOT APLICABLE
+PvPFist:
+- '&2%player &E被 &C%killer &E擊殺'
+PvPBow:
+- '&2%player &E被 &C%killer &E射死'
+# This happens when a player dies by a Thorn Enchantment.
+Thorns:
+- '&2%player &E被 &C%killer &E傷害反彈至死'
+#====# Other Causes #====#
+TNT:
+- '&2%player &E受到 &CTNT &E波及，不幸往生...'
+- '&2%player &E大叫：好一個 &CTNT'
+Cactus:
+- '&2%player &E被 &C仙人掌 &E刺死'
+- '&2%player &E在 &C仙人掌 &E上練習輕功，失血過多而死。'
+- '&C仙人掌 &E愛 &2%player'
+Anvil:
+- '&2%player &E被 &C鐵砧 &E壓成肉餅。'
+- '&2%player &E跟 &C鐵砧 &E融為一體。'
+# Dispenser only has 1 message for deaths, but i added another one if player dies from a fireball ;)
+DispenserArrow:
+- '&2%player &E被 &C發射器 &E的箭射死'
+- '&2%player &E在 &C發射器 &E面前練習鐵布杉時死亡。'
+DispenserFireball:
+- '&C發射器 &E的&2火球&EKO了 &2%player '
+- '&2%player &E被 &C發射器 &E的&2火球&E燒死'
+Drowning:
+- '&2%player &E游泳不換氣，不幸溺死'
+- '&2%player &E來不及施展水下呼吸，窒息而死。'
+- '&2%player &E潛水忘記帶氧氣筒。'
+PotionofHarming:
+- '&2%player &E毒藥潑到，掛點'
+- '&E毒藥噴的 &2%player &E滿臉都是。'
+# In Minecraft you can't die from normal Poison, you just get to half heart, anyway it a Poison Potion hits you when u're with low health and kills you or by other plugins this could happen.
+Fall:
+- '&2%player &E跳樓，以為自己是超人。'
+- '&2%player &E得意忘形，不小心摔落至死。'
+- '&2%player &E學習信仰之跳，失敗。'
+Poison:
+- '&2%player &E食物中毒而死。'
+- '&2%player &E被慘忍的毒死。'
+# Direct exposure to a fire block
+FireBlock:
+- '&2%player &E站在火堆裡，大跳過火舞。'
+- '&2%player &E玩火自焚。'
+# Death caused by burns after leaving a Fire Block or Lava Block.
+FireEffect:
+- '&2%player &E被活活燒死。'
+- '&2%player &E遇火焚身而死。'
+- '&2%player &E臨演被火焚身的屁孩。'
+Lava:
+- '&2%player &E在岩漿裡做spa，熱死了。'
+- '&2%player &E在岩漿裡游泳，熟透了。'
+- '&2%player &E在岩漿裡三溫暖。'
+# You usually get "went up in flames" like cause of death by a thunder, now you can specify what you want, anyway if the fire kills you first the cause will still being the fire.
+Lightning:
+- '&2%player &E被雷擊中而死'
+- '&2%player &E在下雨天放風箏，被電死。'
+- '&2%player &E自以為諸葛再世，控雷打到自己。'
+Starvation:
+- '&2%player &E活生生被餓死'
+- '&2%player &E窮到連麵包都沒有，順利投胎'
+- '&2%player &E參加飢餓60，掛了。'
+Suffocation:
+- '&2%player &E與牆壁合為一體'
+- '&2%player &E在牆壁裡渡完了他的一生'
+# Suicide message is only possible when player uses /suicide or /kill to himself.
+Suicide:
+- '&2%player &E自殺'
+- '&2%player &E終結了自己的生命'
+Void:
+- '&2%player &E在虛空被撕裂'
+- '&2%player &E被虛空吞噬'
+# Weird causes like killed by EnderPearl, Eggs and Snowballs.
+# Snowmans can't kill players cause Snowballs have no damage, anyway some servers change this mechanic for fun (like my server), so i added it too.
+Others:
+- '&2%player &E享受了奇怪的死法'
+- '&2%player &E詭異的死...亡...'
+Snowman:
+- '&2%player &E被 &C雪人 &E雪球砸中，白白的滿臉都是'
+- '&C雪人 &E把 &2%player &E凍僵'
+## Rest of the Causes, command causes will be showed here, like /kill or /suicide case doesn't have a damager.
+Unknown:
+- '&2%player &E享受了未知的死法。'
+- '&2%player &E就這麼死了。'

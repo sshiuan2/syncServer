@@ -1,0 +1,6 @@
+auth:
+  0,65,0:
+    CoolDown: 0
+    Script:
+    - '@SETSTR $<this>.LOC <triggerloc>'
+    - '@CALL signtext:login'

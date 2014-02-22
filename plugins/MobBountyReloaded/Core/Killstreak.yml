@@ -1,0 +1,44 @@
+# Killstreaks have changed as of v302. Kill bonuses are
+# now separate from normal rewards. As such, multiplying is
+# no longer an option. You can, however, still specify how much
+# each killstreak is worth.
+KillBonus:
+  '5': 5.0
+  '10': 10.0
+allowedCreatures:
+- Bat
+- Blaze
+- CaveSpider
+- Chicken
+- Cow
+- Creeper
+- ElectrifiedCreeper
+- Enderdragon
+- Enderman
+- Ghast
+- Giant
+- IronGolem
+- MagmaCube
+- Monster
+- Mooshroom
+- Ocelot
+- Pig
+- PigZombie
+- Player
+- SelfTamedCat
+- SelfTamedWolf
+- Sheep
+- Silverfish
+- Skeleton
+- Slime
+- SnowGolem
+- Spider
+- Squid
+- TamedCat
+- TamedWolf
+- Unknown
+- Villager
+- Witch
+- Wither
+- Wolf
+- Zombie

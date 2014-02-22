@@ -1,0 +1,26 @@
+# 
+#    backends:                            <- Backend Definition Section
+#        file:                            <- File Based Backend Section
+#            file: permissions.yml        <- File Name To Use
+#    backend: file                        <- Backend To Use On Start
+#    superperms:                          <- Settings For SuperPerm Support
+#        enable-wildcards: true
+#        disable-unmatched: false
+#        enable: true
+#        debug: false
+#        compatibility-mode: false
+#    createUserRecords: false             <- Other Settings
+#    allowOps: false
+#    debug: false
+#    basedir: plugins/PermissionsEx       <- Directory Name To Use
+
+permissions:
+  basedir: plugins/PermissionsEx
+  backend: sql
+  backends:
+    sql:
+      driver: mysql
+      uri: mysql://10.0.0.200/PermissionsEx
+      user: PermissionsEx
+      password: xEsnoissimreP
+  superperms: {}

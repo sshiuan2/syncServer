@@ -1,0 +1,76 @@
+Log chat to console: true
+ChatSpy sees all chat: false
+CleanTab: false
+NicknameLengthLimit: 16
+PrefaceDisplayNames: true
+CleanChatRegex: ([&][klmno])
+GlobalChatRegex: \{(factions_.*?)\}
+Channels:
+  LocalChatRadius: 100
+  Global: '&6[廣]&e[{server}]{prefix}&f{player}&f{suffix}&f: &f{message}'
+  Faction: '&a{factions_roleprefix}{factions_title}{player}:&r {message}'
+  FactionAlly: '&d{factions_roleprefix}{factions_name}{player}:&r {message}'
+  Servers:
+    天界:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&4[喊]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: 天
+    人界:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[喊]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: 人
+    交易大廳:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[喊]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: op
+    測試服:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[喊]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: 測
+    空島生存:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: 空
+    天界_:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: 天_
+    小遊戲:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: 小
+    pvp_bb:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: pvp
+    創造:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: 創
+    音樂:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: 音
+    跑跑:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: 跑
+    打殭屍:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[Local]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: 僵
+    流沙:
+      Server: '&e[{server}]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Local: '&9[喊]{prefix}&f{player}&f{suffix}&f: &7{message}'
+      Shortname: 流
+DefaultChannel: Global
+AdminChatColor: '&f&l'
+Prefix:
+  Enabled: true
+  Groups:
+    Admin: '&l[九天之上]'
+    Default: '&r[凡人]'
+Suffix:
+  Enabled: false
+  Groups:
+    Default: '&4'

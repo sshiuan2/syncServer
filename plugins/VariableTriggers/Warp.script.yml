@@ -1,0 +1,11 @@
+Scripts:
+  Warp:
+    Script:
+    - '@SETSTR $<this>.LOC <triggerloc>'
+  serverSurvival_animalShop:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.name 人界-動物商店'
+    - '@CALL Warp:Warp'
+    - '@CALL signtext:Warp'
+    - '@CMDOP warp $<this>.name'

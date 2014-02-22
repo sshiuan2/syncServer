@@ -1,0 +1,27 @@
+broadcast:
+#  pre: '&9AutoSaving'
+  pre: '&9自動存檔中...'
+#  post: '&9AutoSave Complete'
+  post: '&9自動存檔完成'
+broadcastbackup:
+#  pre: '&9AutoBackuping'
+  pre: '&9自動備份中...'
+#  post: '&9AutoBackup Complete'
+  post: '&9自動備份完成'
+broadcastpurge:
+#  pre: '&9AutoPurging'
+  pre: '&9開始清除過舊資料...'
+#  post: '&9AutoPurge Complete'
+  post: '&9過舊資料清除完畢'
+warning:
+#  save: '&9Warning, AutoSave will commence soon.'
+  save: '&9自動存檔即將開始'
+#  backup: '&9Warning, AutoBackup will commence soon'
+  backup: '&9自動備份即將開始'
+#insufficentpermissions: '&cYou do not have access to that command.'
+insufficentpermissions: '&c沒有權限使用此指令。'
+autorestart:
+#  restarting: '&9Server is restarting'
+  restarting: '&f伺服器重啟...'
+#  countdown: '&9Server will restart in {SECONDS} seconds'
+  countdown: '&c[注意] &f伺服器將重啟！ 到數 &a{SECONDS} &f秒！'

@@ -1,0 +1,12 @@
+Scripts:
+  LOC2loc:
+    Script:
+    - '@DELVAR s $<this>.loc'
+    - '@SETINT $<this>.index 1'
+    - '@WHILE s <getchar:$<this>.LOC:$<this>.index> != null'
+    - '  @IF s <getchar:$<this>.LOC:$<this>.index> = ,'
+    - '  @ELSE'
+    - '    @ADDSTR $<this>.loc <getchar:$<this>.LOC:$<this>.index>'
+    - '  @ENDIF'
+    - '  @ADDINT $<this>.index 1'
+    - '@ENDWHILE'

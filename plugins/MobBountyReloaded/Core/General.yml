@@ -1,0 +1,12 @@
+# The locale version to use in locale.yml
+locale: en
+killCache:
+  # Whether or not to use killCache
+  use: false
+  # Milliseconds between earning updates
+  timeLimit: 30000
+# Whether or not the plugin is in debugMode
+debugMode: false
+# Earning money in creative mode
+creativeEarning:
+  allow: false

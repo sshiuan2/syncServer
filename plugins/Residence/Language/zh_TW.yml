@@ -1,0 +1,605 @@
+# NOTE: 'If you want to modify this file, it is HIGHLY recommended that you make a copy
+# of this file and modify that instead. This file will be updated automatically by Residence
+# when a newer version is detected, and your changes will be overwritten. Once you
+# have a copy of this file, change the Language: 'option under the Residence config.yml
+# to whatever you named your copy.
+Version: 21
+FieldsVersion: 22
+Editor: 'O0oO0o0Oo0O'
+Language:
+    # The below lines represent various messages residence sends to the players.
+    # Note that some messages have variables such as %1 that are inserted at runtime.
+    #Version 1 Fields
+    InvalidResidence: '領地名錯誤'
+    InvalidSubzone: '分區名錯誤'
+    InvalidDirection: '方向錯誤'
+    InvalidChannel: '頻道錯誤'
+    InvalidAmount: '數量錯誤'
+    InvalidCost: '花費錯誤'
+    InvalidDays: '天數錯誤'
+    InvalidMaterial: '材料錯誤'
+    InvalidBoolean: '值有誤。必須是 true(t) 或 false(f)'
+    InvalidArea: '區塊錯誤'
+    InvalidGroup: '群組錯誤'
+    InvalidMessageType: '類型有誤。必須是 enter (輸入)或 remove (移除)。'
+    InvalidList: '列表錯誤'
+    InvalidFlag: '此權限(flag)無效'
+    InvalidFlagState: '權限狀態有誤。必須是 true/t (開啟)、false/f (關閉)、或 remove/r (移除)'
+    AreaExists: '區塊名重複'
+    AreaCreate: '區塊: %1 創建成功'
+    AreaDiffWorld: '區塊與領地在不同世界'
+    AreaCollision: '與領地 %1 衝突'
+    AreaSubzoneCollision: '與分區 %1 衝突'
+    AreaNonExist: '無此區塊'
+    AreaInvalidName: '區塊名無效'
+    AreaRename: '區塊名從 %1 改為 %2'
+    AreaRemove: '移除區塊 %1...'
+    AreaRemoveLast: '領地需保留至少一個區塊'
+    AreaNotWithinParent: '此區塊不在區域內'
+    AreaUpdate: '區塊已更新...'
+    AreaMaxPhysical: '已達到領地允許的大小上限'
+    AreaSizeLimit: '區塊大小超出領地允許上限'
+    AreaHighLimit: '超出你領地保護高度，你的上限是 %1'
+    AreaLowLimit: '超出你領地保護深度，你的上限是 %1'
+    NotInResidence: '你不在領地裡'
+    InResidence: '你在 %1 領地裡'
+    ResidenceOwnerChange: '領地 %1 的主人變更為為 %2'
+    NonAdmin: '你沒有 residence.admin 權限，或 admin 標籤無法使用'
+    AdminOnly: '需有 residence.admin 權限才可使用'
+    ChatDisabled: '領地聊天關閉...'
+    SubzoneRename: '分區 %1 名稱改為 %2'
+    SubzoneRemove: '分區 %1 已移除'
+    SubzoneCreate: '創建分區 %1'
+    SubzoneCreateFail: '創建分區 %1 失敗'
+    SubzoneExists: '分區 %1 已存在'
+    SubzoneCollide: '與另一領地分區 %1 衝突'
+    SubzoneMaxDepth: '已達分區最大深度'
+    SubzoneSelectInside: '選擇點必須在領地內'
+    SelectPoints: '請先用工具取點'
+    SelectionSuccess: '取點成功'
+    SelectionFail: '取點失敗...'
+    SelectionBedrock: '延伸至最低深度'
+    SelectionSky: '延伸至最大高度'
+    SelectionArea: '在區域 %2 中選擇區塊 %1'
+    SelectDiabled: '你沒有取點權限'
+    NoPermission: '你沒有權限(請注意ID需全部小寫，跟res info訊息要一樣)'
+    OwnerNoPermission: '持有者無此權限'
+    ParentNoPermission: '你沒有改變此區域的權限'
+    MessageChange: '訊息已設置...'
+    FlagSet: '權限已設置...'
+    FlagCheckTrue: '玩家 %2 在領地 %3 設置權限 %1 = %4'
+    FlagCheckFalse: '玩家 %2 未能在領地中設置權限 %1'
+    FlagsCleared: '權限已清除...'
+    FlagsDefault: '已設為預設值'
+    Usage: '用法'
+    InvalidHelp: '說明頁有誤...'
+    SubCommands: '次指令'
+    InvalidList: '未知的列表類型，必須是黑名單中的類型'
+    MaterialGet: '材料名稱是ID %1 %2'
+    MarketDisabled: '市場未開放'
+    MarketList: '市場列表'
+    SelectionTool: '取點工具'
+    InfoTool: '資訊工具'
+    NoBankAccess: '你沒銀行權限'
+    NotEnoughMoney: '資金不足'
+    BankNoMoney: '銀行裡資金不足'
+    BankDeposit: '存 %1 元到領地銀行'
+    BankWithdraw: '從領地銀行取出 %1 元'
+    MoneyCharged: '從 %2 帳戶支出 %1 元'
+    MoneyCredit: '從 %2 帳戶收入 %1 元'
+    RentDisabled: '租貸系統關閉中'
+    RentReleaseInvalid: '領地 %1 沒有被租用或出租'
+    RentSellFail: '已出租的領地不能出售'
+    SellRentFail: '出售中的領地不能出租'
+    OwnerBuyFail: '無法購買自己的土地'
+    OwnerRentFail: '無法租自己的土地'
+    AlreadySellFail: '领地已经出售!'
+    ResidenceBought: '你買下領地 %1'
+    ResidenceBuy: '玩家 %1 買下了你的 %2 領地'
+    ResidenceBuyTooBig: '此領地範圍超出系統限制'
+    ResidenceNotForSale: '領地沒在出售'
+    ResidenceForSale: '出售領地 %1 售價 %2'
+    ResidenceStopSelling: '停止出售領地'
+    ResidenceTooMany: '擁有領地數量達上限'
+    ResidenceMaxRent: '租用領地數量達上限'
+    ResidenceAlreadyRent: '領地已被租用...'
+    ResidenceNotForRent: '領地不出租...'
+    ResidenceNotRented: '領地尚未被租用'
+    ResidenceUnrent: '領地 %1 停止出租'
+    ResidenceRemoveRentable: '領地 %1 不再出租'
+    ResidenceForRentSuccess: '領地 %1 現租金為 %3 天 %2 元'
+    ResidenceRentSuccess: '你已租用 %1 領地共 %2 天..'
+    ResidenceAlreadyRented: '領地 %1 現已出租給 %2'
+    ResidenceAlreadyExists: '領地 %1 已存在'
+    ResidenceCreate: '創建領地 %1'
+    ResidenceRename: '領地 %1 改名為 %2'
+    ResidenceRemove: '領地 %1 已被移除...'
+    RentDisabled: '出租功能禁用...'
+    RentDisableRenew: '%1 到期自動續約已關閉'
+    RentEnableRenew: '%1 到期自動續約已開啟'
+    RentableDisableRenew: '%1 租用狀態關閉'
+    RentableEnableRenew: '%1 租用狀態開啟'
+    LandForSale: '出售土地'
+    SellAmount: '銷售金額'
+    LeaseExpire: '租貸到期時間'
+    RentExpire: '租金到期時間'
+    RentableAutoRenew: '自動更新可出租的土地'
+    RentAutoRenew: '租借自動更新'
+    RentableLand: '可供出租的土地'
+    ListMaterialAdd: '%1 添加到領地 %2'
+    ListMaterialRemove: '%1 從領地 %2 移除'
+    ItemBlacklisted: '這裡禁止使用此物品'
+    RentedModifyDeny: '不能修改租來的領地'
+    WorldPVPDisabled: '當前世界禁止PvP'
+    NoPVPZone: '此處非PVP區域'
+    FlagDeny: '你沒有領地 %1 的權限'
+    FlagSetDeny: '持有者不能使用 %1 權限'
+    SelectPoint: '選取點 %1 '
+    ResidenceChat: '領地聊天切換到 %1'
+    ResidenceMoveDeny: '你沒有領地 %1 移動權限'
+    TeleportDeny: '你沒有傳送權限'
+    TeleportSuccess: '已傳送'
+    TeleportNear: '傳送到領地旁'
+    TeleportNoFlag: '你沒有傳送權限至目標領地'
+    SetTeleportLocation: '傳送點已設置...'
+    HelpPageHeader: '指令 - %1 - 第 %2 / %3 頁'
+    ListExists: '列表已存在...'
+    ListRemoved: '列表已移除...'
+    ListCreate: '已創建列表 %1'
+    LeaseRenew: '租貸有效期至 %1 '
+    LeaseRenewMax: '租貸最大的允許值'
+    LeaseNotExpire: '沒有這樣的租貸或租貸未到期'
+    LeaseRenewalCost: '更新區域 %1 的花費。共 %2'
+    LeaseInfinite: '租貸時間已設置為無限...'
+    PermissionsApply: '權限已套用到領地'
+    PhysicalAreas: '實際區塊'
+    CurrentArea: '當前區塊'
+    LeaseExpire: '租貸期滿'
+    NotOnline: '目標玩家不在線上'
+    ResidenceGiveLimits: '超過目標玩家的上限，無法給予'
+    ResidenceGive: '你把領地 %1 轉移給玩家 %2'
+    ResidenceRecieve: '從玩家 %2 那裡接收到 %1 領地'
+    #Version 4 New Fields
+    #ResidenceListAll: 'Residences - <Page %1 of %2> - removed, use GenericPage now
+    ResidenceListAllEmpty: '你在伺服器沒有領地...'
+    InvalidPage: '無效的頁數...'
+    NextPage: '下頁'
+    #Version 10 New Fields
+    RemovePlayersResidences: '刪除此玩家所有領地 %1'
+    GenericPage: '第 %1 / %2 頁'
+    #Version 11 New Fields
+    ResidenceRentedBy: '被 %1 租用'
+    #Version 14 New Fields
+    InvalidCharacters: '偵測到無效名子...'
+    InvalidNameCharacters: '輸入字含非法字符...'
+    #Version 15 New Fields
+    DeleteConfirm: '確定刪除領地 %1 ？請輸入 /res confirm 確定刪除'
+    #Version 18 New Fields
+    SelectTooHigh: '警告，選擇了地圖上方，限制'
+    SelectTooLow: '警告，選擇了地圖底部，限制'
+    WorldEditNotFound: '未找到 WorldEdit'
+    #Version 19 New Fields
+    NoResHere: '你沒有在這居住'
+    DeleteSubzoneConfirm: '確定刪除分區 %1 ？請輸入 /res confirm 確定刪除'
+    #Version 20 New Fields
+    SubzoneOwnerChange: '分區 %1 的主人改為 %2'
+    CoordsTop: 'X:%1, Y:%2, Z:%3'
+    CoordsBottom: 'X:%1, Y:%2, Z:%3'
+    #Version 21 New Fields
+    AdminToggle: '管理員戳記設置為 %1'
+    #Version 22 New Fields
+    NoSpawn: '你沒有在重生點移動的權限'
+    CompassTargetReset: '指南針方向已重設'
+    CompassTargetSet: '指南針將指向 %1'
+
+    #The below lines are mostly a word bank for various uses.
+    #Version 1 Fields
+    Description: '描述'
+    Land: '土地'
+    Cost: '花費'
+    Selection: '選擇'
+    Total: '總計'
+    Size: '尺寸'
+    Expanding: '擴張'
+    Shifting: '位移'
+    Up: '上'
+    Down: '下'
+    Error: '錯誤'
+    Flags: '權限'
+    Your: '你的'
+    Group: '群組'
+    Others: '其他玩家'
+    Primary: '第一個'
+    Secondary: '第二個'
+    Selection: '選擇'
+    Moved: '移動'
+    Status: '狀態'
+    Available: '可用'
+    On: '開啟'
+    Off: '關閉'
+    Name: '名子'
+    Lists: '列表'
+    Residences: '領地'
+    Residence: '領地'
+    Count: '統計'
+    Owner: '持有者'
+    #Version 4 Fields
+    World: '世界'
+    #Version 12 Fields
+    Subzones: '分區'
+    #Version 20 Fields
+    CoordsT: '頂坐標'
+    CoordsB: '底坐標'
+    #Version 22 Fields
+    TurnOn: '開啟'
+    TurnOff: '關閉'
+
+# This is the help / 用法 messages for each command.
+# It follows this format:
+# <Command>
+# Description: '<general description of command, one line of text>
+# Info: '<extra info lines to describe the command, list of text>
+# SubCommands:
+# <SubCommands> - these follow the same format, and each sub command can have its own subcommands
+# When a user gets help for a command (adds a ? mark on the end), first its Info lines are printed, then its sub commands are printed below that
+# Pages are automatically generated if the total lines of text exceeds 6 (will be configurable later).
+# Add a page number after the ? mark to see that page.
+
+HelpLinesPerPage: 7
+CommandHelp: #this is just a holder node, that holds the entire help
+    Description: '領地插件(Residence)說明'
+    SubCommands: #this is the actual beginning of all commands
+        res: #main residence command
+            Description: 'res指令說明'
+            Info:
+                - '用法：/res ? [頁數]'
+                - '用法：/res <次指令> ? [頁數]'
+            SubCommands:
+                select: #selection commands
+                    Description: '選擇範圍'
+                    Info:
+                        - '/res select [座標x] [座標y] [座標z] - 選擇以你為中心的方型範圍'
+                        - '/res select <領地名> <分區名> - 選取領地內存在的分區範圍'
+                    SubCommands:
+                        coords:
+                            Description: 查看選取坐標
+                            Info:
+                                - '用法: /res select coords'
+                        size:
+                            Description: 查看選取範圍
+                            Info:
+                                - '用法: /res select size'
+                        cost:
+                            Description: 查看選取花費
+                            Info:
+                                - '用法: /res select cost'
+                        vert:
+                            Description: 將選取範圍延伸至最頂和最底
+                            Info:
+                                - '用法: /res select vert'
+                        sky:
+                            Description: 將選取範圍延伸至最頂
+                            Info:
+                                - '用法: /res select sky'
+                        bedrock:
+                            Description: 選取範圍延伸至最底
+                            Info:
+                                - '用法: /res select bedrock'
+                        expand:
+                            Description: '將選取範圍往前延伸 <數量> 格'
+                            Info:
+                                - '用法: /res select expand <數量>'
+                        shift:
+                            Description: '將選取範圍往前方移動 <數量> 格'
+                            Info:
+                                - '用法: /res select shift <數量>'
+                        chunk:
+                            Description: '選擇地圖上你所在的chuck'
+                            Info:
+                                - '用法: /res select chunk'
+                                - 'chuck長寬高: 16x16x天空到底部'
+                        worldedit:
+                            Description: '使用WorldEdit已選取的範圍'
+                            Info:
+                                - '用法 /res select worldedit'
+                create: #creation command
+                    Description: 創建領地
+                    Info:
+                        - '用法: /res create <領地名>'
+                remove: #remove command
+                    Description: 移除領地
+                    Info:
+                        - '刪除領地用法: /res remove <領地名>'
+                        - '刪除分區用法: /res remove <領地名>.<分區名>'
+                removeall:
+                    Description: 移除自己所有領地
+                    Info:
+                        - '用法: /res removeall [自己ID]'
+                        - '移除其他玩家: /resadmin removeall [玩家ID]'
+                confirm:
+                    Description: '再次確認是否移除'
+                    Info:
+                        - '用法: /res confirm'
+                subzone:
+                    Description: '在領地內創建分區'
+                    Info:
+                        - '用法: /res subzone [領地名] <分區名>'
+                        - '若不輸入領地名(或打錯)，分區名將使用你現在位置的領地或分區名'
+                        - '刪除分區: /res remove <領地名>.<分區名>'
+                area:
+                    Description: '管理領地實際區塊'
+                    SubCommands:
+                        list:
+                            Description: '列出領地內的區塊'
+                            Info:
+                                - '用法: /res area list [領地名] <頁數>'
+                        listall:
+                            Description: '列出領地內所有區塊資訊'
+                            Info:
+                                - '用法: /res area listall <領地名> <頁數>'
+                        add:
+                            Description: '將該區塊分配給領地'
+                            Info:
+                                - '用法: /res area add <領地名> <區塊名>'
+                                - '你必需要先取點'
+                        remove:
+                            Description: '從領地移除該區塊'
+                            Info:
+                                - '用法: /res area remove <領地名> <區塊名>'
+                        replace:
+                            Description: '重設領地內某區塊'
+                            Info:
+                                - '用法: /res area replace <領地名> <區塊名>'
+                                - '你必需要先取點'
+                                - '置換的區塊若比較大，將會收取差額'
+                info:
+                    Description: '查看領地資訊'
+                    Info:
+                        - '用法: /res info [領地名]'
+                        - '若不輸入領地，將顯示你所在位置的領地資訊'
+                limits:
+                    Description: '查看你的權限資訊'
+                    Info:
+                        - '用法: /res limits'
+                message:
+                    Description: '管理領地出(leave)/入(enter)訊息'
+                    Info:
+                        - '用法(設定): /res message <領地名> <enter/leave> <訊息>'
+                        - '用法(移除): /res message <領地名> remove <enter/leave>'
+                lease:
+                    Description: '管理領地租賃事項'
+                    SubCommands:
+                        renew:
+                            Description: '花錢更新租約'
+                            Info:
+                                - '用法: /res lease renew <領地名>'
+                    SubCommands:
+                        cost:
+                            Description: '查看領地租約更新訊息'
+                            Info:
+                                - '用法: /res lease cost <領地名>'
+                    SubCommands:
+                        set:
+                            Description: '延長租約 天數/永久(infinite) (admin only)'
+                            Info:
+                                - '用法: /resadmin lease set <領地名> <天數/infinite>'
+                bank:
+                    Description: '領地資金的存入(deposit)/提領(withdraw)'
+                    Info:
+                        - '用法: /res bank <deposit/withdraw> <金額>'
+                        - '你必須要在領地內'
+                        - '你必須有 +bank 的權限'
+                tp:
+                    Description: '將你傳送至領地'
+                    Info:
+                        - '用法: /res tp <領地名>'
+                        - '你必須是領地主人，或是有 +tp 的權限'
+                        - '群組必須要沒有限制傳送'
+                tpset:
+                    Description: '將你腳下設定為領地傳送點'
+                    Info:
+                        - '用法: /res tpset'
+                        - '你必須要在領地內'
+                        - '你必須是領地主人，或是有 +admin 的權限'
+                set:
+                    Description: '設定領地權限預設值 開啟(true)/關閉(false)/移除(remove)'
+                    Info:
+                        - '用法: /res set <領地名> <權限名> <true/false/remove>'
+                        - '可用 /res flags ? 查看權限名稱說明'
+                        - '可用 /res pset ? 查看如何給玩家權限'
+                pset:
+                    Description: '設定玩家額外的領地權限 開啟(true)/關閉(false)/移除(remove)'
+                    Info:
+                        - '用法: /res pset <領地名> <玩家ID> <權限名> <true/false/remove>'
+                        - '用法: /res pset <領地名> <玩家ID> removeall (移除該玩家所有權限)'
+                        - '可用 /res flags ? 查看權限名稱說明'
+                gset:
+                    Description: '設定群組權限 開啟(true)/關閉(false)/移除(remove)'
+                    Info:
+                        - '用法: /res gset <領地名> <群組名> <權限名> <true/false/remove>'
+                        - '可用 /res flags ? 查看權限名稱說明'
+                lset:
+                    Description: '更改物品黑名單(blacklist)跟忽略名單(ignorelist)'
+                    Info:
+                        - '用法: /res lset <領地名> <blacklist/ignorelist> <material>'
+                        - '用法: /res lset <領地名> info (查看名單資訊)'
+                        - '黑名單上的物品將不能在領地內放置'
+                        - '忽略名單上的物品可在領地內任意使用'
+                flags:
+                    Description: '權限名稱與說明'
+                    Info:
+                        - 'build - 允許建造(放置、破壞...)'
+                        - 'use - 允許使用物品'
+                        - 'move - 允許移動'
+                        - 'container - 允許使用容器(熔爐、箱子、釀造架...)'
+                        - 'tp - 允許傳送至領地'
+                        - 'trusted - 一次滿足 build, use, move, container, tp 五種願望'
+                        - 'place - 允許放置方塊。會蓋掉 build 權限'
+                        - 'destroy - 允許破壞方塊。會蓋掉 build 權限'
+                        - 'pvp - 允許攻擊玩家'
+                        - 'admin - 允許設置權限'
+                        - 'subzone - 允許創建分區'
+                        - 'monsters - 允許生怪'
+                        - 'animals - 允許生動物'
+                        - 'healing - 居住者會回血'
+                        - 'tnt - 允許TNT爆炸'
+                        - 'creeper - 允許古力帕爆炸'
+                        - 'ignite - 允許放火'
+                        - 'firespread - 允許火蔓延'
+                        - 'bucket - 允許使用鐵桶'
+                        - 'flow - 允許流動(水、岩漿)'
+                        - 'lavaflow - 允許岩漿流動。會蓋掉 flow 權限'
+                        - 'waterflow - 允許水流動。會蓋掉 flow 權限'
+                        - 'damage - 允許失血'
+                        - 'piston - 允許活塞移動方塊'
+                        - 'hidden - 隱藏領地。不出現在公開領地列表'
+                        - 'lever - 允許使用控制桿'
+                        - 'button - 允許使用按鈕'
+                        - 'diode - 允許使用紅石中繼器'
+                        - 'pressure - 允許使用壓力板'
+                        - 'note - 允許使用音階盒'
+                        - 'door - 允許使用門、地板門'
+                        - 'redstone - 一次滿足 lever, button, diode, pressure, note 五種願望'
+                        - 'table - 允許使用工作台'
+                        - 'enchant - 允許使用附魔台'
+                        - 'brew - 允許使用釀造架'
+                        - 'craft - 一次滿足 table, enchant, brew 三個願望'
+                        - 'cake - 允許吃蛋糕'
+                        - 'bed - 允許使用床'
+                        - 'burn - 允許怪物會被燃燒'
+                list:
+                    Description: '領地列表'
+                    Info:
+                        - '用法: /res list [玩家ID] [頁數]'
+                        - '不會列出隱藏的領地'
+                        - '自己的列表將顯示隱藏的領地'
+                        - '可用 /res listall 查看所有領地'
+                listhidden:
+                    Description: '查看該玩家隱藏的領地(ADMIN ONLY)'
+                    Info:
+                        - '用法: /res listhidden <玩家ID> [頁數]'
+                listall:
+                    Description: '查看所有領地(不包含其他玩家隱藏的領地)'
+                    Info:
+                        - '用法: /res listall [頁數]'
+                listallhidden:
+                    Description: '查看所有玩家隱藏的領地(ADMIN ONLY)'
+                    Info:
+                        - '用法: /res listhidden [頁數]'
+                sublist:
+                    Description: '查看領地內分區'
+                    Info:
+                        - '用法: /res sublist <領地名> [頁數]'
+                default:
+                    Description: '將領地內權限改為預設值'
+                    Info:
+                        - '用法: /res default <領地名>'
+                        - '你必須是領地主人或有 admin 權限'
+                rename:
+                    Description: '修改領地名稱'
+                    Info:
+                        - '用法: /res rename <原名稱> <新名稱>'
+                        - '你必須是領地主人或有 admin 權限'
+                        - '名稱不可跟其他領地重複'
+                mirror:
+                    Description: '複製領地權限到另一個領地'
+                    Info:
+                        - '用法: /res mirror <原領地> <目標領地>'
+                        - '你必須是兩領地主人或有 admin 權限'
+                market:
+                    Description: '買/賣/租 領地'
+                    SubCommands:
+                        info:
+                            Description: '查看領地經濟資訊'
+                            Info:
+                                - '用法: /res market info <領地名>'
+                        list:
+                            Description: '查看領地市場列表'
+                            Info:
+                                - '用法: /res market list'
+                        sell:
+                            Description: '出售領地'
+                            Info:
+                                - '用法: /res market sell <領地名> <金額>'
+                        buy:
+                            Description: '購買有在出售的領地'
+                            Info:
+                                - '用法: /res market buy <領地名>'
+                        unsell:
+                            Description: '停止出售該領地'
+                            Info:
+                                - '用法: /res market unsell <領地名>'
+                        rent:
+                            Description: '租領地 自動續租開啟(true)/關閉(false)'
+                            Info:
+                                - '用法: /res market rent <領地名> <true/false>'
+                        rentable:
+                            Description: '設定領地出租事項 自動出租開啟(true)/關閉(false)'
+                            Info:
+                                - '用法: /res market rentable <領地名> <金額> <天數> <true/false>'
+                                - '每 <天數> 天收取 <金額> 元'
+                        release:
+                            Description: '取消領地出租或被租賃的狀態'
+                            Info:
+                                - '用法: /res market release <領地名>'
+                                - '如果你是房客，此指令將把房子還給主人'
+                                - '如果你是領地主人，此指令將停止出租'
+                current:
+                    Description: '查看所在位置領地名'
+                    Info:
+                        - '用法: /res current'
+                lists:
+                    Description: '預先定義權限列表'
+                    Info:
+                        - '將定義過的列表設定為某領地使用'
+                    SubCommands:
+                        add:
+                            Description: '新增列表'
+                            Info:
+                                - '用法: /res lists add <列表名>'
+                        remove:
+                            Description: '移除列表'
+                            Info:
+                                - '用法: /res lists remove <列表名>'
+                        apply:
+                            Description: '同意領地使用該列表'
+                            Info:
+                                - '用法: /res lists apply <列表名> <領地名>'
+                        set:
+                            Description: '設定旗標'
+                            Info:
+                                - '用法: /res lists set <列表名> <flag> <參數>'
+                        pset:
+                            Description: '設定玩家旗標'
+                            Info:
+                                - '用法: /res lists pset <列表名> <玩家ID> <flag> <參數>'
+                        gset:
+                            Description: '設定群組權限'
+                            Info:
+                                - '用法: /res lists gset <列表名> <群組名> <flag> <參數>'
+                        view:
+                            Description: '查看自定列表'
+                            Info:
+                                - '用法: /res lists view <列表名>'
+                server:
+                    Description: '將領地改為[伺服器]擁有(admin only)'
+                    Info:
+                        - '用法: /resadmin server <領地名>'
+                setowner:
+                    Description: '重新設置領地主人(admin only)'
+                    Info:
+                        - '用法: /resadmin setowner <領地名> <玩家ID>'
+                resreload:
+                    Description: 重新載入(admin only).
+                    Info:
+                        - '用法: /resreload'
+                resload:
+                    Description: '讀取存檔(UNSAFE, admin only)'
+                    Info:
+                        - '用法: /resload'
+                        - 'UNSAFE command, 不儲存就直接讀取'
+                        - '在改變資料後讀取原本的存檔'
+                version:
+                    Description: 查看版本
+                    Info:
+                        - '用法: /res version'

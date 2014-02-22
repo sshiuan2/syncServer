@@ -1,0 +1,130 @@
+DataSource:
+  mySQLColumnName: username
+  mySQLTablename: users
+  mySQLUsername: AuthMe
+  backend: mysql
+  mySQLColumnLastLogin: lastlogin
+  mySQLDatabase: Account
+  mySQLPort: '3306'
+  mySQLColumnIp: ip
+  mySQLHost: 10.0.0.200
+  mySQLColumnPassword: password
+  mySQLPassword: eMhtuA
+  caching: true
+  mySQLlastlocX: x
+  mySQLlastlocY: y
+  mySQLlastlocZ: z
+  mySQLlastlocWorld: world
+  mySQLColumnEmail: email
+  mySQLColumnId: id
+GroupOptions:
+  UnregisteredPlayerGroup: ''
+  RegisteredPlayerGroup: ''
+  Permissions:
+    PermissionsOnJoin: []
+settings:
+  sessions:
+    enabled: false
+    timeout: 10
+    sessionExpireOnIpChange: false
+  restrictions:
+    allowChat: false
+    allowCommands:
+    - /login
+    - /l
+    - /captcha
+    maxRegPerIp: 10
+    maxNicknameLength: 50
+    ForceSingleSession: true
+    ForceSpawnLocOnJoinEnabled: true
+    SaveQuitLocation: true
+    AllowRestrictedUser: false
+    AllowedRestrictedUser: []
+    kickNonRegistered: true
+    kickOnWrongPassword: false
+    teleportUnAuthedToSpawn: true
+    minNicknameLength: 4
+    allowMovement: false
+    timeout: 60
+    allowedNicknameCharacters: ^[a-zA-Z_0-9\u002d\u00a7\u3002\u4E00-\u9FFF\uff01-\uff9f]+$
+    allowedMovementRadius: 100
+    enablePasswordVerifier: true
+    ProtectInventoryBeforeLogIn: true
+    displayOtherAccounts: true
+    ForceSpawnOnTheseWorlds:
+    - auth
+    banUnsafedIP: false
+  GameMode:
+    ForceSurvivalMode: false
+    ResetInventoryIfCreative: false
+    ForceOnlyAfterLogin: false
+  security:
+    minPasswordLength: 4
+    unLoggedinGroup: '未登入'
+    passwordHash: MD5
+    doubleMD5SaltLength: 8
+  registration:
+    enabled: true
+    messageInterval: 5
+    force: true
+    enableEmailRegistrationSystem: false
+    doubleEmailCheck: false
+  unrestrictions:
+    UnrestrictedName: []
+  messagesLanguage: zhtw
+ExternalBoardOptions:
+  mySQLColumnSalt: ''
+  mySQLColumnGroup: ''
+  nonActivedUserGroup: -1
+  mySQLOtherUsernameColumns: []
+  bCryptLog2Round: 10
+Xenoforo:
+  predefinedSalt: ''
+permission:
+  EnablePermissionCheck: false
+BackupSystem:
+  ActivateBackup: false
+  OnServerStart: false
+  OnServerStop: true
+  MysqlWindowsPath: C:\\Program Files\\MySQL\\MySQL Server 5.1\\
+Passpartu:
+  enablePasspartu: false
+Security:
+  SQLProblem:
+    stopServer: true
+  ReloadCommand:
+    useReloadCommandSupport: true
+  console:
+    noConsoleSpam: false
+    removePassword: true
+    logConsole: true
+  captcha:
+    useCaptcha: true
+    maxLoginTry: 5
+    captchaLength: 4
+Converter:
+  Rakamak:
+    fileName: users.rak
+    useIP: false
+    ipFileName: UsersIp.rak
+    newPasswordHash: SHA256
+Email:
+  mailSMTP: smtp.gmail.com
+  mailPort: 465
+  mailAccount: ''
+  mailPassword: ''
+  mailSenderName: ''
+  RecoveryPasswordLength: 8
+  mailSubject: '[up9cloud]您的新密碼'
+  maxRegPerEmail: 1
+  mailText: '玩家 <playername> 您好！ <br /><br /> 這是您在 <servername> 的新密碼: <generatedpass><br
+    /><br /> 請馬上至 <a href="up9cloud.net">官網</a> 更新您的密碼！'
+Hooks:
+  multiverse: true
+  chestshop: true
+  bungeecord: true
+  notifications: true
+  disableSocialSpy: true
+  useEssentialsMotd: false
+Performances:
+  useMultiThreading: false

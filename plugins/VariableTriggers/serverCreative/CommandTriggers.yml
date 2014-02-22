@@ -1,0 +1,26 @@
+Commands:
+  help:
+    Override: true
+    Script:
+    - '@IF s <cmdarg:1> = null'
+    - '@CMD plotme'
+    - '@ELSE'
+    - '@CMD plotme <cmdarg:1>'
+    - '@ENDIF'
+  home:
+    Override: true
+    Script:
+    - '@IF s <cmdarg:1> = null'
+    - '@CMD plotme home'
+    - '@ELSE'
+    - '@CMD plotme home:<cmdarg:1>'
+    - '@ENDIF'
+  auto:
+    Override: true
+    Script:
+    - '@CMD plotme auto'
+  spawn:
+    Override: true
+    Script:
+    - '@PLAYER &8&l最快回去的方法就是...'
+    - '@CMDOP kill'

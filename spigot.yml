@@ -1,0 +1,130 @@
+# This is the main configuration file for Spigot.
+# As you can see, there's tons to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# For a reference for any variable inside this file, check out the Spigot wiki at
+# http://www.spigotmc.org/wiki/spigot-configuration/
+# 
+# If you need help with the configuration or have any questions related to Spigot,
+# join us at the IRC or drop by our forums and leave a post.
+# 
+# IRC: #spigot @ irc.esper.net ( http://webchat.esper.net/?channel=spigot )
+# Forums: http://www.spigotmc.org/forum/
+
+config-version: 5
+commands:
+  tab-complete: true
+  log: true
+  spam-exclusions:
+  - /skill
+messages:
+  whitelist: 你不在白名單內。
+  unknown-command: 未知的指令。請輸入 /help 查看說明。
+  server-full: 伺服器滿人中！
+  outdated-client: Outdated client! Please use {}
+  outdated-server: Outdated server! I'm still on {0}
+  restart: 伺服器重啟
+settings:
+  timeout-time: 60
+  restart-on-crash: false
+  restart-script: ./start.sh
+  netty-threads: 3
+  bungeecord: true
+  late-bind: false
+  log-filters:
+  - ^(.*)(/login)(.*)$
+  prevent-proxies: false
+  bungeecord-addresses:
+  - 192.200.109.235
+#replace bukkit command to vanilla original command
+replace-commands:
+- blockdata
+- clear
+- clone
+- effect
+- enchant
+- give
+- kill
+- particle
+- playsound
+- setblock
+- setworldspawn
+- spreadplayers
+- summon
+- tellraw
+- testforblock
+- time
+#- tp
+- weather
+- xp
+world-settings:
+  default:
+    verbose: true
+    view-distance: 10
+    chunks-per-tick: 650
+    merge-radius:
+      exp: 3.0
+      item: 2.5
+    mob-spawn-range: 4
+    nerf-spawner-mobs: false
+    zombie-aggressive-towards-villager: true
+    item-despawn-rate: 6000
+    arrow-despawn-rate: 1200
+    entity-activation-range:
+#origin
+#      animals: 32
+#      monsters: 32
+#      misc: 16
+#3/4
+      animals: 24
+      monsters: 24
+      misc: 12
+    entity-tracking-range:
+#origin
+#      players: 48
+#      animals: 48
+#      monsters: 48
+#      misc: 32
+#      other: 64
+#3/4
+      players: 36
+      animals: 36
+      monsters: 36
+      misc: 24
+      other: 48
+    ticks-per:
+      hopper-transfer: 8
+      hopper-check: 8
+    random-light-updates: false
+    save-structure-info: true
+    anti-xray:
+      enabled: true
+      engine-mode: 1
+      hide-blocks:
+      - 14
+      - 15
+      - 16
+      - 21
+      - 48
+      - 49
+      - 54
+      - 56
+      - 73
+      - 74
+      - 82
+      - 129
+      - 130
+      replace-blocks:
+      - 1
+      - 5
+    growth:
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      wheat-modifier: 100
+listeners:
+- port: default
+  host: default
+  netty: true

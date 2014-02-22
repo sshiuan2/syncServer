@@ -1,0 +1,227 @@
+#--------------------------------------------------------------------#
+#                   ClearLag Configuration File                      #
+#--------------------------------------------------------------------#
+# Configure to your liking, reload the config by tying: /lagg reload #
+#                                -                                   #
+#        Here is a helpful tutorial on this configuration setup!     #
+#   http://dev.bukkit.org/server-mods/clearlagg/pages/config-setup/  #
+#--------------------------------------------------------------------#
+#                     All possible mob names                         #
+# http://dev.bukkit.org/server-mods/clearlagg/pages/mob-types/nodes/ #
+#--------------------------------------------------------------------#
+settings:
+  auto-update: false
+  enable-signs: true
+  config-version: eleven
+  disable-waterlife: true
+  keep-spawn-in-memory: true
+  
+#Let clearlag control the spawning in ALL worlds? (Supports all plugins!)
+custom-mobspawner:
+  enabled: false
+#How many times should clearlag attempt to find a safe location for the mob to spawn
+  max-tries: 50
+#(In seconds) how often should clearlag try to spawn mobs?
+  interval: 30
+#This is the radius around the player
+  radius: 30
+#This is the radius FROM the player (in blocks!)
+  radius-from: 7
+#How far should mobs spawn from eachother (NOT in blocks!!) (1,010 = around 10-20 blocks)
+  mob-radius: 1010
+#Should we keep trying to spawn a mob if a clear location isn't found
+  forcespawn: false
+#4 = nighttime, what light level should mobs spawn in
+  lightlevel: 4
+#Chance mobs will have armor/sword, 1 being diamond every time
+  armor-chance: 30 
+  mobs: #More types of a mob, more likely it'll spawn(ONLY IN NORMAL WORLDS!)
+    - zombie 5
+    - skeleton 3
+    - creeper
+    - enderman
+  animals: #More types of a mob, more likely it'll spawn(ONLY IN NORMAL WORLDS!)
+    - pig 4
+    - sheep 1
+    - cow 6
+    - chicken 2
+  
+#This option disallows the placement of too many tnt-minecarts
+tnt-minecart:
+  enabled: false
+  max: 2
+  radius: 6
+  
+#This option reduces global dispenser rate
+dispenser-reducer:
+  enabled: false
+  time: 100
+  
+#This option reduces the explosions of mass amounts of tnt, and reduces tnt lag
+tnt:
+  tnt-reducer: false
+  
+#This option reduces fire spread rate
+firespread-reducer:
+  enabled: false
+  time: 2000
+  
+#How many entities should one chunk be allowed to hold?
+chunk-entity-limiter:
+  enabled: false
+  clean-chunk: true
+  limit: 40
+  
+spawn-limiter:
+  enabled: false
+  interval: 15
+  monsters: 300
+  animals: 300
+  
+#Meters your TPS, if it goes to low, run the commands you wrote below!
+tps-meter:
+  enabled: false
+  interval: 15 
+  tps-trigger: 14.0
+  commands:
+    - 'lagg killmobs'
+    - 'lagg clear'
+  
+#This is /lagg killmobs, put what you DON'T want removed! 
+kill-mobs:
+   disable-build-wither: false 
+   mob-filter:
+        - Villager
+        - Wolf
+        - Horse
+        - EntityHorse
+  
+#This takes care of mob spawners
+mobspawner:
+  enabled: false
+  max-spawn: 4
+  
+#No longer bugged! -- Dont use if you have CB++ or Spigot!
+item-merger:
+  enabled: false
+  radius: 6
+  
+#Auto-removal options
+auto-removal:
+  warning-message: '&4[系統] &c地上物品將於一分鐘後清除！'
+  broadcast-message: '&6[系統] &a已清除 +RemoveAmount 個物品！'
+#  warning-message: '&4[ClearLag] &cWarning Ground items will be removed in one minute!'
+#  broadcast-message: '&6[ClearLag] &aRemoved +RemoveAmount Entities!'
+  broadcast-warning: false
+  enable-scheduler: false
+  autoremoval-interval: 900
+  warning-delay: 60
+  
+#What should be removed during an auto-removal
+remove:
+  world-filter:
+    - this_world
+  broadcast-removal: true
+  boat: true
+  falling-block: true
+  experienceOrb: true
+  painting: true
+  projectile: true
+  item: true
+  itemframe: false
+  minecart: true
+  primed-tnt: true
+  arrow: true
+  snowball: true
+  fireball: true
+  ender-signal: true
+  item-filter:
+  # - 264
+  # - 265
+  # - 311
+  # - 312
+  # - 266
+  mobs:
+  # - cow
+ 
+#What should be removed during /lagg clear 
+command-remove:
+  world-filter:
+    - this_world
+  broadcast-removal: false
+  boat: true
+  falling-block: true
+  experienceOrb: true
+  painting: true
+  projectile: true
+  item: true
+  itemframe: false
+  minecart: true
+  primed-tnt: true
+  arrow: true
+  snowball: true
+  fireball: true
+  ender-signal: true
+  item-filter:
+  # - 264
+  # - 265
+  # - 311
+  # - 312
+  # - 266
+  mobs:
+  # - cow
+   
+check:
+  world-filter:
+    - this_world
+  boat: true
+  falling-block: true
+  experienceOrb: true
+  painting: true
+  projectile: true
+  item: true
+  itemframe: false
+  minecart: true
+  primed-tnt: true
+  arrow: true
+  snowball: true
+  fireball: true
+  ender-signal: true
+  item-filter:
+  # - 264
+  # - 265
+  # - 311
+  # - 312
+  # - 266
+  mobs:
+    creature: true
+    animals: true
+    monster: true
+     
+limit:
+  enable-limit: false
+  max: 1000
+  check-interval: 60
+  world-filter:
+    - this_world
+  broadcast-removal: true
+  remove:
+  boat: true
+  falling-block: true
+  experienceOrb: true
+  painting: true
+  projectile: true
+  item: true
+  itemframe: false
+  minecart: true
+  primed-tnt: true
+  arrow: true
+  snowball: true
+  fireball: true
+  ender-signal: true
+  item-filter:
+  # - 264
+  # - 265
+  # - 311
+  # - 312
+  # - 266

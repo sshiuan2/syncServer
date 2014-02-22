@@ -1,0 +1,126 @@
+# Language File : EN - English
+error-no-perms: You don't have permission to use that command.
+error-no-perms-biome: You don`t have permission to use that biome.
+error-regen: Regen in progress, try again later.
+error-start: IslandWorld not started correctly, check logs!
+error-world: Cannot determine correct world.
+error-have-island: You already have island.
+error-no-island: You don't have island.
+error-schematic: You don't have permission to use that schematic (%name%).
+error-schematic-not-exists: Choosen schematic (%name%) doesn't exists!
+error-current-world: You cannot use that command in current world.
+error-delay: There is time limit (%time% min) between delete commands.
+error-calc-delay: There is time limit (%time% min) between calc commands.
+error-no-free: We don't have empty islands, inform administrator!
+error-get-free: There is a problem with empty islands, inform administrator!
+error-helping: Cannot make island while helping on other island.
+error-wg-region: There is problem with WG protect region for your island, inform administrator!
+error-no-island-party: You don't have island, and you have no party.
+error-outside: You cannot set home location outside your island.
+error-expell: We dont find any players on island.
+error-expell-outside: That player is not on your island.
+error-add-have-island: Cannot add player to island, he have already own island.
+error-add-have-party: Cannot add player to island, he is already added to some island.
+error-add-limit: Cannot add player to island, you reach party limit.
+error-add-already: Player %name% is already added to your isle.
+error-not-online: Player %name% not online or not exists.
+error-remove-not-added: Player %name% is not added to your isle.
+error-tp-have-island: You cannot use teleport while you have own island.
+error-tp-no-party: You dont have permission to teleport to %name% island.
+error-tp-no-island: Player %name% doesnt have island.
+error-no-player: You try to teleport to wrong player.
+error-leave: Cannot leave, you have no party.
+error-fixhome: There is problem with coords, inform administrator!
+error-cha: There is problem with challenge.
+error-cha-id: Invalid challenge Id.
+error-cha-order: Cannot finish %id%, you need to finish previous challenges.
+error-no-visit: Visit command is not allowed. 
+error-visit-no-island: Player %name% doesnt have island.
+error-visit-owner-wait: Cannot make visit request, %name% didnt respond to previous request.
+error-visit-visitor-wait: Cannot make visit request, you still waiting for answer.
+error-visit-no-player: Invalid player, or player is not online.
+error-visit-owner-no-reply: You didnt respond to %name%'s request. Request removed.
+error-visit-visitor-no-reply: '%name% didnt respond to your request. Request removed.' 
+error-visit-request-you-deny: You denied %name%'s request.
+error-visit-request-deny: '%name% denied your request.'
+error-visit-spawn: Cannot visit %name% island, there is problem with spawn.
+error-visit-your-spawn: Player %name% want to visit your island, but there is problem with spawn.
+error-delete-respond: You didnt respond to delete request.
+error-delete-comm: Cannot use that command, waiting for delete respond.
+error-no-region-here: You are not inside any island region.
+error-tp-while-falling: Cannot teleport while falling.
+error-teleport-break: You will be not teleported because you move.
+error-home-limit: You cannot store more than %count% homes.
+error-no-home: You doesn't have stored home location %name%.
+error-outside-island: You are outside your island.
+error-invalid-biome: 'Error, invalid biome: %biome%.'
+info-biome: 'Biome at your location: %biome%.'
+info-biomes: 'Biomes list:'
+info-visit-visitor-tp: '%name% teleported to your island.'
+info-visit-visitor: 'Teleported to %name% island.'
+info-created: Island created.
+info-deleted: Island deleted.
+info-loc-changed: Location changed.
+info-expell: You expelled %count% players from island.
+info-expelled: You was expelled from %name% island.
+info-add-ok: Player %name% added to your island.
+info-added-ok: Player %name% added you to his/her island.
+info-remove-ok: Player %name% removed from your island.
+info-removed-ok: Player %name% removed you from his/her island.
+info-leave-ok: Removed from %name% island.
+info-tele-spawn: Teleported to spawn.
+info-fixhome: Fixed home coords.
+info-protect-disabled: Protect is not available on our server.
+info-protect-ok: Your island is now protected.
+info-unprotect-ok: Your island is now Unprotected!
+info-protect-move: Island is protected, you cannot enter.
+info-cha-header: 'Challenge [%id%] : '
+info-cha-already: Already completed!
+info-cha-completed: Completed!
+info-cha-reward-added: Reward added into your inventory.
+info-cha-item-missing: Required item missing, unable to complete.
+info-cha-no-req-item: That challenge doesnt have required item.
+info-cha-list-header: '--------- Challenges: %from%/%max% ---------'
+info-cha-reward-global: 'Reward for completing challenges: %count% piece(s) of %item%'
+info-cha-reward: 'Reward: %count% piece(s) of %item%'
+info-visit-request: You make request to visit %name%'s island
+info-visit-need-answer: '%name% make request to visit your island. If you agree use /island accept command or /island deny if you want to reject his request'
+info-delete-added: Are you sure? Write /is delete again to confirm.
+info-teleported: Teleported.
+info-teleport-after: Teleporting after %time% sec. Please don't move!
+info-telporting: Teleporting...
+info-tp-to-island: Teleported to %name% island.
+info-home-set: Home location set.
+info-home-deleted: Home %name% deleted
+info-entered: Entered %name% island.
+info-points: Your island have %points% points.
+info-for-points: '%name%`s island points: %points%.'
+info-rank: 'Best islands:'
+info-rank-last: 'Last rank update:'
+info-rank-island: To calculate your island points use /island calc command
+com-usage: 'Usage:'
+com-create: create new island.
+com-delete: delete your island.
+com-info: shows info about your island.
+com-sethome: change home point for teleport.
+com-delhome: delete home point.
+com-home: teleport to your island.
+com-fixhome: try to fix home coords.
+com-spawn: teleport to spawn world.
+com-expell: teleport out players without perms from island.
+com-add: add player to your island.
+com-remove: remove player from your isle.
+com-tp: teleport to player isle.
+com-visit: make visit request.
+com-leave: leave your party island.
+com-protect: protect your island.
+com-unprotect: unprotect your island.
+com-calc: calculate your island points value.
+com-rank: show best island rank.
+com-cha-list: List challenges.
+com-cha-complete: Complete challenge.
+sign-perm-create: You don't have permission to create that sign
+sign-perm-use: You don't have permission to use that sign
+sign-second: Second line must be challenge number, or all.
+sign-created: Challenge sign created
+sign-unknown: Unknown sign type

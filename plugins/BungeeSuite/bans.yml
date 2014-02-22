@@ -1,0 +1,4 @@
+Bans:
+  Enabled: true
+  BroadcastBans: true
+  DetectAltAccounts: true

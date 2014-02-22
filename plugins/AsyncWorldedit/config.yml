@@ -1,0 +1,53 @@
+awe:
+  version: 1
+  rendering:
+    interval: 15
+    blocks: 1000
+    blocks-vip: 1000
+    queue-max-size: 10000000
+    queue-limit-hard: 500000
+    queue-limit-soft: 250000
+  checkVersion: true
+  defaultOn: true
+  enabledOperations:
+    - undo
+    - redo
+    - fillXZ
+    - removeAbove
+    - removeBelow
+    - removeNear
+    - setBlocks
+    - replaceBlocks
+    - makeCuboidFaces
+    - makeCuboidWalls
+    - overlayCuboidBlocks
+    - naturalizeCuboidBlocks
+    - stackCuboidRegion
+    - moveCuboidRegion
+    - drainArea
+    - fixLiquid
+    - makeCylinder
+    - makeSphere
+    - makePyramid
+    - thaw
+    - simulateSnow
+    - green
+    - makePumpkinPatches
+    - makeForest
+    - makeShape
+    - deformRegion
+    - hollowOutRegion
+  logger:
+#    type: none
+#   type: logBlock
+    type: coreProtect
+#   type: prism
+#   type: hawkEye
+    worlds:
+       - 人界
+       - 住宅區
+       - 地獄
+       - 終界
+#      - world
+#      - world_nether
+#      - world_the_end

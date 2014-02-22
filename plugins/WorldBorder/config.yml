@@ -1,0 +1,24 @@
+cfg-version: 7
+message: 接觸世界邊緣
+round-border: false
+debug-mode: false
+whoosh-effect: false
+portal-redirection: true
+knock-back-dist: 3.0
+timer-delay-ticks: 5
+dynmap-border-enabled: true
+dynmap-border-message: 世界邊緣
+remount-delay-ticks: 0
+worlds:
+  world:
+    x: 0.0
+    z: 0.0
+    radiusX: 10000
+    radiusZ: 10000
+    wrapping: true
+  人界:
+    x: 0.0
+    z: 0.0
+    radiusX: 6000
+    radiusZ: 6000
+    wrapping: true

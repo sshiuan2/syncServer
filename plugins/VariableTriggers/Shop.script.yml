@@ -1,0 +1,156 @@
+Scripts:
+  msgTakeMoney:
+    Script:
+    - '@PLAYER &2[經濟]&r <playername> 帳戶 &c&l減少&r $<this>.total 元'
+    - '@PLAYER 您得到&l $<this>.name x $<this>.amount'
+  msgNotEnoughMoney:
+    Script:
+    - '@PLAYER 你的錢不夠'
+  SellToPlayer:
+    Script:
+    - '@SETSTR $<this>.LOC <triggerloc>'
+    - '@SETSTR $<this>.id $ID.<var:$<this>.item>'
+    - '@SETSTR $<this>.name $NAME.<var:$<this>.item>'
+    - '@SETINT $<this>.price $PRICE.<var:$<this>.item>'
+    - '@SETINT $<this>.total $<this>.price'
+    - '@MULINT $<this>.total $<this>.amount'
+    - '@IF b <takemoney:<playername>:$<this>.total> = true'
+    - '  @CALL Shop:msgTakeMoney'
+    - '  @CMDOP give <playername> $<this>.id $<this>.amount'
+    - '@ELSE'
+    - '  @CALL Shop:msgNotEnoughMoney'
+    - '@ENDIF'
+  eggPig:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item eggPig'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  eggSheep:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item eggSheep'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  eggCow:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item eggCow'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  eggChicken:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item eggChicken'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  eggSquid:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item eggSquid'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  eggWolf:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item eggWolf'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  eggMooshroom:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item eggMooshroom'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  eggSnowgolem:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item eggSnowgolem'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  eggOcelot:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item eggOcelot'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  eggIrongolem:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item eggIrongolem'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  eggHorse:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item eggHorse'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  ironHorseArmor:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item ironHorseArmor'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  goldenHorseArmor:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item goldenHorseArmor'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  diamondHorseArmor:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item diamondHorseArmor'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  saddle:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETSTR $<this>.item saddle'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:SellToPlayer'
+    - '@CALL signtext:Shop'
+  money2token:
+    Script:
+    - '@SETSTR $<this>.LOC <triggerloc>'
+    - '@SETSTR $<this>.id 395'
+    - '@SETSTR $<this>.name 鈔票'
+    - '@SETSTR $<this>.price 1'
+    - '@SETINT $<this>.total $<this>.price'
+    - '@MULINT $<this>.total $<this>.amount'
+    - '@IF b <takemoney:<playername>:$<this>.total> = true'
+    - '  @CALL Shop:msgTakeMoney'
+    - '  @CMDCON give <playername> $<this>.id $<this>.amount Name:&6鈔票'
+    - '@ELSE'
+    - '  @CALL Shop:msgNotEnoughMoney'
+    - '@ENDIF'
+  1token:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:money2token'
+  10token:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETINT $<this>.amount 10'
+    - '@CALL Shop:money2token'
+  64token:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETINT $<this>.amount 64'
+    - '@CALL Shop:money2token'

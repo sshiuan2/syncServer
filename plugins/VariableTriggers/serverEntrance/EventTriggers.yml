@@ -1,0 +1,6 @@
+天界:
+  Join:
+    CoolDown: 1
+    Script:
+    - '@CMDOP tp 0.5 172 41'
+    - '@CMDOP warp 天界-重生點'

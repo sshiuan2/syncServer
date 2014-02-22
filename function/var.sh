@@ -1,0 +1,40 @@
+#!/bin/bash
+varDir="$(cd $(dirname ${BASH_SOURCE[0]}) && pwd)"
+varPath="$varDir/var.sh"
+
+thisServerIp=`hostname --ip-address`
+thisServerPort="25565"
+thisServerPath="$(dirname "$varDir")"
+thisServerName="$(basename "$thisServerPath")"
+
+thisWorldName="world"
+thisWorldPath="$thisServerPath/$thisWorldName"
+thisWorldNameNether="${thisWorldName}_nether"
+thisWorldNameTheEnd="${thisWorldName}_the_end"
+thisWorldNameBackup="${thisWorldName}_backup"
+
+syncServerUser="root"
+syncServerIp="192.200.109.235"
+syncServerName="syncServer"
+syncServerPath="/root/$syncServerName"
+if [ $thisServerIp == $syncServerIp ];then
+syncServerScpPath=$syncServerPath
+else
+syncServerScpPath="$syncServerUser@$syncServerIp:$syncServerPath"
+fi
+
+session=
+window=0
+pane=0
+
+chatGrepArg="\[Server[^ ]\|\[Async Chat Thread\|command: \/\(m\|msg\|tell\|t\|w\|r\|p\|rc\) "
+chatEgrepArg=""
+chatRegex=$chatGrepArg
+
+source_all(){
+echo -n "sourceAllFunctions: "
+for f in $varDir/*;do
+source $f;echo -n "$f ";
+done
+echo ""
+}

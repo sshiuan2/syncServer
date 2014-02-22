@@ -1,0 +1,28 @@
+playernum: 0
+t1done: false
+Gracep: true
+maxPlayers:
+  max: 10
+lobby:
+  x: 0.5
+  y: 9.0
+  z: -22.5
+  world: tntrun
+spawn:
+  x: 0.5
+  y: 7
+  z: 0.5
+  world: tntrun
+end:
+  x: 0.5
+  y: 24.0
+  z: 0.5
+  world: tntrun
+sand:
+  next: 1
+tnt:
+  next: 1
+gravel:
+  next: 1
+isinsession: false
+gamestarted: false

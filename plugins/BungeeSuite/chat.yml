@@ -1,0 +1,7 @@
+Log chat to console: false
+Strip color from log: true
+MutePrivateMessages: true
+NicknameLengthLimit: 16
+UpdateNicknamesOnTab: true
+GlobalChatRegex: \{(factions_.*?)\}
+DefaultChannel: Global

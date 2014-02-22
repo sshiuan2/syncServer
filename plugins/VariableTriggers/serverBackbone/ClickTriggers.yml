@@ -1,0 +1,97 @@
+pvp:
+  -21,52,23:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 1'
+  -20,52,23:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 2'
+  -19,52,23:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 3'
+  -19,52,29:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 4'
+  -20,52,29:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 5'
+  -21,52,29:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 6'
+  21,52,29:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 1'
+  20,52,29:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 2'
+  19,52,29:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 3'
+  19,52,23:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 4'
+  20,52,23:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 5'
+  21,52,23:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 6'
+  22,52,24:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 7'
+  0,65,4:
+    CoolDown: 0
+    Script:
+    - '@CMD bb join 1'
+  -22,52,25:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 8'
+  -22,52,24:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 9'
+  22,52,28:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 9'
+  22,52,27:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store 8'
+  0,56,21:
+    CoolDown: 0
+    Script:
+    - '@CMD bb leave'
+  0,56,31:
+    CoolDown: 0
+    Script:
+    - '@CMD bb leave'
+  22,52,26:
+    CoolDown: 0
+    Script:
+    - '@CMD bb leave'
+  -22,52,26:
+    CoolDown: 0
+    Script:
+    - '@CMD bb leave'
+  -22,53,26:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store'
+  22,53,26:
+    CoolDown: 0
+    Script:
+    - '@CMD bb store'

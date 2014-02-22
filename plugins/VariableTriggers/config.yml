@@ -1,0 +1,13 @@
+# VariableTriggers
+# Configuration file
+# if you mess up this file, just delete it and a new one will be created for you.
+# If you delete this file the comments will come back so you can read details about each option.
+
+options:
+  AutoSaveInterval: 18
+  AutoSaveDisplay: true
+  MaxBackups: 0
+  WandID: 352
+  OnlyUseBukkitSuperPerms: false
+  TeleportOp: true
+  AdvancedMode: true

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not change IDs !                                     -->
+<!-- Because you make total mess with completed challenges!  -->
+<!-- If you want to add own custom challenges                -->
+<!-- Please use ids higher than 1000                         -->
+<!--                                                         -->
+<!-- Possible params                                         -->
+<!--                                                         -->
+<!--   itemId - item Id                                      -->
+<!--   damage - damage value                                 -->
+<!--   count  - needed count                                 -->
+<!--   take   - true if item should be deleted               -->
+<!--                                                         -->
+<!-- Possible nodes:                                         -->
+<!--                                                         -->
+<!--  required - item required to finish challenge           -->
+<!--  reward   - reward for completing challenge             -->
+<!--                                                         -->
+<!--  globalreward   - (outside challenges) global reward    -->
+<!--                                                         -->
+<list>
+	<globalreward itemId='266' count='1' />
+	<challenge id='1'>
+		<descr val='Build a Cobble Stone generator and gather 20 cobblestone' />
+		<required itemId='4' count='20' take='true' />
+	</challenge>
+	<challenge id='2'>
+		<descr val='Produce 10 stone' />
+		<required itemId='1' count='10' take='true' />
+	</challenge>
+	<challenge id='3'>
+		<descr val='Produce 1 stone button' />
+		<required itemId='77' count='1' take='true' />
+	</challenge>
+	<challenge id='4'>
+		<descr val='Produce 1 stone pressure plate' />
+		<required itemId='70' count='1' take='true' />
+	</challenge>
+	<challenge id='5'>
+		<descr val='Produce 10 stone slabs' />
+		<required itemId='44' count='10' take='true' />
+	</challenge>
+	<challenge id='6'>
+		<descr val='Produce 20 stone bricks' />
+		<required itemId='98' count='20' take='true' />
+	</challenge>
+	<challenge id='7'>
+		<descr val='Produce 5 stone brick stairs' />
+		<required itemId='109' count='5' take='true' />
+	</challenge>
+	<challenge id='8'>
+		<descr val='Produce 5 stone brick slab' />
+		<required itemId='44' damage='5' count='5' take='true' />
+	</challenge>
+	<challenge id='9'>
+		<descr val='Craft a Fishing Rod' />
+		<required itemId='346' count='1'/>
+	</challenge>
+	<challenge id='10'>
+		<descr val='Catch 10 fish' />
+		<required itemId='349' count='10' take='true'/>
+	</challenge>
+	<challenge id='11'>
+		<descr val='Cook 10 fish' />
+		<required itemId='350' count='10' take='true'/>
+	</challenge>
+	<challenge id='12'>
+		<descr val='Produce one boat' />
+		<required itemId='333' count='1' take='true'/>
+	</challenge>
+	<challenge id='13'>
+		<descr val='Produce 10 bowls' />
+		<required itemId='281' count='10' take='true'/>
+	</challenge>
+	<challenge id='14'>
+		<descr val='Produce one chest' />
+		<required itemId='54' count='1' />
+	</challenge>
+	<challenge id='15'>
+		<descr val='Produce crafting table' />
+		<required itemId='58' count='1' />
+	</challenge>
+	<challenge id='16'>
+		<descr val='Produce wooden door' />
+		<required itemId='324' count='1' take='true' />
+	</challenge>
+	<challenge id='17'>
+		<descr val='Produce 10 wooden fences' />
+		<required itemId='85' count='10' take='true' />
+	</challenge>
+	<challenge id='18'>
+		<descr val='Produce 10 fence gates' />
+		<required itemId='107' count='10' take='true' />
+	</challenge>
+	<challenge id='19'>
+		<descr val='Produce 10 ladders' />
+		<required itemId='65' count='10' take='true' />
+	</challenge>
+	<challenge id='20'>
+		<descr val='Produce 10 signs' />
+		<required itemId='323' count='10' take='true' />
+	</challenge>
+	<challenge id='21'>
+		<descr val='Produce 10 paintings' />
+		<required itemId='321' count='10' take='true' />
+	</challenge>
+	<challenge id='22'>
+		<descr val='Produce 5 trap doors' />
+		<required itemId='96' count='5' take='true' />
+	</challenge>
+	<challenge id='23'>
+		<descr val='Produce 20 torches' />
+		<required itemId='50' count='20' take='true' />
+	</challenge>
+	<challenge id='24'>
+		<descr val='Produce 10 redstone torches' />
+		<required itemId='76' count='10' take='true' />
+	</challenge>
+	<challenge id='25'>
+		<descr val='Produce one Bow' />
+		<required itemId='261' count='1' />
+	</challenge>
+	<challenge id='26'>
+		<descr val='Produce 20 arrows' />
+		<required itemId='262' count='20' take='true' />
+	</challenge>
+	<challenge id='27'>
+		<descr val='Produce one bed' />
+		<required itemId='355' count='1' />
+	</challenge>
+	<challenge id='28'>
+		<descr val='Produce note block' />
+		<required itemId='25' count='1' />
+	</challenge>
+	<challenge id='29'>
+		<descr val='Produce a Jukebox' />
+		<required itemId='84' count='1' />
+	</challenge>
+	<challenge id='30'>
+		<descr val='Produce a Bookshelf' />
+		<required itemId='47' count='1' />
+	</challenge>
+	<challenge id='31'>
+		<descr val='Produce 10 Wool' />
+		<required itemId='35' count='10' take='true'/>
+	</challenge>
+	<challenge id='32'>
+		<descr val='Produce 10 Orange Wool' />
+		<required itemId='35' count='10' damage='1' take='true'/>
+	</challenge>
+	<challenge id='33'>
+		<descr val='Produce 10 Magenta Wool' />
+		<required itemId='35' count='10' damage='2' take='true'/>
+	</challenge>
+	<challenge id='34'>
+		<descr val='Produce 10 Light Blue Wool' />
+		<required itemId='35' count='10' damage='3' take='true'/>
+	</challenge>
+	<challenge id='35'>
+		<descr val='Produce 10 Yellow Wool' />
+		<required itemId='35' count='10' damage='4' take='true'/>
+	</challenge>
+	<challenge id='36'>
+		<descr val='Produce 10 Lime Wool' />
+		<required itemId='35' count='10' damage='5' take='true'/>
+	</challenge>
+	<challenge id='37'>
+		<descr val='Produce 10 Pink Wool' />
+		<required itemId='35' count='10' damage='6' take='true'/>
+	</challenge>
+	<challenge id='38'>
+		<descr val='Produce 10 Gray Wool' />
+		<required itemId='35' count='10' damage='7' take='true'/>
+	</challenge>
+	<challenge id='39'>
+		<descr val='Produce 10 Light Gray Wool' />
+		<required itemId='35' count='10' damage='8' take='true'/>
+	</challenge>
+	<challenge id='40'>
+		<descr val='Produce 10 Cyan Wool' />
+		<required itemId='35' count='10' damage='9' take='true'/>
+	</challenge>
+	<challenge id='41'>
+		<descr val='Produce 10 Purple Wool' />
+		<required itemId='35' count='10' damage='10' take='true'/>
+	</challenge>
+	<challenge id='42'>
+		<descr val='Produce 10 Blue Wool' />
+		<required itemId='35' count='10' damage='11' take='true'/>
+	</challenge>
+	<challenge id='43'>
+		<descr val='Produce 10 Brown Wool' />
+		<required itemId='35' count='10' damage='12' take='true'/>
+	</challenge>
+	<challenge id='44'>
+		<descr val='Produce 10 Green Wool' />
+		<required itemId='35' count='10' damage='13' take='true'/>
+	</challenge>
+	<challenge id='45'>
+		<descr val='Produce 10 Red Wool' />
+		<required itemId='35' count='10' damage='14' take='true'/>
+	</challenge>
+	<challenge id='46'>
+		<descr val='Produce 10 Black Wool' />
+		<required itemId='35' count='10' damage='15' take='true'/>
+	</challenge>
+	<challenge id='47'>
+		<descr val='Gather stack of Netherrack' />
+		<required itemId='87' count='64' take='true'/>
+	</challenge>
+	<challenge id='48'>
+		<descr val='Gather 10 Nether Bricks' />
+		<required itemId='112' count='10' take='true'/>
+	</challenge>
+	<challenge id='49'>
+		<descr val='Produce 10 Nether Brick Fences' />
+		<required itemId='113' count='10' take='true'/>
+	</challenge>
+	<challenge id='50'>
+		<descr val='Produce 10 Nether Brick Stairs' />
+		<required itemId='114' count='10' take='true'/>
+	</challenge>
+</list>

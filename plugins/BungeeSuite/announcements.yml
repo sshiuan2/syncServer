@@ -1,0 +1,129 @@
+Announcements:
+  enabled: false
+  Global:
+    Interval: 1200
+    Messages:
+    - '[遊戲官網]：&9&lup9cloud.net'
+  天界:
+    Interval: 720
+    Messages:
+    - '&f[公告] &9九天之上歡迎您的到來！'
+  天界_:
+    Interval: 720
+    Messages:
+    - '&f[公告] &9九天之上歡迎您的到來！'
+  人界:
+    Interval: 360
+    Messages:
+    - '&f&l回重生點請輸入/spawn'
+  創造:
+    Interval: 360
+    Messages:
+    - '&f&l回重生點請輸入/spawn'
+  交易大廳:
+    Interval: 360
+    Messages:
+    - '&f交易大廳 建設中...'
+  測試服:
+    Interval: 360
+    Messages:
+    - '&4測試服'
+  空島生存:
+    Interval: 360
+    Messages:
+    - '&f&l回重生點可輸入/spawn'
+  pvp_bb:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the pvp_bb server!'
+    - '&aDon''t forget to check out our website'
+  跑跑:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the 跑跑 server!'
+    - '&aDon''t forget to check out our website'
+  打殭屍:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the 打殭屍 server!'
+    - '&aDon''t forget to check out our website'
+  音樂:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the 音樂 server!'
+    - '&aDon''t forget to check out our website'
+  流沙:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the 流沙 server!'
+    - '&aDon''t forget to check out our website'
+  驗證:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the 驗證 server!'
+    - '&aDon''t forget to check out our website'
+  測試:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the 測試 server!'
+    - '&aDon''t forget to check out our website'
+  原味:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the 原味 server!'
+    - '&aDon''t forget to check out our website'
+  in91andy:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the in91andy server!'
+    - '&aDon''t forget to check out our website'
+  tPC:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the tPC server!'
+    - '&aDon''t forget to check out our website'
+  zoo:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the zoo server!'
+    - '&aDon''t forget to check out our website'
+  Bomb:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the Bomb server!'
+    - '&aDon''t forget to check out our website'
+  auth:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the auth server!'
+    - '&aDon''t forget to check out our website'
+  test:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the test server!'
+    - '&aDon''t forget to check out our website'
+  music:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the music server!'
+    - '&aDon''t forget to check out our website'
+  creative:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the creative server!'
+    - '&aDon''t forget to check out our website'
+  E-2:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the E-2 server!'
+    - '&aDon''t forget to check out our website'
+  h43test:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the h43test server!'
+    - '&aDon''t forget to check out our website'
+  trade:
+    Interval: 150
+    Messages:
+    - '&4Welcome to the trade server!'
+    - '&aDon''t forget to check out our website'

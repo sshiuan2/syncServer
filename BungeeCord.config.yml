@@ -1,0 +1,112 @@
+groups:
+  up9cloud-admin:
+  - admin
+  up9cloud-jo:
+  - op
+  up9cloud-michell:
+  - op
+disabled_commands:
+- find
+player_limit: 168
+stats: 4DACA6AB-C060-41B1-8FC2-C20D96C42274
+permissions:
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+  op:
+  - bungeecord.command.server
+  admin:
+  - bungeecord.command.server
+  - bungeecord.command.alert
+  - bungeecord.command.end
+  - bungeecord.command.ip
+  - bungeecord.command.reload
+listeners:
+- fallback_server: 天界
+  max_players: 2014
+  host: 192.200.109.235:25565
+  tab_size: 60
+  force_default_server: true
+  tab_list: SERVER
+  motd: '4DACA6AB-C060-41B1-8FC2-C20D96C42274'
+#&aup9cloud.net &c|&r &e天界 Σ(ﾟ дﾟ|||)'
+  default_server: 天界
+  forced_hosts:
+    test.net: test
+  bind_local_address: false
+  ping_passthrough: false
+  query_enabled: true
+  query_port: 25577
+timeout: 30000
+connection_throttle: 4000
+servers:
+  原味:
+    address: 10.0.0.4:25565
+    restricted: false
+    motd: '&aup9cloud.net &c|&r &e天界 Σ(ﾟ дﾟ|||)'
+  zoo:
+    address: 10.0.0.4:25566
+    restricted: false
+    motd: '&aup9cloud.net &c|&r &e天界 Σ(ﾟ дﾟ|||)'
+  天界:
+    address: 10.0.0.1:25565
+    restricted: false
+    motd: '&aup9cloud.net &c|&r &eΣ(ﾟ дﾟ|||) &7官網可下載1.7.4懶人包！'
+  auth:
+    address: 10.0.0.1:25566
+    restricted: false
+    motd: '&aup9cloud.net:25566 &c|&r &e天界 Σ(ﾟ дﾟ|||)'
+  人界:
+    address: 10.0.0.200:25565
+    restricted: false
+    motd: '&aup9cloud.net &c|&r &e人界 Σ(ﾟ дﾟ|||)'
+  trade:
+    address: 10.0.0.3:25565
+    restricted: false
+    motd: '&aup9cloud.net &c|&r &e人界 Σ(ﾟ дﾟ|||)'
+  空島生存:
+    address: 10.0.0.2:25565
+    restricted: false
+    motd: '&aup9cloud.net &c|&r &e人界 Σ(ﾟ дﾟ|||)'
+  pvp_bb:
+    address: 10.0.0.2:25567
+    restricted: false
+    motd: '&aup9cloud.net &c|&r &e人界 Σ(ﾟ дﾟ|||)'
+  tPC:
+    address: 10.0.0.2:25568
+    restricted: false
+    motd: '&aup9cloud.net &c|&r &e人界 Σ(ﾟ дﾟ|||)'
+  creative:
+    address: 10.0.0.1:25567
+    restricted: false
+    motd: '&aup9cloud.net &c|&r &e人界 Σ(ﾟ дﾟ|||)'
+  流沙:
+    address: 10.0.0.2:25566
+    restricted: false
+    motd: '&aup9cloud.net &c|&r &e人界 Σ(ﾟ дﾟ|||)'
+  Bomb:
+    address: 10.0.0.2:25569
+    restricted: false
+    motd: '&aup9cloud.net &c|&r &e人界 Σ(ﾟ дﾟ|||)'
+  music:
+    address: 10.0.0.3:25599
+    restricted: false
+    motd: '&aup9cloud.net &c|&r &e人界 Σ(ﾟ дﾟ|||)'
+  test:
+    address: 10.0.0.3:25600
+    restricted: false
+    motd: '&aup9cloud.net &c|&r &e人界 Σ(ﾟ дﾟ|||)'
+  in91andy:
+    address: 10.0.0.3:25566
+    restricted: false
+    motd: '&aup9cloud.net &c|&r &e人界 Σ(ﾟ дﾟ|||)'
+  h43test:
+    address: 140.115.6.22:25566
+    restricted: false                             
+    motd: '&ah43'
+  E-2:
+    address: 1.34.227.149:25564
+    restricted: false
+    motd: '&aE伺服器'
+ip_forward: true
+online_mode: true

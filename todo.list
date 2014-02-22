@@ -1,0 +1,23 @@
+move pluginServer to syncServer ok
+fix function/* almost
+fix function/wget.sh ok
+fix game servers sync file almost
+fix suvival server sync file ok
+fix proxy_sp server sync file ok
+ln creative dynmap tiles ok
+fix creative server plotme database ok
+ln survival dynmap tiles ok
+fix proxy server sync file ok
+move world to world
+
+git upload
+
+? remove survival server's backup & remove autosaveworld plugin?
+seperate the mysql and survival server..
+
+write the deploy shell file
+
+try use autoconf automake???
+
+taipei server: git clone & dl all worlds
+

@@ -1,0 +1,108 @@
+var:
+  debug: false
+save:
+  enabled: true
+  interval: 900
+  broadcast: false
+backup:
+  enabled: true
+  interval: 21600
+  savebefore: true
+  broadcast: true
+  localfs:
+    enabled: true
+    worlds:
+    - world
+    - 天界
+    - 人界
+    - 交易大廳
+    - 住宅區
+    - 創造
+    - 空島生存
+    - tntrun
+    - pvp_bb
+    - TEST
+    MaxNumberOfWorldsBackups: 36
+    pluginsfolder: false
+    MaxNumberOfPluginsBackups: 18
+    excludefolders: []
+    toextfolders: false
+    disableintfolder: true
+    extfolders: []
+    zip: true
+  ftp:
+    enabled: false
+    hostname: 127.0.0.1
+    port: 21
+    login: user
+    password: password
+    path: /asw/
+    worlds:
+    - '*'
+    pluginsfolder: false
+    excludefolders: []
+    zip: false
+purge:
+  enabled: false
+  interval: 86400
+  awaytime: 2592000
+  broadcast: true
+  wg:
+    enabled: true
+    regenpurgedregion: true
+    noregenoverlapregion: true
+  lwc:
+    enabled: true
+    deletepurgedblocks: false
+  mvinv:
+    enabled: true
+  pm:
+    enabled: true
+    regenpurgedplot: true
+  residence:
+    enabled: true
+    regenpurgedresidence: false
+  dat:
+    enabled: true
+crashrestart:
+  enabled: true
+  scriptpath: run.sh
+  timeout: 60
+  juststop: true
+autorestart:
+  enabled: true
+  broadcast: true
+  time:
+  - '04:30'
+  countdown:
+    enabled: true
+    broadcastonsecond:
+    - 300
+    - 60
+    - 30
+    - 10
+    - 9
+    - 8
+    - 7
+    - 6
+    - 5
+    - 4
+    - 3
+    - 2
+    - 1
+  scriptpath: run.sh
+  juststop: true
+consolecommand:
+  timemode:
+    enabled: false
+    times: {}
+  intervalmode:
+    enabled: false
+    intervals: {}
+worldregen:
+  savewg: true
+  savefactions: false
+  savegp: true
+locale:
+  switchtolangfile: true
+  langfilesuffix: zh_TW

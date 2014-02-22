@@ -1,0 +1,11 @@
+Scripts:
+  var:
+    Script:
+    - ''
+  boolean:
+    Script:
+    - '@IF b $<this>.flag = false'
+    - '  @SETBOOL $<this>.flag true'
+    - '@ELSE'
+    - '  @SETBOOL $<this>.flag false'
+    - '@ENDIF'

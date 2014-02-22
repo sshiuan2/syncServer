@@ -1,0 +1,52 @@
+# These multipliers are used for determining
+# rewards based on world type.
+Environment:
+  NORMAL: 1.0
+  NETHER: 1.1
+  THE_END: 1.2
+# These multipliers are used for determining
+# rewards based on the time in the world.
+Time:
+  Day: 1.0
+  Sunset: 1.1
+  Night: 1.2
+  Sunrise: 1.1
+# These multipliers are used for determining
+# rewards for a group.
+Group:
+  Default: 1.0
+# These multipliers are used for determining
+# rewards for a user.
+User:
+  Default: 1.0
+# These multipliers are used for determining
+# rewards for a world.
+World:
+  world: 1.0
+# This multiplier is used for determining
+# rewards when using fortune tools.
+fortuneToolsMultiplier: 1.0
+Biome:
+  SWAMPLAND: 1.0
+  FOREST: 1.0
+  TAIGA: 1.0
+  DESERT: 1.0
+  PLAINS: 1.0
+  HELL: 1.0
+  SKY: 1.0
+  OCEAN: 1.0
+  RIVER: 1.0
+  EXTREME_HILLS: 1.0
+  FROZEN_OCEAN: 1.0
+  FROZEN_RIVER: 1.0
+  ICE_PLAINS: 1.0
+  ICE_MOUNTAINS: 1.0
+  MUSHROOM_ISLAND: 1.0
+  MUSHROOM_SHORE: 1.0
+  BEACH: 1.0
+  DESERT_HILLS: 1.0
+  FOREST_HILLS: 1.0
+  TAIGA_HILLS: 1.0
+  SMALL_MOUNTAINS: 1.0
+  JUNGLE: 1.0
+  JUNGLE_HILLS: 1.0

@@ -1,0 +1,6 @@
+pvp:
+  Join:
+    CoolDown: 0
+    Script:
+    - '@CMD worldspawn'
+    - '//@CMDOP tp'

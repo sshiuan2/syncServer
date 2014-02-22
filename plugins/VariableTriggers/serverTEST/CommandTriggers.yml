@@ -1,0 +1,16 @@
+Commands:
+  signedit:
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@CALL Command:signedit'
+  op:
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@PLAYER please execute in console'
+  deop:
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@PLAYER please execute in console'

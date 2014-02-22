@@ -1,0 +1,33 @@
+Scripts:
+  PrivatePointCheck:
+    Script:
+    - '@SETINT $SIGNPOINT.index 1'
+    - '@SETBOOL $SIGNPOINT.check false'
+    - '@WHILE s $SIGNPOINT.P<var:$SIGNPOINT.index> != END'
+    - '  @IF s <getblocklos:LOC:4> = $SIGNPOINT.P<var:$SIGNPOINT.index>'
+    - '    @SETBOOL $SIGNPOINT.check true'
+    - '    @SETINT $SIGNPOINT.index $SIGNPOINT.index'
+    - '    @SETSTR $SIGNPOINT.call $SIGNPOINT.T<var:$SIGNPOINT.index>'
+    - '    @EXIT'
+    - '  @ENDIF'
+    - '  @ADDINT $SIGNPOINT.index 1'
+    - '@ENDWHILE'
+  PublicPointCheck:
+    Script:
+    - '@SETINT $SIGNPOINT.<playername>-index 1'
+    - '@SETBOOL $SIGNPOINT.<playername>-check false'
+    - '@WHILE s $SIGNPOINT.publicP<var:$SIGNPOINT.<playername>-index> != END'
+    - '  @IF s <getblocklos:LOC:4> = $SIGNPOINT.publicP<var:$SIGNPOINT.<playername>-index>'
+    - '    @SETBOOL $SIGNPOINT.<playername>-check true'
+    - '    @EXIT'
+    - '  @ENDIF'
+    - '  @ADDINT $SIGNPOINT.<playername>-index 1'
+    - '@ENDWHILE'
+  textReset:
+    Script:
+    - '@CALL SignPoint:PrivatePointCheck'
+    - '@CALL SignPoint:PublicPointCheck'
+    - '@IF b $SIGNPOINT.check = true'
+    - '//@OR b $SIGNPOINT.<playername>-check = true'
+    - '  @CALL signtext:<var:$SIGNPOINT.call>'
+    - '@ENDIF'

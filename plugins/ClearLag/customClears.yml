@@ -1,0 +1,21 @@
+run:
+  clearVil:
+    interval: 0
+    broadcast: true
+#    broadcastmsg: '&6[Villager-Cleaner] &3Cleared +RemoveAmount villagers!'
+    broadcastmsg: '&6[系統] &3已清除 +RemoveAmount 個村民！'
+    world-filter:
+    - neverClear_world
+    clear-list:
+    - Villager
+  mypvpcleaner:
+    interval: 0
+    limit: 0
+    broadcast: true
+#    broadcastmsg: '&6[PVP-Cleaner] &3Cleared +RemoveAmount items!'
+    broadcastmsg: '&6[系統] &3已清除 +RemoveAmount 個PVP物品！'
+    world-filter:
+    - world_end
+    clear-list:
+    - Arrow
+    - Item

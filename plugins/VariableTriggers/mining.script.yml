@@ -1,0 +1,28 @@
+Scripts:
+  OREPOINTReset:
+    Script:
+    - '@SETINT $<this>.arrayindex 1'
+    - '@WHILE s $OREPOINT.P<var:$<this>.arrayindex> != END'
+    - '  @SETBLOCK $OREPOINT.P<var:$<this>.arrayindex>id $OREPOINT.P<var:$<this>.arrayindex>'
+    - '  @PLAYER 已重置 $OREPOINT.P<var:$<this>.arrayindex>id $OREPOINT.P<var:$<this>.arrayindex>name 礦點 $OREPOINT.P<var:$<this>.arrayindex>'
+    - '  @ADDINT $<this>.arrayindex 1'
+    - '@ENDWHILE'
+  OREPOINTCheck:
+    Script:
+    - '@SETINT $<this>.<playername>-arrayindex 1'
+    - '@SETBOOL $<this>.<playername>-OREPOINTCheck false'
+    - '@WHILE s $OREPOINT.P<var:$<this>.<playername>-arrayindex> != END'
+    - '  @IF s <triggerloc> = $OREPOINT.P<var:$<this>.<playername>-arrayindex>'
+    - '    @SETBOOL $<this>.<playername>-OREPOINTCheck true'
+    - '    @EXIT'
+    - '  @ENDIF'
+    - '  @ADDINT $<this>.<playername>-arrayindex 1'
+    - '@ENDWHILE'
+  OreRespawn:
+    Script:
+    - '@SETSTR $<this>.<playername>-blockname $OREPOINT.P<var:$<this>.<playername>-arrayindex>name'
+    - '@SETINT $<this>.<playername>-CD $CD.<var:$<this>.<playername>-blockname>'
+    - '@DELVAR s $<this>.<playername>-blockname'
+    - '@PAUSE <var:$<this>.<playername>-CD>'
+    - '@DELVAR i $<this>.<playername>-CD'
+    - '@SETBLOCK <blocktype> <triggerloc>'

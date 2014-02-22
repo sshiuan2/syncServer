@@ -1,0 +1,374 @@
+objects:
+  人界_Click_-8770248:
+    Integers:
+      y: 52
+      n: 61
+    Strings:
+      up9cloud_admin: Y
+      O0oO0o0Oo0O: Y
+      a3139109: N
+      sp-35980653: N
+      sp-dddavid: Y
+      hunk8991: N
+      sp-max6527316: N
+      sp-funnytai: Y
+      qq871799: N
+      in91andy: N
+      up9cloud_Jo: Y
+      XianGerWu: N
+      LOC: -87,70,248
+      GrapefruitBear: N
+      sp-abcd21587378: N
+      sp-JackLin84911: N
+      h4359665: N
+      starwk: N
+      sp-KasuganoSora: N
+      s960409: N
+      sp-qaz20001027: N
+      tuerlala: N
+      sp-qk185445: Y
+      jk30903713: N
+      zx142539: N
+      sp-ddavid: Y
+      sp-Oscarmilk: Y
+      SP-Mercurius: Y
+      b1317669: Y
+      texyee2: N
+      sp-ivy0923: N
+      sp-kamisama0402: Y
+      sp-a12143407: N
+      sp-p07049: N
+      sp-tt1069: N
+      sp-pootiu24: Y
+      sp-Mercurius: Y
+      sp-dionneoh: N
+      Fang_Ji: Y
+      sp-love1314: N
+      up9cloud-JO: N
+      a30964137: N
+      super_hope: N
+      sp-bruce800606: Y
+      ammie890214: N
+      sp-Kane: N
+      up9cloud-admin: Y
+      ken841112: N
+      lht1226: N
+      Lin_Mcihael: Y
+      cherrychow: Y
+      sp-kenny: N
+      sp-super3: Y
+      Luminus032: N
+      e7952110: Y
+      HENRY0116: N
+      sp-bonebonekai: Y
+      jackycow: N
+      sp-kevincat1586: Y
+      sp-dog2002: Y
+      CaIMtaRdyMaxs: N
+      sp-pesp1219: Y
+      alien0512: N
+      sp-leochan0311: Y
+      TORY27695637: N
+      _Mike___: Y
+      sp-Ditzon: N
+      crazeburner: N
+      a1991102621: N
+      simonlii: Y
+      '27299272': N
+      hpprk: N
+      sp-Alive: Y
+      andylww: Y
+      Tony_cc: Y
+      AnimalYoKoCho: Y
+      Headshot8: Y
+      GUNDAM1203: N
+      sp-apple0311: Y
+      sp-jackyivy0923: Y
+      ｓｐ-PushLoli: Y
+      ahui2013: N
+      sp-AndyLau: N
+      andy25028046: N
+      Ender_KOKing: Y
+      sp-aud9i999: N
+      sp-sh9867896: Y
+      sp-smallsin: N
+      sp-Preset: Y
+      ww9876301: Y
+      Ireaaz: Y
+      KsPartNer: N
+      wfghjklee: Y
+      kinlam234: Y
+      spywalk: Y
+      Yellowhaha: Y
+      sp-john0609: N
+      Xueshuang: N
+      A129lau: N
+      x0911584816: Y
+      khc20709: N
+      TWpaomian: N
+      LanSeepinG: Y
+      TW_Smosh: N
+      TWFUCKMAN: Y
+      andywawa: N
+      sp-philip123: Y
+      npc53665: Y
+      ro24858607: N
+      JENNYHENRRY: Y
+      sp-ooxx185: Y
+      qaz70903: Y
+      AncoFinna: N
+      sp-21542: N
+    StringLists: {}
+    Booleans: {}
+  人界_Click_-9370242:
+    Integers:
+      total: 19586
+    Strings:
+      LOC: -93,70,242
+    StringLists: {}
+    Booleans: {}
+  人界_Click_-9369242:
+    Integers:
+      total: 460
+    Strings:
+      LOC: -93,69,242
+    StringLists: {}
+    Booleans: {}
+  人界_Click_-9368242:
+    Integers:
+      total: 211
+    Strings:
+      LOC: -93,68,242
+    StringLists: {}
+    Booleans: {}
+  人界_Click_-9368241:
+    Integers:
+      total: 239
+    Strings:
+      LOC: -93,68,241
+    StringLists: {}
+    Booleans: {}
+  人界_Click_-9368243:
+    Integers:
+      total: 152
+    Strings:
+      LOC: -93,68,243
+    StringLists: {}
+    Booleans: {}
+  人界_Click_-9368244:
+    Integers:
+      total: 165
+    Strings:
+      LOC: -93,68,244
+    StringLists: {}
+    Booleans: {}
+  world_Click_12265435:
+    Integers:
+      amount: 1
+      total: 1
+    Strings:
+      LOC: 122,65,435
+      id: '395'
+      name: 鈔票
+      price: '1'
+    StringLists: {}
+    Booleans: {}
+  world_Click_12065437:
+    Integers:
+      amount: 64
+      total: 64
+    Strings:
+      LOC: 120,65,437
+      id: '395'
+      name: 鈔票
+      price: '1'
+    StringLists: {}
+    Booleans: {}
+  world_Click_12165436:
+    Integers:
+      amount: 10
+      total: 10
+    Strings:
+      LOC: 121,65,436
+      id: '395'
+      name: 鈔票
+      price: '1'
+    StringLists: {}
+    Booleans: {}
+  world_Click_26266260:
+    Integers:
+      total: 157
+    Strings:
+      LOC: 262,66,260
+    StringLists: {}
+    Booleans: {}
+  world_Click_26266261:
+    Integers:
+      total: 209
+    Strings:
+      LOC: 262,66,261
+    StringLists: {}
+    Booleans: {}
+  world_Click_26266262:
+    Integers:
+      total: 179
+    Strings:
+      LOC: 262,66,262
+    StringLists: {}
+    Booleans: {}
+  world_Click_26266263:
+    Integers:
+      total: 197
+    Strings:
+      LOC: 262,66,263
+    StringLists: {}
+    Booleans: {}
+  world_Click_26266264:
+    Integers:
+      total: 205
+    Strings:
+      LOC: 262,66,264
+    StringLists: {}
+    Booleans: {}
+  SIGNEDIT:
+    Integers:
+      up9cloud-admin: 4
+      O0oO0o0Oo0O: 2
+      susanwawa: 3
+      SmallWawa: 1
+      GUNDAM1203: 1
+      Yellowhaha: 3
+      e7952110: 3
+      sp-kenny: 1
+      qaz70903: 3
+      HENRY0116: 1
+      sp-oscar: 1
+      Akuma_Minato: 3
+      armies5250: 1
+      Small_Fall: 1
+      sp-vincentjian: 4
+      skyqazwsx: 2
+      sp-28003027: 2
+      DarkXAnthony: 4
+      XianGerWu: 1
+      justplayboy: 1
+      carrysimon: 1
+      sp-JackLin84911: 4
+      A129lau: 1
+      sp-karta2200150: 1
+      sp-aud9i999: 1
+      sp-yuenwilho: 1
+      azz8068513: 4
+    Strings:
+      up9cloud-admin-undo: test
+      up9cloud-admin-redo: 32,67,518 4 &8方便玩家互相交易
+      O0oO0o0Oo0O-undo: test
+      O0oO0o0Oo0O-redo: 250,67,261 2 永保安康
+      susanwawa-undo: test
+      susanwawa-redo: 250,67,263 3 <SUSAN>
+      SmallWawa-undo: test
+      SmallWawa-redo: 250,67,264 1 　　　　　　　　　　
+      GUNDAM1203-undo: test
+      GUNDAM1203-redo: 250,67,262 1 早安諾
+      Yellowhaha-undo: test
+      Yellowhaha-redo: 250,68,264 3 hahahaha
+      e7952110-undo: test
+      e7952110-redo: 250,67,261 3 0.0
+      sp-kenny-undo: test
+      sp-kenny-redo: 250,68,263 1 wawawawawawa
+      qaz70903-undo: test
+      qaz70903-redo: 250,68,264 3 qaz70903
+      HENRY0116-undo: test
+      HENRY0116-redo: 250,67,263 1 ㄏㄏ
+      sp-oscar-undo: test
+      sp-oscar-redo: 250,67,263 1 ...!
+      Akuma_Minato-undo: test
+      Akuma_Minato-redo: 250,67,263 3 Akuma_Minato
+      armies5250-undo: test
+      armies5250-redo: 250,67,264 1 &a安安
+      Small_Fall-undo: test
+      Small_Fall-redo: 250,67,262 1 Small_Fall
+      sp-vincentjian-undo: test
+      sp-vincentjian-redo: 250,67,263 4 通通過來天外天
+      skyqazwsx-undo: test
+      skyqazwsx-redo: 250,67,262 2 ~
+      sp-28003027-undo: test
+      sp-28003027-redo: 250,67,262 2 hi大家好我第一天來這
+      DarkXAnthony-undo: test
+      DarkXAnthony-redo: 250,67,261 4 DarkXAnthony
+      XianGerWu-undo: test
+      XianGerWu-redo: 250,67,260 1 XianGerWu 潮帥的
+      justplayboy-undo: test
+      justplayboy-redo: 250,67,261 1 我是新手...
+      carrysimon-undo: test
+      carrysimon-redo: 250,68,263 1 你好呀各位^^
+      sp-JackLin84911-undo: test
+      sp-JackLin84911-redo: 250,68,264 4 　　　　　　　　　　
+      A129lau-undo: test
+      A129lau-redo: 250,67,263 1 computer class yaa
+      sp-karta2200150-undo: test
+      sp-karta2200150-redo: 250,68,262 1 安安
+      sp-aud9i999-undo: test
+      sp-aud9i999-redo: 250,67,262 1 &a&l安安你好
+      sp-yuenwilho-undo: test
+      sp-yuenwilho-redo: 250,67,262 1 87:P
+      azz8068513-undo: test
+      azz8068513-redo: 250,67,263 4 希望能做個朋友
+    StringLists: {}
+    Booleans: {}
+  VOTE:
+    Integers:
+      VoteKillall_tBase: 0
+      VoteKillall_fBase: 30
+    Strings: {}
+    StringLists: {}
+    Booleans: {}
+  CD:
+    Integers:
+      COAL_ORE: 300
+      IRON_ORE: 900
+      GOLD_ORE: 1800
+      DIAMOND_ORE: 7200
+      REDSTONE_ORE: 3600
+      LAPIS_ORE: 4800
+      EMERALD_ORE: 36000
+      QUARTZ_ORE: 600
+    Strings: {}
+    StringLists: {}
+    Booleans: {}
+  SIGNPOINT:
+    Integers:
+      TMICOOKIE-index: 1
+      misakamikoto7-index: 1
+      e7952110-index: 1
+    Strings: {}
+    StringLists: {}
+    Booleans:
+      TMICOOKIE-check: false
+      misakamikoto7-check: false
+      e7952110-check: false
+  VAR:
+    Integers: {}
+    Strings:
+      subfix: 全域變數...
+      prefix: 設置
+      this: SIGNPOINT
+    StringLists: {}
+    Booleans: {}
+  MSG:
+    Integers: {}
+    Strings:
+      NoPermission: 你沒有權限，再亂用射射你喔！
+    StringLists: {}
+    Booleans: {}
+  SIGNTEXT:
+    Integers: {}
+    Strings:
+      ore1: '&f&l測試獎勵'
+      ore4: '&0'
+      newbieBook1: '&f&l免費領取！'
+      newbieBook2: '&0'
+      newbieBook3: '&0共發出'
+      newbieBook4: '&0'
+    StringLists: {}
+    Booleans: {}

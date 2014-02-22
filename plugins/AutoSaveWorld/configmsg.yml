@@ -1,0 +1,16 @@
+broadcast:
+  pre: '&9自動存檔中...'
+  post: '&9自動存檔完成'
+broadcastbackup:
+  pre: '&9自動備份中...'
+  post: '&9自動備份完成'
+broadcastpurge:
+  pre: '&9開始清除過舊資料...'
+  post: '&9過舊資料清除完畢'
+warning:
+  save: '&9自動存檔即將開始'
+  backup: '&9自動備份即將開始'
+insufficentpermissions: '&c指令無效。沒有權限。'
+autorestart:
+  restarting: '&9伺服器重啟中...'
+  countdown: '&9伺服器將於 {SECONDS} 秒後重啟'

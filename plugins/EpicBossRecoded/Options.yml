@@ -1,0 +1,8 @@
+# --== Options for EpicBossRecoded ==--
+# -----------------------------
+# "BossTitle" This is what shows up when hp of boss is shing in chat, this is the prefix!
+# "percentage" If it's "true" it will boss HP every 10%, Recomended
+# "RegainHealth" Set to true if you want boss to get 100% hp if no player is near it.
+BossTitle: ''
+percentage: false
+RegainHealth: false

@@ -1,0 +1,91 @@
+# 
+# Visit Bukkit Page for more informations about all config options
+debug: false
+island-debug: false
+old-version: false
+version-check: false
+language: zh_TW
+world-isle: world
+world-spawn: world
+world-block-id: 0
+island-height: 20
+island-size: 100
+region-spacing: 1
+max-count: 100
+snail-mode: false
+teleport-delay: 0
+movement-break-tp: false
+time-limit: 0
+calc-limit: 10
+auto-save: 60
+backup-on-start: true
+backup-max-days: 14
+set-home: false
+clean-inventory: true
+clean-inventory-leave: true
+clean-inventory-exit: false
+delete-challenges: true
+allow-visit: true
+strict-party: true
+party-limit: 4
+party-limit-vip: 6
+home-limit: 3
+home-limit-vip: 6
+skip-completed: false
+challenges-order: false
+repeatable: false
+use-signs: true
+obsidian-break: false
+obsidian-limit: true
+request-time: 10
+reload-time: 30
+auto-purge: 0
+purge-check-members: true
+purge-delay: 5
+falling-block-tp: true
+remove-mob-on-tp: false
+respawn-on-island: skip
+spawn-on-quit: false
+chat-prefix: none
+item-protection: false
+island-lock: false
+negative-build: true
+default-biome: forest
+per-biome-perms: false
+calc-on-enter: false
+flags:
+  move-info: true
+  pvp: false
+  use-egg: false
+  use-vehicle: false
+  item-pickup: false
+  use-portal: false
+  kill-animals: false
+  kill-monster: false
+  potion-throw: false
+allowed-list:
+- '26'
+blocked-list:
+- '383:56'
+ignored-list:
+- '7'
+material-points:
+  '4': 2
+database:
+  host: 10.0.0.200
+  port: 3306
+  user: IslandWorld
+  pass: dlroWdnalsI
+  base: IslandWorld
+pathway:
+  width: 0
+  height: 150
+  block: '44:2'
+economy-enabled: false
+command-cost:
+  commandname: 200
+allowed:
+- 26
+blocked:
+- 23036
+island-protection: true

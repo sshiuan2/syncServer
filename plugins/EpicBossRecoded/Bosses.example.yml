@@ -1,0 +1,147 @@
+Bosses:
+#生物種類:
+# angrywolf	生氣的狼
+# creeper	苦力怕
+# wither	凋零
+# enderdragon	終界龍
+# witherskeleton	凋零骷髏
+# zombiebaby	殭屍嬰兒
+# zombievillager	殭屍村民
+# bat	蝙蝠
+# witch	巫婆
+# mushroomcow	哞菇
+# mushroomcowbaby	哞菇嬰兒
+# squid	烏賊
+# skeleton	骷髏
+# ghast	地獄幽靈
+# blaze	烈焰神
+# zombie	殭屍
+# slime	史萊姆
+# wolf	 狼
+# irongolem	鐵傀儡
+# pig	豬
+# sheep	羊
+# villager	村民
+# ocelot	山貓
+# chicken	雞
+# chickenbaby	嬰兒雞
+# cow	牛
+# cowbaby	嬰兒牛
+# spider	蜘蛛
+# enderman	終界使者
+# cavespider	洞穴蜘蛛
+# giant	巨人(殭屍放大版)
+# silverfish	蠹(ㄉㄨˋ) 魚
+# magmacube	熔岩史萊姆
+# pigzombie	殭屍豬人
+#持續時間：單位=秒
+#條件:
+# <生命值 當BOSS生命<此數值時執行技能
+# =生命值 當BOSS生命=此數值時執行技能
+# >生命值 當BOSS生命>此數值時執行技能
+# /較大生命值-較少生命值 當BOSS生命介於此生命值範圍時執行技能
+#藥水效果:
+# SPEED	移動加速
+# SLOW	移動減速
+# FAST_DIGGING	挖掘加速
+# SLOW_DIGGING	挖掘減速
+# INCREASE_DAMAGE	力量
+# HEAL	立即治療
+# HARM	立即傷害
+# JUMP	跳躍能力強化
+# CONFUSION	噁心
+# REGENERATION	回復
+# DAMAGE_RESISTANCE	抗性
+# FIRE_RESISTANCE	火焰抗性
+# WATER_BREATHING	水下呼吸
+# INVISIBILITY	隱形
+# BLINDNESS	失明
+# NIGHT_VISION	夜視
+# HUNGER	飢餓
+# WEAKNESS	虛弱
+# POISON	中毒
+# WITHER	凋零
+#顏色代碼:
+# &0	黑色	&1	深藍	&2	深綠	&3	湖藍
+# &4	深紅	&5	紫色	&6	金色	&7	灰色
+# &8	深灰	&9	靛藍	&a	鮮綠	&b	水藍
+# &c	紅色	&d	粉色	&e	黃色	&f	白色
+# &k	隨機字	&l	粗體	&m	刪除線
+# &n	底線	&o	斜體	&r	重置樣式
+  Test:
+    Type: zombie
+    Health: 500
+    Showhp: true
+#傷害1=0.5顆心
+    Damage: 5
+    Skills:
+#所有技能:
+# swarm	使BOSS召喚生物或其他BOSS
+#- swarm <生物種類>:<數量> <條件> <機率>
+#召喚Epicboss:前面要加"$"
+# throw	將範圍內玩家丟到半空中
+# potion	使範圍內玩家新增藥水效果
+#- potion <範圍>:<藥水效果>:<持續時間>:<等級> <條件> <機率>
+# potionboss	使BOSS新增藥水效果
+#- potion|potionboss <藥水效果>:<持續時間>:<等級> <條件> <機率>
+# lightning	對範圍內玩家雷擊並造成傷害
+#- lightning <範圍>:<傷害> <條件> <機率>
+# fire	使範圍內玩家著火
+#- fire <範圍>:<持續時間> <條件> <機率>
+# dragin	傳送範圍內玩家至BOSS所在位置
+#- dragin <範圍> <條件> <機率>
+# teleport	使BOSS傳送至玩家所在位置或將玩家與BOSS位置交換
+#- teleport <傳送參數> <條件> <機率>
+#傳送參數=teleport:傳送該玩家至此
+#傳送參數=swap:該玩家跟怪物位置互換
+#- throw <範圍>:<強度> <條件> <機率>
+# command	執行指令
+#- command <指令> <條件> <機率>
+#指令中有空白都要使用_替代
+# boss message	在範圍內對玩家送出訊息
+#- bossmsg <範圍>:<訊息> <條件> <機率>
+    - throw 20:2 >0 0.15
+    - potion 25:POISON:30:2 =350 1
+    - lightning 50:10 =200 0.5
+    - fire 20:5 <300 0.25
+    - dragin 10 /200-100 1
+    - teleport teleport =250 0.6
+    - teleport swap <50 0.3
+    - swarm pig:3 =300 1
+    - swarm $Test:1 =1 1
+    - bossmsg 25:&3$player_killed_$boss =0 1
+    - command say_$player_擊殺了_$boss! =0 1
+    Drops:
+#副魔名稱:
+# PROTECTION_ENVIRONMENTAL	保護
+# PROTECTION_FIRE	抗火性
+# PROTECTION_FALL	輕盈
+# PROTECTION_EXPLOSIONS	防爆
+# PROTECTION_PROJECTILE	投射物防禦
+# OXYGEN	氧氣
+# WATER_WORKER	親水性
+# THORNS	荊棘
+# DAMAGE_ALL	鋒利
+# DAMAGE_UNDEAD	不死剋星
+# DAMAGE_ARTHROPODS	節肢剋星
+# KNOCKBACK	擊退(劍)
+# FIRE_ASPECT	燃燒
+# LOOT_BONUS_MOBS	掠奪
+# DIG_SPEED	效率
+# SILK_TOUCH	絲綢之觸
+# DURABILITY	耐久
+# LOOT_BONUS_BLOCKS	幸運
+# ARROW_DAMAGE	強力
+# ARROW_KNOCKBACK	擊退(弓)
+# ARROW_FIRE	火焰
+# ARROW_INFINITE	無限
+#- <物品ID>:<數據值>:<數量>[:位置] <掉落機率> [附魔名稱:等級] [$顯示名稱]
+#位置:0=手，1=鞋子，2=褲子，3=胸甲，4=頭盔
+#附魔等級:-32768~32767
+    - 310:0:1:4 0 PROTECTION_ENVIRONMENTAL:1
+    - 264:0:20 1 $&2Diamonds_for_You!
+    - 266:0:15 1
+    - 276:0:1:0 0.1 KNOCKBACK:32767,DAMAGE_ALL:5,FIRE_ASPECT:2 $&b進擊的雙手巨劍
+#新功能
+#http://www.epicboss.empirehostings.net/Support/showthread.php?tid=161
+

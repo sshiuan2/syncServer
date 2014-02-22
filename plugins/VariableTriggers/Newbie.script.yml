@@ -1,0 +1,59 @@
+Scripts:
+  getBook_newbie_hotkeys:
+    Script:
+    - '@COOLDOWN 3'
+    - '@CMDCON give <playername> 387 1 title:&6&l新手教學 author:up9cloud-jo lore:給新手用的...
+      book:newbie_hotkeys'
+    - '@PLAYER 你獲得了一本書籍...'
+    - '@ADDINT $<this>.total 1'
+    - '@SETSTR $<this>.LOC <triggerloc>'
+    - '@CALL signtext:NewbieBookSign_newbie_hotkeys'
+  getBread:
+    Script:
+    - '@COOLDOWN 3'
+    - //@CMDCON give <playername> 297 1
+    - '@IF i <giveitem:<playername>:297:1> = 0'
+    - '  @PLAYER 你包包太滿，好心人的麵包掉到地上...'
+    - '  @DROPITEM bread 1 NONE <playerloc>'
+    - '@ELSE'
+    - '  @PLAYER 好心人給你一個麵包，趕快吃吧...'
+    - '@ENDIF'
+    - '@ADDINT $<this>.total 1'
+    - '@SETSTR $<this>.LOC <triggerloc>'
+    - '@CALL signtext:NewbieFreeBread'
+  getBook_newbie_commands:
+    Script:
+    - '@COOLDOWN 3'
+    - '@CMDCON give <playername> 387 1 title:&6&l指令教學大全 author:up9cloud-admin lore:給初學者用的...
+      book:newbie_commands'
+    - '@PLAYER 你獲得了一本書籍...'
+    - '@ADDINT $<this>.total 1'
+    - '@SETSTR $<this>.LOC <triggerloc>'
+    - '@CALL signtext:NewbieBookSign_newbie_commands'
+  getBook_boss_list:
+    Script:
+    - '@COOLDOWN 3'
+    - '@CMDCON give <playername> 387 1 title:&6&l怪物種類百科 author:up9cloud-admin lore:給想找虐的人用的...
+      book:boss_list'
+    - '@PLAYER 你獲得了一本書籍...'
+    - '@ADDINT $<this>.total 1'
+    - '@SETSTR $<this>.LOC <triggerloc>'
+    - '@CALL signtext:NewbieBookSign_boss_list'
+  getBook_Residence:
+    Script:
+    - '@COOLDOWN 3'
+    - '@CMDCON give <playername> 387 1 title:&6&l領地教學 author:up9cloud-admin lore:保護自己的財產...
+      book:Residence'
+    - '@PLAYER 你獲得了一本書籍...'
+    - '@ADDINT $<this>.total 1'
+    - '@SETSTR $<this>.LOC <triggerloc>'
+    - '@CALL signtext:NewbieBookSign_Residence'
+  getBook_colors:
+    Script:
+    - '@COOLDOWN 3'
+    - '@CMDCON give <playername> 387 1 title:&6&l彩色文字教學 author:up9cloud-admin lore:給新手用的...
+      book:colors'
+    - '@PLAYER 你獲得了一本書籍...'
+    - '@ADDINT $<this>.total 1'
+    - '@SETSTR $<this>.LOC <triggerloc>'
+    - '@CALL signtext:NewbieBookSign_colors'

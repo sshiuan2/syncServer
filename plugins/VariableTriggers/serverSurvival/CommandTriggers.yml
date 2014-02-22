@@ -1,0 +1,103 @@
+Commands:
+  co:
+    Override: true
+    Script:
+    - '@IF s <playername> = andywawa'
+    - '@AND s <cmdarg:1> = i'
+    - '@CMDOP co i'
+    - '@ENDIF'
+    - '@IF s <playername> = up9cloud-admin'
+    - '@CMD co <cmdline>'
+    - '@ENDIF'
+  tpa:
+    Override: true
+    Script:
+    - '@IF s <cmdarg:1> = null'
+    - '@CMD etpa'
+    - '@ELSE'
+    - '@CMD etpa <cmdarg:1>'
+    - '@ENDIF'
+  tpaccept:
+    Override: true
+    Script:
+    - '@IF s <cmdarg:1> = null'
+    - '@CMD etpaccept'
+    - '@ELSE'
+    - '@CMD etpaccept <cmdarg:1>'
+    - '@ENDIF'
+  tpdeny:
+    Override: true
+    Script:
+    - '@IF s <cmdarg:1> = null'
+    - '@CMD etpdeny'
+    - '@ELSE'
+    - '@CMD etpdeny <cmdarg:1>'
+    - '@ENDIF'
+  tphere:
+    Override: true
+    Script:
+    - '@IF s <cmdarg:1> = null'
+    - '@CMD etphere'
+    - '@ELSE'
+    - '@CMD etphere <cmdarg:1>'
+    - '@ENDIF'
+  back:
+    Override: true
+    Script:
+    - '@IF s <cmdarg:1> = null'
+    - '@CMD eback'
+    - '@ELSE'
+    - '@CMD eback <cmdarg:1>'
+    - '@ENDIF'
+  delhome:
+    Override: true
+    Script:
+    - '@CALL Command:delhome'
+  signedit:
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@CALL Command:signedit'
+  test:
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@CALL Command:test'
+  sign:
+    Override: true
+    Script:
+    - '@CALL Command:sign'
+  broadcast:
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@CALL Command:broadcast'
+  sethome:
+    Override: true
+    Script:
+    - '@CALL Command:sethome'
+  give:
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@CALL Command:give'
+  spawn:
+    Override: true
+    Script:
+    - //@CALL Command:spawn
+    - '@CMDCON mw move <playername> <worldname>'
+  delobj:
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@CALL Command:delobj'
+  getobj:
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@CALL Command:getobj'
+  call:
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@CALL Command:call'

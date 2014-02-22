@@ -1,0 +1,35 @@
+# This is a ScriptFile example.
+# Naming scheme:
+    # Save your script files as fileName.script.yml
+    # do not use periods (.) comma's (,) spaces or any special characters in the
+    # fileName part. All scriptfile's must end with .script.yml
+    # The shorter the name the better.
+
+# Create as many script file as you need, but don't create one for
+# each script. You should spread them out at a 10 to 1 ratio.
+# If you have 30 scripts you should put them in 3 files. if you have
+# 100 scripts put them in 10 files. This is not an rule, just a suggestion.
+
+# DO NOT MODIFY OR DELETE THIS FILE! Just create new ones.
+
+
+# Here is how the scripts are saved. Notice that the two scripts below have the
+# same name except for capitalization, but are seen as two different scripts.
+# Do not use periods (.) comma's (,) spaces or any special characters in the
+# name of a script.
+
+Scripts:
+  TestExample1:
+    Script:
+    - '@PLAYER This is a script line of a script named TestExample1'
+    - '@CALL example:testexample1'
+  testexample1:
+    Script:
+    - '@PLAYER Another script named testexample1'
+    - '@PLAYER Notice that the names are case sensitive'
+    - '@PLAYER A script can have as many lines as needed'
+    
+# You can have two scripts with the exact same name TestExample3 and TestExample3
+# as long as they are in separate scriptfile's.
+
+# DO NOT MODIFY OR DELETE THIS FILE! Just create new ones.

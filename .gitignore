@@ -1,0 +1,6 @@
+test*
+*.log
+*.jar
+*.zip
+world/
+lib/

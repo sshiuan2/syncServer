@@ -1,0 +1,73 @@
+worlds:
+  world:
+    PlotAutoLimit: 2000
+    PathWidth: 11
+    PlotSize: 64
+    BottomBlockId: '7'
+    WallBlockId: '44:4'
+    PlotFloorBlockId: '2'
+    PlotFillingBlockId: '3'
+    RoadMainBlockId: '35:15'
+    RoadStripeBlockId: '43'
+    RoadHeight: 64
+    DaysToExpiration: 180
+    ProtectedBlocks:
+    - 54
+    - 61
+    - 62
+    - 120
+    - 94
+    - 93
+    - 84
+    - 25
+    - 355
+    - 118
+    - 117
+    - 138
+    - 140
+    - 145
+    PreventedItems:
+    - '351:15'
+    - '259'
+    - '328'
+    - '343'
+    - '342'
+    - '333'
+    ProtectedWallBlockId: '0'
+    ForSaleWallBlockId: '85'
+    AuctionWallBlockId: '113'
+    AutoLinkPlots: true
+    DisableExplosion: true
+    DisableIgnition: false
+    economy:
+      UseEconomy: true
+      CanPutOnSale: true
+      CanSellToBank: true
+      RefundClaimPriceOnReset: true
+      RefundClaimPriceOnSetOwner: false
+      ClaimPrice: 150.0
+      ClearPrice: 15.0
+      AddPlayerPrice: 15.0
+      DenyPlayerPrice: 15.0
+      RemovePlayerPrice: 15.0
+      UndenyPlayerPrice: 15.0
+      PlotHomePrice: 0.0
+      CanCustomizeSellPrice: true
+      SellToPlayerPrice: 150.0
+      SellToBankPrice: 0.0
+      BuyFromBankPrice: 10000.0
+      AddCommentPrice: 30.0
+      BiomeChangePrice: 10000.0
+      ProtectPrice: 15.0
+      DisposePrice: 15.0
+usemySQL: true
+mySQLconn: jdbc:mysql://10.0.0.200:3306/PlotMe
+mySQLuname: PlotMe
+mySQLpass: eMtolP
+globalUseEconomy: true
+AdvancedLogging: false
+Language: zh_TW
+allowWorldTeleport: true
+defaultWEAnywhere: true
+auto-update: false
+allowToDeny: true

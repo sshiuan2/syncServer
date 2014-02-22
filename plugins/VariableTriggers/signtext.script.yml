@@ -1,0 +1,167 @@
+Scripts:
+  login:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 &f&l您好！'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l請先登入'
+    - '@SIGNTEXT $<this>.LOC 3 &c&l/login <密碼>'
+    - '@SIGNTEXT $<this>.LOC 4 &0'
+  OreSignCoal:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 $SIGNTEXT.ore1'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l煤礦'
+    - '@SETINT $<this>.CD $CoolDown.COAL_ORE'
+    - '@DIVINT $<this>.CD 60'
+    - '@SIGNTEXT $<this>.LOC 3 &fCD&a&l <var:$<this>.CD> 分'
+    - '@SIGNTEXT $<this>.LOC 4 $SIGNTEXT.ore4'
+  OreSignIron:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 $SIGNTEXT.ore1'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l鐵礦'
+    - '@SETINT $<this>.CD $CoolDown.IRON_ORE'
+    - '@DIVINT $<this>.CD 60'
+    - '@SIGNTEXT $<this>.LOC 3 &fCD&a&l <var:$<this>.CD> 分'
+    - '@SIGNTEXT $<this>.LOC 4 $SIGNTEXT.ore4'
+  OreSignGold:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 $SIGNTEXT.ore1'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l金礦'
+    - '@SETINT $<this>.CD $CoolDown.GOLD_ORE'
+    - '@DIVINT $<this>.CD 60'
+    - '@SIGNTEXT $<this>.LOC 3 &fCD&a&l <var:$<this>.CD> 分'
+    - '@SIGNTEXT $<this>.LOC 4 $SIGNTEXT.ore4'
+  OreSignDiamond:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 $SIGNTEXT.ore1'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l鑽石礦'
+    - '@SETINT $<this>.CD $CoolDown.DIAMOND_ORE'
+    - '@DIVINT $<this>.CD 60'
+    - '@SIGNTEXT $<this>.LOC 3 &fCD&a&l <var:$<this>.CD> 分'
+    - '@SIGNTEXT $<this>.LOC 4 $SIGNTEXT.ore4'
+  OreSignRedstone:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 $SIGNTEXT.ore1'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l紅石礦'
+    - '@SETINT $<this>.CD $CoolDown.REDSTONE_ORE'
+    - '@DIVINT $<this>.CD 60'
+    - '@SIGNTEXT $<this>.LOC 3 &fCD&a&l <var:$<this>.CD> 分'
+    - '@SIGNTEXT $<this>.LOC 4 $SIGNTEXT.ore4'
+  OreSignLapis:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 $SIGNTEXT.ore1'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l青金石礦'
+    - '@SETINT $<this>.CD $CoolDown.LAPIS_ORE'
+    - '@DIVINT $<this>.CD 60'
+    - '@SIGNTEXT $<this>.LOC 3 &fCD&a&l <var:$<this>.CD> 分'
+    - '@SIGNTEXT $<this>.LOC 4 $SIGNTEXT.ore4'
+  OreSignEmerald:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 $SIGNTEXT.ore1'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l綠寶石礦'
+    - '@SETINT $<this>.CD $CoolDown.EMERALD_ORE'
+    - '@DIVINT $<this>.CD 60'
+    - '@SIGNTEXT $<this>.LOC 3 &fCD&a&l <var:$<this>.CD> 分'
+    - '@SIGNTEXT $<this>.LOC 4 $SIGNTEXT.ore4'
+  OreSignQuartz:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 $SIGNTEXT.ore1'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l地獄石英礦'
+    - '@SETINT $<this>.CD $CoolDown.QUARTZ_ORE'
+    - '@DIVINT $<this>.CD 60'
+    - '@SIGNTEXT $<this>.LOC 3 &fCD&a&l <var:$<this>.CD> 分'
+    - '@SIGNTEXT $<this>.LOC 4 $SIGNTEXT.ore4'
+  VoteTreeTest:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 &a&l[投票]'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l這棵樹要不要砍？'
+    - '@SIGNTEXT $<this>.LOC 3 &a是&f/&c否'
+    - '@SIGNTEXT $<this>.LOC 4 &a $<this>.y &f/&c $<this>.n'
+  VoteKillall:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 &a&l[投票]'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l是否要殺光生物？'
+    - '@SIGNTEXT $<this>.LOC 3 &7生物=動物+怪物'
+    - '@SIGNTEXT $<this>.LOC 4 &a $<this>.true &f/&c $<this>.false'
+  VoteKillall_search:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 &a&l[投票查詢]'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l$<this>.title'
+    - '@SIGNTEXT $<this>.LOC 3 &f查詢投過票沒'
+    - '@SIGNTEXT $<this>.LOC 4 &f免得失手！'
+  VoteKillall_p1:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 &f&l理由'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l動物總量有上限'
+    - '@SIGNTEXT $<this>.LOC 3 &f&l被占滿就沒野生'
+    - '@SIGNTEXT $<this>.LOC 4 &f&l需定期清除！'
+  VoteKillall_p2:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 &a&l規則1'
+    - '@SIGNTEXT $<this>.LOC 2 &a&l投票可增快(選是)'
+    - '@SIGNTEXT $<this>.LOC 3 &a&l或減緩(選否)'
+    - '@SIGNTEXT $<this>.LOC 4 &a&l執行的間隔時間'
+  VoteKillall_p3:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 &a&l規則2'
+    - '@SIGNTEXT $<this>.LOC 2 &a&l[否]起始量= $VOTE.VoteKillall_fBase'
+    - '@SIGNTEXT $<this>.LOC 3 &a&l每日-1'
+    - '@SIGNTEXT $<this>.LOC 4 &a&l低於[是]會自動執行'
+  NewbieFreeBread:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 &f&l免費&a&l麵包'
+    - '@SIGNTEXT $<this>.LOC 2 &l好心人至今'
+    - '@SIGNTEXT $<this>.LOC 3 &l已送出...'
+    - '@SIGNTEXT $<this>.LOC 4 &f $<this>.total 個麵包'
+  NewbieBookSign_boss_list:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 $SIGNTEXT.newbieBook1'
+    - '@SIGNTEXT $<this>.LOC 2 &a&l怪物種類百科'
+    - '@SIGNTEXT $<this>.LOC 3 $SIGNTEXT.newbieBook3'
+    - '@SIGNTEXT $<this>.LOC 4 &f $<this>.total 本'
+  NewbieBookSign_newbie_hotkeys:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 $SIGNTEXT.newbieBook1'
+    - '@SIGNTEXT $<this>.LOC 2 &a&l新手教學'
+    - '@SIGNTEXT $<this>.LOC 3 $SIGNTEXT.newbieBook3'
+    - '@SIGNTEXT $<this>.LOC 4 &f $<this>.total 本'
+  NewbieBookSign_colors:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 $SIGNTEXT.newbieBook1'
+    - '@SIGNTEXT $<this>.LOC 2 &a&l彩色文字教學'
+    - '@SIGNTEXT $<this>.LOC 3 $SIGNTEXT.newbieBook3'
+    - '@SIGNTEXT $<this>.LOC 4 &f $<this>.total 本'
+  NewbieBookSign_newbie_commands:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 $SIGNTEXT.newbieBook1'
+    - '@SIGNTEXT $<this>.LOC 2 &a&l指令教學大全'
+    - '@SIGNTEXT $<this>.LOC 3 $SIGNTEXT.newbieBook3'
+    - '@SIGNTEXT $<this>.LOC 4 &f $<this>.total 本'
+  NewbieBookSign_Residence:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 $SIGNTEXT.newbieBook1'
+    - '@SIGNTEXT $<this>.LOC 2 &a&l領地教學'
+    - '@SIGNTEXT $<this>.LOC 3 $SIGNTEXT.newbieBook3'
+    - '@SIGNTEXT $<this>.LOC 4 &f $<this>.total 本'
+  SpeedSign:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 &0'
+    - '@SIGNTEXT $<this>.LOC 2 &a&l跑酷難度切換'
+    - '@SIGNTEXT $<this>.LOC 3 &f&l加速： $<this>.stat'
+    - '@SIGNTEXT $<this>.LOC 4 &0'
+  Shop:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 &a&l[商店]'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l $<this>.name'
+    - '@SIGNTEXT $<this>.LOC 3 &f&lx $<this>.amount'
+    - '@SIGNTEXT $<this>.LOC 4 &a&l共 $<this>.total &a&l元'
+  Warp:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 &5&l[傳送]'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l↓↓↓目的地↓↓↓'
+    - '@SIGNTEXT $<this>.LOC 3 &b&l $<this>.name'
+    - '@SIGNTEXT $<this>.LOC 4 &0'
+  mcMMO_taming_1:
+    Script:
+    - '@SIGNTEXT $<this>.LOC 1 &a&l[mcMMO]招換'
+    - '@SIGNTEXT $<this>.LOC 2 &f&l拿10個物品'
+    - '@SIGNTEXT $<this>.LOC 3 &f&l蹲下+滑鼠左鍵'
+    - '@SIGNTEXT $<this>.LOC 4 &7&l(蘋果,骨頭,魚)'

@@ -1,0 +1,42 @@
+# You can do some cool things with the MBR reward system.
+# If you add a colon (:) to your reward, it will produce a range.
+# Having '28.5:30.0' will produce a reward between those two numbers.
+# If you'd like to make a creature not give a reward, set its value to '0.0'.
+
+# To give a value to a world, give it a format like so:
+# worldnamehere:
+#   creaturenamehere:
+#     value: valueamounthere
+Default:
+  LEASH_HITCH: '0.05:0.25'
+  CREEPER: '0.05:0.25'
+  SKELETON: '0.05:0.25'
+  SPIDER: '0.05:0.25'
+  GIANT: '0.05:0.45'
+  ZOMBIE: '0.05:0.25'
+  SLIME: '0.05:0.25'
+  GHAST: '0.05:0.45'
+  PIG_ZOMBIE: '0.05:0.25'
+  ENDERMAN: '0.05:0.45'
+  CAVE_SPIDER: '0.05:0.25'
+  SILVERFISH: '0.05:0.25'
+  BLAZE: '0.05:0.25'
+  MAGMA_CUBE: '0.05:0.25'
+  ENDER_DRAGON: '0.5:2.5'
+  WITHER: '1.5:4.5'
+  BAT: '0.05:0.25'
+  WITCH: '0.05:0.25'
+  PIG: '0.01:0.05'
+  SHEEP: '0.01:0.05'
+  COW: '0.01:0.05'
+  CHICKEN: '0.01:0.05'
+  SQUID: '0.01:0.05'
+  WOLF: '0.05:0.25'
+  MUSHROOM_COW: '0.01:0.05'
+  SNOWMAN: '0.01:0.05'
+  OCELOT: '0.01:0.05'
+  IRON_GOLEM: '0.05:0.35'
+  HORSE: '0.01:0.05'
+  VILLAGER: '0.01:0.02'
+  PLAYER: '0.01:0.02'
+  UNKNOWN: '0.01:1'

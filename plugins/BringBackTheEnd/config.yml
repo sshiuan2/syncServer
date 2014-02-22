@@ -1,0 +1,16 @@
+# 
+# Bring Back The End Configuration File
+# /re help
+bringbacktheend:
+  logDebug: false
+  autoReset: true
+  interval: 1200
+  tpPlayersAfterTimeout: false
+  dragonAmount: 5
+  saveRate: 300
+  autohookworld: true
+  worldName: world_the_end
+  remainingTicks: 0
+  pendingRebuild: false
+  pendingDragons: 5
+  version: 122

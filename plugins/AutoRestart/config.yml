@@ -1,0 +1,28 @@
+# 
+# +------------------------------------------------------+ #
+# /                  AutoRestart Config                  \ #
+# /                Plugin By Sni_In_A_Box                \ #
+# /      http://dev.bukkit.org/profiles/Rossco5378/      \ #
+# +------------------------------------------------------+ #
+Restart:
+  Time: 93600
+  Message: '&a伺服器正在重啟中...'
+  warn1: '&a[注意] &f5 分鐘後，伺服器將重啟！'
+  warntime1: 300
+  warn2: '&a[注意] &f2 分鐘後，伺服器將重啟！'
+  warntime2: 120
+  warn3: '&a[注意] &f1 分鐘後，伺服器將重啟！'
+  warntime3: 60
+  warn4: '&c[注意] &f伺服器將重啟！ 到數 &a10 &f秒！'
+  warntime4: 10
+  warn5: '&c[注意] &f伺服器將重啟！ 到數 &a5 &f秒！'
+  warntime5: 5
+  warn6: '&c[注意] &f伺服器將重啟！ 到數 &a4 &f秒！'
+  warntime6: 4
+  warn7: '&c[注意] &f伺服器將重啟！ 到數 &a3 &f秒！'
+  warntime7: 3
+  warn8: '&c[注意] &f伺服器將重啟！ 到數 &a2 &f秒！'
+  warntime8: 2
+  warn9: '&c[注意] &f伺服器將重啟！ 到數 &a1 &f秒！'
+  warntime9: 1
+auto-update: false

@@ -1,0 +1,19 @@
+Database:
+  Type: MySQL
+  IRL: 10.0.0.200
+  Database: BungeeSuite
+  Port: '3306'
+  Username: BungeeSuite
+  Password: etiuSeegnuB
+  Host: 10.0.0.200
+  Threads: 5
+TeleportDelay: '100'
+MOTD:
+  Enabled: false
+  message: '&6令人尊敬的 {player} &6歡迎您！'
+NewPlayer:
+  BroadCast: false
+  Broadcast Message: '&c新&d人 &r>>> {player} <<< &d第一次連進九天之上！快去天界堵他！'
+NewPlayerBroadcast: true
+BroadcastProxyConnectionMessages: true
+PlayerDisconnectDelay: 10
