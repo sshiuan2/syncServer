@@ -97,7 +97,7 @@ Database_Purging:
     Purge_Interval: -1
     # Any user who hasn't connected in this many months will be purged from the database
     # To never purge old users, set to -1
-    Old_User_Cutoff: 6
+    Old_User_Cutoff: -1
 
 #
 #  Settings for Backups

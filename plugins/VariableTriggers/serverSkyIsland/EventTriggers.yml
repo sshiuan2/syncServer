@@ -3,4 +3,4 @@ world:
     CoolDown: 0
     Script:
     - '//@CMDOP tp'
-    - '@CMD worldspawn'
+    - '@CMD is spawn'

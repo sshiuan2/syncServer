@@ -5,13 +5,17 @@ if [ -f $varPath ];then source $varPath;
 else echo "source var.sh failed!";exit;fi
 
 sync_var(){
-sed -i "s/^thisServerIp=.*$/thisServerIp=10.0.0.1/g" $varPath
-sed -i "s/^thisServerPort=.*$/thisServerPort=25566/g" $varPath
-sed -i "s/^thisWorldName=.*$/thisWorldName=\"auth\"/g" $varPath
-
-sed -i 's/^session=.*$/session=mc1/g' $varPath
-sed -i 's/^window=.*$/window=1/g' $varPath
-sed -i 's/^pane=.*$/pane=0/g' $varPath
+declare -A sync_var=()
+sync_var[thisServerIp]="10.0.0.1"
+sync_var[thisServerPort]="25566"
+sync_var[thisWorldName]="auth"
+sync_var[session]="mc1"
+sync_var[window]="1"
+sync_var[pane]="0"
+local k
+for k in "${!sync_var[@]}";do
+sed -i "s/^$k=.*$/$k=${sync_var[$k]}/g" $varPath
+done
 }
 sync_world_clean(){
 cd $thisServerPath/$thisWorldName
@@ -20,10 +24,15 @@ cd $thisServerPath/$thisWorldName
 }
 sync_conf(){
 local to=$thisServerPath/server.properties
-sed -i "s/^level-name=.*$/level-name=$thisWorldName/g" $to
-sed -i "s/^server-port=.*$/server-port=$thisServerPort/g" $to
-sed -i "s/^server-name=.*$/server-name=$thisServerName/g" $to
-sed -i 's/^max-players=.*$/max-players=10/g' $to
+declare -A sync_conf=()
+sync_conf[level-name]="$thisWorldName"
+sync_conf[server-port]="$thisServerPort"
+sync_conf[server-name]="$thisServerName"
+sync_conf[max-players]="10"
+local k
+for k in "${!sync_conf[@]}";do
+sed -i "s/^$k=.*$/$k=${sync_conf[$k]}/g" $to
+done
 }
 sync_start(){
 local to=$thisServerPath/start.sh

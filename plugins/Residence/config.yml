@@ -31,13 +31,17 @@ Global:
             use: true
             build: true
             ignite: true
-            firespread: true
+            firespread: false
             damage: true
             creeper: true
             tnt: false
             pvp: false
         WorldNameHere: #here you can set flags for individual worlds, these override Global
             #build: true
+        人界:
+            pvp: true
+        world_the_end:
+            tnt: true
     FlagPermission:
         admin: true
         move: true
@@ -151,7 +155,7 @@ Groups:
 #         - '路人'
        Residence:
            CanCreate: true
-           MaxResidences: 4
+           MaxResidences: 6
            MaxAreasPerResidence: 5
            MaxEastWest: 64
            MaxNorthSouth: 64

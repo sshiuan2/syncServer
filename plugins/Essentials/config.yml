@@ -20,13 +20,13 @@
 ############################################################
 
 # A color code between 0-9 or a-f. Set to 'none' to disable.
-ops-name-color: '4'
+ops-name-color: 'd'
 
 # The character(s) to prefix all nicknames, so that you know they are not true usernames.
-nickname-prefix: '●'
+nickname-prefix: '♥'
 
 # Disable this if you have any other plugin, that modifies the displayname of a user.
-change-displayname: false
+change-displayname: true
 
 # When this option is enabled, the (tab) player list will be updated with the displayname.
 # The value of change-displayname (above) has to be true.
@@ -39,7 +39,7 @@ change-displayname: false
 #add-prefix-suffix: false
 
 # The delay, in seconds, required between /home, /tp, etc.
-teleport-cooldown: 150
+teleport-cooldown: 300
 
 # The delay, in seconds, before a user actually teleports.  If the user moves or gets attacked in this timeframe, the teleport never occurs.
 teleport-delay: 5
@@ -444,7 +444,7 @@ max-money: 10000000000000
 min-money: 0
 
 # Enable this to log all interactions with trade/buy/sell signs and sell command
-economy-log-enabled: false
+economy-log-enabled: true
 
 ############################################################
 # +------------------------------------------------------+ #

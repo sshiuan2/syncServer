@@ -1,0 +1,8 @@
+jails: 
+  j0: 
+    world: world
+    x: 256.5
+    y: 10.0
+    z: 259.5
+    yaw: 0
+    pitch: 0

@@ -11,9 +11,6 @@ TeleportDelay: '100'
 MOTD:
   Enabled: false
   message: '&6令人尊敬的 {player} &6歡迎您！'
-NewPlayer:
-  BroadCast: false
-  Broadcast Message: '&c新&d人 &r>>> {player} <<< &d第一次連進九天之上！快去天界堵他！'
-NewPlayerBroadcast: true
+NewPlayerBroadcast: false
 BroadcastProxyConnectionMessages: true
 PlayerDisconnectDelay: 10

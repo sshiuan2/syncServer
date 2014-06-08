@@ -1,0 +1,6 @@
+Commands:
+  signedit:
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@CALL Command:signedit'

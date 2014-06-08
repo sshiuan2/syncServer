@@ -1,12 +1,12 @@
 Scripts:
   var:
     Script:
-    - '@CALL serverSurvival:SIGNPOINT'
+    - '@CALL serverSurvival:SIGNPOINT_public'
     - '//@CALL serverSurvival:OREPOINT'
     - '//@CALL serverSurvival:PRICE'
     - '//@CALL serverSurvival:ID'
     - '//@CALL serverSurvival:NAME'
-  SIGNPOINT:
+  SIGNPOINT_public:
     Script:
     - '@SETSTR $VAR.this SIGNPOINT'
     - '@CALL var:preDo'
@@ -34,7 +34,10 @@ Scripts:
     - '@SETSTR $SIGNPOINT.publicP<var:$SIGNPOINT.index> 250,68,264'
     - '@ADDINT $SIGNPOINT.index 1'
     - '@SETSTR $SIGNPOINT.publicP<var:$SIGNPOINT.index> END'
-    - '@EXIT'
+  SIGNPOINT_ore:
+    Script:
+    - '@SETSTR $VAR.this SIGNPOINT'
+    - '@CALL var:preDo'
     - '@SETINT $SIGNPOINT.index 1'
     - '@SETSTR $SIGNPOINT.P<var:$SIGNPOINT.index> -95,81,257'
     - '@SETSTR $SIGNPOINT.T<var:$SIGNPOINT.index> OreSignCoal'
@@ -59,7 +62,11 @@ Scripts:
     - '@ADDINT $SIGNPOINT.index 1'
     - '@SETSTR $SIGNPOINT.P<var:$SIGNPOINT.index> -88,81,257'
     - '@SETSTR $SIGNPOINT.T<var:$SIGNPOINT.index> OreSignQuartz'
-    - '@ADDINT $SIGNPOINT.index 1'
+  SIGNPOINT_newbie:
+    Script:
+    - '@SETSTR $VAR.this SIGNPOINT'
+    - '@CALL var:preDo'
+    - '@SETINT $SIGNPOINT.index 1'
     - '@SETSTR $SIGNPOINT.P<var:$SIGNPOINT.index> -93,69,242'
     - '@SETSTR $SIGNPOINT.T<var:$SIGNPOINT.index> NewbieBookSign_newbie_hotkeys'
     - '@ADDINT $SIGNPOINT.index 1'

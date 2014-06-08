@@ -23,50 +23,79 @@ wget_server_jar(){
 local name=$1
 local url=$2
 local uname=`basename $url`
+rm -f $uname
 wget $url
-cp -f $uname $name
+cp -f $uname $name.jar
 }
-function wget_vanilla(){
-wget_vanilla_1_7_4;
+wget_server_vanilla(){
+wget_server_vanilla_1_7_5 minecraft_server;
 }
-function wget_vanilla_1_7_4(){
-cd $thisServerPath
-wget -N https://s3.amazonaws.com/Minecraft.Download/versions/1.7.4/minecraft_server.1.7.4.jar
-cp -f minecraft_server.1.7.4.jar minecraft_server.jar
+wget_server_vanilla_1_7_5(){
+local name=$1
+local url
+url="https://s3.amazonaws.com/Minecraft.Download/versions/1.7.5/minecraft_server.1.7.5.jar"
+wget_server_jar $name $url
 }
-function wget_vanilla_1_7_2(){
-cd $thisServerPath
-rm -f minecraft_server.1.7.2.jar
-wget https://s3.amazonaws.com/Minecraft.Download/versions/1.7.2/minecraft_server.1.7.2.jar
-cp -f minecraft_server.1.7.2.jar minecraft_server.jar
+wget_server_vanilla_1_7_4(){
+local name=$1
+local url
+url="https://s3.amazonaws.com/Minecraft.Download/versions/1.7.4/minecraft_server.1.7.4.jar"
+wget_server_jar $name $url
 }
-function wget_craftbukkit(){
+wget_server_vanilla_1_7_2(){
+local name=$1
+local url
+url="https://s3.amazonaws.com/Minecraft.Download/versions/1.7.2/minecraft_server.1.7.2.jar"
+wget_server_jar $name $url
+}
+wget_server_craftbukkit(){
 #craftbukkit need search newest version on the net
-wget_craftbukkit_1_7_2;
+wget_server_craftbukkit_1_7_5 $@
 }
-function wget_craftbukkit_1_7_2(){
-local name="craftbukkit-dev_1_7_2"
-cd $thisServerPath
-wget -N http://dl.bukkit.org/downloads/craftbukkit/get/02538_1.7.2-R0.4/craftbukkit-dev.jar -O $name.jar
-cp -f $name.jar craftbukkit-dev.jar
-cp -f craftbukkit-dev.jar craftbukkit.jar
+wget_server_craftbukkit_1_7_5(){
+local name=$1
+local url
+url="http://dl.bukkit.org/downloads/craftbukkit/get/02566_1.7.5-R0.1/craftbukkit-dev.jar"
+wget_server_jar $name $url
 }
-function wget_spigot(){
-wget_spigot_latest;
+wget_server_spigot(){
+wget_server_spigot_1_7_5 $@
 }
-function wget_spigot_latest(){
-cd $thisServerPath
-wget -N http://ci.md-5.net/job/Spigot/lastSuccessfulBuild/artifact/Spigot-Server/target/spigot.jar
+wget_server_spigot_latest(){
+local name=$1
+local url
+if [ "$2" == "dev" ];then
+url="http://ci.md-5.net/job/Spigot/lastSuccessfulBuild/artifact/Spigot-Server/target/spigot.jar"
+else
+url="http://ci.md-5.net/job/Spigot/lastSuccessfulBuild/artifact/Spigot-Server/target/spigot.jar"
+fi
+wget_server_jar $name $url
 }
-function wget_spigot_1_7_2(){
-cd $thisServerPath
-wget http://ci.md-5.net/job/Spigot/lastSuccessfulBuild/artifact/Spigot-Server/target/spigot-1.7.2-R0.4-SNAPSHOT.jar
-cp -f spigot-1.7.2-R0.4-SNAPSHOT.jar spigot.jar
+wget_server_spigot_1_7_5(){
+local name=$1
+local url
+if [ "$2" == "dev" ];then
+url="http://ci.md-5.net/job/Spigot/lastSuccessfulBuild/artifact/Spigot-Server/target/spigot-1.7.5-R0.1-SNAPSHOT.jar"
+else
+url="http://ci.md-5.net/job/Spigot/lastSuccessfulBuild/artifact/Spigot-Server/target/spigot-1.7.5-R0.1-SNAPSHOT.jar"
+fi
+wget_server_jar $name $url
 }
-function wget_BungeeCord(){
-cd $thisServerPath
-rm -f BungeeCord.jar
-wget http://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar
+wget_server_spigot_1_7_2(){
+local name=$1
+local url
+url="http://ci.md-5.net/job/Spigot/lastSuccessfulBuild/artifact/Spigot-Server/target/spigot-1.7.2-R0.4-SNAPSHOT.jar"
+wget_server_jar $name $url
+}
+wget_server_BungeeCord(){
+local name=$1
+local url
+if [ "$2" == "dev" ];then
+url="http://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar"
+else
+url="http://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar"
+fi
+wget_server_jar $name $url
 }
 function wget_structuresaver(){
 cd $thisServerPath/plugins
@@ -208,10 +237,19 @@ function wget_Chairs(){
 cd $thisServerPath/plugins
 wget http://dev.bukkit.org/media/files/731/441/Chairs.jar
 }
-function wget_Essentials(){
+wget_plugin_Essentials(){
+local name=$1
+local url
+if [ $2 == "dev" ];then
+echo "this link has java script..need node to dl?"
+url="http://ci.ess3.net/repository/download/bt9/5958:id/Jars/Essentials.jar"
+else
+url="wget http://dev.bukkit.org/media/files/711/777/Essentials.zip"
 cd $thisServerPath/plugins
-wget http://dev.bukkit.org/media/files/711/777/Essentials.zip
+wget $url
 unzip Essentials.zip
+fi
+wget_plugin_jar $name $url
 }
 function wget_ColoredSigns(){
 cd $thisServerPath/plugins
@@ -236,10 +274,11 @@ wget http://dev.bukkit.org/media/files/742/103/PermissionsEx.jar
 wget_plugin_WorldEdit(){
 local name=$1
 local url
-url="http://builds.enginehub.org/job/worldedit/last-successful/download/worldedit-5.5.9-SNAPSHOT.zip"
+url="http://dev.bukkit.org/media/files/782/358/worldedit-5.6.1.jar"
 cd $thisServerPath/plugins
-wget $url
-unzip -jo worldedit*.zip $name.jar
+wget $url -O WorldEdit.jar
+#unzip -jo worldedit*.zip $name.jar
+#url="http://builds.enginehub.org/job/worldedit/last-successful/download/worldedit-5.5.9-SNAPSHOT.zip"
 #wget http://dev.bukkit.org/media/files/715/447/worldedit-5.5.7.jar -O WorldEdit.jar
 }
 function wget_AsyncWorldEdit(){
@@ -355,9 +394,16 @@ function wget_CoreProtect(){
 cd $thisServerPath/plugins
 wget http://dev.bukkit.org/media/files/715/374/CoreProtect_2.0.8.jar -O CoreProtect.jar
 }
-function wget_WorldBorder(){
+wget_plugin_WorldBorder(){
 cd $thisServerPath/plugins
-wget http://dev.bukkit.org/media/files/718/250/WorldBorder.jar
+local name=$1
+local url
+if [ "$2" == "dev" ];then
+url=http://dev.bukkit.org/media/files/775/280/WorldBorder.jar
+else
+url=http://dev.bukkit.org/media/files/775/280/WorldBorder.jar
+fi
+wget_plugin_jar $name $url
 }
 function wget_Residence(){
 cd $thisServerPath/plugins
@@ -374,7 +420,7 @@ cd $thisServerPath/plugins
 rm $name.jar
 wget http://dev.bukkit.org/media/files/770/208/Vault.jar
 }
-function wget_iConomy(){
+wget_plugin_iConomy(){
 cd $thisServerPath/plugins
 wget http://dev.bukkit.org/media/files/584/551/iConomy.jar
 }
@@ -384,11 +430,15 @@ wget http://dev.bukkit.org/media/files/689/596/MobBountyReloaded_v376.zip
 unzip MobBountyReloaded_v376.zip
 mv MobBountyReloaded_v376.jar MobBountyReloaded.jar
 }
-wget_mcMMO(){
-local to=$thisServerPath/plugins
-cd $to
-#wget http://dev.bukkit.org/media/files/748/895/mcMMO.jar
-wget -N http://ci.ecocitycraft.com/job/mcMMO/lastSuccessfulBuild/artifact/target/mcMMO.jar
+wget_plugin_mcMMO(){
+local name=$1
+local url
+if [ "$2" == "dev" ];then
+url="http://ci.md-5.net/job/mcMMO-dev/lastSuccessfulBuild/artifact/target/mcMMO.jar"
+else
+url="http://ci.md-5.net/job/mcMMO/lastSuccessfulBuild/artifact/target/mcMMO.jar"
+fi
+wget_plugin_jar $name $url
 }
 function wget_HealthBar(){
 #http://dev.bukkit.org/bukkit-plugins/health-bar/
@@ -415,4 +465,24 @@ wget -N http://dev.bukkit.org/media/files/691/599/GriefPrevention.jar
 function wget_KillerMoney(){
 cd $thisServerPath/plugins
 wget -N http://dev.bukkit.org/media/files/766/430/KillerMoney.jar
+}
+wget_plugin_SuperCensor(){
+local name=$1
+local url
+if [ "$2" == "dev" ];then
+url="http://dev.bukkit.org/media/files/769/295/SuperCensor.jar"
+else
+url="http://dev.bukkit.org/media/files/769/295/SuperCensor.jar"
+fi
+wget_plugin_jar $name $url
+}
+wget_plugin_ChatControl(){
+local name=$1
+local url
+if [ "$2" == "dev" ];then
+url="http://www.spigotmc.org/resources/chatcontrol.271/download?version=1388"
+else
+url="http://www.spigotmc.org/resources/chatcontrol.271/download?version=1388"
+fi
+wget_plugin_jar $name $url
 }

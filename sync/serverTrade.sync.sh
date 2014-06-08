@@ -9,7 +9,8 @@ sed -i "s/^thisServerIp=.*$/thisServerIp=10.0.0.3/g" $varPath
 sed -i "s/^thisServerPort=.*$/thisServerPort=25565/g" $varPath
 
 #sed -i "s/^thisWorldName=.*$/thisWorldName=\"trade\"/g" $varPath
-sed -i "s/^thisWorldName=.*$/thisWorldName=\"Qwhite\"/g" $varPath
+#sed -i "s/^thisWorldName=.*$/thisWorldName=\"Qwhite\"/g" $varPath
+sed -i "s/^thisWorldName=.*$/thisWorldName=\"moha\"/g" $varPath
 
 sed -i 's/^session=.*$/session=mc3/g' $varPath
 sed -i 's/^window=.*$/window=1/g' $varPath
@@ -30,6 +31,8 @@ sed -i 's/^gamemode=.*$/gamemode=1/g' $to
 
 sed -i 's/^max-players=.*$/max-players=5/g' $to
 sed -i 's/^spawn-protection=.*$/spawn-protection=100000/g' $to
+
+sed -i 's/^white-list=.*$/white-list=true/g' $to
 }
 sync_start(){
 local to=$thisServerPath/start.sh
@@ -39,6 +42,7 @@ sed -i 's/^local Xmx=.*$/Xmx=512M/g' $to
 sync_op(){
 local to=$thisServerPath/ops.txt
 echo "sp-bonebonekai" >> $to
+echo "O0oO0o0Oo0O" >> $to
 }
 sync_var;
 source_all;
@@ -52,6 +56,7 @@ scp_getServer spigot;
 sync_conf;
 sync_op;
 
+scp_getPlugin SuperCensor
 scp_getPlugin VariableTriggers;
 scp_getPlugin BungeeSuiteWarps;
 #scp_getPlugin TeleportSigns;

@@ -2,13 +2,7 @@ Commands:
   co:
     Override: true
     Script:
-    - '@IF s <playername> = andywawa'
-    - '@AND s <cmdarg:1> = i'
-    - '@CMDOP co i'
-    - '@ENDIF'
-    - '@IF s <playername> = up9cloud-admin'
-    - '@CMD co <cmdline>'
-    - '@ENDIF'
+    - '@CALL Command:co'
   tpa:
     Override: true
     Script:
@@ -101,3 +95,21 @@ Commands:
     Permission: vtriggers.admin
     Script:
     - '@CALL Command:call'
+  mute:
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@CALL Command:mute'
+  res:
+    Override: true
+    Script:
+    - '@IF s <worldname> = world_the_end'
+    - '@AND s <cmdarg1> = tp'
+    - '  @PLAYER 挑戰終界禁止使用領地傳送喔！^^'
+    - '@ELSE'
+    - '  @CMD res <cmdline>'
+    - '@ENDIF'
+  jail:
+    Override: true
+    Script:
+    - '@CALL Command:jail'

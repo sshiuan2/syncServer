@@ -11,9 +11,9 @@ sync_var[thisServerPort]="25565"
 sync_var[session]="mc4"
 sync_var[window]="0"
 sync_var[pane]="0"
-local i
-for i in "${!sync_var[@]}";do
-sed -i "s/^$i=.*$/$i=${sync_var[$i]}/g" $varPath
+local k
+for k in "${!sync_var[@]}";do
+sed -i "s/^$k=.*$/$k=${sync_var[$k]}/g" $varPath
 done
 }
 sync_conf(){
@@ -42,7 +42,7 @@ sed -i 's/^level-type=.*$/level-type=AMPLIFIED/g' $to
 sync_start(){
 local to="$thisServerPath/start.sh"
 sed -i 's/^local Xms=.*$/Xms=64M/g' $to
-sed -i 's/^local Xmx=.*$/Xmx=1G/g' $to
+sed -i 's/^local Xmx=.*$/Xmx=512M/g' $to
 sed -i 's/^local ParallelGCThreads=.*$/ParallelGCThreads=1/g' $to
 }
 sync_var;

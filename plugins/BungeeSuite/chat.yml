@@ -1,4 +1,4 @@
-Log chat to console: false
+Log chat to console: true
 Strip color from log: true
 MutePrivateMessages: true
 NicknameLengthLimit: 16

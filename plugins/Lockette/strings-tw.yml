@@ -5,13 +5,13 @@ version: 0
 alternate-private-tag: 私人
 alternate-moreusers-tag: 更多使用者
 alternate-everyone-tag: 所有玩家
-alternate-operators-tag: Operators
+alternate-operators-tag: 管理員
 alternate-timer-tag: 限秒
-alternate-fee-tag: 費用
+alternate-fee-tag: 收費
 msg-user-conflict-door: 門衝突已移除
 msg-user-illegal: 不合法箱子已移除
 msg-user-resize-owned: 你無法改變 *** 的箱子大小
-msg-help-chest: 放置一個[私人]告示牌，鎖住箱子
+msg-help-chest: 在箱子上貼一個[私人]告示牌，鎖住箱子
 msg-owner-release: 你解鎖了容器
 msg-admin-release: (Admin) @@@ 嘗試破壞 *** 的容器
 msg-user-release-owned: 你無法解鎖 *** 的容器
@@ -19,11 +19,11 @@ msg-owner-remove: 你移除了一個使用者
 msg-user-remove-owned: 你無法移除 *** 容器的使用者
 msg-user-break-owned: 你無法破壞 *** 的容器
 msg-user-denied-door: 你沒有權限開此扇門
-msg-user-touch-fee: '因打開付給 *** 共 ### 費用'
-msg-user-touch-owned: '*** 宣告擁有此容器'
-msg-help-select: 告示牌已選擇，編輯請輸入 /lockette <行數> <內容>
+msg-user-touch-fee: '支付給 *** 共 ### 費用'
+msg-user-touch-owned: '*** 擁有此容器'
+msg-help-select: 告示牌已選擇，編輯請輸入/lockette <行> <內容>
 msg-admin-bypass: 打開了 *** 擁有的門，記得隨手關門
-msg-admin-snoop: (Admin) @@@ 嘗試偷看 *** 的容器內容物
+msg-admin-snoop: (Admin) @@@ 檢查 *** 的容器內容物
 msg-user-denied: 你沒有權限打開此容器
 msg-error-zone: 此區域由 *** 保護
 msg-error-permission: 容器上鎖被系統拒絕
@@ -35,7 +35,7 @@ msg-owner-claim: 你宣告了容器所有權
 msg-error-adduser-owned: 你無法在 *** 的容器上增加使用者
 msg-error-adduser: 附近無任何有所有權的容器可以增加使用者
 msg-owner-adduser: 你新增了使用者
-msg-help-command1: '&C編輯告示牌，右鍵點擊並輸入 /lockette <行數> <內容>'
+msg-help-command1: '&C編輯告示牌，右鍵點擊並輸入 /lockette <行> <內容>'
 msg-help-command2: '&C修正自動門錯位，對著門並輸入 /lockette fix'
 msg-help-command3: '&C(Operators) 重新讀取設定，輸入 /lockette reload'
 msg-help-command4: '&C查看Lockette版本，輸入 /lockette version'

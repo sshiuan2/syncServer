@@ -1,0 +1,46 @@
+# SuperCensor by Wruczek - all rigist is reserved. Plugin website: dev.bukkit.org/server-mods/SuperCensor
+
+# You can color messages in all SuperCensor configuration files using color codes.
+# If you color message, add ' at the start and end of message
+# How color messages: char & and char a-f or 0-9
+# Example: '&aHello!'
+# List of color codes: http://wiki.ess3.net/mc/
+
+Reloading: '&aReloading...'
+Reload: '&aConfig reloaded!'
+Permissions: '&6[&eSuperCensor&6] &cYou don`t have permissions to use this command'
+CommandNotFound: '&6[&eSuperCensor&6] &cUnknown command! &aType:&6 /sc &afor list commands'
+Console: '[SC] Only player can use a SuperCensor commands.'
+
+CannotWrite: '&6[&eSC&6] &cChat has been disabled! You cannot write!'
+
+SlowChat:
+  Enabled: true
+  Time: 1
+  Message: '&7你說話太快了！要慢慢說別人才聽的清楚喔！要乖乖。'
+
+# !!!> IT NOT WORKING! <!!!
+# Define the mode in which the plugin will work.
+# Mode 1: Plugin will check only words in the message
+# Mode 2: Plugin will check all letters in the message
+Mode: 2
+# ===========================
+
+#Use %player% to define, who enabled or disabled the chat
+BroadcastOnChatEnable: true
+BroadcastOnChatDisable: true
+MessageDisplayerWhenChatHasBeenEnabled: '&6[&eSuperCensor&6] &aChat has been enabled by &f%player%'
+MessageDisplayerWhenChatHasBeenDisabled: '&6[&eSuperCensor&6] &eChat has been disabled by &f%player%'
+
+# Use %clearer% to define who clear the chat
+Clear:
+  Clear-own: '&6[&eSuperCensor&6] &bYou have clear you own chat'
+  Clear-global: '&6[&eSuperCensor&6] &bChat has been cleared by &6%clearer%'
+  Clear-global success: '&6[&eSuperCensor&6] &bYou have successful clear chat online players'
+  Notification: '&6[&eSuperCensor&6] &ePlayer %clearer% has clear the chat, but you have been exempt from this action, and your chat has not been cleared.'
+
+Check for updates:
+  Enabled: false
+  Check on enable: true
+  Automatic download: true
+  Inform on admin join: true

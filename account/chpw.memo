@@ -1,0 +1,30 @@
+html layout(填空)
+username [?]
+old pw [?]
+new pw [?]
+new pw confirm [?]
+[submit] [cancel]
+
+先js confirm 
+new pw==new pw confirm
+username格式正確
+
+sv撈資料
+SELECT `id`,`username`,`password`,`email` FROM `users` WHERE `username`=?
+mp5(old pw)==`password`
+
+if 1
+?=md5(new pw)
+UPDATE `users` SET `password`=? WHERE `username`=?
+
+if(!empty(email)){
+success
+}
+else{
+success && 引導填資料
+}
+
+else
+exception && do forgetpw
+
+fail

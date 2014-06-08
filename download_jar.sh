@@ -8,54 +8,61 @@ else echo "source var.sh failed!";exit;fi
 source_all;
 
 default(){
-wget_vanilla
-wget_craftbukkit
-wget_BungeeCord
-wget_spigot
+local servers=(
+vanilla
+craftbukkit
+BungeeCord
+spigot
+)
+local s
+for s in ${servers[@]};do
+wget_server $s
+done
 
-purgePlugins
+local plugins=(
+AuthMe
+PermissionsEx
+WorldEdit
 
-wget_structuresaver
-wget_BungeeSuite
-wget_AutoMessage
-wget_AuthMe
-wget_VariableTriggers
-wget_Lockette
-wget_ClearLag
-wget_CraftBukkitUpToDate
-wget_AutoSaveWorld
-wget_AutoRestart
-wget_AntiCheat
-wget_Chairs
-wget_Essentials
-wget_ColoredSigns
-wget_ChatColors
-wget_ColoredTexts
-wget_DeathMessages
-wget_PermissionsEx
-wget_WorldEdit
-wget_AsyncWorldEdit
-wget_dynmap
-wget_TeleportSigns
-wget_ServerSigns
-wget_Multiverse-Core
-wget_multiworld
-wget_PlotMe
-wget_IslandWorld
-wget_BringBackTheEnd
-wget_Backbone
-wget_Quicksand
-wget_CoreProtect
-wget_WorldBorder
-wget_Residence
-fix_Residence
-wget_Flags
-wget_Vault
-wget_iConomy
-wget_MobBountyReloaded
-wget_mcMMO
-wget_HealthBar
-wget_EpicBossRecoded
+VariableTriggers
+BungeeSuite
+TeleportSigns
+
+Essentials
+
+ColoredSigns
+ChatColors
+
+DeathMessages
+
+MultiWorld
+BringBackTheEnd
+
+PlotMe
+IslandWorld
+Backbone
+Quicksand
+
+Lockette
+Residence
+CoreProtect
+AutoSaveWorld
+WorldBorder
+
+"dynmap all"
+
+Vault
+iConomy
+KillerMoney
+
+mcMMO
+HealthBar
+EpicBossRecoded
+)
+local p
+for p in ${plugins[@]};do
+wget_plugin $p
+done
 }
 
 case "$1" in

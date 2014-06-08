@@ -50,6 +50,7 @@ sync_conf;
 scp_getPlugin VariableTriggers;
 scp_getPlugin TeleportSigns;
 scp_getPlugin BungeeSuiteWarps;
+scp_getPlugin SuperCensor;
 
 scp_getPlugin IslandWorld; #must need world edit
 sync_IslandWorld;

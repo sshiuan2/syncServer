@@ -1,0 +1,5 @@
+world:
+  Join:
+    CoolDown: 1
+    Script:
+    - '@CMDOP tp -166 5 -488'

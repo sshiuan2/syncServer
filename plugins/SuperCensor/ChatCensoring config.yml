@@ -1,0 +1,44 @@
+# ======= ChatCensoring configuration file =======
+Enabled: true
+SendMessage: true
+Message: '&7你輸入了禁止的關鍵字！請再檢查一次！Q_Q要乖乖！'
+SendMessageToAdmins: true
+MessageToAdmins: '&e[&aSuperCensor&e] &6Player &b%playername%&6 wanted to swear. Message: &r%message%.'
+CheckCommands: true
+
+# This sound has been played when player are swearing
+# List of Minecraft sounds: http://jd.bukkit.org/rb/apidocs/org/bukkit/Sound.html
+Sound:
+  Enabled: true
+  Sound: GHAST_SCREAM
+  Pitch: 1.0
+  Volume: 1.0
+
+# What commands should be checked?
+CheckedCommands:
+  - msg
+  - emsg
+  - m
+  - whisper
+  - ewhisper
+  - w
+  - reply
+  - ereply
+  - er
+  - r
+  - rc
+  - tell
+  - etell
+  - t
+  - pm
+  - party
+  - p
+  - helpop
+  - mail
+  - email
+# You can use "%player%", to define player`s name.
+Run commands:
+  Enabled: false
+  Commands:
+    - example command 1
+    - example command 2

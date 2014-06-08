@@ -1,11 +1,17 @@
 #!/bin/bash
 #for server 1.7 or newer
-varPath="function/var.sh"
-if [ -f $varPath ];then	source $varPath;
-else echo "source var.sh failed!";exit;fi
+thisPwd="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+varPath="$thisPwd/function/var.sh"
+if [ -f $varPath ];then source $varPath;
+else echo "source var.sh failed!";exit 2;fi
 
 main(){
+local chatRegex="\[Server[^ ]\|\[Async Chat Thread\|command: \/\(m\|msg\|tell\|t\|w\|r\|p\|rc\) "
 local dir=$thisServerPath/logs
+if [ ! -d $dir ];then
+echo "logs folder not exist."
+exit 2
+fi
 
 case $1 in
 	all)

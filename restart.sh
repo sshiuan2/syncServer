@@ -7,7 +7,14 @@ else echo "source var.sh failed!";exit;fi
 source $varDir/tmux.sh
 
 main(){
-local delay=30
-tmux_sendkey_restart "$session:$window.$pane" $delay;
+local target="$session:$window.$pane"
+local delay
+local type=$1
+if [ "$type" == "proxy" ];then
+delay=10
+else
+delay=30
+fi
+tmux_sendkey_restart $target $delay $type;
 }
-main
+main $@

@@ -59,7 +59,7 @@ System:
 
   # Logs all monetary transactions passed through iConomy
   Logging:
-    Enabled: false
+    Enabled: true
 
   # Purges Default Balances at Loading
   # Good way to keep unused accounts or default accounts wiped out and lower database usage.

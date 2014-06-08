@@ -19,10 +19,14 @@ worlds:
     worldgen: Normal
     options: ''
     difficulty: 3
-    autoload: true
+    autoload: false
     flags:
       SPAWNMONSTER: false
       SPAWNANIMAL: false
+      PVP: true
+      REMEMBERSPAWN: false
+      RECIEVECHAT: false
+      SENDCHAT: false
   world:
     seed: 5940251458428313362
     worldgen: Normal
@@ -31,15 +35,3 @@ worlds:
     autoload: true
     flags:
       PVP: true
-  world_nether:
-    seed: 1272720270528574572
-    worldgen: Nether
-    options: ''
-    difficulty: 3
-    autoload: true
-  world_the_end:
-    seed: 1272720270528574572
-    worldgen: The_End
-    options: ''
-    difficulty: 3
-    autoload: true

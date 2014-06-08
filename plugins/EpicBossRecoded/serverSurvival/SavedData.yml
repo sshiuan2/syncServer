@@ -1,0 +1,16 @@
+Location:
+- spawn_left:world:289:66:262
+- spawn_boat_bed:world:61:67:302
+- spawn_boat_boiler:world:60:58:312
+- spawn_rainbow:world:144:69:258
+Timers:
+- spawn_zombieking_b1:殭屍巨人首領:spawn_left:7200
+- spawn_zombieking_s1:殭屍巨人王:spawn_left:3600
+- spawn_zombieking_s2:殭屍巨人王:spawn_left:3600
+- spawn_zombieking_s3:殭屍巨人王:spawn_left:3600
+- spawn_zombieking_s4:殭屍巨人王:spawn_left:3600
+- spawn_slimeking_1:史萊姆首領:spawn_boat_bed:5400
+- spawn_slimeking_f1:史萊姆女首領:spawn_boat_boiler:3600
+- spawn_ghastking:飛天水母王:spawn_rainbow:3600
+Bosses:
+- 噴火牛:100:world:-1564:66:-260:null

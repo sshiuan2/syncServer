@@ -33,9 +33,9 @@ $path/upload.sh
 }
 sync_conf(){
 local to=$thisServerPath/server.properties
-sed -i "s/^level-name=$/level-name=$thisWorldName/g" $to
-sed -i "s/^server-port=$/server-port=$thisServerPort/g" $to
-sed -i "s/^server-name=$/server-name=up9cloud - $thisServerName/g" $to
+sed -i "s/^level-name=.*$/level-name=$thisWorldName/g" $to
+sed -i "s/^server-port=.*$/server-port=$thisServerPort/g" $to
+sed -i "s/^server-name=.*$/server-name=up9cloud - $thisServerName/g" $to
 sed -i 's/^enable-command-block=.*$/enable-command-block=true/g' $to
 
 sed -i 's/^spawn-animals=.*$/spawn-animals=true/g' $to
@@ -46,7 +46,6 @@ sed -i 's/^spawn-monsters=.*$/spawn-monsters=true/g' $to
 sed -i 's/^difficulty=.*$/difficulty=3/g' $to
 sed -i 's/^pvp=.*$/pvp=true/g' $to
 
-sed -i "s/^op-permission-level=$/op-permission-level=4/g" $to
 sed -i "s/^level-type=.*$/level-type=FLAT/g" $to
 sed -i 's/^gamemode=.*$/gamemode=1/g' $to
 sed -i 's/^force-gamemode=.*$/force-gamemode=true/g' $to
@@ -54,6 +53,7 @@ sed -i 's/^force-gamemode=.*$/force-gamemode=true/g' $to
 sed -i 's/^max-players=.*$/max-players=8/g' $to
 #sed -i 's/^spawn-protection=.*$/spawn-protection=500/g' $to
 
+sed -i "s/^op-permission-level=.*$/op-permission-level=2/g" $to
 sed -i 's/^white-list=.*$/white-list=true/g' $to
 
 sync_conf_spigot;
@@ -75,11 +75,17 @@ echo "in91andy" >> $to
 echo "sp-kenny" >> $to
 echo "SmallWawa" >> $to
 echo "XianGerWu" >> $to
-echo "A129lau" >> $to
+#echo "A129lau" >> $to #black list send items to survival server...
 echo "sp-bonebonekai" >> $to
 echo "sp-byebyron" >> $to
 echo "andywawa" >> $to
+echo "susanwawa" >> $to
 echo "jam09jam" >> $to
+echo "bonr_maximum" >> $to
+echo "Shiaobin" >> $to
+echo "sp-moha" >> $to
+echo "OZ_00MS" >> $to
+echo "carlccc0911" >> $to
 sync_whitelist
 }
 sync_whitelist(){

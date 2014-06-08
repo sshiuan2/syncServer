@@ -11,9 +11,9 @@ source $varDir/color.sh
 
 main(){
 #dont change, otherwise sed command will not work
-local Xms=64M
-local Xmx=512M
-local ParallelGCThreads=1
+local Xms=$javaXms
+local Xmx=$javaXmx
+local ParallelGCThreads=$javaParallelGCThreads
 local MaxGCPauseMillis=500
 local SurvivorRatio=16
 local UseSSE=3
@@ -56,17 +56,14 @@ local arg
 local a
 echo -n "載入參數: "
 for a in ${argArray[@]};do
-#for ((i=0; i<${#argArray[@]}; i++)); do
   arg="${arg}${a} "
-#{argArray[$i]}"
   echo -n "$a "
-#{argArray[$i]} "
 done
 echo ""
 local jar=
 
 msg_startServer;
 cd $thisServerPath
-java $arg -jar $jar nogui
+java $arg -jar $thisServerPath/$jar nogui
 }
 main

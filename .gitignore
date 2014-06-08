@@ -1,6 +1,10 @@
 test*
+*.class
 *.log
 *.jar
 *.zip
 world/
 lib/
+*.secret
+secret.*
+plugins/WorldEdit/schematics

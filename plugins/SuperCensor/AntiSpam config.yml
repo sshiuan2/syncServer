@@ -1,0 +1,39 @@
+# ======= AntiSpam configuration file =======
+
+ChatAntiSpam:
+  Enabled: true
+  SendMessage: true
+  Message: '&7不能一直說同樣的話喔！要乖乖！'
+  SendMessageToAdmins: true
+  MessageToAdmins: '&e[&aSuperCensor&e] &6Player &b%player%&6 wanted to spam on chat. He typed: &r%message%&r.'
+
+CommandAntiSpam:
+  Enabled: false
+  SendMessage: true
+  Message: '&6[&eSC&6]&b Please stop spamming commands!'
+  SendMessageToAdmins: true
+  MessageToAdmins: '&e[&aSuperCensor&e] &6Player &b%player%&6 wanted to spam using commands. He typed: &r%message%&r.'
+  #This function not work on this commands.
+  Extemped commands:
+    Enabled: true
+    Extemped commands:
+      - login
+      - register
+      - tell
+      - msg
+      - w
+
+# This sound has been played when player are swearing
+# List of Minecraft sounds: http://jd.bukkit.org/rb/apidocs/org/bukkit/Sound.html
+Sound:
+  Enabled: true
+  Sound: GHAST_SCREAM
+  Pitch: 1.0
+  Volume: 1.0
+
+# You can use "%player%", to define player`s name and "%message%" - to define message.
+Run commands:
+  Enabled: false
+  Commands:
+    - example command 1
+    - example command 2

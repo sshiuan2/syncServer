@@ -28,7 +28,17 @@ sed -i 's/^max-players=.*$/max-players=10/g' $to
 sync_start(){
 local to=$thisServerPath/start.sh
 sed -i 's/^local Xms=.*$/Xms=64M/g' $to
-sed -i 's/^local Xmx=.*$/Xmx=1G/g' $to
+sed -i 's/^local Xmx=.*$/Xmx=768M/g' $to
+}
+sync_killall(){
+local i
+#/butcher : Kills all hostile mobs
+#/butcher -p : also kills pets.
+#/butcher -n : also kills NPCs.
+#/butcher -g : also kills Golems.
+#/butcher -a : also kills animals.
+#/butcher -f : compounds all previous flags.
+#/butcher -l : strikes lightning on each killed mob.
 }
 sync_var;
 source_all;

@@ -18,29 +18,46 @@ tmux_sendkey_restart(){
 local target=$1
 
 local pre_delay=0
-local delay=$2
-if [ $2 == "" ];then local delay=300;fi
-local sub_delay=30
+local delay
+if [ $2 == "" ];then
+delay=300
+else
+delay=$2
+fi
+local sub_delay=0
 
 local argv=()
+local pre_msg
+local cmd
+local cmd_end
+local type=$3
+if [ "$type" == "proxy" ];then
+pre_msg="Proxy Auto Restart:"
+cmd=alert
+cmd_end=end
+else
+pre_msg="Auto Restart:"
+cmd=say
+cmd_end=stop
+fi
 
-argv+=("say Auto Restart:" 1)
+argv+=("$cmd $pre_msg" 1)
 while (($delay > 0));do
 if (( $(($delay - 60)) >= "60" ));then
-argv+=("say ${delay}s" 60)
+argv+=("$cmd ${delay}s" 60)
 delay=$(($delay - 60))
 elif (( $(($delay - 30)) >= "30" ));then
-argv+=("say ${delay}s" 30)
+argv+=("$cmd ${delay}s" 30)
 delay=$(($delay - 30))
 elif (( $(($delay - 10)) >= "10" ));then
-argv+=("say ${delay}s" 10)
+argv+=("$cmd ${delay}s" 10)
 delay=$(($delay - 10))
 else
-argv+=("say ${delay}s" 1)
+argv+=("$cmd ${delay}s" 1)
 delay=$(($delay - 1))
 fi
 done
-argv+=("stop")
+argv+=("$cmd_end")
 sleep $pre_delay
 
 for ((i=0; i<${#argv[@]}; i++)); do
@@ -52,8 +69,4 @@ tmux send-key -t $target enter "${argv[$i]}" enter
 done
 
 sleep $sub_delay
-}
-tmux_sendkey_tailMsgLog(){
-local target=$1
-tmux send-key -t $target C-c enter "$thisServerPath/logsChat.sh last" enter
 }

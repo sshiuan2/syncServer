@@ -24,7 +24,7 @@ scp $from/$name.jar $to/$name.jar
 }
 scp_getWorld(){
 local name=$1
-scp_getWorld_$1 $@
+scp_getWorld_$name $@
 }
 scp_getWorld_region_0_0_spawn(){
 local name=$1
@@ -128,14 +128,15 @@ scp $syncServerScpPath/${f} $thisServerPath/${f}
 done
 #scp_getController_gc_on
 }
-function scp_getController_gc_on(){
-cd $thisServerPath
+scp_getController_gc_on(){
+local to=$thisServerPath/start.sh
 #開啟gc顯示
-sed -i '/argArray=(/a \-verbosegc' start.sh
-sed -i '/argArray=(/a \-Xloggc:gc.log' start.sh
-echo 'Restarted' >> gc.log.old
-echo `date +"%F %T"` >> gc.log.old
-cat gc.log >> gc.log.old
+sed -i '/argArray=(/a \-verbosegc' $to
+sed -i '/argArray=(/a \-Xloggc:gc.log' $to
+to=$thisServerPath/gc.log
+echo 'Restarted' >> $to
+echo `date +"%F %T"` >> $to
+cat $to >> $to.0
 }
 scp_getPlugin_BungeeSuite(){
 local name=$1
@@ -263,7 +264,8 @@ scp_getPlugin_iConomy(){
 local name=$1
 local from=$syncServerScpPath/plugins/$name
 local to=$thisServerPath/plugins/$name
-scp -r $from $to/../
+scp $from/Config.yml $to
+scp $from/Template.yml $to
 scp -r $syncServerScpPath/lib $thisServerPath
 }
 scp_getPlugin_WorldBorder(){
@@ -279,6 +281,7 @@ local to=$thisServerPath/plugins/$name
 scp $from/*.sh $to
 scp $from/*.yml $to
 scp $from/*.xml $to
+scp -r $from/schematics $to
 scp -r $from/$thisServerName $to
 scp_getPlugin_IslandWorld_restore $name
 }
@@ -319,12 +322,14 @@ scp_getPlugin_Essentials_restore $name
 }
 scp_getPlugin_Essentials_restore(){
 local name=$1
+local f=jail.yml
 local d=userdata
 local from=$thisServerPath/plugins_backup/$name
 local to=$thisServerPath/plugins/$name
+if [ -f $from/$f ];then
+mv $from/$f $to
+fi
 if [ ! -d $from/$d ];then
-mkdir -p $thisServerPath/plugins_backup
-mkdir -p $from
 mkdir -p $from/$d
 fi
 ln -s $from/$d $to/$d
@@ -449,11 +454,11 @@ scp -r $from $to/..
 }
 scp_getPlugin_BringBackTheEnd(){
 local name=$1
-local world=$2
+local f=config.yml
 local from=$syncServerScpPath/plugins/$name
 local to=$thisServerPath/plugins/$name
-scp $from/config.yml $to/config.yml
-sed -i "s/\  worldName:.*$/\  worldName: $world/g" $to/config.yml
+scp $from/$f $to
+sed -i "s/\  worldName:.*$/\  worldName: $thisWorldNameTheEnd/g" $to/$f
 }
 scp_getPlugin_Residence(){
 local name=$1
@@ -514,4 +519,15 @@ local from=$syncServerScpPath/plugins/$name
 local to=$thisServerPath/plugins/$name
 scp $from/$thisServerName.config.yml $to/config.yml
 scp $from/upload.sh $to/upload.sh
+}
+scp_getPlugin_SuperCensor(){
+local name=$1
+local from=$syncServerScpPath/plugins/$name
+local to=$thisServerPath/plugins/$name
+scp $from/*.yml $to
+}
+scp_getPlugin_ChatControl(){
+local name=$1
+local from=$syncServerScpPath/plugins/$name
+local to=$thisServerPath/plugins/$name
 }

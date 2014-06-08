@@ -26,7 +26,7 @@ statistics:
   average: '<gray>平均 +currency: <white>+amount'
   accounts: '<gray>帳戶總額: <white>+amount'
 interest:
-  announcement: <green>收到 <white> +amount
+  announcement: '<green>收到 <white>+amount'
 accounts:
   empty: <rose>已刪除 <white>所有<rose> 帳戶
   purge: <rose>已清除所有閒置的帳戶

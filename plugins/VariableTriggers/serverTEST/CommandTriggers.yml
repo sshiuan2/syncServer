@@ -14,3 +14,7 @@ Commands:
     Permission: vtriggers.admin
     Script:
     - '@PLAYER please execute in console'
+  spawn:
+    Override: true
+    Script:
+    - '@CMD tp 256 68 256'

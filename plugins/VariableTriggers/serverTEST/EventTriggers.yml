@@ -2,7 +2,8 @@ world:
   Join:
     CoolDown: 0
     Script:
-    - '@PLAYER &f-----測試服的OP，請注意地圖up9cloud.net:8888工作區別！-----'
+    - '@PLAYER &f-----測試服的OP，世界地圖up9cloud.net:8888-----'
+    - '@PLAYER &a&l要建設重生區前，請先跟op商量過，除非你是老手！'
     - '@PLAYER &f開放使用&2&l/signedit&f指令，方便編輯牌子'
     - '@PLAYER &6&l右下&f0,0~512,512：人界重生點，請務必小心蓋，每日會同步'
     - '@PLAYER &f指令方塊離開前&4&l務必拔除&f觸發開關(ex:按鈕、控制桿)'

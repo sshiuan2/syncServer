@@ -4,6 +4,32 @@ local jar=$1
 local to="$thisServerPath/start.sh"
 sed -i "s/jar=.*$/jar=$jar/g" $to
 }
+fix_plugin(){
+local name=$1
+fix_plugin_$name $@
+}
+fix_plugin_iConomy_fail(){
+local name=$1
+local f=iConomy
+local to="$thisServerPath/plugins/$name/src/com/iCo6"
+local bukkit="$thisServerPath/craftbukkit.jar"
+local pkg="$thisServerPath/plugins/$name.jar"
+cp -f $pkg $pkg.old
+cd $to
+javac -classpath $bukkit:$pkg $to/$f.java
+jar uf $pkg $to/$f.class
+}
+fix_plugin_iConomy(){
+local name=$1
+local f=Interest
+local to="$thisServerPath/plugins/$name/src/com/iCo6/system"
+local bukkit="$thisServerPath/craftbukkit.jar"
+local pkg="$thisServerPath/plugins/$name.jar"
+cp -f $pkg $pkg.old
+cd $to
+javac -classpath $bukkit:$pkg $to/$f.java
+jar uf $pkg $to/$f.class
+}
 function fix_craftbukkit_v1_6_4_R0(){
 cd $thisServerPath/input/
 rm -fr $thisServerPath/input/net

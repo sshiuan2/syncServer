@@ -1,0 +1,14 @@
+Commands:
+  signedit:
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@CALL Command:signedit'
+  spawn:
+    Override: true
+    Script:
+    - '@CMD is spawn'
+  help:
+    Override: true
+    Script:
+    - '@CMD is <cmdline>'

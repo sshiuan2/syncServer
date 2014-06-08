@@ -10,3 +10,17 @@ Scripts:
     - '  @ENDIF'
     - '  @ADDINT $<this>.index 1'
     - '@ENDWHILE'
+  boolean:
+    Script:
+    - '@IF b $<this>.flag = false'
+    - '  @SETBOOL $<this>.flag true'
+    - '@ELSE'
+    - '  @SETBOOL $<this>.flag false'
+    - '@ENDIF'
+  opListCheck:
+    - '@OR s <playername> = andywawa'
+    - '@OR s <playername> = O0oO0o0Oo0O'
+    - '@OR s <playername> = sp-bonebonekai'
+    - '@OR s <playername> = in91andy'
+    - '@OR s <playername> = bonr_maximum'
+    - '@OR s <playername> = sp-Venceno'

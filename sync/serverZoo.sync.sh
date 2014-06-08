@@ -5,63 +5,97 @@ if [ -f $varPath ];then source $varPath;
 else echo "source var.sh failed!";exit;fi
 
 sync_var(){
-sed -i "s/^thisServerIp=.*$/thisServerIp=10.0.0.4/g" $varPath
-sed -i "s/^thisServerPort=.*$/thisServerPort=25566/g" $varPath
+declare -A sync_var=()
+sync_var[thisServerIp]="10.0.0.4"
+sync_var[thisServerPort]="25566"
+#sync_var[thisServerName]=""
 
-sed -i 's/^session=.*$/session=mc4/g' $varPath
-sed -i 's/^window=.*$/window=1/g' $varPath
-sed -i 's/^pane=.*$/pane=0/g' $varPath
+#sync_var[thisWorldName]=""
+#sync_var[thisWorldNameNether]=""
+#sync_var[thisWorldNameTheEnd]=""
+
+sync_var[tmuxSession]="mc4"
+sync_var[tmuxWindow]="1"
+sync_var[tmuxPane]="0"
+
+sync_var[javaXms]="64M"
+sync_var[javaXmx]="512M"
+sync_var[javaParallelGCThreads]="1"
+
+local k
+for k in "${!sync_var[@]}";do
+sed -i "s/^$k=.*$/$k=${sync_var[$k]}/g" $varPath
+done
 }
 sync_conf(){
-local to=$thisServerPath/server.properties
-sed -i "s/^level-name=$/level-name=$thisWorldName/g" $to
-sed -i "s/^server-ip=.*$/server-ip=$thisServerIp/g" $to
-sed -i "s/^server-port=$/server-port=$thisServerPort/g" $to
-sed -i "s/^server-name=$/server-name=up9cloud - $thisServerName/g" $to
-sed -i 's/^enable-command-block=.*$/enable-command-block=true/g' $to
-
-sed -i 's/^spawn-animals=.*$/spawn-animals=true/g' $to
-sed -i 's/^spawn-npcs=.*$/spawn-npcs=true/g' $to
-sed -i 's/^spawn-monsters=.*$/spawn-monsters=true/g' $to
-
-sed -i 's/^allow-nether=.*$/allow-nether=false/g' $to
-sed -i 's/^generate-structures=.*$/generate-structures=false/g' $to
-sed -i 's/^pvp=.*$/pvp=false/g' $to
-
-sed -i 's/^announce-player-achievements=.*$/announce-player-achievements=false/g' $to
-sed -i "s/^op-permission-level=$/op-permission-level=4/g" $to
-sed -i "s/^level-type=.*$/level-type=FLAT/g" $to
-#DEFAULT - Standard world with hills, valleys, water, etc.
-#FLAT - A flat world with no features, meant for building.
-#LARGEBIOMES - Same as default but all biomes are larger.
-#AMPLIFIED - Same as default but world-generation height limit is increased.
-sed -i 's/^gamemode=.*$/gamemode=2/g' $to
-sed -i 's/^force-gamemode=.*$/force-gamemode=true/g' $to
-sed -i 's/^max-build-height=.*$/max-build-height=128/g' $to
-sed -i 's/^max-players=.*$/max-players=8/g' $to
-#sed -i 's/^spawn-protection=.*$/spawn-protection=1000/g' $to
+sync_conf_vanilla
 }
-sync_op(){
-local to=$thisServerPath/ops.txt
-echo 'O0oO0o0Oo0O' >> $to
-echo 'in91andy' >> $to
-echo 'sp-Kane' >> $to
+sync_conf_vanilla(){
+local f=$thisServerPath/server.properties
+declare -A sync_conf_vanilla=()
+sync_conf_vanilla[enable-command-block]="true"
+
+sync_conf_vanilla[level-name]="$thisWorldName"
+sync_conf_vanilla[server-port]="$thisServerPort"
+sync_conf_vanilla[server-name]="$thisServerName"
+
+#sync_conf_vanilla[spawn-npcs]="true"
+sync_conf_vanilla[spawn-animals]="true"
+sync_conf_vanilla[spawn-monsters]="true"
+
+#sync_conf_vanilla[allow-nether]="false"
+sync_conf_vanilla[level-type]="FLAT"
+
+sync_conf_vanilla[gamemode]="2"
+sync_conf_vanilla[force-gamemode]="true"
+#sync_conf_vanilla[pvp]="true"
+sync_conf_vanilla[max-players]="5"
+#sync_conf_vanilla[spawn-protection]="0"
+
+local k
+for k in "${!sync_conf_vanilla[@]}";do
+sed -i "s/^$k=.*$/$k=${sync_conf_vanilla[$k]}/g" $f
+done
+
+sync_conf_ban_ips
+sync_conf_ban_players
+sync_conf_ops
+sync_conf_whitelist
 }
-sync_start(){
-local to=$thisServerPath/start.sh
-sed -i 's/^local Xms=.*$/Xms=64M/g' $to
-sed -i 's/^local Xmx=.*$/Xmx=512M/g' $to
-sed -i 's/^local ParallelGCThreads=.*$/ParallelGCThreads=1/g' $to
+sync_conf_ban_ips(){
+local f=$thisServerPath/banned-ips.txt
 }
+sync_conf_ban_players(){
+local f=$thisServerPath/banned-players.txt
+}
+sync_conf_ops(){
+local f=$thisServerPath/ops.txt
+echo 'O0oO0o0Oo0O' >> $f
+echo 'in91andy' >> $f
+echo 'sp-Kane' >> $f
+}
+sync_conf_whitelist(){
+local f=$thisServerPath/white-list.txt
+}
+sync_scp(){
+scp_getControllers;
+scp_getServer spigot;
+
+local plugins=(
+WorldEdit
+)
+local p
+for p in ${plugins[@]};do
+scp_getPlugin $p;
+done
+}
+main(){
 sync_var;
 source_all;
 
-purge_world_players;
-
 msg_startSync;
-scp_getControllers;
-sync_start;
-scp_getServer vanilla;
+sync_scp;
 sync_conf;
-sync_op;
 msg_endSync;
+}
+main

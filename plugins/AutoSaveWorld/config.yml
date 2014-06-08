@@ -6,7 +6,7 @@ save:
   broadcast: false
 backup:
   enabled: true
-  interval: 21600
+  interval: 36000
   savebefore: true
   broadcast: true
   localfs:
@@ -16,13 +16,9 @@ backup:
     - 天界
     - 人界
     - 交易大廳
-    - 住宅區
     - 創造
     - 空島生存
-    - tntrun
-    - pvp_bb
-    - TEST
-    MaxNumberOfWorldsBackups: 36
+    MaxNumberOfWorldsBackups: 28
     pluginsfolder: false
     MaxNumberOfPluginsBackups: 18
     excludefolders: []

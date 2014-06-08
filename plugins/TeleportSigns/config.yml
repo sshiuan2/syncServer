@@ -35,30 +35,30 @@ servers:
   trade:
     address: 10.0.0.3:25565
     displayname: '&e&l<OP服>'
-  打殭屍:
+  in91andy:
+    address: 10.0.0.3:25566
+    displayname: '&1[in91andy]'
+  sp-kenny:
     address: 10.0.0.3:25567
-    displayname: '&c&l[打殭屍]'
+    displayname: '&c[sp-kenny]'
   music:
     address: 10.0.0.3:25599
     displayname: '&f&l<音樂>'
-  原味:
-    address: 10.0.0.4:25565
-    displayname: '&f&l<原味>'
-  zoo:
-    address: 10.0.0.4:25566
-    displayname: '&a&l[動物園]'
   test:
     address: 10.0.0.3:25600
     displayname: '&7&l[測試]'
-  in91andy:
-    address: 10.0.0.3:25566
-    displayname: '&7&l[in91andy]'
+  event:
+    address: 10.0.0.4:25565
+    displayname: '&e&l[活動]'
+  zoo:
+    address: 10.0.0.4:25566
+    displayname: '&a&l[動物園]'
 layouts:
   default:
     teleport: true
     layout:
       - '&l↓㊣傳送至㊣↓'
-      - '&l%displayname%'
+      - '%displayname%'
       - '&f&l%numpl%/%maxpl%'
       - '%isonline%'
     online: '&a&l點我可傳送'
@@ -83,4 +83,14 @@ layouts:
       - '%isonline%'
     online: '&a點擊進入'
     offline: '&c未開放'
+    offline-int: '-'
+  event:
+    teleport: true
+    layout:
+      - '&l不定期更換地圖'
+      - '&l[勇者之塔]'
+      - '&f&l%numpl%/%maxpl%'
+      - '%isonline%'
+    online: '&a&l活動上線中'
+    offline: '&c&l離線'
     offline-int: '-'

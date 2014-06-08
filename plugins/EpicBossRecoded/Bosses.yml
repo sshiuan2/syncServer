@@ -264,20 +264,19 @@ Bosses:
     - potionboss INVISIBILITY:1:5 <2500 0.5
     - swarm ghast:3 <2500 0.1
     - swarm $水母王手下甲:1 <2500 0.1
-    - swarm $水母王手下甲:2 <1500 0.2
-    - swarm $水母王手下甲:3 <500 0.3
-    - swarm $水母王手下乙:4 <2500 0.2
-    - swarm $水母王手下乙:6 <1500 0.3
-    - swarm $水母王手下乙:8 <500 0.4
+    - swarm $水母王手下甲:1 <1500 0.1
+    - swarm $水母王手下甲:1 <500 0.2
+    - swarm $水母王手下乙:1 <2500 0.1
+    - swarm $水母王手下乙:2 <1500 0.2
+    - swarm $水母王手下乙:3 <500 0.3
     - bossmsg 25:&a$boss_&r臨死前招換出一堆骷髏 =0 1
     - swarm $水母王手下甲:1 =0 0.5
     - swarm $水母王手下甲:1 =0 0.5
-    - swarm $水母王手下甲:2 =0 0.5
-    - swarm $水母王手下甲:2 =0 0.5
+    - swarm $水母王手下甲:1 =0 0.5
     - swarm $水母王手下乙:1 =0 0.5
     - swarm $水母王手下乙:1 =0 0.5
-    - swarm $水母王手下乙:2 =0 0.5
-    - swarm $水母王手下乙:2 =0 0.5
+    - swarm $水母王手下乙:1 =0 0.5
+    - swarm $水母王手下乙:1 =0 0.5
     - command ebroadcast_&c恭喜!_&f$player_&2成功擊殺了_&f$boss_&2獲得獎勵金_&f25.00_&2元 =0 1
     - command money_give_$player_25 =0 1
     Drops:

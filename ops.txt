@@ -1,3 +1,5 @@
 up9cloud-admin
 up9cloud-jo
 up9cloud-michell
+up9cloud-kai
+up9cloud-wawa

@@ -30,6 +30,8 @@ sed -i 's/^force-gamemode=.*$/force-gamemode=true/g' $to
 sed -i 's/^max-build-height=.*$/max-build-height=128/g' $to
 sed -i 's/^max-players=.*$/max-players=8/g' $to
 sed -i 's/^spawn-protection=.*$/spawn-protection=0/g' $to
+
+sed -i 's/^white-list=.*$/white-list=true/g' $to
 }
 sync_op(){
 local to=$thisServerPath/ops.txt

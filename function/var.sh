@@ -23,13 +23,19 @@ else
 syncServerScpPath="$syncServerUser@$syncServerIp:$syncServerPath"
 fi
 
-session=
-window=0
-pane=0
+databaseIp="10.0.0.200"
 
-chatGrepArg="\[Server[^ ]\|\[Async Chat Thread\|command: \/\(m\|msg\|tell\|t\|w\|r\|p\|rc\) "
-chatEgrepArg=""
-chatRegex=$chatGrepArg
+tmuxSession=
+tmuxWindow=
+tmuxPane=0
+
+session=$tmuxSession
+window=$tmuxWindow
+pane=$tmuxPane
+
+javaXms=64M
+javaXmx=512M
+javaParallelGCThreads=1
 
 source_all(){
 echo -n "sourceAllFunctions: "

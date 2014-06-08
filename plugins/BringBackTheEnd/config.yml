@@ -1,16 +1,44 @@
-# 
+#
 # Bring Back The End Configuration File
+#
+# Description of the options:
+# logDebug (true/false) - Logs debug messages to console
+# autoReset (true/false) - Activates the auto reset functionality of the plugin
+# interval <time> - How long, in seconds, before resetting after killing the dragon(s)
+# tpPlayersAfterTimeout (true/false) - After the grace period (interval), tp the players that are in the end to spawn (true) or
+#   wait until they leave (false). 
+# dragonAmount - How many dragons should spawn.
+# saveRate <time> How often (in seconds) to save the remaining ticks for a reset to this configuration file.
+#   NOTES: 
+#      * Too low means increased disk access.
+#      * Too high may cause the current tick count to be lost if the server is shut down incorrectly.
+#      * Default is 5 minutes.
+#      * This value needs to be lower than the interval or it will be adjusted as necessary.
+#
+#  autoHookWorld: Looks for all worlds and hooks to the first 'end' environment found. If set to false, you need to use the 'worldName' property
+#  
+#
+# DO NOT CHANGE THE REMANING OPTION UNLESS YOU HAVE A GOOD REASON
+#
 # /re help
+
 bringbacktheend:
+
   logDebug: false
   autoReset: true
   interval: 1200
   tpPlayersAfterTimeout: false
-  dragonAmount: 5
+  dragonAmount: 2
   saveRate: 300
   autohookworld: true
-  worldName: world_the_end
+  worldName: 'world_the_end'
+  
+# ***Do NOT change the following values unless you have a good reason.***
+# Remaining ticks for reset
   remainingTicks: 0
+# Is the end pending a reset?
   pendingRebuild: false
-  pendingDragons: 5
+# If so, how many dragons are to be spawned on that pending reset
+  pendingDragons: 1
+# Config version. Changing this can lead to configuration being corrupted.
   version: 122

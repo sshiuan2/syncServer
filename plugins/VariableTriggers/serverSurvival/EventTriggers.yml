@@ -1,1 +1,11 @@
-world: {}
+world:
+  BlockBreak:
+    CoolDown: 1402173235378
+    Script:
+    - '@COOLDOWN 5'
+    - '@IF s <blockid> = 56'
+    - '  @IF s $BlockBreak.diamond_block = <playsername>'
+    - '    @SETSTR $BlockBreak.diamond_block <playsername>'
+    - '    @BROADCAST &l<playername> 挖到鑽石啦！'
+    - '  @ENDIF'
+    - '@ENDIF'

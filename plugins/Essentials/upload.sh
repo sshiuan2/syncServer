@@ -6,12 +6,15 @@ else echo "source var.sh failed!";exit;fi
 
 main(){
 local name='Essentials'
+local f=jail.yml
 local from=$thisServerPath/plugins/$name
 local to=$syncServerScpPath/plugins/$name
-mv $from/userdata $from/$thisServerName.userdata
-scp -r $from/$thisServerName.userdata $to
-mv $from/$thisServerName.userdata $from/userdata
+mkdir -p $from/$thisServerName
+cp $from/$f $from/$thisServerName
+
+scp -r $from/$thisServerName $to
 
 scp $from/*.sh $to
 }
-main
+
+main $name

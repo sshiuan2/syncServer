@@ -13,9 +13,9 @@ island-size: 100
 region-spacing: 1
 max-count: 100
 snail-mode: false
-teleport-delay: 0
+teleport-delay: 1
 movement-break-tp: false
-time-limit: 0
+time-limit: 15
 calc-limit: 10
 auto-save: 60
 backup-on-start: true
@@ -37,7 +37,7 @@ repeatable: false
 use-signs: true
 obsidian-break: false
 obsidian-limit: true
-request-time: 10
+request-time: 30
 reload-time: 30
 auto-purge: 0
 purge-check-members: true
