@@ -1,0 +1,109 @@
+Firaga:
+  Cooldown: 0.25
+  Skills:
+  - skill FiragaEffectOne >0 1
+  - skill FiragaSoundOne >0 1
+  - delay 2
+  - skill FiragaEffectTwo >0 1
+  - delay 2
+  - skill FiragaEffectThree >0 1
+  - skill FiragaSoundOne >0 1
+  - delay 2
+  - skill FiragaEffectFour >0 1
+  - delay 2
+  - skill FiragaEffectFive >0 1
+  - skill FiragaSoundTwo >0 1
+  - delay 1
+  - skill FiragaFallEffectOne >0 1
+  - delay 2
+  - skill FiragaFallEffectTwo >0 1
+  - delay 2
+  - skill FiragaFallEffectThree >0 1
+  - delay 2
+  - skill FiragaFallEffectFour >0 1
+  - delay 1
+  - skill FiragaDamage >0 1
+  - skill FiragaExplodeEffectOne >0 1
+  - skill FiragaSoundThree >0 1
+  - delay 1
+  - skill FiragaExplodeEffectTwo >0 1
+  - delay 1
+  - skill FiragaExplodeEffectThree >0 1
+  - delay 1
+  - skill FiragaExplodeEffectFour >0 1
+  - delay 1
+  - skill FiragaExplodeEffectFive >0 1
+FiragaDamage:
+  Cooldown: 0.25
+  Skills:
+  - damage 0:6:true >0 1
+  - ignite 0:60 >0 1
+  - explosion 0:2:true:false >0 1
+FiragaEffectOne:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.1:0.1:100:0:5.0
+FiragaEffectTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.2:0.2:200:0:5.0
+FiragaEffectThree:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.3:0.3:300:0:5.0
+FiragaEffectFour:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.4:0.4:400:0:5.0
+FiragaEffectOne:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.5:0.5:500:0:5.0
+FiragaFallEffectOne:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.2:0.3:100:0:4.0
+FiragaFallEffectTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.2:0.3:100:0:3.0
+FiragaFallEffectThree:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.2:0.3:100:0:2.0
+FiragaFallEffectFour:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.2:0.3:100:0:1.0
+FiragaExplodeEffectOne:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles lava:0.4:0.5:100:0:0.1
+FiragaExplodeEffectTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles lava:0.8:0.4:100:0:1
+FiragaExplodeEffectThree:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles lava:1.2:0.3:100:0:0
+FiragaExplodeEffectFour:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles lava:1.6:0.2:100:0:-0.2
+FiragaExplodeEffectFive:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles lava:2.0:0.1:100:0:-0.4
+FiragaSoundOne:
+  Cooldown: 0.25
+  Skills:
+  - effect target sound fire.fire:1.0:0.1
+FiragaSoundTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect target sound mob.ghast.fireball:1.0:0.1
+FiragaSoundThree:
+  Cooldown: 0.25
+  Skills:
+  - effect target sound mob.zombie.remedy:1.0:0.1

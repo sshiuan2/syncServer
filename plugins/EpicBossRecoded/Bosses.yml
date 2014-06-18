@@ -259,7 +259,7 @@ Bosses:
     Damage: 20
     Skills:
     - bossmsg 20:&a$boss_&f我也是有幫手的！ <2500 0.1
-    - bossmsg 20:&a$boss_&f都去死吧！ <2500 0.1
+    - bossmsg 20:&a$boss_&f看我的嘔吐火球！ <2500 0.1
     - potionboss SPEED:3:3 <2500 0.2
     - potionboss INVISIBILITY:1:5 <2500 0.5
     - swarm ghast:3 <2500 0.1

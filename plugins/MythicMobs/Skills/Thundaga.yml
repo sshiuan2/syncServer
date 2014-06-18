@@ -1,0 +1,98 @@
+Thundaga:
+  Cooldown: 5
+  Skills:
+  - skill ThundagaPreEffect >0 1
+  - skill ThundagaPreSound >0 1
+  - delay 3
+  - skill ThundagaPreEffect >0 1
+  - skill ThundagaPreSound >0 1
+  - delay 3
+  - skill ThundagaPreEffect >0 1
+  - skill ThundagaPreSound >0 1
+  - delay 4
+  - skill ThundagaDamageOne >0 1
+  - skill ThundagaMulti >0 1
+  - skill ThundagaEffect >0 1
+  - skill ThundagaPreEffect >0 1
+  - skill ThundagaPreSound >0 1
+  - delay 3
+  - skill ThundagaSound >0 1
+  - skill ThundagaPreEffect >0 1
+  - skill ThundagaPreSound >0 1
+  - delay 3
+  - skill ThundagaPreEffect >0 1
+  - skill ThundagaPreSound >0 1
+  - delay 4
+  - skill ThundagaDamageOne >0 1
+  - skill ThundagaMulti >0 1
+  - skill ThundagaEffect >0 1
+  - skill ThundagaPreEffect >0 1
+  - skill ThundagaPreSound >0 1
+  - delay 3
+  - skill ThundagaSound >0 1
+  - skill ThundagaPreEffect >0 1
+  - skill ThundagaPreSound >0 1
+  - delay 3
+  - skill ThundagaPreEffect >0 1
+  - skill ThundagaPreSound >0 1
+  - delay 4
+  - skill ThundagaDamageOne >0 1
+  - skill ThundagaMulti >0 1
+  - skill ThundagaEffect >0 1
+  - skill ThundagaPreEffect >0 1
+  - skill ThundagaPreSound >0 1
+ThundagaMulti:
+  Cooldown: 0.25
+  Skills:
+  - skill ThundagaDamageOne >0 1
+  - skill ThundagaConfusion >0 1
+  - skill ThundagaWeakness >0 1
+  - skill ThundagaExtraEffect >0 1
+ThundagaRainDamage:
+  Cooldown: 0.25
+  Conditions:
+  - raining true
+  Skills:
+  - damage 0:2:true >0 1
+ThundagaDamageOne:
+  Cooldown: 0.25
+  Skills:
+  - damage 0:3:true >0 1
+ThundagaDamageTwo:
+  Cooldown: 0.25
+  Skills:
+  - damage 0:3:false >0 1
+ThundagaConfusion:
+  Cooldown: 0.25
+  Skills:
+  - potion 0:CONFUSION:200:100 >0 1
+ThundagaWeakness:
+  Cooldown: 0.25
+  Skills:
+  - potion 0:WEAKNESS:40:2 >0 1
+ThundagaPreEffect:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles cloud:2.0:0.5:400:0.1:7.0
+  - effect target particles smoke:2.0:0.5:600:0.1:7.0
+  - effect target particles magicCrit:2.0:0.5:500:0.1:0.1
+ThundagaPreSound:
+  Cooldown: 0.25
+  Skills:
+  - effect target sound ambient.weather.rain:1.0:0.1
+ThundagaEffect:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles magicCrit:0.5:0.5:300:0.1:0.9
+  - effect target particles fireworksSpark:0.5:0.5:150:0.3:0.1
+  - effect target lightning >0 1
+ThundagaSound:
+  Cooldown: 0.25
+  Skills:
+  - effect target sound ambient.weather.thunder:1.0:0.1
+  - effect target sound random.explode:1.0:0.1
+ThundagaExtraEffect:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles magicCrit:0.5:0.5:300:0.1:0.9
+  - effect target lightning >0 1

@@ -63,19 +63,31 @@ sync_conf_ops
 sync_conf_whitelist
 }
 sync_conf_ban_ips(){
-local f=$thisServerPath/banned-ips.txt
+local f=$thisServerPath/banned-ips.json
 }
 sync_conf_ban_players(){
-local f=$thisServerPath/banned-players.txt
+local f=$thisServerPath/banned-players.json
 }
 sync_conf_ops(){
-local f=$thisServerPath/ops.txt
-echo 'O0oO0o0Oo0O' >> $f
-echo 'in91andy' >> $f
-echo 'sp-Kane' >> $f
+local f=$thisServerPath/ops.json
+local ops=(
+O0oO0o0Oo0O
+in91andy
+sp-Kane
+)
+local op;
+local args=();
+for op in ${ops[@]};do
+args+=(`buildOpData "$op"`);
+done;
+local arg;
+for arg in ${args[@]};do
+echo $arg;
+cat $f|$varDir/jq ". + $arg" > $f;
+done;
 }
 sync_conf_whitelist(){
-local f=$thisServerPath/white-list.txt
+local f=$thisServerPath/white-list.json
 }
 sync_scp(){
 scp_getControllers;

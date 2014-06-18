@@ -24,11 +24,39 @@ sed -i 's/^allow-flight=.*$/allow-flight=true/g' $to
 sed -i 's/^gamemode=.*$/gamemode=1/g' $to
 sed -i 's/^spawn-protection=.*$/spawn-protection=0/g' $to
 sed -i 's/^max-players=.*$/max-players=10/g' $to
+
+sync_conf_start
 }
-sync_start(){
+sync_conf_start(){
 local to=$thisServerPath/start.sh
 sed -i 's/^local Xms=.*$/Xms=64M/g' $to
 sed -i 's/^local Xmx=.*$/Xmx=768M/g' $to
+}
+sync_scp(){
+scp_getControllers;
+scp_getServer spigot;
+
+local plugins=(
+PlotMe
+VariableTriggers
+BungeeSuiteWarps
+
+TeleportSigns
+
+dynmap
+DynmapPlotMe
+
+ChatColors
+PermissionsEx
+Vault
+iConomy
+WorldBorder
+WorldEdit
+)
+local p
+for p in ${plugins[@]};do
+scp_getPlugin $p;
+done
 }
 sync_killall(){
 local i
@@ -40,30 +68,15 @@ local i
 #/butcher -f : compounds all previous flags.
 #/butcher -l : strikes lightning on each killed mob.
 }
+main(){
 sync_var;
 source_all;
 
 purge_plugins all;
 
 msg_startSync;
-scp_getControllers;
-sync_start;
-scp_getServer spigot;
+sync_scp;
 sync_conf;
-
-scp_getPlugin PlotMe;
-scp_getPlugin VariableTriggers;
-scp_getPlugin BungeeSuiteWarps;
-
-scp_getPlugin TeleportSigns;
-
-scp_getPlugin dynmap;
-scp_getPlugin DynmapPlotMe;
-
-scp_getPlugin ChatColors;
-scp_getPlugin PermissionsEx;
-scp_getPlugin Vault;
-scp_getPlugin iConomy;
-scp_getPlugin WorldBorder;
-scp_getPlugin WorldEdit;
 msg_endSync;
+}
+main

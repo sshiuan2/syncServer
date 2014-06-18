@@ -1,0 +1,303 @@
+IceCrystal:
+  Cooldown: 0.25
+  Skills:
+  - skill IceCrystalEffectOne >0 1
+  - skill IceCrystalSoundOne >0 1
+  - delay 3
+  - skill IceCrystalEffectTwo >0 1
+  - delay 3
+  - skill IceCrystalEffectThree >0 1
+  - delay 3
+  - skill IceCrystalEffectFour >0 1
+  - delay 3
+  - skill IceCrystalEffectFive >0 1
+  - delay 3
+  - skill IceCrystalEffectSix >0 1
+  - delay 3
+  - skill IceCrystalEffectSeven >0 1
+  - delay 3
+  - skill IceCrystalEffectEight >0 1
+  - delay 3
+  - skill IceCrystalEffectNine >0 1
+  - delay 2
+  - skill IceCrystalDamage >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 1
+  - skill IceCrystalEffectNine >0 1
+  - delay 2
+  - skill IceCrystalEffectTen >0 1
+  - skill IceCrystalSoundThree
+IceCrystalDamage:
+  Cooldown: 0.25
+  Skills:
+  - potion 8:SLOW:10:4 >0 1
+  - potion 8:WEAKNESS:10:1 >0 1
+  - skill IceCrystalLineEffect >0 1
+  - skill IceCrystalSoundTwo >0 1
+  - delay 5
+  - potion 8:SLOW:10:4 >0 1
+  - potion 8:WEAKNESS:10:1 >0 1
+  - skill IceCrystalLineEffect >0 1
+  - skill IceCrystalSoundTwo >0 1
+  - delay 5
+  - potion 8:SLOW:10:4 >0 1
+  - potion 8:WEAKNESS:10:1 >0 1
+  - skill IceCrystalLineEffect >0 1
+  - skill IceCrystalSoundTwo >0 1
+  - delay 5
+  - potion 8:SLOW:10:4 >0 1
+  - potion 8:WEAKNESS:10:1 >0 1
+  - skill IceCrystalLineEffect >0 1
+  - skill IceCrystalSoundTwo >0 1
+  - delay 5
+  - potion 8:SLOW:10:4 >0 1
+  - potion 8:WEAKNESS:10:1 >0 1
+  - skill IceCrystalLineEffect >0 1
+  - skill IceCrystalSoundTwo >0 1
+  - delay 5
+  - potion 8:SLOW:10:4 >0 1
+  - potion 8:WEAKNESS:10:1 >0 1
+  - skill IceCrystalLineEffect >0 1
+  - skill IceCrystalSoundTwo >0 1
+  - delay 5
+  - potion 8:SLOW:10:4 >0 1
+  - potion 8:WEAKNESS:10:1 >0 1
+  - skill IceCrystalLineEffect >0 1
+  - skill IceCrystalSoundTwo >0 1
+  - delay 5
+  - potion 8:SLOW:10:4 >0 1
+  - potion 8:WEAKNESS:10:1 >0 1
+  - skill IceCrystalLineEffect >0 1
+  - skill IceCrystalSoundTwo >0 1
+  - delay 5
+  - potion 8:SLOW:10:4 >0 1
+  - potion 8:WEAKNESS:10:1 >0 1
+  - skill IceCrystalLineEffect >0 1
+  - skill IceCrystalSoundTwo >0 1
+  - delay 5
+  - potion 8:SLOW:10:4 >0 1
+  - potion 8:WEAKNESS:10:1 >0 1
+  - skill IceCrystalLineEffect >0 1
+  - skill IceCrystalSoundTwo >0 1
+  - delay 5
+  - potion 8:SLOW:10:4 >0 1
+  - potion 8:WEAKNESS:10:1 >0 1
+  - skill IceCrystalLineEffect >0 1
+  - skill IceCrystalSoundTwo >0 1
+  - delay 5
+  - potion 8:SLOW:10:4 >0 1
+  - potion 8:WEAKNESS:10:1 >0 1
+  - skill IceCrystalLineEffect >0 1
+  - skill IceCrystalSoundTwo >0 1
+  - damage 8:6:true >0 1
+  - effect playersinradius:8 particleline snowballpoof:0.3:0.3:250:0.1:1.5 >0 1
+  - effect playersinradius:8 particleline snowshovel:0.3:0.3:250:0.1:1.5 >0 1
+  - effect playersinradius:8 sound random.glass:1.5:0.1 >0 1
+  - potion 8:SLOW:100:10 >0 1
+IceCrystalEffectOne:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_79_79:0.1:0.1:100:0.1:0.1
+IceCrystalEffectTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_79_79:0.2:0.2:200:0.1:0.2
+  - effect boss particles snowballpoof:0.2:0.2:100:0.1:0.2
+IceCrystalEffectThree:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_79_79:0.3:0.3:300:0.1:1.0
+  - effect boss particles snowballpoof:0.2:0.2:100:0.1:0.7
+  - effect boss particles snowballpoof:0.3:0.2:100:0.1:0.4
+IceCrystalEffectFour:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_79_79:0.4:0.4:400:0.1:1.5
+  - effect boss particles snowballpoof:0.2:0.2:100:0.1:1.2
+  - effect boss particles snowballpoof:0.3:0.2:100:0.1:0.8
+  - effect boss particles snowballpoof:0.4:0.3:100:0.1:0.4
+IceCrystalEffectFive:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_79_79:0.5:0.5:500:0.1:2.0
+  - effect boss particles snowballpoof:0.2:0.2:100:0.1:1.6
+  - effect boss particles snowballpoof:0.3:0.2:100:0.1:1.3
+  - effect boss particles snowballpoof:0.4:0.3:100:0.1:0.8
+  - effect boss particles snowballpoof:0.5:0.3:100:0.1:0.4
+IceCrystalEffectSix:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_79_79:0.6:0.6:600:0.1:2.5
+  - effect boss particles snowballpoof:0.2:0.2:100:0.1:2.0
+  - effect boss particles snowballpoof:0.3:0.2:100:0.1:1.6
+  - effect boss particles snowballpoof:0.4:0.3:100:0.1:1.2
+  - effect boss particles snowballpoof:0.5:0.3:100:0.1:0.7
+  - effect boss particles snowballpoof:0.6:0.4:100:0.1:0.3
+IceCrystalEffectSeven:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_79_79:0.7:0.7:700:0.1:3.3
+  - effect boss particles snowballpoof:0.2:0.2:100:0.1:2.4
+  - effect boss particles snowballpoof:0.3:0.2:100:0.1:2.0
+  - effect boss particles snowballpoof:0.4:0.3:100:0.1:1.6
+  - effect boss particles snowballpoof:0.5:0.3:100:0.1:1.1
+  - effect boss particles snowballpoof:0.6:0.4:100:0.1:0.6
+  - effect boss particles snowballpoof:0.7:0.4:100:0.1:0.2
+IceCrystalEffectEight:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_79_79:0.7:0.7:700:0.1:4.0
+  - effect boss particles snowballpoof:0.2:0.2:100:0.1:2.9
+  - effect boss particles snowballpoof:0.3:0.2:100:0.1:2.6
+  - effect boss particles snowballpoof:0.4:0.3:100:0.1:2.1
+  - effect boss particles snowballpoof:0.5:0.3:100:0.1:1.6
+  - effect boss particles snowballpoof:0.6:0.4:100:0.1:1.1
+  - effect boss particles snowballpoof:0.7:0.4:100:0.1:0.6
+  - effect boss particles snowballpoof:0.8:0.4:100:0.1:0.2
+IceCrystalEffectNine:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_79_79:0.7:0.7:650:0:5.0
+  - effect boss particles snowballpoof:0.2:0.2:80:0.1:3.4
+  - effect boss particles snowballpoof:0.3:0.2:80:0.1:3.0
+  - effect boss particles snowballpoof:0.4:0.3:80:0.1:2.5
+  - effect boss particles snowballpoof:0.5:0.3:80:0.1:2.0
+  - effect boss particles snowballpoof:0.6:0.4:80:0.1:1.5
+  - effect boss particles snowballpoof:0.7:0.4:80:0.1:1.0
+IceCrystalEffectTen:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_79_79:1.5:1.5:1050:0:5.0
+IceCrystalLineEffect:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:7 particleline snowballpoof:0.1:0.1:40:0:1.5:0.5
+IceCrystalSoundOne:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:7 sound portal.portal:1.5:2.0
+IceCrystalSoundTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:7 sound mob.zombie.unfect:1.5:1.0
+IceCrystalSoundThree:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:7 sound game.potion.smash:1.5:0.1

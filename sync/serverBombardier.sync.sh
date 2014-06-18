@@ -28,7 +28,7 @@ sync_conf(){
 local to=$thisServerPath/server.properties
 sed -i "s/^level-name=$/level-name=$thisWorldName/g" $to
 sed -i "s/^server-port=$/server-port=$thisServerPort/g" $to
-sed -i "s/^server-name=$/server-name=up9cloud - $thisServerName/g" $to
+sed -i "s/^server-name=$/server-name=$thisServerName/g" $to
 sed -i 's/^enable-command-block=.*$/enable-command-block=true/g' $to
 
 #sed -i 's/^spawn-animals=.*$/spawn-animals=true/g' $to
@@ -47,9 +47,10 @@ sed -i 's/^force-gamemode=.*$/force-gamemode=true/g' $to
 sed -i 's/^max-players=.*$/max-players=8/g' $to
 sed -i 's/^spawn-protection=.*$/spawn-protection=0/g' $to
 }
-sync_start(){
-sed -i 's/^local Xms=.*$/Xms=64M/g' start.sh
-sed -i 's/^local Xmx=.*$/Xmx=512M/g' start.sh
+sync_conf_start(){
+local to=$thisServerPath/start.sh
+sed -i 's/^local Xms=.*$/Xms=64M/g' $to
+sed -i 's/^local Xmx=.*$/Xmx=512M/g' $to
 }
 sync_var;
 source_all;
@@ -59,7 +60,7 @@ sync_world_restore;
 
 msg_startSync;
 scp_getControllers;
-sync_start;
+sync_conf_start;
 scp_getServer vanilla;
 sync_conf;
 msg_endSync;

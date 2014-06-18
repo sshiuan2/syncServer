@@ -7,7 +7,6 @@ else echo "source var.sh failed!";exit;fi
 sync_var(){
 sed -i "s/^thisServerIp=.*$/thisServerIp=10.0.0.2/g" $varPath
 sed -i "s/^thisServerPort=.*$/thisServerPort=25565/g" $varPath
-sed -i "s/^thisWorldName=.*$/thisWorldName=\"world\"/g" $varPath
 
 sed -i 's/^session=.*$/session=mc2/g' $varPath
 sed -i 's/^window=.*$/window=0/g' $varPath
@@ -17,14 +16,20 @@ sync_conf(){
 local to=$thisServerPath/server.properties
 sed -i "s/^level-name=$/level-name=$thisWorldName/g" $to
 sed -i "s/^server-port=$/server-port=$thisServerPort/g" $to
+sed -i "s/^server-name=$/server-name=$thisServerName/g" $to
+sed -i 's/^enable-command-block=.*$/enable-command-block=true/g' $to
+
 sed -i 's/^spawn-animals=.*$/spawn-animals=true/g' $to
-sed -i 's/^server-name=$/server-name=$thisServerName/g' $to
-sed -i 's/^max-players=.*$/max-players=20/g' $to
 sed -i 's/^spawn-monsters=.*$/spawn-monsters=true/g' $to
+
 sed -i 's/^generate-structures=.*$/generate-structures=true/g' $to
+
+sed -i 's/^max-players=.*$/max-players=20/g' $to
 sed -i 's/^spawn-protection=.*$/spawn-protection=40/g' $to
+
+sync_conf_start
 }
-sync_start(){
+sync_conf_start(){
 local to=$thisServerPath/start.sh
 sed -i 's/^local Xms=.*$/Xms=64M/g' $to
 sed -i 's/^local Xmx=.*$/Xmx=512M/g' $to
@@ -43,7 +48,6 @@ purge_plugins all;
 
 msg_startSync;
 scp_getControllers;
-sync_start;
 scp_getServer spigot;
 sync_conf;
 

@@ -23,6 +23,10 @@ cd $thisServerPath/$thisWorldName
 #ln -s /dev/null $thisWorldName/players
 }
 sync_conf(){
+sync_conf_vanilla
+sync_conf_start
+}
+sync_conf_vanilla(){
 local to=$thisServerPath/server.properties
 declare -A sync_conf=()
 sync_conf[level-name]="$thisWorldName"
@@ -34,30 +38,42 @@ for k in "${!sync_conf[@]}";do
 sed -i "s/^$k=.*$/$k=${sync_conf[$k]}/g" $to
 done
 }
-sync_start(){
+sync_conf_start(){
 local to=$thisServerPath/start.sh
 sed -i 's/^local Xms=.*$/Xms=64M/g' $to
 sed -i 's/^local Xmx=.*$/Xmx=256M/g' $to
 }
+sync_scp(){
+scp_getControllers;
+scp_getServer spigot;
+
+local plugins=(
+VariableTriggers
+BungeeSuitePortals
+BungeeSuiteWarps
+PermissionsEx
+AuthMe
+TeleportSigns
+#WorldEdit
+)
+
+local p;
+for p in ${plugins[@]};do
+scp_getPlugin $p;
+done;
+}
+main(){
 sync_var;
 source_all;
+
+msg_startSync;
 
 sync_world_clean;
 purge_plugins all;
 
-msg_startSync;
-scp_getControllers;
-sync_start;
-scp_getServer spigot;
+sync_scp;
 sync_conf;
 
-scp_getPlugin VariableTriggers;
-scp_getPlugin BungeeSuitePortals;
-scp_getPlugin BungeeSuiteWarps
-scp_getPlugin PermissionsEx;
-scp_getPlugin AuthMe;
-
-scp_getPlugin TeleportSigns;
-
-#scp_getPlugin WorldEdit;
 msg_endSync
+}
+main

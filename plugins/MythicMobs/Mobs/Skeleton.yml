@@ -1,0 +1,24 @@
+#skeleton
+#witherskeleton
+Skeleton_w:
+  Mobtype: witherskeleton
+  Display: '水母王手下甲'
+  Health: 100
+  Showhp: false
+  Damage: 5
+  Skills:
+  - bossmsg 20:'&a$boss &f我來幫您了，大大！' <100 0.2
+  Equipment:
+  - 272:0 0.0
+  Drops:
+Skeleton:
+  Mobtype: skeleton
+  Display: '水母王手下乙'
+  Health: 100
+  Showhp: false
+  Damage: 5
+  Skills:
+  - msg 20:'&a$boss &f我來幫您了，大大！' <100 0.2
+  Equipment:
+  - 261:0 0.0 ARROW_KNOCKBACK:1
+  Drops:

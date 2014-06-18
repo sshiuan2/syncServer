@@ -1,0 +1,76 @@
+Thundara:
+  Cooldown: 3
+  Skills:
+  - skill ThundaraPreEffectOne >0 1
+  - delay 4
+  - skill ThundaraPreEffectOne >0 1
+  - skill ThundaraPreEffectTwo >0 1
+  - delay 4
+  - skill ThundaraPreEffectTwo >0 1
+  - skill ThundaraPreEffectThree >0 1
+  - delay 4
+  - skill ThundaraPreEffectThree >0 1
+  - skill ThundaraPreEffectFour >0 1
+  - delay 4
+  - skill ThundaraDamage >0 1
+  - skill ThundaraWeakness >0 1
+  - skill ThundaraConfusion >0 1
+  - skill ThundaraEffectOne >0 1
+  - skill ThundaraEffectTwo >0 1
+  - delay 3
+  - skill ThundaraSound >0 1
+  - skill ThundaraEffectOne >0 1
+  - delay 3
+  - skill ThundaraEffectOne
+ThundaraWeakness:
+  Cooldown: 0.25
+  Skills:
+  - potion 0:WEAKNESS:30:1 >0 1
+ThundaraConfusion:
+  Cooldown: 0.25
+  Skills:
+  - potion 0:CONFUSION:200:100 >0 1
+ThundaraRainDamage:
+  Cooldown: 0.25
+  Conditions:
+  - raining true
+  Skills:
+  - damage 0:2:true >0 1
+ThundaraDamage:
+  Cooldown: 0.25
+  Skills:
+  - damage 0:6:false >0 1
+ThundaraPreEffectOne:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles magicCrit:0.2:1.0:200:0.1:5.0
+  - effect target particles magicCrit:2.0:0.2:300:0.1:0.1
+ThundaraPreEffectTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles magicCrit:0.2:1.0:200:0.1:4.0
+  - effect target particles magicCrit:1.5:0.2:300:0.1:0.3
+ThundaraPreEffectThree:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles magicCrit:0.2:1.0:200:0.1:3.0
+  - effect target particles magicCrit:1.0:0.2:300:0.1:0.5
+ThundaraPreEffectFour:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles magicCrit:0.2:1.0:200:0.1:2.0
+  - effect target particles magicCrit:0.5:0.2:300:0.1:0.8
+ThundaraEffectOne:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles magicCrit:0.5:0.5:300:0.1:0.9
+ThundaraEffectTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles magicCrit:0.5:0.5:100:0.3:0.1
+  - effect target lightning >0 1
+ThundaraSound:
+  Cooldown: 0.25
+  Skills:
+  - effect target sound ambient.weather.thunder:1.5:0.1
+  - effect target sound random.explode:1.5:0.1

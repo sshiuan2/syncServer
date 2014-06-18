@@ -1,0 +1,128 @@
+PetalStorm:
+  Cooldown: 5
+  Skills:
+  - msg 10:'$boss &eIs preparing a powerful spell!' >0 1
+  - potionself SLOW:260:10
+  - delay 60
+  - msg 10:'$boss &eCasts Petal Storm!' >0 1
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormThornsOne >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - skill PetalStormSound >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - skill PetalStormSound >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - skill PetalStormSound >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - skill PetalStormSound >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - skill PetalStormSound >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - skill PetalStormSound >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - skill PetalStormSound >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - skill PetalStormSound >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - skill PetalStormSound >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+  - skill PetalStormSound >0 1
+  - delay 5
+  - skill PetalStormEffectOne >0 1
+  - skill PetalStormEffectTwo >0 1
+  - skill PetalStormThornsTwo >0 1
+PetalStormEffectOne:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_175_4:3.5:0.5:500:0.03:0
+  - effect boss particles blockcrack_175_5:3.5:0.5:500:0.03:0
+  - effect boss particles blockcrack_175_1:3.5:0.5:500:0.03:0
+PetalStormEffectTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particlering blockcrack_38_5:8:10:0.8:4.0:500:0:0
+  - effect boss particlering blockcrack_38_8:8:10:0.8:4.0:500:0:0
+PetalStormThornsOne:
+  Cooldown: 0.25
+  Skills:
+  - throw 8:0:8 >0 1
+  - effect playersinradius:8 particles blockcrack_175_1:0.1:4.0:250:0:0
+  - effect playersinradius:8 particles blockcrack_175_4:0.1:4.0:250:0:0
+  - effect playersinradius:8 particles blockcrack_175_5:0.1:4.0:250:0:0
+PetalStormThornsTwo:
+  Cooldown: 0.25
+  Skills:
+  - throw 8:0:2 >0 1
+  - effect playersinradius:8 particles blockcrack_38_0:0.1:2.0:250:0:0
+  - effect playersinradius:8 particles blockcrack_38_1:0.1:2.0:250:0:0
+  - effect playersinradius:8 particles blockcrack_38_2:0.1:2.0:250:0:0
+PetalStormSound:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:8 sound mob.creeper.death:1.0:1.0

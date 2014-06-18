@@ -1,0 +1,52 @@
+Vacuum:
+  Cooldown: 0.25
+  Skills:
+  - skill VacuumPull >0 1
+  - skill VacuumEffect1 >0 1
+  - skill VacuumSound >0 1
+  - delay 4
+  - skill VacuumPull >0 1
+  - skill VacuumEffect2 >0 1
+  - delay 4
+  - skill VacuumPull >0 1
+  - skill VacuumEffect3 >0 1
+  - delay 4
+  - skill VacuumPull >0 1
+  - skill VacuumEffect4 >0 1
+  - delay 4
+  - skill VacuumPull >0 1
+  - skill VacuumEffect5 >0 1
+  - delay 4
+VacuumPull:
+  Cooldown: 0.25
+  Skills:
+  - throw 6:-10:-5
+VacuumEffect1:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles explode:2.5:0.05:1500:0:1
+  - effect boss particles largeexplode:0.5:0.05:50:0:1
+VacuumEffect2:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles explode:2.0:0.05:1250:0:1
+  - effect boss particles largeexplode:0.5:0.05:50:0:1
+VacuumEffect3:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles explode:1.5:0.05:1000:0:1
+  - effect boss particles largeexplode:0.5:0.05:50:0:1
+VacuumEffect4:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles explode:1.0:0.05:750:0:1
+  - effect boss particles largeexplode:0.5:0.05:50:0:1
+VacuumEffect5:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles explode:0.5:0.05:500:0:1
+  - effect boss particles largeexplode:0.5:0.05:50:0:1
+VacuumSound:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound mob.wither.idle:1.0:1.0

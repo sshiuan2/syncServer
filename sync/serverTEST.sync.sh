@@ -19,6 +19,7 @@ local from=$thisServerPath/$thisWorldName
 local to=$sourceWorldName
 local ds=(
 players
+playerdata
 data
 stats
 )
@@ -57,42 +58,82 @@ sed -i "s/^op-permission-level=.*$/op-permission-level=2/g" $to
 sed -i 's/^white-list=.*$/white-list=true/g' $to
 
 sync_conf_spigot;
+sync_conf_start;
+sync_conf_ops;
 }
 sync_conf_spigot(){
 local to=$thisServerPath/spigot.yml
 sed -i 's/\  whitelist:.*$/  whitelist: "你不在白名單內！若想加入請FB問op...\\n近期有人搗亂，待1.8有觀察者模式後再拿掉白名單。"/g' $to
 }
-sync_start(){
+sync_conf_start(){
 local to=$thisServerPath/start.sh
 sed -i 's/^local Xms=.*$/Xms=64M/g' $to
 sed -i 's/^local Xmx=.*$/Xmx=512M/g' $to
 }
-sync_op(){
-local to=$thisServerPath/ops.txt
-echo "O0oO0o0Oo0O" >> $to
-echo "sp-michelle" >> $to
-echo "in91andy" >> $to
-echo "sp-kenny" >> $to
-echo "SmallWawa" >> $to
-echo "XianGerWu" >> $to
-#echo "A129lau" >> $to #black list send items to survival server...
-echo "sp-bonebonekai" >> $to
-echo "sp-byebyron" >> $to
-echo "andywawa" >> $to
-echo "susanwawa" >> $to
-echo "jam09jam" >> $to
-echo "bonr_maximum" >> $to
-echo "Shiaobin" >> $to
-echo "sp-moha" >> $to
-echo "OZ_00MS" >> $to
-echo "carlccc0911" >> $to
-sync_whitelist
+sync_conf_ops(){
+local f="$thisServerPath/ops.json"
+local ops=(
+"O0oO0o0Oo0O"
+"sp-michelle"
+"in91andy"
+"sp-kenny"
+"SmallWawa"
+"XianGerWu"
+#"A129lau" #black list send items to survival server...
+"sp-bonebonekai"
+"sp-byebyron"
+"andywawa"
+"susanwawa"
+"jam09jam"
+"bonr_maximum"
+"Shiaobin"
+"sp-moha"
+"OZ_00MS"
+"carlccc0911"
+)
+local op;
+local args=();
+for op in ${ops[@]};do
+args+=(`buildOpData "$op"`);
+done;
+local arg;
+for arg in ${args[@]};do
+echo $arg;
+cat $f|$varDir/jq ". + $arg" > $f;
+done;
+sync_conf_whitelist
 }
-sync_whitelist(){
-local from=$thisServerPath/ops.txt
-local to=$thisServerPath/white-list.txt
-cat $from >> $to
-echo "sp-JackLin84911" >> $to
+sync_conf_whitelist(){
+local f=$thisServerPath/whitelist.json
+local whites=(
+"sp-JackLin84911"
+)
+local white;
+local args=();
+for white in ${whites[@]};do
+args+=(`buildOpData "$white"`);
+done;
+local arg;
+for arg in ${args[@]};do
+echo $arg;
+cat $f|$varDir/jq ". + $arg" > $f;
+done;
+}
+sync_scp(){
+scp_getControllers;
+scp_getServer spigot;
+
+local plugins=(
+VariableTriggers
+WorldEdit
+dynmap
+
+#iConomy
+#Vault
+#KillerMoney
+#GriefPrevention
+#Residence
+)
 }
 sync_dynmap_port(){
 local to=$thisServerPath/plugins/dynmap/configuration.txt
@@ -101,25 +142,15 @@ sed -i "s/^webserver-port:.*$/webserver-port: 8888/g" $to
 sync_var;
 source_all;
 
+msg_startSync;
+
 sync_backup_region;
 #sync_backup_score;
 purge_plugins all;
 
-msg_startSync;
-scp_getControllers
-sync_start;
-scp_getServer spigot;
+sync_scp;
 sync_conf;
-sync_op;
 
-#scp_getPlugin EpicBossGoldEdition;
-scp_getPlugin VariableTriggers;
-scp_getPlugin WorldEdit;
-scp_getPlugin dynmap;
 sync_dynmap_port;
-#scp_getPlugin iConomy
-#scp_getPlugin Vault
-#scp_getPlugin KillerMoney
-#scp_getPlugin GriefPrevention;
-#scp_getPlugin Residence;
+
 msg_endSync;

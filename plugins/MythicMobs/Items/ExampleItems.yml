@@ -1,0 +1,21 @@
+Example:
+  Id: 276
+  Data: 0
+  Amount: 1
+  Display: '&3Greatsword of the Skeleton King'
+  Lore:
+  - '&6A powerful sword used by'
+  - '&6the King of Skeletons.'
+  Enchantments:
+  - DAMAGE_ALL:5
+  - KNOCKBACK:2
+  - FIRE_ASPECT:2
+  - PROTECTION_ENVIRONMENTAL:2
+  - PROTECTION_PROJECTILE:2
+  - PROTECTION_FIRE:2
+  - PROTECTION_EXPLOSIONS:2
+  Options:
+    Health: 10
+    MovementSpeed: 0.1
+    KnockbackResistance: 10
+    Color: 255,40,40

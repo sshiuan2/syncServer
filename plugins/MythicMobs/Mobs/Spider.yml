@@ -1,0 +1,48 @@
+#spider
+SpiderKing:
+  Mobtype: spider
+  Display: '&6毒蜘蛛他媽'
+  Health: 500
+  Damage: 5
+  Skills:
+  - summon cavespider:2 <500 0.2
+  - summon cavespider:3 =0 0.1
+  - summon cavespider:3 =0 0.1
+  - summon cavespider:3 =0 0.1
+  - summon cavespider:3 =0 0.1
+  - summon cavespider:3 =0 0.1
+  - summon cavespider:3 =0 0.1
+  - summon cavespider:3 =0 0.1
+  - summon cavespider:3 =0 0.1
+  - summon cavespider:3 =0 0.1
+  - summon cavespider:3 =0 0.1
+Firespider:
+  Mobtype: cavespider
+  Display: '&6火蜘蛛'
+  Health: 100
+  Damage: 1
+  Skills:
+  - message 25:'$boss; &4Burn Bitch Burn!!!' >0 0.2
+  - message 25:'$boss; &6How did you defeat me!!!' =0 1
+  - skill Summonspiderkin <50 0.1
+  - effect boss flames >0 0.9
+  - effect boss sound fire.fire >0 0.9
+  - effect boss sound liquid.lavapop >0 0.1
+  - effect boss largesmoke >0 1
+  - effect boss explosion =0 1
+  - shootfireball 1:true:40 >0 0.1
+  - potionboss INVISIBILITY:140:5 <50 0.1
+  - potion 30:SLOW:80:5 >0 0.1
+  - throw 10:30:0 <30 0.5
+  Drops:
+  - Firespiderdrops
+  Options:
+    MovementSpeed: 0.2
+    MaxCombatDistance: 25'
+    FollowRange: 10'
+    KnockbackResistance: 0.5
+    PreventLeashing: true
+    PreventOtherDrops: true
+    PreventRenaming: true
+    PreventTeleporting: true
+    RepeatAllSkills: false

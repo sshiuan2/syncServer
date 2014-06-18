@@ -39,7 +39,7 @@ javaParallelGCThreads=1
 
 source_all(){
 echo -n "sourceAllFunctions: "
-for f in $varDir/*;do
+for f in $varDir/*.sh;do
 source $f;echo -n "$f ";
 done
 echo ""

@@ -1,0 +1,66 @@
+##Passive
+#bat
+#chicken / babychicken
+#cow / babycow
+#horse / babyhorse
+#mushroomcow / babymushroomcow
+#ocelot / babyocelot
+#pig / babypig
+#sheep / babysheep
+#squid
+#village / babyvillager
+##Neutral
+#cavespider: Hostile in light levels below 12
+#spider: Hostile in light levels below 12
+#wolf / babywolf / angrywolf / angrybabywolf: Hostile once attacked or to assist other wolves that were attacked.
+#pigzombie / angrypigzombie / babypigzombie / angrybabypigzombie: Hostile once attacked or to assist other zombie pigmen that were attacked.
+#enderman: Hostile if the player stares at them or they attack the enderman.
+#snow golem / iron golem: Hostile if attacked or if villagers are attacked.
+##Hostile
+#angrypigzombievillager / angrybabypigzombievillager
+#blaze
+#chickenjockey (only hostile if being ridden by a type of zombie)
+#creeper / poweredcreeper
+#ghast
+#magmacube
+#pigzombievillager / babypigzombievillager
+#silverfish
+#skeleton
+#villagezombie / babyvillagezombie
+#witch
+#slime
+#witherskeleton
+#wither
+#enderdragon
+#zombie
+Example:
+  Mobtype: slime
+  Display: '&6Skeleton King'
+  Health: 500
+  Damage: 1
+  Skills:
+  - skill Example >0 0.1
+  Equipment:
+  - KingsCrown:4
+  - COS_YellowChest:3
+  - COS_YellowLegs:2
+  - COS_YellowFeet:1
+  - 280:0
+  Drops:
+  - SkeletonKingDrops
+  - goldnugget 2 0.5
+  LevelModifiers:
+  - health 5
+  - damage 0.5
+  DamageModifiers:
+  - LIGHTNING 0
+  - FIRE 0.5
+  Options:
+    Size: 20
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    PreventSlimeSplit: true
+    MaxCombatDistance: 30
+    KnockbackResistance: 1

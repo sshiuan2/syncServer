@@ -1,0 +1,450 @@
+Volcano:
+  Cooldown: 5
+  Skills:
+  - msg 15:'$boss &eIs preparing a very powerful spell, run!' >0 1
+  - potionself SLOW:220:10 >0 1
+  - delay 60
+  - msg 15:'$boss &eCasts Volcano!'
+  - skill VolcanoRiseEffect1 >0 1
+  - skill VolcanoSound1 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect3 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect4 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect5 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect6 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect7 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - delay 4
+  - skill VolcanoMissile >0 1
+  - skill VolcanoShotEffect >0 1
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoShotEffect >0 1
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoMissile >0 1
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoShotEffect >0 1
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoMissile >0 1
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoShotEffect >0 1
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoMissile >0 1
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoShotEffect >0 1
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoMissile >0 1
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoShotEffect >0 1
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoMissile >0 1
+  - skill VolcanoRiseEffect8 >0 1
+  - skill VolcanoRiseLavaEffect >0 1
+  - skill VolcanoSound2 >0 1
+  - delay 4
+  - skill VolcanoRiseEffect7 >0 1
+  - delay 3
+  - skill VolcanoRiseEffect6 >0 1
+  - delay 3
+  - skill VolcanoRiseEffect5 >0 1
+  - delay 3
+  - skill VolcanoRiseEffect4 >0 1
+  - delay 3
+  - skill VolcanoRiseEffect3 >0 1
+  - delay 3
+  - skill VolcanoRiseEffect2 >0 1
+  - delay 3
+  - skill VolcanoRiseEffect1 >0 1
+  - delay 3
+VolcanoMissile:
+  Cooldown: 0.25
+  Skills:
+  - skill VolcanoMissileEffect1 >0 1
+  - skill VolcanoSound3 >0 1
+  - delay 2
+  - skill VolcanoMissileEffect2 >0 1
+  - delay 2
+  - skill VolcanoMissileEffect3 >0 1
+  - delay 2
+  - skill VolcanoMissileEffect4 >0 1
+  - delay 2
+  - skill VolcanoMissileEffect5 >0 1
+  - delay 2
+  - skill VolcanoMissileEffect6 >0 1
+  - delay 2
+  - skill VolcanoMissileEffect7 >0 1
+  - delay 2
+  - skill VolcanoMissileEffect8 >0 1
+  - delay 1
+  - skill VolcanoMissileEffect9 >0 1
+  - delay 1
+  - skill VolcanoRock >0 1
+  - skill VolcanoMissileEffect9 >0 1
+  - delay 1
+  - skill throw 8:5:2 >0 1
+  - skill VolcanoMissleEffect9 >0 1
+VolcanoRock:
+  Cooldown: 0.25
+  Skills:
+  - skill VolcanoRockEffect1 >0 1
+  - skill VolcanoRockSound1 >0 1
+  - delay 1
+  - skill VolcanoRockEffect2 >0 1
+  - delay 1
+  - skill VolcanoRockEffect3 >0 1
+  - skill VolcanoRockSound2 >0 1
+  - delay 1
+  - skill VolcanoRockEffect4 >0 1
+  - delay 1
+  - skill VolcanoRockEffect5 >0 1
+  - skill VolcanoRockSound3 >0 1
+  - delay 1
+  - skill VolcanoRockEffect6 >0 1
+  - delay 1
+  - skill VolcanoRockEffect7 >0 1
+  - skill VolcanoRockSound4 >0 1
+  - delay 1
+  - skill VolcanoRockEffect8 >0 1
+  - delay 1
+  - skill VolcanoRockEffect9 >0 1
+  - skill VolcanoRockSound5 >0 1
+  - delay 1
+  - skill VolcanoRockEffect10 >0 1
+  - delay 1
+  - skill VolcanoRockEffect11 >0 1
+  - skill VolcanoRockSound6 >0 1
+  - delay 1
+  - skill VolcanoRockEffect12 >0 1
+  - delay 1
+  - damage 8:2:false >0 1
+  - ignite 8:60 >0 1
+  - potion 8:WEAKNESS:100:2 >0 1
+  - potion 8:SLOW:100:2 >0 1
+  - skill VolcanoRockEffect13 >0 1
+  - skill VolcanoRockSound7 >0 1
+VolcanoRockEffect1:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 particles lava:0.1:0.1:20:0:13.0
+  - effect playersinradius:10 particles reddust:0.1:0.1:30:0:13.0
+VolcanoRockEffect2:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 particles lava:0.1:0.1:20:0:12.0
+  - effect playersinradius:10 particles reddust:0.1:0.1:30:0:12.0
+VolcanoRockEffect3:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 particles lava:0.1:0.1:20:0:11.0
+  - effect playersinradius:10 particles reddust:0.1:0.1:30:0:11.0
+VolcanoRockEffect4:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 particles lava:0.1:0.1:20:0:10.0
+  - effect playersinradius:10 particles reddust:0.1:0.1:30:0:10.0
+VolcanoRockEffect5:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 particles lava:0.1:0.1:20:0:9.0
+  - effect playersinradius:10 particles reddust:0.1:0.1:30:0:9.0
+VolcanoRockEffect6:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 particles lava:0.1:0.1:20:0:8.0
+  - effect playersinradius:10 particles reddust:0.1:0.1:30:0:8.0
+VolcanoRockEffect7:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 particles lava:0.1:0.1:20:0:7.0
+  - effect playersinradius:10 particles reddust:0.1:0.1:30:0:7.0
+VolcanoRockEffect8:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 particles lava:0.1:0.1:20:0:6.0
+  - effect playersinradius:10 particles reddust:0.1:0.1:30:0:6.0
+VolcanoRockEffect9:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 particles lava:0.1:0.1:20:0:5.0
+  - effect playersinradius:10 particles reddust:0.1:0.1:30:0:5.0
+VolcanoRockEffect10:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 particles lava:0.1:0.1:20:0:4.0
+  - effect playersinradius:10 particles reddust:0.1:0.1:30:0:4.0
+VolcanoRockEffect11:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 particles lava:0.1:0.1:20:0:3.0
+  - effect playersinradius:10 particles reddust:0.1:0.1:30:0:3.0
+VolcanoRockEffect12:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 particles lava:0.1:0.1:20:0:2.0
+  - effect playersinradius:10 particles reddust:0.1:0.1:30:0:2.0
+VolcanoRockEffect13:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 particles lava:0.1:0.1:20:0:1.0
+  - effect playersinradius:10 particles reddust:0.1:0.1:30:0:1.0
+VolcanoRockSound1:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 sound fireworks.launch:0.1:0.1
+VolcanoRockSound2:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 sound fireworks.launch:0.3:0.1
+VolcanoRockSound3:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 sound fireworks.launch:0.5:0.1
+VolcanoRockSound4:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 sound fireworks.launch:0.7:0.1
+VolcanoRockSound5:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 sound fireworks.launch:0.9:0.1
+VolcanoRockSound6:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 sound fireworks.launch:1.1:0.1
+VolcanoRockSound7:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 sound random.explode:1.0:2.0
+  - effect playersinradius:10 sound mob.zombie.remedy:1.0:2.0
+
+
+VolcanoRiseEffect1:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_03_3:0.1:0.1:100:0.1:1.5
+VolcanoRiseEffect2:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_03_3:0.1:0.1:100:0.1:1.5
+  - effect boss particles blockcrack_03_3:0.3:0.1:150:0.1:1.0
+VolcanoRiseEffect3:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_03_3:0.1:0.1:100:0.1:2.0
+  - effect boss particles blockcrack_03_3:0.3:0.1:150:0.1:1.5
+  - effect boss particles blockcrack_03_3:0.5:0.1:200:0.1:1.0
+VolcanoRiseEffect4:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_03_3:0.1:0.1:100:0.1:2.5
+  - effect boss particles blockcrack_03_3:0.3:0.1:150:0.1:2.0
+  - effect boss particles blockcrack_03_3:0.5:0.1:200:0.1:1.5
+  - effect boss particles blockcrack_03_3:0.7:0.1:250:0.1:1.0
+VolcanoRiseEffect5:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_03_3:0.1:0.1:100:0.1:3.0
+  - effect boss particles blockcrack_03_3:0.3:0.1:150:0.1:2.5
+  - effect boss particles blockcrack_03_3:0.5:0.1:200:0.1:2.0
+  - effect boss particles blockcrack_03_3:0.7:0.1:250:0.1:1.5
+  - effect boss particles blockcrack_03_3:0.9:0.1:300:0.1:1.0
+VolcanoRiseEffect6:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_03_3:0.1:0.1:100:0.1:3.5
+  - effect boss particles blockcrack_03_3:0.3:0.1:150:0.1:3.0
+  - effect boss particles blockcrack_03_3:0.5:0.1:200:0.1:2.5
+  - effect boss particles blockcrack_03_3:0.7:0.1:250:0.1:2.0
+  - effect boss particles blockcrack_03_3:0.9:0.1:300:0.1:1.5
+  - effect boss particles blockcrack_03_3:1.1:0.1:350:0.1:1.0
+VolcanoRiseEffect7:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_03_3:0.1:0.1:100:0.1:4.0
+  - effect boss particles blockcrack_03_3:0.3:0.1:150:0.1:3.5
+  - effect boss particles blockcrack_03_3:0.5:0.1:200:0.1:3.0
+  - effect boss particles blockcrack_03_3:0.7:0.1:250:0.1:2.5
+  - effect boss particles blockcrack_03_3:0.9:0.1:300:0.1:2.0
+  - effect boss particles blockcrack_03_3:1.1:0.1:350:0.1:1.5
+  - effect boss particles blockcrack_03_3:1.3:0.1:350:0.1:1.0
+VolcanoRiseEffect8:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles blockcrack_03_3:0.1:0.1:60:0.1:4.5
+  - effect boss particles blockcrack_03_3:0.3:0.1:110:0.1:4.0
+  - effect boss particles blockcrack_03_3:0.5:0.1:160:0.1:3.5
+  - effect boss particles blockcrack_03_3:0.7:0.1:210:0.1:3.0
+  - effect boss particles blockcrack_03_3:0.9:0.1:260:0.1:2.5
+  - effect boss particles blockcrack_03_3:1.1:0.1:310:0.1:2.0
+  - effect boss particles blockcrack_03_3:1.3:0.1:360:0.1:1.5
+  - effect boss particles blockcrack_03_3:1.5:0.1:410:0.1:1.0
+VolcanoRiseLavaEffect:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles reddust:0.2:0.1:50:0:4.5
+  - effect boss particles reddust:0.4:0.1:90:0:4.0
+  - effect boss particles reddust:0.6:0.1:140:0:3.5
+  - effect boss particles reddust:0.8:0.1:190:0:3.0
+  - effect boss particles reddust:1.0:0.1:240:0:2.5
+  - effect boss particles reddust:1.2:0.1:290:0:2.0
+  - effect boss particles reddust:1.4:0.1:340:0:1.5
+  - effect boss particles reddust:1.6:0.1:390:0:1.0
+  - effect boss particles lava:0.8:1.0:150:0:4.0
+VolcanoShotEffect:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles lava:0.8:1.0:150:0:4.0
+VolcanoMissileEffect1:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles lava:0.4:0.4:60:0:6.0
+  - effect boss particles reddust:0.4:0.4:80:0:6.0
+VolcanoMissileEffect2:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles lava:0.4:0.4:60:0:7.0
+  - effect boss particles reddust:0.4:0.4:80:0:7.0
+VolcanoMissileEffect3:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles lava:0.4:0.4:60:0:8.0
+  - effect boss particles reddust:0.4:0.4:80:0:8.0
+VolcanoMissileEffect4:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles lava:0.4:0.4:60:0:9.0
+  - effect boss particles reddust:0.4:0.4:80:0:9.0
+VolcanoMissileEffect5:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles lava:0.4:0.4:60:0:10.0
+  - effect boss particles reddust:0.4:0.4:80:0:10.0
+VolcanoMissileEffect6:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles lava:0.4:0.4:60:0:11.0
+  - effect boss particles reddust:0.4:0.4:80:0:11.0
+VolcanoMissileEffect7:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles lava:0.4:0.4:60:0:12.0
+  - effect boss particles reddust:0.4:0.4:80:0:12.0
+VolcanoMissileEffect8:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles lava:0.4:0.4:60:0:13.0
+  - effect boss particles reddust:0.4:0.4:80:0:13.0
+VolcanoMissileEffect9:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles lava:2.0:1.0:300:0:14.0
+VolcanoSound1:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 sound minecart.inside:2.0:2.0
+VolcanoSound2:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 sound random.explode:1.0:0.1
+  - effect playersinradius:10 sound mob.zombie.infect:1.0:0.1
+  - effect playersinradius:10 sound mob.zombie.remedy:0.5:2.0
+VolcanoSound3:
+  Cooldown: 0.25
+  Skills:
+  - effect playersinradius:10 sound mob.zombie.remedy:1.5:0.1

@@ -1,0 +1,31 @@
+#ghast
+GhastKing:
+  Mobtype: ghast
+  Display: '飛天水母王'
+  Health: 2500
+  Showhp: true
+  Damage: 20
+  Skills:
+  - msg 20:'&a$boss &f我也是有幫手的！' <2500 0.1
+  - msg 20:'&a$boss &f看我的嘔吐火球！' <2500 0.1
+  - potionself SPEED:3:3 <2500 0.2
+  - potionself INVISIBILITY:1:5 <2500 0.5
+  - summon ghast:3 <2500 0.1
+  - summon $水母王手下甲:1 <2500 0.1
+  - summon $水母王手下甲:1 <1500 0.1
+  - summon $水母王手下甲:1 <500 0.2
+  - summon $水母王手下乙:1 <2500 0.1
+  - summon $水母王手下乙:2 <1500 0.2
+  - summon $水母王手下乙:3 <500 0.3
+  - msg 25:'&a$boss &r臨死前招換出一堆骷髏' =0 1
+  - summon $水母王手下甲:1 =0 0.5
+  - summon $水母王手下甲:1 =0 0.5
+  - summon $水母王手下甲:1 =0 0.5
+  - summon $水母王手下乙:1 =0 0.5
+  - summon $水母王手下乙:1 =0 0.5
+  - summon $水母王手下乙:1 =0 0.5
+  - summon $水母王手下乙:1 =0 0.5
+  Equipment:
+  - Bow_GhastKing:0 0.5
+  Drops:
+  - GhastKing

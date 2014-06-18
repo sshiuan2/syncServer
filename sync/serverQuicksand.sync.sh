@@ -28,8 +28,10 @@ sed -i 's/^max-players=.*$/max-players=6/g' $to
 sed -i 's/^spawn-monsters=.*$/spawn-monsters=false/g' $to
 sed -i 's/^generate-structures=.*$/generate-structures=false/g' $to
 sed -i 's/^spawn-protection=.*$/spawn-protection=1000/g' $to
+
+sync_conf_start
 }
-sync_start(){
+sync_conf_start(){
 local to=$thisServerPath/start.sh
 sed -i 's/^local Xms=.*$/Xms=64M/g' $to
 sed -i 's/^local Xmx=.*$/Xmx=512M/g' $to
@@ -41,7 +43,6 @@ purge_plugins all;
 
 msg_startSync;
 scp_getControllers;
-sync_start;
 scp_getServer spigot;
 sync_conf;
 

@@ -1,0 +1,273 @@
+#--------------ADD THIS TO YOUR PREFERRED SKILLS.YML-----------------
+
+CometRain:
+  Cooldown: 5
+  Skills:
+  - msg 15:'$boss &eIs preparing an extremely powerful spell! Run!!'
+  - potionself SLOW:60:10
+  - delay 40
+  - msg 15:'$boss &eCasts Comet Rain!'
+  - summon $CometMob:1:10
+  - delay 20
+  - summon $CometMob:1:10
+  - delay 20
+  - summon $CometMob:1:10
+  - delay 20
+  - summon $CometMob:1:10
+  - delay 20
+  - summon $CometMob:1:10
+  - delay 20
+  - summon $CometMob:4:10
+
+#---------------ONLY ADD THIS IF YOU DO NOT ALREADY HAVE THE TARGETED COMET SKILL IN YOUR SERVER-----------------
+
+CometMob:
+  Mobtype: creeper
+  Health: 30
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    FuseTicks: 60000
+    ExplosionRadius: 0
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+  Skills:
+  - potionself INVISIBILITY:60000:1 ~onSpawn
+  - potionself SLOW:60000:100 ~onSpawn
+  - skill CometTargeted ~onSpawn
+  DamageModifiers:
+  - CUSTOM 0
+  - PROJECTILE 0
+  - ENTITY_ATTACK 0
+  - WITHER 0
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - VOID 0
+  - SUICIDE 0
+  - DROWNING 0
+  - LIGHTNING 0
+  - POISON 0
+  - STARVATION 0
+  - MAGIC 0
+  - FALING_BLOCK 0
+  - THORNS 0
+  - LAVA 0
+  - MELTING 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - SUFFOCATION 0
+  - CONTACT 0
+
+#-----------ONLY ADD THESE IF YOU DO NOT ALREADY HAVE THE COMET OR TARGETED COMET SKILL IN YOUR SERVER-------------
+
+CometTargeted:
+  Cooldown: 0.25
+  Skills:
+  - delay 5
+  - skill CometGroundEff
+  - skill CometStartSound
+  - delay 5
+  - skill CometGroundEff
+  - delay 5
+  - skill CometGroundEff
+  - delay 5
+  - skill CometGroundEff
+  - delay 5
+  - skill CometGroundEff
+  - delay 6
+  - skill CometStartEff1
+  - delay 2
+  - skill CometStartEff2
+  - delay 2
+  - skill CometStartEff3
+  - delay 2
+  - skill CometStartEff4
+  - delay 2
+  - skill CometStartEff5
+  - delay 2
+  - skill CometStartEff6
+  - delay 2
+  - skill CometStartEff7
+  - delay 2
+  - skill CometStartEff8
+  - delay 2
+  - skill CometStartEff9
+  - delay 2
+  - skill CometStartEff10
+  - delay 2
+  - skill CometStartEff11
+  - delay 2
+  - skill CometStartEff12
+  - delay 2
+  - skill CometStartEff13
+  - delay 2
+  - skill CometShadow
+  - damage 6:8:false
+  - skill CometCrashEff
+  - skill CometCrashSound
+  - delay 2
+  - skill CometCrashEff
+  - delay 2
+  - skill CometCrashEff
+  - delay 2
+  - skill CometCrashEff
+  - delay 2
+  - suicide
+CometShadow:
+  Cooldown: 0.25
+  Skills:
+  - potion 6:WITHER:60:0
+  - skill CometShadowEff
+  - delay 5
+  - potion 6:WITHER:55:0
+  - skill CometShadowEff
+  - delay 5
+  - potion 6:WITHER:50:0
+  - skill CometShadowEff
+  - delay 5
+  - potion 6:WITHER:45:0
+  - skill CometShadowEff
+  - delay 5
+  - potion 6:WITHER:40:0
+  - skill CometShadowEff
+  - damage 6:1:false
+  - delay 5
+  - potion 6:WITHER:35:0
+  - skill CometShadowEff
+  - delay 5
+  - potion 6:WITHER:30:0
+  - skill CometShadowEff
+  - delay 5
+  - potion 6:WITHER:25:0
+  - skill CometShadowEff
+  - delay 5
+  - potion 6:WITHER:20:0
+  - skill CometShadowEff
+  - damage 6:1:false
+  - delay 5
+  - potion 6:WITHER:15:0
+  - skill CometShadowEff
+  - delay 5
+  - potion 6:WITHER:10:0
+  - skill CometShadowEff
+  - delay 5
+  - potion 6:WITHER:5:0
+  - skill CometShadowEff
+  - damage 6:1:false
+CometShadowEff:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles witchMagic:0.2:0.2:60:0:0.6
+CometGroundEff:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles reddust:0.2:0.1:70:0.1:0
+CometStart1:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles smoke:0.3:0.3:275:0.1:13
+  - effect boss particles witchMagic:0.3:0.3:275:0.1:13
+  - effect boss particles lava:0.3:0.3:175:0.1:13
+  - effect boss particles reddust:0.2:0.1:70:0.1:1
+CometStartEff2:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles smoke:0.3:0.3:275:0.1:12
+  - effect boss particles witchMagic:0.3:0.3:275:0.1:12
+  - effect boss particles lava:0.3:0.3:175:0.1:12
+  - effect boss particles reddust:0.2:0.1:70:0.1:1
+CometStartEff3:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles smoke:0.3:0.3:275:0.1:11
+  - effect boss particles witchMagic:0.3:0.3:275:0.1:11
+  - effect boss particles lava:0.3:0.3:175:0.1:11
+  - effect boss particles reddust:0.2:0.1:70:0.1:1
+CometStartEff4:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles smoke:0.3:0.3:275:0.1:10
+  - effect boss particles witchMagic:0.3:0.3:275:0.1:10
+  - effect boss particles lava:0.3:0.3:175:0.1:10
+  - effect boss particles reddust:0.2:0.1:70:0.1:1
+CometStartEff5:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles smoke:0.3:0.3:275:0.1:9
+  - effect boss particles witchMagic:0.3:0.3:275:0.1:9
+  - effect boss particles lava:0.3:0.3:175:0.1:9
+  - effect boss particles reddust:0.2:0.1:70:0.1:1
+CometStartEff6:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles smoke:0.3:0.3:275:0.1:8
+  - effect boss particles witchMagic:0.3:0.3:275:0.1:8
+  - effect boss particles lava:0.3:0.3:175:0.1:8
+  - effect boss particles reddust:0.2:0.1:70:0.1:1
+CometStartEff7:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles smoke:0.3:0.3:275:0.1:7
+  - effect boss particles witchMagic:0.3:0.3:275:0.1:7
+  - effect boss particles lava:0.3:0.3:175:0.1:7
+  - effect boss particles reddust:0.2:0.1:70:0.1:1
+CometStartEff8:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles smoke:0.3:0.3:275:0.1:6
+  - effect boss particles witchMagic:0.3:0.3:275:0.1:6
+  - effect boss particles lava:0.3:0.3:175:0.1:6
+  - effect boss particles reddust:0.2:0.1:70:0.1:1
+CometStartEff9:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles smoke:0.3:0.3:275:0.1:5
+  - effect boss particles witchMagic:0.3:0.3:275:0.1:5
+  - effect boss particles lava:0.3:0.3:175:0.1:5
+  - effect boss particles reddust:0.2:0.1:70:0.1:1
+CometStartEff10:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles smoke:0.3:0.3:275:0.1:4
+  - effect boss particles witchMagic:0.3:0.3:275:0.1:4
+  - effect boss particles lava:0.3:0.3:175:0.1:4
+  - effect boss particles reddust:0.2:0.1:70:0.1:1
+CometStartEff11:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles smoke:0.3:0.3:275:0.1:3
+  - effect boss particles witchMagic:0.3:0.3:275:0.1:3
+  - effect boss particles lava:0.3:0.3:175:0.1:3
+  - effect boss particles reddust:0.2:0.1:70:0.1:1
+CometStartEff12:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles smoke:0.3:0.3:275:0.1:2
+  - effect boss particles witchMagic:0.3:0.3:275:0.1:2
+  - effect boss particles lava:0.3:0.3:175:0.1:2
+  - effect boss particles reddust:0.2:0.1:70:0.1:1
+CometStartEff13:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles smoke:0.3:0.3:275:0.1:1
+  - effect boss particles witchMagic:0.3:0.3:275:0.1:1
+  - effect boss particles lava:0.3:0.3:175:0.1:1
+  - effect boss particles reddust:0.2:0.1:70:0.1:1
+CometCrashEff:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles smoke:2.0:2.0:900:0.1:1
+  - effect boss particles witchMagic:2.0:2.0:1500:0.1:1
+  - effect boss particles lava:2.0:2.0:900:0.1:1
+CometStartSound:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound mob.wither.spawn:1.5:1.2
+CometCrashSound:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound random.explode:1.5:2.0
+  - effect boss sound random.explode:1.5:0.1
+  - effect boss sound mob.ghast.fireball:1.5:0.1
+  - effect boss sound mob.zombie.remedy:1.5:0.1

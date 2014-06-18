@@ -97,7 +97,6 @@ Commands:
     - '@CALL Command:call'
   mute:
     Override: true
-    Permission: vtriggers.admin
     Script:
     - '@CALL Command:mute'
   res:

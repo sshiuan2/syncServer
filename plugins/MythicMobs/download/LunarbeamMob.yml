@@ -1,0 +1,405 @@
+---------------------------Add this to your preferred mobs.yml------------------------------------
+
+LunarbeamMob:
+  Mobtype: creeper
+  Health: 20
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    FuseTicks: 60000
+    ExplosionRadius: 0
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+  Skills:
+  - potionself SLOW:60000:100 ~onSpawn
+  - potionself INVISIBILITY:60000:1 ~onSpawn
+  - skill LunarbeamTarget ~onSpawn
+  DamageModifiers:
+  - CUSTOM 0
+  - PROJECTILE 0
+  - ENTITY_ATTACK 0
+  - WITHER 0
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - VOID 0
+  - SUICIDE 0
+  - DROWNING 0
+  - LIGHTNING 0
+  - POISON 0
+  - STARVATION 0
+  - MAGIC 0
+  - FALING_BLOCK 0
+  - THORNS 0
+  - LAVA 0
+  - MELTING 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - SUFFOCATION 0
+  - CONTACT 0
+
+--------------------------Add this to your preferred skills.yml------------------------------------
+
+LunarbeamTarget:
+  Cooldown: 5
+  Conditions:
+  - targetwithin 15
+  - targetinlineofsight true
+  Skills:
+  - msg 10:'$boss &eIs preparing a powerful spell!'
+  - potionself SLOW:100:10
+  - delay 40
+  - msg 10:'$boss &eCasts Lunarbeam!'
+  - cmd 'mm m spawn LunarbeamMob 1 $world,$player_x,$player_y,$player_z'
+LunarbeamTargeted:
+  Cooldown: 0.25
+  Skills:
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedSoundOne >0 1
+  - delay 1
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedEffectTwo >0 1
+  - delay 1
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedEffectTwo >0 1
+  - skill LunarbeamTargetedEffectThree >0 1
+  - delay 1
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedEffectTwo >0 1
+  - skill LunarbeamTargetedEffectThree >0 1
+  - skill LunarbeamTargetedEffectFour >0 1
+  - delay 1
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedEffectTwo >0 1
+  - skill LunarbeamTargetedEffectThree >0 1
+  - skill LunarbeamTargetedEffectFour >0 1
+  - skill LunarbeamTargetedEffectFive >0 1
+  - delay 1
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedEffectTwo >0 1
+  - skill LunarbeamTargetedEffectThree >0 1
+  - skill LunarbeamTargetedEffectFour >0 1
+  - skill LunarbeamTargetedEffectFive >0 1
+  - skill LunarbeamTargetedEffectSix >0 1
+  - delay 1
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedEffectTwo >0 1
+  - skill LunarbeamTargetedEffectThree >0 1
+  - skill LunarbeamTargetedEffectFour >0 1
+  - skill LunarbeamTargetedEffectFive >0 1
+  - skill LunarbeamTargetedEffectSix >0 1
+  - skill LunarbeamTargetedEffectSeven >0 1
+  - delay 1
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedEffectTwo >0 1
+  - skill LunarbeamTargetedEffectThree >0 1
+  - skill LunarbeamTargetedEffectFour >0 1
+  - skill LunarbeamTargetedEffectFive >0 1
+  - skill LunarbeamTargetedEffectSix >0 1
+  - skill LunarbeamTargetedEffectSeven >0 1
+  - skill LunarbeamTargetedEffectEight >0 1
+  - delay 1
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedEffectTwo >0 1
+  - skill LunarbeamTargetedEffectThree >0 1
+  - skill LunarbeamTargetedEffectFour >0 1
+  - skill LunarbeamTargetedEffectFive >0 1
+  - skill LunarbeamTargetedEffectSix >0 1
+  - skill LunarbeamTargetedEffectSeven >0 1
+  - skill LunarbeamTargetedEffectEight >0 1
+  - skill LunarbeamTargetedEffectNine >0 1
+  - delay 1
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedEffectTwo >0 1
+  - skill LunarbeamTargetedEffectThree >0 1
+  - skill LunarbeamTargetedEffectFour >0 1
+  - skill LunarbeamTargetedEffectFive >0 1
+  - skill LunarbeamTargetedEffectSix >0 1
+  - skill LunarbeamTargetedEffectSeven >0 1
+  - skill LunarbeamTargetedEffectEight >0 1
+  - skill LunarbeamTargetedEffectNine >0 1
+  - skill LunarbeamTargetedEffectTen >0 1
+  - delay 4
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedEffectTwo >0 1
+  - skill LunarbeamTargetedEffectThree >0 1
+  - skill LunarbeamTargetedEffectFour >0 1
+  - skill LunarbeamTargetedEffectFive >0 1
+  - skill LunarbeamTargetedEffectSix >0 1
+  - skill LunarbeamTargetedEffectSeven >0 1
+  - skill LunarbeamTargetedEffectEight >0 1
+  - skill LunarbeamTargetedEffectNine >0 1
+  - skill LunarbeamTargetedEffectTen >0 1
+  - delay 4
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedEffectTwo >0 1
+  - skill LunarbeamTargetedEffectThree >0 1
+  - skill LunarbeamTargetedEffectFour >0 1
+  - skill LunarbeamTargetedEffectFive >0 1
+  - skill LunarbeamTargetedEffectSix >0 1
+  - skill LunarbeamTargetedEffectSeven >0 1
+  - skill LunarbeamTargetedEffectEight >0 1
+  - skill LunarbeamTargetedEffectNine >0 1
+  - skill LunarbeamTargetedEffectTen >0 1
+  - delay 4
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedEffectTwo >0 1
+  - skill LunarbeamTargetedEffectThree >0 1
+  - skill LunarbeamTargetedEffectFour >0 1
+  - skill LunarbeamTargetedEffectFive >0 1
+  - skill LunarbeamTargetedEffectSix >0 1
+  - skill LunarbeamTargetedEffectSeven >0 1
+  - skill LunarbeamTargetedEffectEight >0 1
+  - skill LunarbeamTargetedEffectNine >0 1
+  - skill LunarbeamTargetedEffectTen >0 1
+  - delay 4
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedEffectTwo >0 1
+  - skill LunarbeamTargetedEffectThree >0 1
+  - skill LunarbeamTargetedEffectFour >0 1
+  - skill LunarbeamTargetedEffectFive >0 1
+  - skill LunarbeamTargetedEffectSix >0 1
+  - skill LunarbeamTargetedEffectSeven >0 1
+  - skill LunarbeamTargetedEffectEight >0 1
+  - skill LunarbeamTargetedEffectNine >0 1
+  - skill LunarbeamTargetedEffectTen >0 1
+  - delay 4
+  - skill LunarbeamTargetedShadow >0 1
+  - skill LunarbeamTargetedDamage >0 1
+  - skill LunarbeamTargetedSlow >0 1
+  - skill LunarbeamTargetedEffectOne >0 1
+  - skill LunarbeamTargetedEffectTwo >0 1
+  - skill LunarbeamTargetedEffectThree >0 1
+  - skill LunarbeamTargetedEffectFour >0 1
+  - skill LunarbeamTargetedEffectFive >0 1
+  - skill LunarbeamTargetedEffectSix >0 1
+  - skill LunarbeamTargetedEffectSeven >0 1
+  - skill LunarbeamTargetedEffectEight >0 1
+  - skill LunarbeamTargetedEffectNine >0 1
+  - skill LunarbeamTargetedEffectTen >0 1
+  - skill LunarbeamTargetedSoundTwo >0 1
+  - delay 2
+  - skill LunarbeamTargetedAttackOne >0 1
+  - skill LunarbeamTargetedAttackTwo >0 1
+  - skill LunarbeamTargetedAttackThree >0 1
+  - skill LunarbeamTargetedAttackFour >0 1
+  - skill LunarbeamTargetedAttackFive >0 1
+  - skill LunarbeamTargetedGround >0 1
+  - skill LunarbeamTargetedSoundThree >0 1
+  - delay 3
+  - skill LunarbeamTargetedAttackOne >0 1
+  - skill LunarbeamTargetedAttackTwo >0 1
+  - skill LunarbeamTargetedAttackThree >0 1
+  - skill LunarbeamTargetedAttackFour >0 1
+  - skill LunarbeamTargetedAttackFive >0 1
+  - skill LunarbeamTargetedGround >0 1
+  - skill LunarbeamTargetedSoundThree >0 1
+  - delay 3
+  - skill LunarbeamTargetedAttackOne >0 1
+  - skill LunarbeamTargetedAttackTwo >0 1
+  - skill LunarbeamTargetedAttackThree >0 1
+  - skill LunarbeamTargetedAttackFour >0 1
+  - skill LunarbeamTargetedAttackFive >0 1
+  - skill LunarbeamTargetedGround >0 1
+  - delay 3
+  - skill LunarbeamTargetedAttackOne >0 1
+  - skill LunarbeamTargetedAttackTwo >0 1
+  - skill LunarbeamTargetedAttackThree >0 1
+  - skill LunarbeamTargetedAttackFour >0 1
+  - skill LunarbeamTargetedAttackFive >0 1
+  - skill LunarbeamTargetedGround >0 1
+  - delay 3
+  - skill LunarbeamTargetedAttackOne >0 1
+  - skill LunarbeamTargetedAttackTwo >0 1
+  - skill LunarbeamTargetedAttackThree >0 1
+  - skill LunarbeamTargetedAttackFour >0 1
+  - skill LunarbeamTargetedAttackFive >0 1
+  - skill LunarbeamTargetedGround >0 1
+  - delay 3
+  - skill LunarbeamTargetedAttackOne >0 1
+  - skill LunarbeamTargetedAttackTwo >0 1
+  - skill LunarbeamTargetedAttackThree >0 1
+  - skill LunarbeamTargetedAttackFour >0 1
+  - skill LunarbeamTargetedAttackFive >0 1
+  - skill LunarbeamTargetedGround >0 1
+  - delay 3
+  - skill LunarbeamTargetedAttackOne >0 1
+  - skill LunarbeamTargetedAttackTwo >0 1
+  - skill LunarbeamTargetedAttackThree >0 1
+  - skill LunarbeamTargetedAttackFour >0 1
+  - skill LunarbeamTargetedAttackFive >0 1
+  - skill LunarbeamTargetedGround >0 1
+  - delay 3
+  - skill LunarbeamTargetedAttackOne >0 1
+  - skill LunarbeamTargetedAttackTwo >0 1
+  - skill LunarbeamTargetedAttackThree >0 1
+  - skill LunarbeamTargetedAttackFour >0 1
+  - skill LunarbeamTargetedAttackFive >0 1
+  - delay 2
+  - skill LunarbeamTargetedAttackOne >0 1
+  - skill LunarbeamTargetedAttackTwo >0 1
+  - skill LunarbeamTargetedAttackThree >0 1
+  - skill LunarbeamTargetedAttackFour >0 1
+  - delay 2
+  - skill LunarbeamTargetedAttackOne >0 1
+  - skill LunarbeamTargetedAttackTwo >0 1
+  - skill LunarbeamTargetedAttackThree >0 1
+  - delay 2
+  - skill LunarbeamTargetedAttackOne >0 1
+  - skill LunarbeamTargetedAttackTwo >0 1
+  - delay 2
+  - skill LunarbeamTargetedAttackOne >0 1
+  - delay 5
+  - suicide
+
+LunarbeamTargetedShadowEffect:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles witchMagic:0.2:0.2:60:0:0.6
+LunarbeamTargetedEffectOne:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles instantSpell:0.4:1.0:100:0.1:15.0
+LunarbeamTargetedEffectTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles instantSpell:0.4:1.0:100:0.1:13.5
+LunarbeamTargetedEffectThree:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles instantSpell:0.4:1.0:100:0.1:12.0
+LunarbeamTargetedEffectFour:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles instantSpell:0.4:1.0:100:0.1:10.5
+LunarbeamTargetedEffectFive:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles instantSpell:0.4:1.0:100:0.1:9.0
+LunarbeamTargetedEffectSix:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles instantSpell:0.4:1.0:100:0.1:7.5
+LunarbeamTargetedEffectSeven:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles instantSpell:0.4:1.0:100:0.1:6.0
+LunarbeamTargetedEffectEight:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles instantSpell:0.4:1.0:100:0.1:4.5
+LunarbeamTargetedEffectNine:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles instantSpell:0.4:1.0:100:0.1:3.0
+LunarbeamTargetedEffectTen:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles instantSpell:0.4:1.0:100:0.1:1.5
+LunarbeamTargetedAttackOne:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles witchMagic:0.45:2.0:125:0.1:14.0
+  - effect boss particles smoke:0.45:2.0:125:0:14.0
+  - effect boss particles mobSpellAmbient:1.0:2.0:200:0:14.0
+LunarbeamTargetedAttackTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles witchMagic:0.45:2.0:125:0.1:11.0
+  - effect boss particles smoke:0.45:2.0:125:0:11.0
+  - effect boss particles mobSpellAmbient:1.0:2.0:200:0:11.0
+LunarbeamTargetedAttackThree:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles witchMagic:0.45:2.0:125:0.1:8.0
+  - effect boss particles smoke:0.45:2.0:125:0:8.0
+  - effect boss particles mobSpellAmbient:1.0:2.0:200:0:8.0
+LunarbeamTargetedAttackFour:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles witchMagic:0.45:2.0:125:0.1:5.0
+  - effect boss particles smoke:0.45:2.0:125:0:5.0
+  - effect boss particles mobSpellAmbient:1.0:2.0:200:0:5.0
+LunarbeamTargetedAttackFive:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles witchMagic:0.45:2.0:125:0.1:2.0
+  - effect boss particles smoke:0.45:2.0:125:0:2.0
+  - effect boss particles mobSpellAmbient:1.0:2.0:200:0:2.0
+LunarbeamTargetedGround:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles witchMagic:2.25:1.25:1600:0.1:1.5
+  - effect boss particles reddust:2.25:1.25:800:0.1:1.5
+LunarbeamTargetedSoundOne:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound mob.wither.spawn:1.5:1.5
+LunarbeamTargetedSoundTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound random.explode:2.0:1.0
+LunarbeamTargetedSoundThree:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound mob.zombie.infect:1.2:0.1
+  - effect boss sound mob.zombie.remedy:1.0:0.8
+LunarbeamTargetedWither:
+  Cooldown: 0.25
+  Skills:
+  - potion 5:WITHER:5:0
+LunarbeamTargetedSlow:
+  Cooldown: 0.25
+  Skills:
+  - potion 5:SLOW:60:2
+LunarbeamTargetedDamage:
+  Cooldown: 0.25
+  Skills:
+  - damage 5:5:false >0 1
+LunarbeamTargetedShadowDamage:
+  Cooldown: 0.25
+  Skills:
+  - damage 5:1:true >0 1
+LunarbeamTargetedShadow:
+  Cooldown: 0.25
+  Skills:
+  - skill LunarbeamTargetedWither >0 1
+  - skill LunarbeamTargetedShadowEffect >0 1
+  - delay 5
+  - skill LunarbeamTargetedWither >0 1
+  - skill LunarbeamTargetedShadowEffect >0 1
+  - delay 5
+  - skill LunarbeamTargetedWither >0 1
+  - skill LunarbeamTargetedShadowEffect >0 1
+  - delay 5
+  - skill LunarbeamTargetedWither >0 1
+  - skill LunarbeamTargetedShadowEffect >0 1
+  - delay 5
+  - skill LunarbeamTargetedWither >0 1
+  - skill LunarbeamTargetedShadowEffect >0 1
+  - skill LunarbeamTargetedShadowDamage >0 1
+  - delay 5
+  - skill LunarbeamTargetedWither >0 1
+  - skill LunarbeamTargetedShadowEffect >0 1
+  - delay 5
+  - skill LunarbeamTargetedWither >0 1
+  - skill LunarbeamTargetedShadowEffect >0 1
+  - delay 5
+  - skill LunarbeamTargetedWither >0 1
+  - skill LunarbeamTargetedShadowEffect >0 1
+  - delay 5
+  - skill LunarbeamTargetedWither >0 1
+  - skill LunarbeamTargetedShadowEffect >0 1
+  - skill LunarbeamTargetedShadowDamage >0 1
+  - delay 5
+  - skill LunarbeamTargetedWither >0 1
+  - skill LunarbeamTargetedShadowEffect >0 1
+  - delay 5
+  - skill LunarbeamTargetedWither >0 1
+  - skill LunarbeamTargetedShadowEffect >0 1
+  - delay 5
+  - skill LunarbeamTargetedWither >0 1
+  - skill LunarbeamTargetedShadowEffect >0 1
+  - delay 5
+  - skill LunarbeamTargetedWither >0 1
+  - skill LunarbeamTargetedShadowEffect >0 1

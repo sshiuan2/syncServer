@@ -55,10 +55,15 @@ fix_start_jar $jar
 scp_getVanillaConf(){
 local files=(
 server.properties
-ops.txt
-white-list.txt
-banned-ips.txt
-banned-players.txt
+#usercache.json
+ops.json
+whitelist.json
+banned-ips.json
+banned-players.json
+#ops.txt
+#white-list.txt
+#banned-ips.txt
+#banned-players.txt
 )
 for f in ${files[@]};do
 scp $syncServerScpPath/${f} $thisServerPath/${f}
@@ -185,6 +190,37 @@ mv $from/* $to
 }
 scp_getPlugin_EpicBossGoldEdition(){
 local name=$1
+local from=$syncServerScpPath/plugins/$name
+local to=$thisServerPath/plugins/$name
+local files=(
+#Bosses.yml
+#Options.yml
+#download.sh
+#upload.sh
+)
+for f in ${files[@]};do
+scp $from/$f $to/$f
+done
+scp -r $from/$thisServerName $to
+#scp_getPlugin_EpicBossGoldEdition_restore $name
+}
+scp_getPlugin_EpicBossGoldEdition_restore(){
+local name=$1
+local from=$thisServerPath/plugins/$name/$thisServerName
+local to=$thisServerPath/plugins/$name
+mv $from/* $to
+}
+scp_getPlugin_MythicMobs(){
+local name=$1
+local from=$syncServerScpPath/plugins/$name
+local to=$thisServerPath/plugins/$name
+local files=(
+#Bosses.yml
+)
+#for f in ${files[@]};do
+#scp $from/$f $to/$f
+#done
+scp -r $from $to/../
 }
 scp_getPlugin_VariableTriggers(){
 local name=$1
@@ -310,6 +346,7 @@ motd.txt
 rules.txt
 info.txt
 book.txt
+messages_zh_TW.properties
 #spawn.yml: every server's spawn point is different!
 #userdata/: homes and logout location
 #warp/: warp location, replaced by bungeesuite warp

@@ -1,0 +1,131 @@
+#zombie
+#giant
+Zombie_lv0:
+  Mobtype: zombie
+  Display: '新手殭屍'
+  Health: 10
+  Damage: 4
+  Skills:
+  - summon zombiebaby:2 =0 1
+  - msg 25:'&a$boss &r臨死前招換出 &c殭屍屁孩 &rx2' =0 1
+  Drops:
+  - Zombie_lv0
+Zombie_lv1:
+  Mobtype: zombie
+  Display: '成年殭屍'
+  Health: 20
+  Damage: 8
+  Skills:
+  - summon $Zombie_lv0:2 =0 1
+  - msg 25:'&a$boss &r臨死前招換出 &c新手殭屍 &rx2' =0 1
+  Equipment:
+  - 268:0 0.05
+  - 301:1 0.05
+  - 300:2 0.05
+  - 299:3 0.05
+  - 298:4 0.05
+  Drops:
+  - Zombie_lv1
+Zombie_lv2:
+  Mobtype: zombie
+  Display: '殭屍隊長'
+  Health: 40
+  Damage: 16
+  Skills:
+  - summon $Zombie_lv1:1 =0 1
+  - msg 25:'&a$boss &r臨死前招換出 &c成年殭屍 &rx1' =0 1
+  Equipment:
+  - 272:0 0.05
+  - 305:1 0.05
+  - 304:2 0.05
+  - 303:3 0.05
+  - 302:4 0.05
+  Drops:
+  - Zombie_lv2
+Zombie_lv3:
+  Mobtype: zombie
+  Display: '殭屍長老'
+  Health: 80
+  Damage: 32
+  Skills:
+  - summon $Zombie_lv2:1 =0 1
+  - msg 25:'&a$boss &r臨死前招換出 &c殭屍隊長 &rx1' =0 1
+  Equipment:
+  - Sword_Zombie_lv3:0 0.1
+  - Boots_Zombie_lv3:1 0.1
+  - Leggings_Zombie_lv3:2 0.1
+  - Chestplate_Zombie_lv3:3 0.1
+  - Helmet_Zombie_lv3:4 0.1
+  Drops:
+  - Zombie_lv3
+Zombie_lv4:
+  Mobtype: zombie
+  Display: '殭屍教主'
+  Health: 320
+  Damage: 64
+  Skills:
+  - summon $Zombie_lv3:1 =0 1
+  - msg 25:'&a$boss &r臨死前招換出 &c殭屍長老 &rx1' =0 1
+  Equipment:
+  - Sword_Zombie_lv4:0 0.5
+  - Boots_Zombie_lv4:1 0.2
+  - Leggings_Zombie_lv4:2 0.2
+  - Chestplate_Zombie_lv4:3 0.2
+  - Helmet_Zombie_lv4:4 0.2
+  Drops:
+  - Zombie_lv4
+ZombieKing:
+  Mobtype: giant
+  Display: '殭屍巨人王'
+  Health: 1600
+  Damage: 128
+  Skills:
+  - summon $Zombie_lv1:1 /1600-1280 0.01
+  - summon $Zombie_lv2:1 <1280 0.01
+  - summon $Zombie_lv2:1 <960 0.01
+  - potionself SPEED:4:5 <960 0.2
+  - summon $Zombie_lv3:1 <640 0.05
+  - summon $Zombie_lv4:1 <320 0.1
+  - summon $Zombie_lv4:2 =0 1
+  - msg 25:'&a$boss &r臨死前招換出 &c殭屍教主 &rx2' =0 1
+  - potion 25:SPEED:4:4 <160 1
+  Equipment:
+  - Sword_ZombieKing:0 0.4
+  - Boots_ZombieKing:1 0.2
+  - Leggings_ZombieKing:2 0.2
+  - Chestplate_ZombieKing:3 0.2
+  - Helmet_ZombieKing:4 0.2
+  Drops:
+  - ZombieKing
+ZombieKing_lv1:
+  Mobtype: giant
+  Display: '殭屍巨人首領'
+  Health: 3200
+  Damage: 256
+  Skills:
+  - msg 20:'&4[$boss]說： &2別想要逃跑！' <3200 0.1
+  - potionself SPEED:5:2 <3200 0.1
+  - summon $Zombie_lv3:1 <2500 0.01
+  - potionself SPEED:5:3 <2000 0.1
+  - summon $Zombie_lv4:1 <1500 0.01
+  - potionself SPEED:5:4 <1000 0.1
+  - potionself SPEED:5:5 <500 0.2
+  - summon $ZombieKing:1 <250 0.01
+  - potion 25:SPEED:5:4 <250 0.3
+  - msg 25:'&a$boss &r臨死前招換出一堆殭屍' =0 1
+  - summon zombie:1 =0 0.5
+  - summon zombie:1 =0 0.5
+  - summon zombie:1 =0 0.5
+  - summon zombie:1 =0 0.5
+  - summon zombiebaby:1 =0 0.5
+  - summon zombiebaby:1 =0 0.5
+  - summon zombiebaby:1 =0 0.5
+  - summon zombiebaby:1 =0 0.5
+  Equipment:
+  - Sword_ZombieKing_lv1:0 0.3
+  - Boots_ZombieKing_lv1:1 0.2
+  - Leggings_ZombieKing_lv1:2 0.2
+  - Chestplate_ZombieKing_lv1:3 0.2
+  - Helmet_ZombieKing_lv1:4 0.2
+  Drops:
+  - ZombieKing_lv1

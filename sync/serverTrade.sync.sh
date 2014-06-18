@@ -33,38 +33,64 @@ sed -i 's/^max-players=.*$/max-players=5/g' $to
 sed -i 's/^spawn-protection=.*$/spawn-protection=100000/g' $to
 
 sed -i 's/^white-list=.*$/white-list=true/g' $to
+
+sync_conf_start;
+sync_conf_op;
 }
-sync_start(){
+sync_conf_start(){
 local to=$thisServerPath/start.sh
 sed -i 's/^local Xms=.*$/Xms=64M/g' $to
 sed -i 's/^local Xmx=.*$/Xmx=512M/g' $to
 }
-sync_op(){
-local to=$thisServerPath/ops.txt
-echo "sp-bonebonekai" >> $to
-echo "O0oO0o0Oo0O" >> $to
+sync_conf_op(){
+local f="$thisServerPath/ops.json"
+local ops=(
+"sp-bonebonekai"
+"O0oO0o0Oo0O"
+)
+local op;
+local args=();
+for op in ${ops[@]};do
+args+=(`buildOpData "$op"`);
+done;
+local arg;
+for arg in ${args[@]};do
+echo $arg;
+cat $f|$varDir/jq ". + $arg" > $f;
+done;
 }
+sync_scp(){
+scp_getControllers;
+scp_getServer spigot;
+
+local plugins=(
+SuperCensor
+VariableTriggers
+BungeeSuiteWarps
+#TeleportSigns
+ChatColors
+PermissionsEx
+#Vault
+#iConomy
+WorldEdit
+dynmap
+)
+local p
+for p in ${plugins[@]};do
+scp_getPlugin $p;
+done
+}
+main(){
 sync_var;
 source_all;
 
+msg_startSync;
+
 purge_plugins all;
 
-msg_startSync;
-scp_getControllers;
-sync_start;
-scp_getServer spigot;
+sync_scp;
 sync_conf;
-sync_op;
 
-scp_getPlugin SuperCensor
-scp_getPlugin VariableTriggers;
-scp_getPlugin BungeeSuiteWarps;
-#scp_getPlugin TeleportSigns;
-scp_getPlugin ChatColors;
-scp_getPlugin PermissionsEx;
-#scp_getPlugin Vault;
-#scp_getPlugin iConomy;
-#scp_getPlugin WorldBorder;
-scp_getPlugin WorldEdit;
-scp_getPlugin dynmap;
 msg_endSync;
+}
+main

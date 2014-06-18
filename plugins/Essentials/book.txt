@@ -260,7 +260,7 @@ You can use this content by using the book:<section> meta option in kits or item
 &l掉落物品：
 &a&l很有彈性之劍
 &8史萊姆球
- &0
+&8&l頭顱
  &0
  &0
  &0
@@ -273,7 +273,7 @@ You can use this content by using the book:<section> meta option in kits or item
 &l掉落物品：
 &5&l史萊姆火焰刀
 &8火焰球
- &0
+&8&l頭顱
  &0
  &0
  &0
@@ -287,7 +287,7 @@ You can use this content by using the book:<section> meta option in kits or item
 &5&l飛天水母之弓
 &8幽靈之淚
 &8火焰球
- &0
+&8&l頭顱
  &0
  &0
  &0
@@ -297,10 +297,36 @@ You can use this content by using the book:<section> meta option in kits or item
 &l血量：&4???
  &0
 &l掉落物品：
-&b新年許願劍
-&b新年套裝-帽子
-&b新年套裝-上衣
-&b新年套裝-褲子
-&b新年套裝-鞋子
+&b&l新年許願劍
+&b&l新年套裝-帽子
+&b&l新年套裝-上衣
+&b&l新年套裝-褲子
+&b&l新年套裝-鞋子
+ &0
+ &0
+
+ &0
+&l名稱：&c&l神豬
+&l血量：&999
+ &0
+&l掉落物品：
+&8大量豬肉
+ &0
+ &0
+ &0
+ &0
+ &0
+ &0
+
+ &0
+&l名稱：&c&l蛙爸
+&l血量：&8888
+ &0
+&l掉落物品：
+&a&l蛙式重劍
+&a&l青蛙套裝-上衣
+&a&l青蛙套裝-褲子
+&8金蘋果
+ &0
  &0
  &0

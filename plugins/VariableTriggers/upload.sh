@@ -9,8 +9,6 @@ local name=VariableTriggers
 local from=$thisServerPath/plugins/$name
 local to=$syncServerScpPath/plugins/$name
 $from/backupTriggers.sh
-#scp -r $from/*.script.yml $to
-#scp -r $from/*.sh $to
 scp -r $from/$thisServerName $to
 }
 main

@@ -13,10 +13,10 @@ sed -i 's/^window=.*$/window=1/g' $varPath
 sed -i 's/^pane=.*$/pane=0/g' $varPath
 }
 sync_conf_ban(){
-local to=$thisServerPath/banned-ips.txt
-echo "112.171.53.194" >> $to
-echo "123.240.177.208" >> $to
-echo "124.209.99.194" >> $to
+local to=$thisServerPath/banned-ips.json
+#echo "112.171.53.194" >> $to
+#echo "123.240.177.208" >> $to
+#echo "124.209.99.194" >> $to
 #older brother
 #echo "123.240.133.184" >> $to
 }
@@ -99,7 +99,7 @@ KillerMoney
 
 Essentials
 ChatColors
-DeathMessages
+#DeathMessages #cancel by no mod tag name
 HealthBar
 SuperCensor
 

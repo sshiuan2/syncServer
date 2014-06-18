@@ -37,6 +37,7 @@ sync_op(){
 local to=$thisServerPath/ops.txt
 echo 'in91andy' >> $to
 echo 'sp-Mercurius' >> $to
+echo 'O0oO0o0Oo0O' >> $to
 }
 sync_start(){
 local to=$thisServerPath/start.sh
@@ -56,4 +57,6 @@ sync_conf;
 sync_op;
 
 scp_getPlugin WorldEdit;
+scp_getPlugin MythicMobs;
+scp_getPlugin HealthBar;
 msg_endSync;

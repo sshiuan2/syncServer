@@ -171,12 +171,12 @@ Scripts:
     - '@ENDIF'
   mute:
     Script:
-    - '@IF b <haspermission:vtriggers.admin> = false'
-    - '@CALL Function:opListCheck'
+    - '@CALL Function:IF_opListCheck'
+    - '@IF b $<this>.<playername> = true'
     - '  @IF i <cmdargcount> < 2'
-    - '    @CMD mute <cmdline> 600'
+    - '    @CMDOP mute <cmdline> 600'
     - '  @ELSE'
-    - '    @CMD mute <cmdline>'
+    - '    @CMDOP mute <cmdline>'
     - '  @ENDIF'
     - '@ELSE'
     - '  @IF i <cmdargcount> < 2'
@@ -187,16 +187,16 @@ Scripts:
     - '@ENDIF'
   jail:
     Script:
-    - '@IF i <cmdargcount> != 0'
-    - '@CALL Function:opListCheck'
+    - '@CALL Function:IF_opListCheck'
+    - '@IF b $<this>.<playername> = true'
     - '  @CMDOP jail <cmdline>'
     - '@ELSE'
     - '  @CMD jail <cmdline>'
     - '@ENDIF'
   co:
     Script:
-    - '@IF i <cmdargcount> != 0'
-    - '@CALL Function:opListCheck'
+    - '@CALL Function:IF_opListCheck'
+    - '@IF b $<this>.<playername> = true'
     - '@SETSTR $TEMP.s <cmdarg:2>'
     - '  @IF s <cmdarg:1> = i'
     - '  @OR s <cmdarg:1> = l'

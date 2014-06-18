@@ -1,0 +1,54 @@
+#slime
+#magmacube
+SlimeKing:
+  Mobtype: slime
+  Display: '史萊姆首領'
+  Health: 5000
+  Damage: 10
+  Skills:
+  - Potion 6:POISON:5:3 <5000 0.2
+  - msg 20:'&a$boss &f噴出一堆黏黏的東西' <5000 0.05
+  - Potion 6:CONFUSION:10:5 <4000 0.1
+  - msg 20:'&a$boss &f散發出暈眩的氣息' <4000 0.05
+  - Potion 6:SLOW:10:5 <3000 0.1
+  - msg 20:'&a$boss &f讓周圍的空氣變黏' <3000 0.05
+  - Potion 6:BLINDNESS:5:5 <2000 0.2
+  - msg 20:'&a$boss &f開始吸收周圍的光線' <2000 0.05
+  - PotionSelf SPEED:5:5 <1000 0.3
+  - msg 20:'&a$boss &f血變少，身體變輕盈了' <1000 0.05
+  - PotionSelf INVISIBILITY:1:5 <500 0.3
+  - msg 20:'&a$boss &f血變少，身體變更透明了' <500 0.05
+  - swarm slime:1 <500 0.6
+  - msg 20:'&a$boss &f似乎想要分身逃跑' <500 0.1
+  - money 100 =0 1
+  Drops:
+  - SlimeKing
+SlimeKing_f:
+  Mobtype: magmacube
+  Display: '史萊姆女首領'
+  Health: 5000
+  Damage: 12
+  Skills:
+  - fire 10:3 <5000 0.3
+  - msg 20:'&a$boss &f熱力四射！ <5000 0.05
+  - potion 6:POISON:5:3 <5000 0.2
+  - msg 20:'&a$boss &f噴出一堆黏黏的東西' <5000 0.05
+  - potion 6:CONFUSION:10:5 <4000 0.1
+  - msg 20:'&a$boss &f散發出暈眩的氣息' <4000 0.05
+  - potion 6:SLOW:10:5 <3000 0.1
+  - msg 20:'&a$boss &f讓周圍的空氣變黏' <3000 0.05
+  - potion 6:BLINDNESS:5:5 <2000 0.2
+  - msg 20:'&a$boss &f開始吸收周圍的光線' <2000 0.05
+  - PotionSelf SPEED:5:5 <1000 0.3
+  - msg 20:'&a$boss &f血變少，身體變輕盈了' <1000 0.05
+  - PotionSelf INVISIBILITY:1:5 <500 0.3
+  - msg 20:'&a$boss &f血變少，身體變更透明了' <500 0.05
+  - swarm magmacube:1 <500 0.6
+  - msg 20:'&a$boss &f似乎想要分身逃跑' <500 0.1
+  Equipment:
+  - 311:1 0.0 PROTECTION_FIRE:10,PROTECTION_EXPLOSIONS:10,DURABILITY:2
+  - 312:2 0.0 PROTECTION_FIRE:10,PROTECTION_EXPLOSIONS:10,DURABILITY:2
+  - 313:3 0.0 PROTECTION_FIRE:10,PROTECTION_EXPLOSIONS:10,DURABILITY:2
+  - 280:0
+  Drops:
+  - SlimeKing_f

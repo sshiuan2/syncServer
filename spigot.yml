@@ -10,12 +10,32 @@
 # IRC: #spigot @ irc.esper.net ( http://webchat.esper.net/?channel=spigot )
 # Forums: http://www.spigotmc.org/forum/
 
-config-version: 5
+config-version: 6
 commands:
-  tab-complete: true
-  log: true
+  tab-complete: 0
+  replace-commands:
+  - blockdata
+  - clear
+  - clone
+  - effect
+  - enchant
+  - give
+  - kill
+  - particle
+  - playsound
+  - setblock
+  - setworldspawn
+  - spreadplayers
+  - summon
+  - tellraw
+  - testforblock
+  - time
+  - weather
+  - xp
+  silent-commandblock-console: false
   spam-exclusions:
   - /skill
+  log: true
 messages:
   whitelist: 你不在白名單內。
   unknown-command: 未知的指令。請輸入 /help 查看說明。
@@ -24,78 +44,39 @@ messages:
   outdated-server: Outdated server! I'm still on {0}
   restart: 伺服器重啟
 settings:
+  player-shuffle: 0
+  late-bind: false
+  bungeecord: true
+  sample-count: 12
+  filter-creative-items: true
   timeout-time: 60
   restart-on-crash: false
   restart-script: ./start.sh
   netty-threads: 3
-  bungeecord: true
-  late-bind: false
   log-filters:
   - ^(.*)(/login)(.*)$
   prevent-proxies: false
   bungeecord-addresses:
   - 192.200.109.235
-#replace bukkit command to vanilla original command
-replace-commands:
-- blockdata
-- clear
-- clone
-- effect
-- enchant
-- give
-- kill
-- particle
-- playsound
-- setblock
-- setworldspawn
-- spreadplayers
-- summon
-- tellraw
-- testforblock
-- time
-#- tp
-- weather
-- xp
+stats:
+  disable-saving: false
+  forced-stats: {}
 world-settings:
   default:
     verbose: true
-    view-distance: 10
     chunks-per-tick: 650
+    clear-tick-list: false
+    view-distance: 10
     merge-radius:
       exp: 3.0
       item: 2.5
     mob-spawn-range: 4
     nerf-spawner-mobs: false
-    zombie-aggressive-towards-villager: true
+    zombie-aggressive-towards-villager: false
+    wither-spawn-sound-radius: 0
+    enable-zombie-pigmen-portal-spawns: false
     item-despawn-rate: 6000
     arrow-despawn-rate: 1200
-    entity-activation-range:
-#origin
-#      animals: 32
-#      monsters: 32
-#      misc: 16
-#3/4
-      animals: 24
-      monsters: 24
-      misc: 12
-    entity-tracking-range:
-#origin
-#      players: 48
-#      animals: 48
-#      monsters: 48
-#      misc: 32
-#      other: 64
-#3/4
-      players: 36
-      animals: 36
-      monsters: 36
-      misc: 24
-      other: 48
-    ticks-per:
-      hopper-transfer: 8
-      hopper-check: 8
-    random-light-updates: false
-    save-structure-info: true
     anti-xray:
       enabled: true
       engine-mode: 1
@@ -124,6 +105,36 @@ world-settings:
       pumpkin-modifier: 100
       sapling-modifier: 100
       wheat-modifier: 100
+    entity-activation-range:
+#origin
+#      animals: 32
+#      monsters: 32
+#      misc: 16
+#3/4
+      animals: 24
+      monsters: 24
+      misc: 12
+    entity-tracking-range:
+#origin
+#      players: 48
+#      animals: 48
+#      monsters: 48
+#      misc: 32
+#      other: 64
+#3/4
+      players: 36
+      animals: 36
+      monsters: 36
+      misc: 24
+      other: 48
+    ticks-per:
+      hopper-transfer: 8
+      hopper-check: 8
+    random-light-updates: false
+    save-structure-info: true
+    max-bulk-chunks: 5
+    max-entity-collisions: 8
+    dragon-death-sound-radius: 0
 listeners:
 - port: default
   host: default

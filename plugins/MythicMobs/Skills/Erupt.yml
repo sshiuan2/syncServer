@@ -1,0 +1,262 @@
+Erupt:
+  Cooldown: 0.25
+  Skills:
+  - skill EruptEffectOne >0 1
+  - skill EruptSoundOne >0 1
+  - delay 3
+  - skill EruptEffectOne >0 1
+  - skill EruptSoundOne >0 1
+  - delay 3
+  - skill EruptEffectOne >0 1
+  - skill EruptSoundOne >0 1
+  - delay 3
+  - skill EruptEffectOne >0 1
+  - skill EruptSoundOne >0 1
+  - delay 3
+  - skill EruptEffectOne >0 1
+  - skill EruptSoundOne >0 1
+  - delay 3
+  - skill EruptEffectOne >0 1
+  - delay 3
+  - skill EruptEffectOne >0 1
+  - skill EruptSoundTwo >0 1
+  - delay 3
+  - skill EruptEffectOne >0 1
+  - skill EruptEffectTwo >0 1
+  - delay 1
+  - skill EruptMulti >0 1
+  - skill EruptDamageOne >0 1
+  - skill EruptDamageTwo >0 1
+  - skill EruptEffectNine >0 1
+  - skill EruptEffectTwo >0 1
+  - skill EruptEffectThree >0 1
+  - skill EruptSoundThree >0 1
+  - delay 1
+  - skill EruptEffectNine >0 1
+  - skill EruptEffectTwo >0 1
+  - skill EruptEffectThree >0 1
+  - skill EruptEffectFour >0 1
+  - delay 1
+  - skill EruptEffectNine >0 1
+  - skill EruptEffectTwo >0 1
+  - skill EruptEffectThree >0 1
+  - skill EruptEffectFour >0 1
+  - skill EruptEffectFive >0 1
+  - delay 1
+  - skill EruptEffectNine >0 1
+  - skill EruptEffectTwo >0 1
+  - skill EruptEffectThree >0 1
+  - skill EruptEffectFour >0 1
+  - skill EruptEffectFive >0 1
+  - skill EruptEffectSix >0 1
+  - delay 1
+  - skill EruptEffectNine >0 1
+  - skill EruptEffectTwo >0 1
+  - skill EruptEffectThree >0 1
+  - skill EruptEffectFour >0 1
+  - skill EruptEffectFive >0 1
+  - skill EruptEffectSix >0 1
+  - skill EruptEffectSeven >0 1
+  - delay 1
+  - skill EruptEffectNine >0 1
+  - skill EruptEffectTwo >0 1
+  - skill EruptEffectThree >0 1
+  - skill EruptEffectFour >0 1
+  - skill EruptEffectFive >0 1
+  - skill EruptEffectSix >0 1
+  - skill EruptEffectSeven >0 1
+  - skill EruptEffectEight >0 1
+  - delay 3
+  - skill EruptEffectNine >0 1
+  - skill EruptEffectTwo >0 1
+  - skill EruptEffectThree >0 1
+  - skill EruptEffectFour >0 1
+  - skill EruptEffectFive >0 1
+  - skill EruptEffectSix >0 1
+  - skill EruptEffectSeven >0 1
+  - skill EruptEffectEight >0 1
+  - delay 3
+  - skill EruptEffectNine >0 1
+  - skill EruptEffectTwo >0 1
+  - skill EruptEffectThree >0 1
+  - skill EruptEffectFour >0 1
+  - skill EruptEffectFive >0 1
+  - skill EruptEffectSix >0 1
+  - skill EruptEffectSeven >0 1
+  - skill EruptEffectEight >0 1
+  - delay 3
+  - skill EruptEffectNine >0 1
+  - skill EruptEffectTwo >0 1
+  - skill EruptEffectThree >0 1
+  - skill EruptEffectFour >0 1
+  - skill EruptEffectFive >0 1
+  - skill EruptEffectSix >0 1
+  - skill EruptEffectSeven >0 1
+  - skill EruptEffectEight >0 1
+  - delay 3
+  - skill EruptEffectNine >0 1
+  - skill EruptEffectTwo >0 1
+  - skill EruptEffectThree >0 1
+  - skill EruptEffectFour >0 1
+  - skill EruptEffectFive >0 1
+  - skill EruptEffectSix >0 1
+  - skill EruptEffectSeven >0 1
+  - skill EruptEffectEight >0 1
+  - delay 2
+  - skill EruptEffectNine >0 1
+  - skill EruptEffectFive >0 1
+  - skill EruptEffectSix >0 1
+  - skill EruptEffectSeven >0 1
+  - delay 2
+  - skill EruptEffectNine >0 1
+  - skill EruptEffectTwo >0 1
+  - skill EruptEffectThree >0 1
+  - skill EruptEffectFour >0 1
+EruptMulti:
+  Cooldown: 0.15
+  Skills:
+  - delay 1
+  - skill EruptTossOne >0 1
+  - delay 15
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+  - skill EruptTossTwo >0 1
+  - skill EruptEffectSpecial >0 1
+  - delay 2
+EruptDamageOne:
+  Cooldown: 0.15
+  Skills:
+  - delay 1
+  - damage 0:6:false >0 1
+  - ignite 0:200 >0 1
+EruptDamageTwo:
+  Cooldown: 0.15
+  Skills:
+  - delay 1
+  - damage 0:4:true >0 1
+EruptTossOne:
+  Cooldown: 0.15
+  Skills:
+  - throw 0:0:8 >0 1
+EruptTossTwo:
+  Cooldown: 0.15
+  Skills:
+  - throw 0:0:1 >0 1
+EruptEffectSpecial:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles lava:0.3:4.0:50:0.1:-3.5
+  - effect target particles reddust:0.3:4.0:200:0:-3.5
+EruptEffectOne:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles lava:1.75:0.1:70:0.1:1.0
+  - effect target particles reddust:1.75:0.1:700:0:1.0
+EruptEffectTwo:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles lava:1.75:1.0:20:0.1:2.0
+  - effect target particles reddust:1.75:1.0:400:0:2.0
+EruptEffectThree:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles lava:1.5:1.0:20:0.1:3.0
+  - effect target particles reddust:1.5:1.0:300:0:3.0
+EruptEffectFour:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles lava:1.5:1.0:20:0.1:4.0
+  - effect target particles reddust:1.5:1.0:300:0:4.0
+EruptEffectFive:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles lava:1.5:1.0:20:0.1:5.0
+  - effect target particles reddust:1.5:1.0:300:0:5.0
+EruptEffectSix:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles lava:1.5:1.0:20:0.1:6.0
+  - effect target particles reddust:1.5:1.0:300:0:6.0
+EruptEffectSeven:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles lava:1.5:1.0:20:0.1:7.0
+  - effect target particles reddust:1.5:1.0:300:0:7.0
+EruptEffectEight:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles lava:1.5:1.0:20:0.1:8.0
+  - effect target particles reddust:1.5:1.0:300:0:8.0
+EruptEffectNine:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles lava:1.75:1.0:50:0.1:1.0
+  - effect target particles reddust:1.75:1.0:350:0:1.0
+EruptSoundOne:
+  Cooldown: 0.15
+  Skills:
+  - effect target sound liquid.lava:1.5:2.0
+  - effect target sound fire.fire:1.5:0.1
+EruptSoundTwo:
+  Cooldown: 0.15
+  Skills:
+  - effect target sound random.splash:1.5:0.1
+EruptSoundThree:
+  Cooldown: 0.15
+  Skills:
+  - effect target sound mob.zombie.remedy:1.5:2.0

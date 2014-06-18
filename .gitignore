@@ -3,8 +3,10 @@ test*
 *.log
 *.jar
 *.zip
+*.old
 world/
 lib/
 *.secret
 secret.*
 plugins/WorldEdit/schematics
+*.json

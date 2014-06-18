@@ -1,11 +1,12 @@
 world:
   BlockBreak:
-    CoolDown: 1402173235378
+    CoolDown: 1403034170530
     Script:
     - '@COOLDOWN 5'
     - '@IF s <blockid> = 56'
-    - '  @IF s $BlockBreak.diamond_block = <playsername>'
-    - '    @SETSTR $BlockBreak.diamond_block <playsername>'
+    - '  @SETSTR $BlockBreak.diamond_block_cur_finder <playername>'
+    - '  @IF s $BlockBreak.diamond_block_last_finder != $BlockBreak.diamond_block_cur_finder'
     - '    @BROADCAST &l<playername> 挖到鑽石啦！'
     - '  @ENDIF'
+    - '  @SETSTR $BlockBreak.diamond_block_last_finder <playername>'
     - '@ENDIF'

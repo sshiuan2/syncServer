@@ -37,8 +37,10 @@ sed -i 's/^force-gamemode=.*$/force-gamemode=true/g' $to
 sed -i 's/^max-build-height=.*$/max-build-height=128/g' $to
 sed -i 's/^max-players=.*$/max-players=2/g' $to
 sed -i 's/^spawn-protection=.*$/spawn-protection=0/g' $to
+
+sync_conf_start
 }
-sync_start(){
+sync_conf_start(){
 local to=$thisServerPath/start.sh
 sed -i 's/^local Xms=.*$/Xms=64M/g' $to
 sed -i 's/^local Xmx=.*$/Xmx=256M/g' $to
@@ -51,7 +53,6 @@ sync_world_restore;
 
 msg_startSync;
 scp_getControllers;
-sync_start;
 scp_getServer vanilla;
 sync_conf;
 

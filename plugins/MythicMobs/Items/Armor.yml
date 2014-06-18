@@ -1,0 +1,165 @@
+#ID	Internal Name	Armor Type	Armor slot	Can be colored?	Durability	Defense Points	Total
+#301	leather_boots	Leather	Feet	Yes	66	0.5	3.5
+#299	leather_chestplate	Leather	Chest	Yes	81	1.5	
+#298	leather_helmet	Leather	Head	Yes	56	0.5	
+#300	leather_leggings	Leather	Legs	Yes	76	1	
+#317	golden_boots	Gold	Feet	No	92	0.5	5.5
+#315	golden_chestplate	Gold	Chest	No	113	2.5	
+#314	golden_helmet	Gold	Head	No	78	1.5	
+#316	golden_leggings	Gold	Legs	No	106	1	
+#305	chainmail_boots	Chain	Feet	No	196	0.5	6
+#303	chainmail_chestplate	Chain	Chest	No	241	2.5	
+#302	chainmail_helmet	Chain	Head	No	166	1	
+#304	chainmail_leggings	Chain	Legs	No	223	2	
+#309	iron_boots	Iron	Feet	No	196	1	7.5
+#307	iron_chestplate	Iron	Chest	No	241	3	
+#306	iron_helmet	Iron	Head	No	166	1	
+#308	iron_leggings	Iron	Legs	No	223	2.5	
+#313	diamond_boots	Diamond	Feet	No	430	1.5	10
+#311	diamond_chestplate	Diamond	Chest	No	529	4	
+#310	diamond_helmet	Diamond	Head	No	364	1.5	
+#312	diamond_leggings	Diamond	Legs	No	496	3
+Helmet_Zombie_lv3:
+  Id: 302
+  Amount: 1
+  Display: '&f殭屍長老頭盔'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:1
+  - DURABILITY:1
+Chestplate_Zombie_lv3:
+  Id: 303
+  Amount: 1
+  Display: '&f殭屍長老胸甲'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:1
+  - DURABILITY:1
+Leggings_Zombie_lv3:
+  Id: 304
+  Amount: 1
+  Display: '&f殭屍長老護腿'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:1
+  - DURABILITY:1
+Boots_Zombie_lv3:
+  Id: 305
+  Amount: 1
+  Display: '&f殭屍長老靴子'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:1
+  - DURABILITY:1
+Helmet_Zombie_lv4:
+  Id: 306
+  Amount: 1
+  Display: '&9殭屍教主頭盔'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:2
+  - DURABILITY:2
+Chestplate_Zombie_lv4:
+  Id: 307
+  Amount: 1
+  Display: '&9殭屍教主胸甲'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:2
+  - DURABILITY:2
+Leggings_Zombie_lv4:
+  Id: 308
+  Amount: 1
+  Display: '&9殭屍教主護腿'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:2
+  - DURABILITY:2
+Boots_Zombie_lv4:
+  Id: 309
+  Amount: 1
+  Display: '&9殭屍教主靴子'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:2
+  - DURABILITY:2
+Helmet_ZombieKing:
+  Id: 310
+  Amount: 1
+  Display: '&5殭屍王頭盔'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:4
+  - DURABILITY:3
+Chestplate_ZombieKing:
+  Id: 311
+  Amount: 1
+  Display: '&5殭屍王胸甲'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:4
+  - DURABILITY:3
+Leggings_ZombieKing:
+  Id: 312
+  Amount: 1
+  Display: '&5殭屍王護腿'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:4
+  - DURABILITY:3
+Boots_ZombieKing:
+  Id: 313
+  Amount: 1
+  Display: '&5殭屍王靴子'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:4
+  - DURABILITY:3
+Helmet_ZombieKing_lv1:
+  Id: 310
+  Amount: 1
+  Display: '&6殭屍首領頭盔'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:10
+  - DURABILITY:5
+Chestplate_ZombieKing_lv1:
+  Id: 311
+  Amount: 1
+  Display: '&6殭屍首領胸甲'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:10
+  - DURABILITY:5
+Leggings_ZombieKing_lv1:
+  Id: 312
+  Amount: 1
+  Display: '&6殭屍首領護腿'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:10
+  - DURABILITY:5
+Boots_ZombieKing_lv1:
+  Id: 313
+  Amount: 1
+  Display: '&6殭屍首領靴子'
+  Lore:
+  - '&6很僵'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:10
+  - DURABILITY:5

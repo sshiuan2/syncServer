@@ -1,0 +1,92 @@
+Biohazard:
+  Cooldown: 0.25
+  Skills:
+  - skill BiohazardEffectOne >0 1
+  - skill BiohazardSoundOne >0 1
+  - delay 2
+  - skill BiohazardEffectTwo >0 1
+  - delay 2
+  - skill BiohazardEffectThree >0 1
+  - delay 2
+  - skill BiohazardEffectFour >0 1
+  - delay 2
+  - skill BiohazardEffectFive >0 1
+  - delay 2
+  - skill BiohazardEffectSix >0 1
+  - delay 2
+  - skill BiohazardEffectSeven >0 1
+  - skill BiohazardSoundTwo >0 1
+  - delay 2
+  - skill BiohazardEffectEight >0 1
+  - delay 2
+  - skill BiohazardEffectNine >0 1
+  - delay 2
+  - skill BiohazardEffectTen >0 1
+  - skill BiohazardDamage >0 1
+  - delay 2
+  - skill BiohazardEffectTen >0 1
+  - delay 2
+  - skill BiohazardEffectTen >0 1
+  - delay 2
+  - skill BiohazardEffectTen >0 1
+  - delay 2
+  - skill BiohazardEffectTen >0 1
+  - delay 2
+  - skill BiohazardEffectEleven >0 1
+BiohazardDamage:
+  Cooldown: 0.25
+  Skills:
+  - damage 0:4:false >0 1
+  - potion 0:POISON:200:1 >0 1
+BiohazardEffectOne:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles slime:0.3:1.0:250:0.1:10 >0 1
+BiohazardEffectTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles slime:0.3:1.0:250:0.1:9 >0 1
+BiohazardEffectThree:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles slime:0.3:1.0:250:0.1:8 >0 1
+BiohazardEffectFour:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles slime:0.3:1.0:250:0.1:7 >0 1
+BiohazardEffectFive:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles slime:0.3:1.0:250:0.1:6 >0 1
+BiohazardEffectSix:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles slime:0.3:1.0:250:0.1:5 >0 1
+BiohazardEffectSeven:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles slime:0.3:1.0:250:0.1:4 >0 1
+BiohazardEffectEight:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles slime:0.3:1.0:250:0.1:3 >0 1
+BiohazardEffectNine:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles slime:0.3:1.0:250:0.1:2 >0 1
+BiohazardEffectTen:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles slime:0.3:1.0:250:0.1:1 >0 1
+BiohazardEffectEleven:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles slime:2.5:1.0:250:0.1:1 >0 1
+BiohazardSoundOne:
+  Cooldown: 0.25
+  Skills:
+  - effect target sound fireworks.launch:1.0:0.1 >0 1
+BiohazardSoundTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect target sound mob.slime.attack:1.5:0.1 >0 1

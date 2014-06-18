@@ -54,8 +54,22 @@ sed -i 's/^local Xmx=.*$/Xmx=512M/g' $to
 sed -i 's/^local ParallelGCThreads=.*$/ParallelGCThreads=1/g' $to
 }
 sync_conf_ops(){
-local f="$thisServerPath/ops.txt"
-echo "SmallWawa" >> $f
+local f="$thisServerPath/ops.json"
+local f_op="$thisServerPath/function/ops.json.op"
+cat $f | $varDir/jq ". + $(cat $f_op)" > $f;
+local ops=(
+SmallWawa
+)
+local op;
+local args=();
+for op in ${ops[@]};do
+args+=(`buildOpData "$op"`);
+done;
+local arg;
+for arg in ${args[@]};do
+echo $arg;
+cat $f|$varDir/jq ". + $arg" > $f;
+done;
 }
 sync_scp(){
 scp_getControllers;

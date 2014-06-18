@@ -88,7 +88,7 @@ layouts:
     teleport: true
     layout:
       - '&l不定期更換地圖'
-      - '&l[勇者之塔]'
+      - '&l[孤兒院]'
       - '&f&l%numpl%/%maxpl%'
       - '%isonline%'
     online: '&a&l活動上線中'

@@ -17,10 +17,17 @@ Scripts:
     - '@ELSE'
     - '  @SETBOOL $<this>.flag false'
     - '@ENDIF'
-  opListCheck:
+  IF_opListCheck:
+    Script:
+    - '@IF b <haspermission:vtriggers.admin> = true'
     - '@OR s <playername> = andywawa'
     - '@OR s <playername> = O0oO0o0Oo0O'
     - '@OR s <playername> = sp-bonebonekai'
     - '@OR s <playername> = in91andy'
     - '@OR s <playername> = bonr_maximum'
     - '@OR s <playername> = sp-Venceno'
+    - '@OR s <playername> = carlccc0911'
+    - '@SETBOOL $<this>.<playername> true'
+    - '@ELSE'
+    - '@DELVAR b $<this>.<playername>'
+    - '@ENDIF'

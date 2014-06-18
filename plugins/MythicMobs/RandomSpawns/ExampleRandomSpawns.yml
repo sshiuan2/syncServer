@@ -1,0 +1,23 @@
+#following not support
+#bat
+#chicken/babychicken
+#cow/babycow
+#enderdragon
+#ghast
+#horse/babyhorse
+#irongolem
+#magmacube
+#mushroomcow/babymushroomcow
+#pig/babypig
+#sheep/babysheep
+#slime
+#snowman
+#squid
+#villager/babyvillager
+RandomExample:
+  Mobname: Zombie_lv0
+  Worlds: world
+  Chance: 0.001
+  Priority: 1
+  Conditions:
+  - outside true

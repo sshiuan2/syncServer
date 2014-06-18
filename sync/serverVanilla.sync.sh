@@ -38,8 +38,10 @@ sed -i 's/^level-type=.*$/level-type=AMPLIFIED/g' $to
 #FLAT - A flat world with no features, meant for building.
 #LARGEBIOMES - Same as default but all biomes are larger.
 #AMPLIFIED - Same as default but world-generation height limit is increased.
+
+sync_conf_start;
 }
-sync_start(){
+sync_conf_start(){
 local to="$thisServerPath/start.sh"
 sed -i 's/^local Xms=.*$/Xms=64M/g' $to
 sed -i 's/^local Xmx=.*$/Xmx=512M/g' $to
@@ -52,7 +54,6 @@ checkWorldNether 432000;
 
 msg_startSync;
 scp_getControllers;
-sync_start;
 scp_getServer vanilla;
 sync_conf;
 msg_endSync;

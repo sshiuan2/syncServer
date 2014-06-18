@@ -1,0 +1,29 @@
+Thunder:
+  Cooldown: 0.25
+  Skills:
+  - skill ThunderDamage >0 1
+  - skill ThunderSound >0 1
+  - skill ThunderEffect >0 1
+  - delay 4
+  - skill ThunderEffect >0 1
+  - delay 4
+  - skill ThunderEffect >0 1
+ThunderRainDamage:
+  Cooldown: 0.25
+  Conditions:
+  - raining true
+  Skills:
+  - damage 0:2:true >0 1
+ThunderDamage:
+  Cooldown: 0.25
+  Skills:
+  - damage 0:4:true >0 1
+ThunderEffect:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles magicCrit:0.3:0.3:300:0.1:0.9 >0 1
+  - effect target particles instantSpell:0.2:0.2:20:0.1:0.9 >0 1
+ThunderSound:
+  Cooldown: 0.25
+  Skills:
+  - effect target sound ambient.weather.thunder:1.0:2.0 >0 1

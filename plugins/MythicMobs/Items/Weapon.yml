@@ -1,0 +1,94 @@
+#ID	Internal Name	Weapon Type	Durability	Base damage
+#268	wooden_sword	Wood	60	5
+#283	golden_sword	Gold	33	5
+#272	stone_sword	Stone	132	6
+#267	iron_sword	Iron	251	7
+#276	diamond_sword	Diamond	1562	8
+#271	wooden_axe	Wood	60	4.5
+#275	golden_axe	Gold	33	4.5
+#258	stone_axe	Stone	132	5.5
+#286	iron_axe	Iron	251	6.5
+#279	diamond_axe	Diamond	1562	7.5
+#261	bow	NA	385	9-10
+#280	stick	NA	Infinite	0
+#369	blaze_rod	NA	Infinite	0
+#262	arrow	NA	Infinite	0
+DiamondSword:
+  Id: 276
+  Amount: 1
+DiamondSwordFormSlime:
+  Id: 276
+  Amount: 1
+  Display: '&a很有彈性之劍'
+  Lore:
+  - '&6很黏'
+  Enchantments:
+  - DAMAGE_ALL:5
+  - LOOT_BONUS_MOBS:1
+  - DURABILITY:10
+DiamondSwordFormSlime_f:
+  Id: 276
+  Amount: 1
+  Display: '&5史萊姆火焰刀'
+  Lore:
+  - '&6很黏'
+  Enchantments:
+  - DAMAGE_ALL:3
+  - FIRE_ASPECT:10
+  - DAMAGE_UNDEAD:2
+  - LOOT_BONUS_MOBS:1
+  - DURABILITY:2
+Sword_Zombie_lv3:
+  Id: 267
+  Amount: 1
+  Display: '&f殭屍長老之劍'
+  Lore:
+  - '&6很黏'
+  Enchantments:
+  - DAMAGE_ALL:2
+  - DURABILITY:1
+Sword_Zombie_lv4:
+  Id: 276
+  Amount: 1
+  Display: '&9殭屍教主之劍'
+  Lore:
+  - '&6很黏'
+  Enchantments:
+  - DAMAGE_ALL:4
+  - FIRE_ASPECT:1
+  - DURABILITY:2
+Sword_ZombieKing:
+  Id: 276
+  Amount: 1
+  Display: '&5進擊的巨劍'
+  Lore:
+  - '&6很黏'
+  Enchantments:
+  - KNOCKBACK:2
+  - DAMAGE_ALL:8
+  - FIRE_ASPECT:2
+  - DURABILITY:4
+Sword_ZombieKing_lv1:
+  Id: 276
+  Amount: 1
+  Display: '&6進擊的雙手巨劍'
+  Lore:
+  - '&6很黏'
+  Enchantments:
+  - KNOCKBACK:10
+  - DAMAGE_ALL:10
+  - FIRE_ASPECT:10
+  - DURABILITY:8
+Bow_GhastKing:
+  Id: 261
+  Amount: 1
+  Display: '&5飛天水母之弓'
+  Lore:
+  - '&6很黏'
+  Enchantments:
+  - ARROW_DAMAGE:9
+  - ARROW_INFINITE:1
+  - ARROW_KNOCKBACK:1
+  - ARROW_FIRE:1
+  - LOOT_BONUS_BLOCKS:1
+  - DURABILITY:2

@@ -1,0 +1,14 @@
+#irongolem
+irongolemKing:
+  Mobtype: irongolem
+  Display: '強化鐵巨人'
+  Health: 2000
+  Showhp: true
+  Damage: 5
+  Skills:
+  - summon cavespider:1 <1500 0.1
+  - summon $SpiderKing:1 <1000 0.1
+  - summon silverfish:20 =0 1
+  - potionself DAMAGE_RESISTANCE:5:10 <200 0.5
+  - potionself REGENERATION:5:10 <200 0.5
+  - potionself INVISIBILITY:5:10 <200 0.5

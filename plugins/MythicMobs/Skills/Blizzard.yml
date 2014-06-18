@@ -1,0 +1,49 @@
+Blizzard:
+  Cooldown: 5
+  Skills:
+  - skill BlizzardEffectOne >0 1
+  - skill BlizzardSoundOne >0 1
+  - delay 3
+  - skill BlizzardEffectOne >0 1
+  - delay 3
+  - skill BlizzardEffectOne >0 1
+  - skill BlizzardDamage
+BlizzardEffectOne:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles snowshovel:0.3:0.3:100:0.4:0.9
+  - effect target particles snowballpoof:0.2:0.2:100:0.5:0.9
+BlizzardSoundOne:
+  Cooldown: 0.15
+  Skills:
+  - effect target sound random.fizz:1.0:2.0
+BlizzardDamage:
+  Cooldown: 0.15
+  Skills:
+  - skill BlizzardDamageNormal >0 1
+BlizzardDamageNormal:
+  Cooldown: 0.15
+  Skills:
+  - damage 0:3:true >0 1
+  - potion 0:SLOW:200:1
+BlizzardDamageRegular:
+  Cooldown: 0.15
+  Conditions:
+  - biome plains,sunflower_plains,forest,forest_hills,flower_forest,roofed_forest,roofed_forest_mountains,birch_forest,birch_forest_hills,birch_forest_mountains,birch_forest_hills_mountains,swampland,swampland_mountains,river,ocean,deep_ocean,mushroom_island,mushroom_shore,jungle,jungle_edge,jungle_hills,jungle_mountains,jungle_edge_mountains
+  Skills:
+  - damage 0:3:true >0 1
+  - potion 0:SLOW:200:1
+BlizzardDamageCold:
+  Cooldown: 0.15
+  Conditions:
+  - biome stone_beach,frozen_ocean,frozen_river,sky,extreme_hills,extreme_hills_plus,small_mountains,cold_beach,cold_taiga,cold_taiga_hills,cold_taiga_mountains,taiga,taiga_hills,taiga_mountains,ice_plains,ice_plains_spikes,extreme_hills_mountains,extreme_hills_plus_mountains,mega_spruce_taiga,mega_spruce_taiga_hills,mega_taiga,mega_taiga_hills
+  Skills:
+  - damage 0:5:true >0 1
+  - potion 0:SLOW:300:2
+BlizzardDamageWarm:
+  Cooldown: 0.15
+  Conditions:
+  - biome desert,desert_hills,hell,savanna,savanna_plateau,mesa,mesa_plateau,mesa_plateau_forest,mesa_plateau_mountains,mesa_plateau_forest_mountains,savanna_mountains,savanna_plateau_mountains,mesa_bryce,desert_mountains,savanna_plateau_forest_mountains
+  Skills:
+  - damage 0:1:true >0 1
+  - potion 0:SLOW:100:0

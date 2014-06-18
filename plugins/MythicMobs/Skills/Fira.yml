@@ -1,0 +1,62 @@
+Fira:
+  Cooldown: 3
+  Skills:
+  - skill FiraEffectOne >0 1
+  - skill FiraSoundOne >0 1
+  - delay 3
+  - skill FiraEffectTwo >0 1
+  - skill FiraSoundTwo >0 1
+  - delay 3
+  - skill FiraEffectThree >0 1
+  - skill FiraSoundTwo >0 1
+  - delay 3
+  - skill FiraEffectFour >0 1
+  - skill FiraSoundTwo >0 1
+  - delay 3
+  - skill FiraEffectFive >0 1
+  - skill FiraSoundTwo >0 1
+  - delay 2
+  - skill FiraDamage >0 1
+  - skill FiraEffectSix >0 1
+  - skill FiraSoundThree >0 1
+FiraDamage:
+  Cooldown: 0.25
+  Skills:
+  - damage 0:5:true >0 1
+  - ignite 0:60 >0 1
+FiraEffectOne:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.1:0.1:100:0:0.9
+FiraEffectTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.2:0.2:200:0:0.9
+FiraEffectThree:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.3:0.3:300:0:0.9
+FiraEffectFour:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.4:0.4:400:0:0.9
+FiraEffectFive:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.5:0.5:500:0:0.9
+FiraEffectSix:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.5:0.5:200:0.5:0.9
+FiraSoundOne:
+  Cooldown: 0.25
+  Skills:
+  - effect target sound fire.ignite:2.0:0.1
+FiraSoundTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect target sound fire.fire:1.0:0.1
+FiraSoundThree:
+  Cooldown: 0.25
+  Skills:
+  - effect target sound mob.zombie.remedy:0.5:0.1

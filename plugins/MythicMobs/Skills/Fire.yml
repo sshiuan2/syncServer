@@ -1,0 +1,21 @@
+Fire:
+  Cooldown: 0.25
+  Skills:
+  - skill FireDamage >0 1
+  - skill FireEffect >0 1
+  - skill FireSound >0 1
+FireDamage:
+  Cooldown: 0.25
+  Skills:
+  - damage 0:4:true >0 1
+  - ignite 0:40 >0 1
+FireEffect:
+  Cooldown: 0.25
+  Skills:
+  - effect target particles flame:0.3:0.3:100:0.1:0.9 >0 1
+  - effect target particles lava:0.2:0.2:20:0.1:0.9 >0 1
+FireSound:
+  Cooldown: 0.25
+  Skills:
+  - effect target sound mob.ghast.fireball:1.0:2.0 >0 1
+  - effect target sound fire.fire:1.0:0.1 >0 1

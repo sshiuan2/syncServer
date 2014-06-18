@@ -1,0 +1,51 @@
+Zombie_lv0:
+  Drops:
+  - 367 1-5 1
+Zombie_lv1:
+  Drops:
+  - 268 1 0.05
+  - 301 1 0.05
+  - 300 1 0.05
+  - 299 1 0.05
+  - 298 1 0.05
+  - 367 2-7 1
+Zombie_lv2:
+  Drops:
+  - 272 1 0.05
+  - 305 1 0.05
+  - 304 1 0.05
+  - 303 1 0.05
+  - 302 1 0.05
+  - 367 3-9 1
+Zombie_lv3:
+  Drops:
+  - Sword_Zombie_lv3 1 0.1
+  - Boots_Zombie_lv3 1 0.1
+  - Leggings_Zombie_lv3 1 0.1
+  - Chestplate_Zombie_lv3 1 0.1
+  - Helmet_Zombie_lv3 1 0.1
+  - 367 5-13 1
+Zombie_lv4:
+  Drops:
+  - Sword_Zombie_lv4 1 0.5
+  - Boots_Zombie_lv4 1 0.2
+  - Leggings_Zombie_lv4 1 0.2
+  - Chestplate_Zombie_lv4 1 0.2
+  - Helmet_Zombie_lv4 1 0.2
+  - 367 9-17 1
+ZombieKing:
+  Drops:
+  - Sword_ZombieKing 1 0.4
+  - Boots_ZombieKing 1 0.2
+  - Leggings_ZombieKing 1 0.2
+  - Chestplate_ZombieKing 1 0.2
+  - Helmet_ZombieKing 1 0.2
+  - 367 21-43 1
+ZombieKing_lv1:
+  Drops:
+  - Sword_ZombieKing_lv1 1 0.3
+  - Boots_ZombieKing_lv1 1 0.2
+  - Leggings_ZombieKing_lv1 1 0.2
+  - Chestplate_ZombieKing_lv1 1 0.2
+  - Helmet_ZombieKing_lv1 1 0.2
+  - 367 41-59 1

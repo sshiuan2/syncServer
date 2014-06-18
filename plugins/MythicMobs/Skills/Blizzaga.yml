@@ -1,0 +1,128 @@
+Blizzaga:
+  Cooldown: 10
+  Skills:
+  - msg 25:'$boss &eBegins casting a powerful spell!'
+  - potionself SLOW:100:8
+  - msg 25:'$boss &eCasts Blizzaga on $target!'
+  - skill BlizzagaEffectOne >0 1
+  - skill BlizzagaSoundOne >0 1
+  - delay 3
+  - skill BlizzagaEffectTwo >0 1
+  - skill BlizzagaSoundOne >0 1
+  - delay 3
+  - skill BlizzagaEffectThree >0 1
+  - skill BlizzagaSoundOne >0 1
+  - delay 3
+  - skill BlizzagaEffectThree >0 1
+  - skill BlizzagaEffectFour >0 1
+  - skill BlizzagaSoundOne >0 1
+  - delay 3
+  - skill BlizzagaEffectThree >0 1
+  - skill BlizzagaEffectFive >0 1
+  - skill BlizzagaSoundOne >0 1
+  - delay 3
+  - skill BlizzagaEffectThree >0 1
+  - skill BlizzagaEffectSix >0 1
+  - skill BlizzagaSoundOne >0 1
+  - delay 3
+  - skill BlizzagaDamage >0 1
+  - skill BlizzagaEffectSeven >0 1
+  - skill BlizzagaSoundTwo >0 1
+  - skill BlizzagaSoundThree >0 1
+  - delay 3
+  - skill BlizzagaEffectSeven >0 1
+  - delay 3
+  - skill BlizzagaEffectSeven >0 1
+  - skill BlizzagaSoundThree >0 1
+  - delay 3
+  - skill BlizzagaEffectSeven >0 1
+  - delay 3
+  - skill BlizzagaEffectSeven >0 1
+  - skill BlizzagaSoundThree >0 1
+  - delay 3
+  - skill BlizzagaEffectSeven >0 1
+  - delay 3
+  - skill BlizzagaEffectSeven >0 1
+  - skill BlizzagaSoundThree >0 1
+  - delay 3
+  - skill BlizzagaEffectSeven >0 1
+BlizzagaEffectOne:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles snowshovel:3.0:0.1:650:0.01:0.1
+  - effect target particles snowballpoof:3.0:0.1:650:0.1:0.1
+BlizzagaEffectTwo:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles snowshovel:2.5:0.2:550:0.01:0.1
+  - effect target particles snowballpoof:2.5:0.2:550:0.1:0.1
+BlizzagaEffectThree:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles snowshovel:2.0:0.2:450:0.01:0.1
+  - effect target particles snowballpoof:2.0:0.2:450:0.1:0.1
+BlizzagaEffectFour:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles snowshovel:1.5:0.3:350:0.01:0.1
+  - effect target particles snowballpoof:1.5:0.3:350:0.1:0.1
+BlizzagaEffectFive:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles snowshovel:1.0:0.3:300:0.01:0.1
+  - effect target particles snowballpoof:1.0:0.3:300:0.1:0.1
+BlizzagaEffectSix:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles snowshovel:0.5:0.4:300:0.01:0.1
+  - effect target particles snowballpoof:0.5:0.4:300:0.1:0.1
+BlizzagaEffectSeven:
+  Cooldown: 0.15
+  Skills:
+  - effect target particles snowshovel:0.4:1.0:250:0.01:0.5
+  - effect target particles snowballpoof:0.4:1.0:250:0.1:0.5
+  - effect target particles snowshovel:2.0:0.2:125:0.01:0.1
+  - effect target particles snowballpoof:2.0:0.2:125:0.1:0.1
+  - effect target particles snowballpoof:2.0:2.0:200:0.1:0.1
+BlizzagaSoundOne:
+  Cooldown: 0.15
+  Skills:
+  - effect target sound random.fizz:1.0:2.0
+BlizzagaSoundTwo:
+  Cooldown: 0.15
+  Skills:
+  - effect target sound random.glass:1.0:2.0
+BlizzagaSoundThree:
+  Cooldown: 0.15
+  Skills:
+  - effect target sound mob.wither.idle:1.0:1.0
+BlizzagaDamage:
+  Cooldown: 0.15
+  Skills:
+  - skill BlizzagaDamageNormal >0 1
+BlizzagaDamageNormal:
+  Cooldown: 0.15
+  Skills:
+  - damage 0:6:true >0 1
+  - potion 0:SLOW:200:3
+BlizzagaDamageRegular:
+  Cooldown: 0.15
+  Conditions:
+  - biome plains,sunflower_plains,forest,forest_hills,flower_forest,roofed_forest,roofed_forest_mountains,birch_forest,birch_forest_hills,birch_forest_mountains,birch_forest_hills_mountains,swampland,swampland_mountains,river,ocean,deep_ocean,mushroom_island,mushroom_shore,jungle,jungle_edge,jungle_hills,jungle_mountains,jungle_edge_mountains
+  Skills:
+  - damage 0:6:true >0 1
+  - potion 0:SLOW:200:3
+BlizzagaDamageCold:
+  Cooldown: 0.15
+  Conditions:
+  - biome stone_beach,frozen_ocean,frozen_river,sky,extreme_hills,extreme_hills_plus,small_mountains,cold_beach,cold_taiga,cold_taiga_hills,cold_taiga_mountains,taiga,taiga_hills,taiga_mountains,ice_plains,ice_plains_spikes,extreme_hills_mountains,extreme_hills_plus_mountains,mega_spruce_taiga,mega_spruce_taiga_hills,mega_taiga,mega_taiga_hills
+  Skills:
+  - damage 0:8:true >0 1
+  - potion 0:SLOW:300:4
+BlizzagaDamageWarm:
+  Cooldown: 0.15
+  Conditions:
+  - biome desert,desert_hills,hell,savanna,savanna_plateau,mesa,mesa_plateau,mesa_plateau_forest,mesa_plateau_mountains,mesa_plateau_forest_mountains,savanna_mountains,savanna_plateau_mountains,mesa_bryce,desert_mountains,savanna_plateau_forest_mountains
+  Skills:
+  - damage 0:4:true >0 1
+  - potion 0:SLOW:100:2

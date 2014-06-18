@@ -8,15 +8,15 @@
 player-bars:
   enable: true
   after-name:
-    enable: true
+    enable: false
     display-style: 1
-    text-mode: true
+    text-mode: false
     hide-delay-seconds: 0
     use-custom-file: false
     always-shown: true
   below-name:
-    enable: false
-    text: '&cHealth'
+    enable: true
+    text: '&4<3&r'
     use-proportion: true
     proportional-to: 10
   world-disabling: false
@@ -27,9 +27,9 @@ mob-bars:
   display-style: 1
   text-mode: true
   custom-text-enable: true
-  custom-text: '{name} - &c{health}/{max} &4<3'
+  custom-text: '{name} &c{health}/{max}&r &4<3&r'
   hide-delay-seconds: 60
-  show-only-if-looking: false
+  show-only-if-looking: true
   use-custom-file: false
   world-disabling: false
   disabled-worlds: world_nether,world_the_end,exampleWorld
@@ -37,9 +37,9 @@ mob-bars:
   disabled-types: creeper,zombie,skeleton,iron_golem
   always-shown: false
 hooks:
-  epicboss: true
+  epicboss: false
 fix-tab-names: true
-fix-death-messages: true
+fix-death-messages: false
 update-notification: false
 use-player-bar-permissions: false
 override-other-scoreboard: false

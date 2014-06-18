@@ -1,0 +1,433 @@
+FrostNova:
+  Cooldown: 0.25
+  Skills:
+  - skill FrostNovaEffectOne >0 1
+  - skill FrostNovaSoundOne >0 1
+  - delay 2
+  - skill FrostNovaEffectOne >0 1
+  - skill FrostNovaEffectTwo >0 1
+  - skill FrostNovaSoundTwo >0 1
+  - delay 2
+  - skill FrostNovaEffectOne >0 1
+  - skill FrostNovaEffectTwo >0 1
+  - skill FrostNovaEffectThree >0 1
+  - skill FrostNovaSoundThree >0 1
+  - delay 2
+  - skill FrostNovaEffectOne >0 1
+  - skill FrostNovaEffectTwo >0 1
+  - skill FrostNovaEffectThree >0 1
+  - skill FrostNovaEffectFour >0 1
+  - skill FrostNovaSoundFour >0 1
+  - delay 2
+  - skill FrostNovaEffectOne >0 1
+  - skill FrostNovaEffectTwo >0 1
+  - skill FrostNovaEffectThree >0 1
+  - skill FrostNovaEffectFour >0 1
+  - skill FrostNovaEffectFive >0 1
+  - skill FrostNovaSoundFive >0 1
+  - delay 2
+  - skill FrostNovaEffectTwo >0 1
+  - skill FrostNovaEffectThree >0 1
+  - skill FrostNovaEffectFour >0 1
+  - skill FrostNovaEffectFive >0 1
+  - skill FrostNovaEffectSix >0 1
+  - skill FrostNovaSoundSix >0 1
+  - delay 2
+  - skill FrostNovaEffectThree >0 1
+  - skill FrostNovaEffectFour >0 1
+  - skill FrostNovaEffectFive >0 1
+  - skill FrostNovaEffectSix >0 1
+  - skill FrostNovaEffectSeven >0 1
+  - skill FrostNovaSoundSeven >0 1
+  - delay 2
+  - skill FrostNovaEffectFour >0 1
+  - skill FrostNovaEffectFive >0 1
+  - skill FrostNovaEffectSix >0 1
+  - skill FrostNovaEffectSeven >0 1
+  - skill FrostNovaEffectEight >0 1
+  - skill FrostNovaSoundEight >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaExplodeEffect >0 1
+  - skill FrostNovaEffectFive>0 1
+  - skill FrostNovaEffectSix >0 1
+  - skill FrostNovaEffectSeven >0 1
+  - skill FrostNovaEffectEight >0 1
+  - skill FrostNovaSoundNine >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaExplodeEffect >0 1
+  - skill FrostNovaEffectSix >0 1
+  - skill FrostNovaEffectSeven >0 1
+  - skill FrostNovaEffectEight >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaMulti >0 1
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaEffectSeven >0 1
+  - skill FrostNovaEffectEight >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+  - delay 3
+  - skill FrostNovaGroundEffectOne >0 1
+  - skill FrostNovaGroundEffectTwo >0 1
+  - skill FrostNovaGroundEffectThree >0 1
+  - skill FrostNovaGroundEffectFour >0 1
+  - skill FrostNovaGroundEffectFive >0 1
+  - skill FrostNovaSoundTen >0 1
+FrostNovaMulti:
+  Cooldown: 0.25
+  Skills:
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+  - skill FrostNovaAOE >0 1
+  - delay 5
+FrostNovaAEO:
+  Cooldown: 0.25
+  Skills:
+  - skill FrostNovaSlowEffect >0 1
+  - skill FrostNovaSlow >0 1
+  - skill FrostNovaWeakness >0 1
+  - skill FrostNovaStun >0 1
+FrostNovaDamage:
+  Cooldown: 0.25
+  Skills:
+  - damage 7:1:true >0 1
+FrostNovaSlow:
+  Cooldown: 0.25
+  Skills:
+  - potion 7:SLOW:10:100 >0 1
+  - potionself SLOW:10:100 >0 1
+FrostNovaWeakness:
+  Cooldown: 0.25
+  Skills:
+  - potion 7:WEAKNESS:10:3 >0 1
+FrostNovaStun:
+  Cooldown: 0.25
+  Skills:
+  - throw 7:0:-5 >0 1
+FrostNovaSlowEffect:
+  Cooldown: 0.25
+  Skills:
+  - effect playerinradius:7 particles snowshovel:0.2:0.2:200:0.1:0.1
+FrostNovaEffectOne:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:0.3:1.0:100:0.1:12.0
+  - effect boss particles snowballpoof:0.3:1.0:100:0.1:12.0
+FrostNovaEffectTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:0.3:1.0:100:0.1:10.5
+  - effect boss particles snowballpoof:0.3:1.0:100:0.1:10.5
+FrostNovaEffectThree:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:0.3:1.0:100:0.1:9.0
+  - effect boss particles snowballpoof:0.3:1.0:100:0.1:9.0
+FrostNovaEffectFour:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:0.3:1.0:100:0.1:7.5
+  - effect boss particles snowballpoof:0.3:1.0:100:0.1:7.5
+FrostNovaEffectFive:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:0.3:1.0:100:0.1:6.0
+  - effect boss particles snowballpoof:0.3:1.0:100:0.1:6.0
+FrostNovaEffectSix:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:0.3:1.0:100:0.1:4.5
+  - effect boss particles snowballpoof:0.3:1.0:100:0.1:4.5
+FrostNovaEffectSeven:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:0.3:1.0:100:0.1:3.0
+  - effect boss particles snowballpoof:0.3:1.0:100:0.1:3.0
+FrostNovaEffectEight:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:0.3:1.0:100:0.1:1.5
+  - effect boss particles snowballpoof:0.3:1.0:100:0.1:1.5
+FrostNovaEffectNine:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:0.3:1.0:100:0.1:0.5
+  - effect boss particles snowballpoof:0.3:1.0:100:0.1:0.5
+FrostNovaExplodeEffect:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:1.5:1.5:500:0.1:0.5
+  - effect boss particles snowballpoof:1.5:1.5:500:0.1:1.1
+  - effect boss particles largeexplode:0.5:0.5:50:0.1:1.1
+FrostNovaGroundEffectOne:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:0.5:1.0:100:0.1:1.1
+  - effect boss particles snowshovel:1.75:0.1:500:0.1:1.1
+  - effect boss particles cloud:2.5:0.6:500:0:1.0
+FrostNovaGroundEffectTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:1.0:1.0:100:0.1:1.1
+  - effect boss particles cloud:2.5:0.6:500:0:1.0
+FrostNovaGroundEffectThree:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:1.5:1.0:150:0.1:1.1
+  - effect boss particles cloud:2.5:0.6:500:0:1.0
+FrostNovaGroundEffectFour:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:2.0:1.0:200:0.1:1.1
+  - effect boss particles cloud:2.5:0.6:500:0:1.0
+FrostNovaGroundEffectFive:
+  Cooldown: 0.25
+  Skills:
+  - effect boss particles snowshovel:2.5:1.0:500:0.1:1.0
+  - effect boss particles cloud:2.5:0.6:500:0:1.0
+FrostNovaSoundOne:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound random.fizz:1.5:2.0
+FrostNovaSoundTwo:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound random.fizz:1.5:1.8
+FrostNovaSoundThree:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound random.fizz:1.5:1.5
+FrostNovaSoundFour:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound random.fizz:1.5:1.3
+FrostNovaSoundFive:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound random.fizz:1.5:1.0
+FrostNovaSoundSix:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound random.fizz:1.5:0.8
+FrostNovaSoundSeven:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound random.fizz:1.5:0.5
+FrostNovaSoundEight:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound random.fizz:1.5:0.3
+FrostNovaSoundNine:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound mob.wither.idle:1.5:0.l
+FrostNovaSoundTen:
+  Cooldown: 0.25
+  Skills:
+  - effect boss sound random.fizz:1.5:0.1
