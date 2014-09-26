@@ -33,9 +33,9 @@ sync_conf[level-name]="$thisWorldName"
 sync_conf[server-port]="$thisServerPort"
 sync_conf[server-name]="$thisServerName"
 sync_conf[max-players]="10"
-local k
+local k;
 for k in "${!sync_conf[@]}";do
-sed -i "s/^$k=.*$/$k=${sync_conf[$k]}/g" $to
+sed -i "s/^$k=.*$/$k=${sync_conf[$k]}/g" $to;
 done
 }
 sync_conf_start(){
@@ -48,10 +48,11 @@ scp_getControllers;
 scp_getServer spigot;
 
 local plugins=(
+Vault
 VariableTriggers
-BungeeSuitePortals
-BungeeSuiteWarps
-PermissionsEx
+#BungeeSuitePortals
+#BungeeSuiteWarps
+#PermissionsEx
 AuthMe
 TeleportSigns
 #WorldEdit

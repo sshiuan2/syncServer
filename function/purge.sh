@@ -29,3 +29,22 @@ rm -fr $thisServerPath/proxy.log*
 fi
 msg_${FUNCNAME}
 }
+purge_vanilla_files(){
+local fs=(
+ops.txt
+white-list.txt
+usercache.json
+banned-ips.json
+banned-ips.txt
+banned-ips.txt.converted
+banned-players.json
+banned-players.txt
+banned-players.txt.converted
+)
+local f;
+for f in ${fs[@]};do
+if [ -f $thisServerPath/$f ];then
+rm -f $thisServerPath/$f;
+fi;
+done;
+}

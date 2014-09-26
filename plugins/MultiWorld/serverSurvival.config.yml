@@ -14,19 +14,6 @@ options:
   useWorldSpawnHandler: false
   useWorldChatSeperator: false
 worlds:
-  人界:
-    seed: -3396074278129787269
-    worldgen: Normal
-    options: ''
-    difficulty: 3
-    autoload: false
-    flags:
-      SPAWNMONSTER: false
-      SPAWNANIMAL: false
-      PVP: true
-      REMEMBERSPAWN: false
-      RECIEVECHAT: false
-      SENDCHAT: false
   world:
     seed: 5940251458428313362
     worldgen: Normal
@@ -35,3 +22,9 @@ worlds:
     autoload: true
     flags:
       PVP: true
+  world_dungeon:
+    seed: 7538743816359914888
+    worldgen: NORMAL
+    options: ''
+    difficulty: NORMAL
+    autoload: true

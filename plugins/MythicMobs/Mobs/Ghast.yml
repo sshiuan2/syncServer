@@ -6,25 +6,41 @@ GhastKing:
   Showhp: true
   Damage: 20
   Skills:
-  - msg 20:'&a$boss &f我也是有幫手的！' <2500 0.1
-  - msg 20:'&a$boss &f看我的嘔吐火球！' <2500 0.1
+  - msg 20:'&a$boss &f我也是有幫手的！' ~onDamaged <100% 0.1
+  - msg 20:'&a$boss &f看我的嘔吐火球！' ~onDamaged <100% 0.1
   - potionself SPEED:3:3 <2500 0.2
   - potionself INVISIBILITY:1:5 <2500 0.5
-  - summon ghast:3 <2500 0.1
-  - summon $水母王手下甲:1 <2500 0.1
-  - summon $水母王手下甲:1 <1500 0.1
-  - summon $水母王手下甲:1 <500 0.2
-  - summon $水母王手下乙:1 <2500 0.1
-  - summon $水母王手下乙:2 <1500 0.2
-  - summon $水母王手下乙:3 <500 0.3
-  - msg 25:'&a$boss &r臨死前招換出一堆骷髏' =0 1
-  - summon $水母王手下甲:1 =0 0.5
-  - summon $水母王手下甲:1 =0 0.5
-  - summon $水母王手下甲:1 =0 0.5
-  - summon $水母王手下乙:1 =0 0.5
-  - summon $水母王手下乙:1 =0 0.5
-  - summon $水母王手下乙:1 =0 0.5
-  - summon $水母王手下乙:1 =0 0.5
+  - cmd 'summon Ghast $boss_x $boss_y $boss_z' ~onDamaged <100% 0.1
+#  - summon ghast:3 <2500 0.1
+  - cmd 'mm mobs spawn Skeleton_w 1 $world,$boss_x,$boss_y,$boss_z' ~onDamaged <100% 0.01
+  - cmd 'mm mobs spawn Skeleton_w 1 $world,$boss_x,$boss_y,$boss_z' ~onDamaged <60% 0.02
+  - cmd 'mm mobs spawn Skeleton_w 1 $world,$boss_x,$boss_y,$boss_z' ~onDamaged <20% 0.03
+  - cmd 'mm mobs spawn Skeleton 1 $world,$boss_x,$boss_y,$boss_z' ~onDamaged <100% 0.04
+  - cmd 'mm mobs spawn Skeleton 2 $world,$boss_x,$boss_y,$boss_z' ~onDamaged <60% 0.05
+  - cmd 'mm mobs spawn Skeleton 3 $world,$boss_x,$boss_y,$boss_z' ~onDamaged <20% 0.06
+  - lightningall 25:1 ~onDamaged <100% 0.1
+#  - summon $水母王手下甲:1 <2500 0.1
+#  - summon $水母王手下甲:1 <1500 0.1
+#  - summon $水母王手下甲:1 <500 0.2
+#  - summon $水母王手下乙:1 <2500 0.1
+#  - summon $水母王手下乙:2 <1500 0.2
+#  - summon $水母王手下乙:3 <500 0.3
+  - msg 25:'&a$boss &r臨死前招換出一堆骷髏' ~onDeath 1
+  - cmd 'mm mobs spawn Skeleton_w 1 $world,$boss_x,$boss_y,$boss_z' ~onDeath 0.5
+  - cmd 'mm mobs spawn Skeleton_w 1 $world,$boss_x,$boss_y,$boss_z' ~onDeath 0.5
+  - cmd 'mm mobs spawn Skeleton 1 $world,$boss_x,$boss_y,$boss_z' ~onDeath 0.5
+  - cmd 'mm mobs spawn Skeleton 1 $world,$boss_x,$boss_y,$boss_z' ~onDeath 0.5
+  - cmd 'mm mobs spawn Skeleton 1 $world,$boss_x,$boss_y,$boss_z' ~onDeath 0.5
+#  - summon $水母王手下甲:1 ~onDeath 0.5
+#  - summon $水母王手下甲:1 ~onDeath 0.5
+#  - summon $水母王手下甲:1 ~onDeath 0.5
+#  - summon $水母王手下乙:1 ~onDeath 0.5
+#  - summon $水母王手下乙:1 ~onDeath 0.5
+#  - summon $水母王手下乙:1 ~onDeath 0.5
+#  - summon $水母王手下乙:1 ~onDeath 0.5
+  - skill onSpawn_broadcast ~onSpawn 1
+  - skill onDeath_broadcast ~onDeath 1
+#  - msg 0:'&7[提示] 若擊殺者為 Unknown (未知)，那是因為被火球所擊殺... ' ~onDeath 1
   Equipment:
   - Bow_GhastKing:0 0.5
   Drops:

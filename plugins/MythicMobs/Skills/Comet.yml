@@ -1,10 +1,10 @@
 Comet:
   Cooldown: 0.25
   Skills:
-  - msg 15:'$boss &eIs preparing a powerful spell!'
+  - msg 15:'$boss &e招換了 彗星'
   - potionself SLOW:125:10
   - delay 60
-  - msg 15:'$boss &eCasts Comet!'
+  - msg 15:'&e彗星到來！'
   - skill CometGroundEff
   - skill CometStartSound
   - delay 5

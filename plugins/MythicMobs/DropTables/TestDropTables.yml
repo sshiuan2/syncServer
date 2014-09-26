@@ -1,0 +1,22 @@
+Example:
+  Drops:
+  - C_RustySword 1-2 0.035
+  #3.5% chance of dropping 1 to 2 of item C_RustySword. (MythicMobs item)
+  - C_RustyAxe 1 0.15
+  #15% chance of dropping 1 of item C_RustyAxe (MythicMobs item)
+  - 373:8261 3-5 0.5
+  #50% chance of dropping 3 to 5 Healing potions (internal Minecraft item)
+  - 299 1 1
+  #100% chance of dropping 1 Leather Chestplate (internal Minecraft item)
+  - exp 10 1
+  #100% chance of dropping 10 experience (in orbs)
+  - heroesexp 10 1
+  #100% chance of dropping 10 experiences into the heroes plug-in
+  - phatloot PhatHelm 1
+  #100% chance of dropping the PhatHelm item from phatloots plug-in
+  - money 10 1
+  #100% chance of dropping 10 money into the vault plug-in
+  #after editing, need reload mm and "vault"...
+testdrops:
+  Drops:
+  - money 0.01-0.05 1

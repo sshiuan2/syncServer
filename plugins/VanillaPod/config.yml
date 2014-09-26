@@ -1,0 +1,11 @@
+servers:
+  one-seven:
+  - 4
+  - 5
+  latest:
+  - 44
+  - 45
+  - 46
+  - 47
+ping-passthrough: true # Whether to passthrough pings
+ping-cache-delay: 5000 # Delay in milliseconds to cache pings

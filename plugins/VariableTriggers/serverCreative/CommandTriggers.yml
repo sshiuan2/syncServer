@@ -23,14 +23,12 @@ Commands:
     Override: true
     Script:
     - '@PLAYER &8&l最快回去的方法就是...'
-    - '@CMDCON kill <playername>'
+    - '@CMDOP minecraft:kill <playername>'
   tp:
     Override: true
     Script:
-    - '@COOLDOWN 1'
-    - '@CMDOP tp <cmdline>'
+    - '@CMDOP minecraft:tp <cmdline>'
   gamemode:
     Override: true
     Script:
-    - '@COOLDOWN 1'
-    - '@CMDOP gamemode <cmdarg1>'
+    - '@CMDOP minecraft:gamemode <cmdarg1>'

@@ -5,3 +5,10 @@ spawn:
   z: 0.5
   yaw: 0
   pitch: 0
+firstspawn:
+  world: auth
+  x: '0.5'
+  y: '64'
+  z: '0.5'
+  yaw: '0'
+  pitch: '0'

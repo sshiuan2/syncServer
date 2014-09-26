@@ -1,0 +1,96 @@
+Scripts:
+  no_permission:
+    Script:
+    - '@PLAYER &c無權限'
+  not_global_ops:
+    Script:
+    - '@CALL Tip:no_permission'
+  not_ops:
+    Script:
+    - '@CALL Tip:no_permission'
+  not_whitelist:
+    Script:
+    - '@PLAYER &c你不在白名單內'
+  not_goodkids:
+    Script:
+    - '@PLAYER &c你不在好寶寶名單上'
+  not_official_account:
+    Script:
+    - '@PLAYER &c不是正版帳號'
+  wrong_condition:
+    Script:
+    - '@PLAYER &c不可在此狀況下使用'
+  player_not_online:
+    Script:
+    - '@PLAYER &c玩家不在線上'
+  tip_nick:
+    Script:
+    - '@CALL Tip:tip_displayname_title_color'
+    - '@CALL Tip:tip_displayname_title'
+    - '@CALL Tip:tip_displayname_prefix_color'
+    - '@CALL Tip:tip_displayname_prefix'
+    - '@CALL Tip:tip_displayname_color'
+    - '//TODO @CALL Tip:tip_displayname'
+  tip_displayname_title_color:
+    Script:
+    - '@PLAYER &6/nicktc <顏色代碼> [玩家] &r改變自己或他人稱號顏色(op限定)'
+  tip_displayname_title:
+    Script:
+    - '@PLAYER &6/nickt <稱號> [玩家] &r改變自己或他人稱號(op限定)'
+  tip_displayname_title_detail:
+    Script:
+    - '@PLAYER  - 刪除: /nickt &&rr [玩家]'
+    - '@PLAYER  - 開頭無法使用: && * ()'
+  tip_other_displayname_title_color_is_set:
+    Script:
+    - '@PLAYER <cmdarg:2> 的稱號顏色改為 &<cmdarg:1>▉'
+    - '@TELL <cmdarg:2> 你的稱號顏色被改為 &<cmdarg:1>▉'
+  tip_other_displayname_title_is_set:
+    Script:
+    - '@PLAYER <cmdarg:2> 的稱號改為 <cmdarg:1>'
+    - '@TELL <cmdarg:2> 你的稱號被改為 <cmdarg:1>'
+    - '@TELL <cmdarg:2> 請重新進入伺服以便更新暱稱...'
+  tip_other_displayname_title_is_removed:
+    Script:
+    - '@PLAYER <cmdarg:2> 的稱號已被刪除'
+    - '@TELL <cmdarg:2> 你的稱號已被刪除'
+  tip_displayname_prefix_color:
+    Script:
+    - '@PLAYER &6/nickpc <顏色代碼> &r改變自己符號顏色(好寶寶限定)'
+  tip_displayname_prefix:
+    Script:
+    - '@PLAYER &6/nickp <符號> <樣式> &r改變自己符號(正版限定)'
+  tip_displayname_prefix_detail:
+    Script:
+    - '@PLAYER  - 符號: heart, star, music, plus, good'
+    - '@PLAYER  - 刪除: /nickp remove'
+  tip_displayname_prefix_heart:
+    Script:
+    - '@PLAYER &6樣式: &r1❤, 2ღ, 3❥, 4♡, 5♥'
+  tip_displayname_prefix_star:
+    Script:
+    - '@PLAYER &6樣式: &r1★, 2☆, 3✡, 4✩, 5✪, 6✫, 7✬, 8✭, 9✮, 10✯, 11✰'
+  tip_displayname_prefix_music:
+    Script:
+    - '@PLAYER &6樣式: &r1♫, 2♬, 3♪, 4♩, 5♭, 6♪, 7♮, 8♯'
+  tip_displayname_prefix_plus:
+    Script:
+    - '@PLAYER &6樣式: &r1✢, 2✣, 3✤, 4✥, 5✟, 6✧, 7✚, 8✜, 9✝'
+  tip_displayname_prefix_good:
+    Script:
+    - '@PLAYER &6樣式: &r1㊝, 2☻, 3☺'
+  tip_displayname_color:
+    Script:
+    - '@PLAYER &6/nickc <顏色代碼> &r改變自己名稱顏色(op限定)'
+  tip_displayname:
+    Script:
+    - '@PLAYER &8 - 每周五會自動洗白nick'
+  tip_colors:
+    Script:
+    - '@PLAYER ◎顏色代碼：(代碼前要加上 & 符號，若是/nick則不用)'
+    - '@PLAYER &11深藍 &22深綠 &33水藍 &44深紅 &55紫色 &66金黃 &77灰色 &88深灰'
+    - '@PLAYER &99藍色 &00黑色 &aa綠色 &bb亮水藍 &cc紅色 &dd粉紅 &ee黃色 &ff白色'
+    - '@PLAYER &k l&l粗體 o&o斜體 n&n底線&r m&m刪除&r r&r重設'
+  Join_serverSurvival:
+    Script:
+    - '@PLAYER &f&l稱號指令/nick, /colors'

@@ -76,6 +76,8 @@ fi
 sync_scp(){
 scp_getControllers;
 scp_getServer spigot;
+#use old version
+cp -f $thisServerPath/spigot-1.7.5-R0.1-SNAPSHOT.jar $thisServerPath/spigot.jar
 scp_getWorld region_0_0_spawn; #worldname=world
 
 local plugins=(
@@ -91,7 +93,7 @@ PermissionsEx
 CoreProtect
 AutoSaveWorld
 Lockette
-Residence
+Residence #broken in 1.7.9
 
 Vault
 iConomy
@@ -103,8 +105,10 @@ ChatColors
 HealthBar
 SuperCensor
 
-mcMMO
-EpicBossRecoded
+mcMMO #broken in 1.7.9
+MythicMobs
+ProtocolLib
+LibsDisguises
 
 BringBackTheEnd
 MultiWorld
@@ -112,10 +116,10 @@ MultiWorld
 WorldBorder
 WorldEdit
 )
-local p
+local p;
 for p in ${plugins[@]};do
-scp_getPlugin $p;
-done
+scp_getPlugin $p "1.7.5";
+done;
 }
 main(){
 sync_backup;
@@ -127,6 +131,7 @@ source_all;
 msg_startSync;
 
 purge_plugins all;
+purge_vanilla_files;
 #1d=24h=1440m=86400s
 #432000s=7200m=120h=5d
 checkWorldNether 240000;

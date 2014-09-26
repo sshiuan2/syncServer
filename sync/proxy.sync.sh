@@ -14,7 +14,7 @@ sed -i 's/^session=.*$/session=proxy/g' $varPath
 sed -i 's/^window=.*$/window=2/g' $varPath
 sed -i 's/^pane=.*$/pane=2/g' $varPath
 }
-sync_start(){
+sync_conf_start(){
 local to=$thisServerPath/start.sh
 sed -i 's/Xmx=.*/Xmx=512M/g' $to
 sed -i 's/$arg/-server/g' $to
@@ -22,19 +22,28 @@ sed -i 's/$arg/-server/g' $to
 sync_conf(){
 local to=$thisServerPath/config.yml
 local port=25565
+sync_conf_start;
 }
+sync_scp(){
+scp_getControllers;
+scp_getServer proxy;
+scp_getServer icon;
+
+scp_getPlugin BungeeSuite;
+scp_getPlugin VanillaPod;
+}
+main(){
 sync_var;
 source_all;
+
+msg_startSync;
 
 purge_plugins all;
 purge_logs;
 
-msg_startSync;
-scp_getControllers;
-sync_start;
-scp_getServer proxy;
+sync_scp;
 sync_conf;
-scp_getServer icon;
 
-scp_getPlugin BungeeSuite;
 msg_endSync;
+}
+main

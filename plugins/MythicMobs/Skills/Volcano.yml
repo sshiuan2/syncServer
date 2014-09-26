@@ -1,10 +1,10 @@
 Volcano:
   Cooldown: 5
   Skills:
-  - msg 15:'$boss &eIs preparing a very powerful spell, run!' >0 1
+  - msg 15:'$boss &e阿阿你一直打我 我要生氣了喔！' >0 1
   - potionself SLOW:220:10 >0 1
   - delay 60
-  - msg 15:'$boss &eCasts Volcano!'
+  - msg 15:'$boss &e召喚了一座火山！'
   - skill VolcanoRiseEffect1 >0 1
   - skill VolcanoSound1 >0 1
   - delay 4

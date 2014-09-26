@@ -17,6 +17,7 @@ DataSource:
   mySQLlastlocWorld: world
   mySQLColumnEmail: email
   mySQLColumnId: id
+  mySQLColumnLogged: isLogged
 GroupOptions:
   UnregisteredPlayerGroup: ''
   RegisteredPlayerGroup: ''
@@ -46,7 +47,8 @@ settings:
     minNicknameLength: 4
     allowMovement: false
     timeout: 60
-    allowedNicknameCharacters: ^[a-zA-Z_0-9\u002d\u00a7\u3002\u4E00-\u9FFF\uff01-\uff9f]+$
+#    allowedNicknameCharacters: ^[a-zA-Z_0-9\u002d\u00a7\u3002\u4E00-\u9FFF\uff01-\uff9f]+$
+    allowedNicknameCharacters: ^[a-zA-Z_0-9\u002d]+$
     allowedMovementRadius: 100
     enablePasswordVerifier: true
     ProtectInventoryBeforeLogIn: true
@@ -54,32 +56,45 @@ settings:
     ForceSpawnOnTheseWorlds:
     - auth
     banUnsafedIP: false
+    spawnPriority: authme,essentials,multiverse,default
+    maxLoginPerIp: 0
+    maxJoinPerIp: 0
+    noTeleport: false
   GameMode:
     ForceSurvivalMode: false
     ResetInventoryIfCreative: false
     ForceOnlyAfterLogin: false
   security:
     minPasswordLength: 4
-    unLoggedinGroup: '未登入'
+    unLoggedinGroup: 未登入
     passwordHash: MD5
     doubleMD5SaltLength: 8
+    unsafePasswords:
+    - '123456'
+    - password
   registration:
-    enabled: true
+    enabled: false
     messageInterval: 5
     force: true
     enableEmailRegistrationSystem: false
     doubleEmailCheck: false
+    forceKickAfterRegister: false
+    forceLoginAfterRegister: false
   unrestrictions:
     UnrestrictedName: []
   messagesLanguage: zhtw
+  forceCommands: []
+  forceCommandsAsConsole: []
+  useWelcomeMessage: false
+  broadcastWelcomeMessage: false
+  delayJoinMessage: false
 ExternalBoardOptions:
   mySQLColumnSalt: ''
   mySQLColumnGroup: ''
   nonActivedUserGroup: -1
   mySQLOtherUsernameColumns: []
   bCryptLog2Round: 10
-Xenoforo:
-  predefinedSalt: ''
+Xenoforo: {}
 permission:
   EnablePermissionCheck: false
 BackupSystem:
@@ -107,7 +122,6 @@ Converter:
     fileName: users.rak
     useIP: false
     ipFileName: UsersIp.rak
-    newPasswordHash: SHA256
 Email:
   mailSMTP: smtp.gmail.com
   mailPort: 465
@@ -119,12 +133,27 @@ Email:
   maxRegPerEmail: 1
   mailText: '玩家 <playername> 您好！ <br /><br /> 這是您在 <servername> 的新密碼: <generatedpass><br
     /><br /> 請馬上至 <a href="up9cloud.net">官網</a> 更新您的密碼！'
+  recallPlayers: false
+  delayRecall: 5
 Hooks:
-  multiverse: true
-  chestshop: true
+  multiverse: false
+  chestshop: false
   bungeecord: true
-  notifications: true
-  disableSocialSpy: true
+  notifications: false
+  disableSocialSpy: false
   useEssentialsMotd: false
 Performances:
   useMultiThreading: false
+Protection:
+  enableProtection: false
+  countries:
+  - US
+  - GB
+  - TW
+  enableAntiBot: false
+  antiBotSensibility: 5
+  antiBotDuration: 10
+  countriesBlacklist:
+  - A1
+VeryGames:
+  enableIpCheck: false

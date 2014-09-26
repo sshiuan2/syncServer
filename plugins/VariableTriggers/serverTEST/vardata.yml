@@ -1,1 +1,7 @@
-objects: {}
+objects:
+  global_ops:
+    Integers: {}
+    Strings: {}
+    StringLists: {}
+    Booleans:
+      O0oO0o0Oo0O: true

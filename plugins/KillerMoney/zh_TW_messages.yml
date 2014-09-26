@@ -1,0 +1,117 @@
+MESSAGE:
+    Prefix: "&8[&8金錢&8] "
+    ConfigReloaded: "The configuration file and lang file reloaded"
+    NoPermission: "You have not permission for this command!"
+
+PIG:
+    Positive: "&7%playername &7擊殺 &6豬 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+SHEEP:
+    Positive: "&7%playername &7擊殺 &6羊 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+CHICKEN:
+    Positive: "&7%playername &7擊殺 &6雞 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   
+COW:
+    Positive: "&7%playername &7擊殺 &6牛 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+HORSE:
+    Positive: "&7%playername &7擊殺 &6馬 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+WOLF:
+    Positive: "&7%playername &7擊殺 &6狼 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   
+OCELOT:
+    Positive: "&7%playername &7擊殺n &6貓 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+       
+BAT:
+    Positive: "&7%playername &7擊殺 &6蝙蝠 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+BLAZE:
+    Positive: "&7%playername &7擊殺 &6烈焰 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+CAVE_SPIDER:
+    Positive: "&7%playername &7擊殺 &6毒蜘蛛 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+      
+CREEPER:
+    Positive: "&7%playername &7擊殺 &6苦力帕 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+ENDER_DRAGON:
+    Positive: "&7%playername &7擊殺 &6終界龍 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+ENDERMAN:
+    Positive: "&7%playername &7擊殺 &6終界人 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+GHAST:
+    Positive: "&7%playername &7擊殺 &6水母 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+GIANT:
+    Positive: "&7%playername &7擊殺 &6殭屍大大 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+MAGMA_CUBE:
+    Positive: "&7%playername &7擊殺 &6火史萊姆 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+MUSHROOM_COW:
+    Positive: "&7%playername &7擊殺 &6哞牛 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+PIG_ZOMBIE:
+    Positive: "&7%playername &7擊殺 &6豬殭屍 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+PLAYER:
+    Positive: "&7%playername &7擊殺 &6PLAYER&7 (&6%victim&7) &7You earned: &6%currency%money"
+    Negative: "&7%playername &7你擊殺 &6玩家 &7(&6%victim&7) &7失去 &6%currency%money"
+    ToVictim: "&7Ops &7You lost &6%currency%lostmoney&7, because you killed by &6%playername&7!"
+        
+SILVERFISH:
+    Positive: "&7%playername &7擊殺 &6蟲 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+SKELETON:
+    Positive: "&7%playername &7擊殺 &6骷顱 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+SLIME:
+    Positive: "&7%playername &7擊殺 &6史萊姆 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+SPIDER:
+    Positive: "&7%playername &7擊殺 &6蜘蛛 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+SQUID:
+    Positive: "&7%playername &7擊殺 &6烏賊 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+VILLAGER:
+    Positive: "&7%playername &7擊殺 &6村民 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+       
+WITCH:
+    Positive: "&7%playername &7擊殺 &6女巫 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+WITHER:
+    Positive: "&7%playername &7擊殺 &6凋零 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+        
+ZOMBIE:
+    Positive: "&7%playername &7擊殺 &6殭屍 &7獲得 &6%currency%money"
+    Negative: "&7%playername &6您失手了！ &7失去 &6%currency%money"

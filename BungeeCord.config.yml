@@ -5,6 +5,8 @@ groups:
   - op
   up9cloud-michell:
   - op
+  up9cloud-kai:
+  - op
 disabled_commands:
 - find
 player_limit: 168
@@ -47,17 +49,13 @@ servers:
   天界:
     address: 10.0.0.1:25565
     restricted: false
-    motd: '&aup9cloud.net &c|&r &e九天 Σ(ﾟ дﾟ|||) &7官網可下載1.7.4懶人包！'
+    motd: '&aup9cloud.net &c|&r &e九天 Σ(ﾟ дﾟ|||) &7官網可下載1.7.9懶人包！'
   auth:
     address: 10.0.0.1:25566
     restricted: false
     motd: '&aup9cloud.net:25566 &c|&r &e九天 Σ(ﾟ дﾟ|||)'
   creative:
     address: 10.0.0.1:25567
-    restricted: false
-    motd: '&aup9cloud.net'
-  trade:
-    address: 10.0.0.3:25565
     restricted: false
     motd: '&aup9cloud.net'
   空島生存:
@@ -80,6 +78,10 @@ servers:
     address: 10.0.0.2:25569
     restricted: false
     motd: '&aup9cloud.net'
+  trade:
+    address: 10.0.0.3:25565
+    restricted: false
+    motd: '&aup9cloud.net'
   music:
     address: 10.0.0.3:25599
     restricted: false
@@ -96,12 +98,20 @@ servers:
     address: 10.0.0.3:25567
     restricted: false
     motd: '&aup9cloud.net'
+  smallwawa:
+    address: 10.0.0.3:25568
+    restricted: false
+    motd: '&aup9cloud.net'
   event:
     address: 10.0.0.4:25565
     restricted: false
     motd: '&aup9cloud.net'
   zoo:
     address: 10.0.0.4:25566
+    restricted: false
+    motd: '&aup9cloud.net'
+  latest:
+    address: 10.0.0.4:25600
     restricted: false
     motd: '&aup9cloud.net'
   E-2:

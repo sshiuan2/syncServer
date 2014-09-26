@@ -1,0 +1,5 @@
+world:
+  Join:
+    CoolDown: 0
+    Script:
+    - '@CALL Event:sv-SmallWawa_Join'

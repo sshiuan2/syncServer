@@ -10,6 +10,6 @@ local from="$thisServerPath/plugins/$name"
 local to=$from/$thisServerName
 mkdir -p $to
 cp -f $from/*Triggers.yml $to
-cp -f $from/vardata.yml $to
+$from/backupVardata.sh
 }
 main

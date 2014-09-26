@@ -4,35 +4,31 @@
     Script:
     - '@CMDCON mw move <playername> world'
 world:
-  122,65,435:
-    CoolDown: 1403021015926
+  259,65,260:
+    CoolDown: 1404226750551
     Script:
-    - '@CALL Shop:1token'
-  121,65,436:
-    CoolDown: 1403021014283
+    - '@CALL Shop:1_coin_lv1'
+  257,65,260:
+    CoolDown: 1404226742388
     Script:
-    - '@CALL Shop:10token'
-  120,65,437:
-    CoolDown: 1403004397195
-    Script:
-    - '@CALL Shop:64token'
+    - '@CALL Shop:64_coin_lv1'
   262,66,262:
-    CoolDown: 1403017213945
+    CoolDown: 1404218548474
     Script:
     - '@CALL Newbie:getBook_newbie_hotkeys'
   262,66,261:
-    CoolDown: 1403017206446
+    CoolDown: 1404218547397
     Script:
     - '@CALL Newbie:getBook_newbie_commands'
   262,66,263:
-    CoolDown: 1403017232496
+    CoolDown: 1404218549501
     Script:
     - '@CALL Newbie:getBook_boss_list'
   262,66,264:
-    CoolDown: 1403005175961
+    CoolDown: 1404218550292
     Script:
     - '@CALL Newbie:getBook_Residence'
   262,66,260:
-    CoolDown: 1403008043832
+    CoolDown: 1404218545607
     Script:
     - '@CALL Newbie:getBook_colors'

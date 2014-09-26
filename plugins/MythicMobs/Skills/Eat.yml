@@ -1,0 +1,16 @@
+Consume_zombie:
+  Cooldown: 1
+  Conditions:
+  - targetwithin 25
+  Skills:
+  - consume 20:20:10:10 zombie
+Consume_Zombie:
+  Cooldown: 1
+  Conditions:
+  - targetwithin 25
+  Skills:
+  - consume 20:20:10:10 Zombie_lv0
+  - consume 20:20:20:20 Zombie_lv1
+  - consume 20:20:40:40 Zombie_lv2
+  - consume 20:20:80:80 Zombie_lv3
+  - consume 20:20:160:160 Zombie_lv4

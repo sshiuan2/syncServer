@@ -1,125 +1,125 @@
 Starfall:
   Cooldown: 0.25
   Skills:
-  - msg 15:'$boss &eIs preparing a very powerful spell, run!'
+  - msg 15:'$boss &e準備開始施放 星落！'
   - potionself SLOW:145:10
   - delay 60
-  - msg 15:'$boss &eCasts Star Fall!'
-  - skill SFEff1
-  - skill SFSound1
-  - skill SFSound2
+  - msg 15:'$boss &e施放 星落！'
+  - skill StarfallEff1
+  - skill StarfallSound1
+  - skill StarfallSound2
   - delay 3
-  - skill SFEff1
+  - skill StarfallEff1
   - delay 3
-  - skill SFEff2
+  - skill StarfallEff2
   - delay 3
-  - skill SFEff2
+  - skill StarfallEff2
   - delay 3
-  - skill SFEff3
+  - skill StarfallEff3
   - delay 3
-  - skill SFEff3
+  - skill StarfallEff3
   - delay 3
-  - skill SFEff4
+  - skill StarfallEff4
   - delay 3
-  - skill SFEff4
+  - skill StarfallEff4
   - delay 3
-  - skill SFEff5
+  - skill StarfallEff5
   - delay 3
-  - skill SFEff5
+  - skill StarfallEff5
   - delay 3
-  - skill SFMulti
-  - skill SFEff6
+  - skill StarfallMulti
+  - skill StarfallEff6
   - delay 2
-  - skill SFEff6
+  - skill StarfallEff6
   - delay 2
-  - skill SFEff6
+  - skill StarfallEff6
   - delay 2
-  - skill SFEff6
+  - skill StarfallEff6
   - delay 2
-  - skill SFEff6
+  - skill StarfallEff6
   - delay 2
-  - skill SFEff6
+  - skill StarfallEff6
   - delay 2
-  - skill SFEff6
+  - skill StarfallEff6
   - delay 2
-  - skill SFEff6
+  - skill StarfallEff6
   - delay 2
-  - skill SFEff6
+  - skill StarfallEff6
   - delay 2
-  - skill SFEff6
+  - skill StarfallEff6
   - delay 2
-  - skill SFEff6
+  - skill StarfallEff6
   - delay 2
-  - skill SFEff5
+  - skill StarfallEff5
   - delay 2
-  - skill SFEff5
+  - skill StarfallEff5
   - delay 2
-  - skill SFEff4
+  - skill StarfallEff4
   - delay 2
-  - skill SFEff4
+  - skill StarfallEff4
   - delay 2
-  - skill SFEff3
+  - skill StarfallEff3
   - delay 2
-  - skill SFEff3
+  - skill StarfallEff3
   - delay 2
-  - skill SFEff2
+  - skill StarfallEff2
   - delay 2
-  - skill SFEff2
+  - skill StarfallEff2
   - delay 2
-  - skill SFEff1
+  - skill StarfallEff1
   - delay 2
-  - skill SFEff1
+  - skill StarfallEff1
   - delay 2
-SFMulti:
+StarfallMulti:
   Cooldown: 0.25
   Skills:
-  - skill SFStartEff1
+  - skill StarfallStartEff1
   - delay 1
-  - skill SFStartEff2
+  - skill StarfallStartEff2
   - delay 1
-  - skill SFStartEff3
+  - skill StarfallStartEff3
   - delay 1
-  - skill SFFallingEff1
-  - skill SFStartEff4
-  - skill SFFallingSound1
+  - skill StarfallFallingEff1
+  - skill StarfallStartEff4
+  - skill StarfallFallingSound1
   - delay 2
-  - skill SFFallingEff2
-  - skill SFStartEff4
-  - skill SFFallingSound2
+  - skill StarfallFallingEff2
+  - skill StarfallStartEff4
+  - skill StarfallFallingSound2
   - delay 2
-  - skill SFFallingEff3
-  - skill SFStartEff4
-  - skill SFFallingSound2
+  - skill StarfallFallingEff3
+  - skill StarfallStartEff4
+  - skill StarfallFallingSound2
   - delay 2
-  - skill SFFallingEff4
-  - skill SFStartEff4
-  - skill SFFallingSound2
+  - skill StarfallFallingEff4
+  - skill StarfallStartEff4
+  - skill StarfallFallingSound2
   - delay 2
-  - skill SFFallingEff5
-  - skill SFStartEff4
-  - skill SFFallingSound2
+  - skill StarfallFallingEff5
+  - skill StarfallStartEff4
+  - skill StarfallFallingSound2
   - delay 1
-  - skill SFFallingEff6
-  - skill SFStartEff3
-  - skill SFFallingSound2
+  - skill StarfallFallingEff6
+  - skill StarfallStartEff3
+  - skill StarfallFallingSound2
   - delay 1
-  - skill SFFallingEff7
-  - skill SFStartEff2
-  - skill SFFallingSound2
+  - skill StarfallFallingEff7
+  - skill StarfallStartEff2
+  - skill StarfallFallingSound2
   - delay 1
-  - skill SFFallingEff8
-  - skill SFStartEff1
-  - skill SFFallingSound2
+  - skill StarfallFallingEff8
+  - skill StarfallStartEff1
+  - skill StarfallFallingSound2
   - delay 1
   - damage 5:8:false
-  - skill SFShadow
+  - skill StarfallShadow
   - potion 5:BLINDNESS:60:0
   - potion 5:CONFUSION:200:0
   - potion 5:SLOW:60:7
   - potion 5:JUMP:60:-10
-  - skill SFFallingEff9
-  - skill SFFallingSound3
-SFShadow:
+  - skill StarfallFallingEff9
+  - skill StarfallFallingSound3
+StarfallShadow:
   Cooldown: 0.25
   Skills:
   - potion 5:WITHER:60:0
@@ -158,140 +158,140 @@ SFShadow:
   - potion 5:WITHER:5:0
   - effect target particles witchMagic:0.2:0.2:60:0:0.6
   - damage 5:1:false
-SFFallingSound1:
+StarfallFallingSound1:
   Cooldown: 0.25
   Skills:
   - effect target sound mob.ghast.fireball:1.5:0.1
-SFFallingSound2:
+StarfallFallingSound2:
   Cooldown: 0.25
   Skills:
   - effect target sound fire.fire:1.0:2.0
-SFFallingSound3:
+StarfallFallingSound3:
   Cooldown: 0.25
   Skills:
   - effect target sound mob.zombie.infect:1.5:0.1
   - effect target sound mob.blaze.death:1.5:0.1
-SFSound1:
+StarfallSound1:
   Cooldown: 0.25
   Skills:
   - effect boss sound portal.travel:1.5:0.1
-SFSound2:
+StarfallSound2:
   Cooldown: 0.25
   Skills:
   - effect boss sound portal.trigger:1.5:1.0
-SFStartEff1:
+StarfallStartEff1:
   Cooldown: 0.25
   Skills:
   - effect boss particles witchMagic:0.2:0.2:70:0:12
   - effect boss particles reddust:0.2:0.2:70:0.1:12
   - effect boss particles portal:0.2:0.2:70:0.1:12
-SFStartEff2:
+StarfallStartEff2:
   Cooldown: 0.25
   Skills:
   - effect boss particles witchMagic:0.4:0.2:70:0:12
   - effect boss particles reddust:0.4:0.2:70:0.1:12
   - effect boss particles portal:0.4:0.2:70:0.1:12
-SFStartEff3:
+StarfallStartEff3:
   Cooldown: 0.25
   Skills:
   - effect boss particles witchMagic:0.6:0.2:70:0:12
   - effect boss particles reddust:0.6:0.2:70:0.1:12
   - effect boss particles portal:0.6:0.2:70:0.1:12
-SFStartEff4:
+StarfallStartEff4:
   Cooldown: 0.25
   Skills:
   - effect boss particles witchMagic:0.9:0.2:70:0:12
   - effect boss particles reddust:0.9:0.2:70:0.1:12
   - effect boss particles portal:0.9:0.2:70:0.1:12
-SFFallingEff1:
+StarfallFallingEff1:
   Cooldown: 0.25
   Skills:
   - effect target particles fireworksSpark:0.25:0.4:60:0:12
   - effect target particles witchMagic:0.2:0.6:60:0:12
   - effect target particles reddust:0.2:0.6:60:0.1:12
-SFFallingEff1:
+StarfallFallingEff1:
   Cooldown: 0.25
   Skills:
   - effect target particles fireworksSpark:0.25:0.4:60:0:10.5
   - effect target particles witchMagic:0.2:0.6:60:0:10.5
   - effect target particles reddust:0.2:0.6:60:0.1:10.5
-SFFallingEff3:
+StarfallFallingEff3:
   Cooldown: 0.25
   Skills:
   - effect target particles fireworksSpark:0.25:0.4:60:0:9
   - effect target particles witchMagic:0.2:0.6:60:0:9
   - effect target particles reddust:0.2:0.6:60:0.1:9
-SFFallingEff4:
+StarfallFallingEff4:
   Cooldown: 0.25
   Skills:
   - effect target particles fireworksSpark:0.25:0.4:60:0:7.5
   - effect target particles witchMagic:0.2:0.6:60:0:7.5
   - effect target particles reddust:0.2:0.6:60:0.1:7.5
-SFFallingEff5:
+StarfallFallingEff5:
   Cooldown: 0.25
   Skills:
   - effect target particles fireworksSpark:0.25:0.4:60:0:6
   - effect target particles witchMagic:0.2:0.6:60:0:6
   - effect target particles reddust:0.2:0.6:60:0.1:6
-SFFallingEff6:
+StarfallFallingEff6:
   Cooldown: 0.25
   Skills:
   - effect target particles fireworksSpark:0.25:0.4:60:0:4.5
   - effect target particles witchMagic:0.2:0.6:60:0:4.5
   - effect target particles reddust:0.2:0.6:60:0.1:4.5
-SFFallingEff7:
+StarfallFallingEff7:
   Cooldown: 0.25
   Skills:
   - effect target particles fireworksSpark:0.25:0.4:60:0:3
   - effect target particles witchMagic:0.2:0.6:60:0:3
   - effect target particles reddust:0.2:0.6:60:0.1:3
-SFFallingEff8:
+StarfallFallingEff8:
   Cooldown: 0.25
   Skills:
   - effect target particles fireworksSpark:0.25:0.4:60:0:1.5
   - effect target particles witchMagic:0.2:0.6:60:0:1.5
   - effect target particles reddust:0.2:0.6:60:0.1:1.5
-SFFallingEff9:
+StarfallFallingEff9:
   Cooldown: 0.25
   Skills:
   - effect target particles witchMagic:1.0:0.5:100:0.1:0.5
   - effect target particles reddust:1.0:0.5:100:0.1:0.5
-SFEff1:
+StarfallEff1:
   Cooldown: 0.25
   Skills:
   - effect boss particles witchMagic:0.5:0.2:400:0:13
   - effect boss particles blockcrack_49_49:0.5:0.2:300:0.01:13
   - effect boss particles smoke:0.5:0.2:300:0:13
   - effect boss particles instantSpell:0.5:3.0:25:0.01:6
-SFEff2:
+StarfallEff2:
   Cooldown: 0.25
   Skills:
   - effect boss particles witchMagic:1.0:0.2:800:0:13
   - effect boss particles blockcrack_49_49:1.0:0.2:600:0.01:13
   - effect boss particles smoke:1.0:0.2:600:0:13
   - effect boss particles instantSpell:1.0:3.0:50:0.01:6
-SFEff3:
+StarfallEff3:
   Cooldown: 0.25
   Skills:
   - effect boss particles witchMagic:1.5:0.2:1200:0:13
   - effect boss particles blockcrack_49_49:1.5:0.2:900:0.01:13
   - effect boss particles smoke:1.5:0.2:900:0:13
   - effect boss particles instantSpell:1.5:3.0:100:0.01:6
-SFEff4:
+StarfallEff4:
   Cooldown: 0.25
   Skills:
   - effect boss particles witchMagic:2.0:0.2:1600:0:13
   - effect boss particles blockcrack_49_49:2.0:0.2:1200:0.01:13
   - effect boss particles smoke:2.0:0.2:1200:0:13
   - effect boss particles instantSpell:2.0:3.0:150:0.01:6
-SFEff5:
+StarfallEff5:
   Cooldown: 0.25
   Skills:
   - effect boss particles witchMagic:2.5:0.2:2000:0:13
   - effect boss particles blockcrack_49_49:2.5:0.2:1500:0.01:13
   - effect boss particles smoke:2.5:0.2:1500:0:13
   - effect boss particles instantSpell:2.5:3.0:200:0.01:6
-SFEff6:
+StarfallEff6:
   Cooldown: 0.25
   Skills:
   - effect boss particles witchMagic:2.0:0.1:300:0:12

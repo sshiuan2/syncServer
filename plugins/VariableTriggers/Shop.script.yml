@@ -2,7 +2,7 @@ Scripts:
   msgTakeMoney:
     Script:
     - '@PLAYER &2[經濟]&r <playername> 帳戶 &c&l減少&r $<this>.total 元'
-    - '@PLAYER 您得到&l $<this>.name x $<this>.amount'
+    - '@PLAYER 您得到&l $<this>.name &rx $<this>.amount'
   msgNotEnoughMoney:
     Script:
     - '@PLAYER 你的錢不夠'
@@ -129,13 +129,30 @@ Scripts:
     Script:
     - '@SETSTR $<this>.LOC <triggerloc>'
     - '@SETSTR $<this>.id 395'
+    - '@SETSTR $<this>.id_name minecraft:map'
     - '@SETSTR $<this>.name 鈔票'
     - '@SETSTR $<this>.price 1'
     - '@SETINT $<this>.total $<this>.price'
     - '@MULINT $<this>.total $<this>.amount'
     - '@IF b <takemoney:<playername>:$<this>.total> = true'
     - '  @CALL Shop:msgTakeMoney'
-    - '  @CMDCON give <playername> $<this>.id $<this>.amount Name:&6鈔票'
+    - '  @CMDCON minecraft:give <playername> $<this>.id_name $<this>.amount 0 {display:{Name:<var:$<this>.name>}}'
+    - '@ELSE'
+    - '  @CALL Shop:msgNotEnoughMoney'
+    - '@ENDIF'
+  money2coin_lv1:
+    Script:
+    - '@SETSTR $<this>.LOC <triggerloc>'
+    - '@SETSTR $<this>.id 125'
+    - '@SETSTR $<this>.damage 4'
+    - '@SETSTR $<this>.id_name minecraft:double_wooden_slab'
+    - '@SETSTR $<this>.name 木錢'
+    - '@SETSTR $<this>.price 1'
+    - '@SETINT $<this>.total $<this>.price'
+    - '@MULINT $<this>.total $<this>.amount'
+    - '@IF b <takemoney:<playername>:$<this>.total> = true'
+    - '  @CALL Shop:msgTakeMoney'
+    - '  @CMDCON minecraft:give <playername> $<this>.id_name $<this>.amount $<this>.damage {display:{Name:<var:$<this>.name>}}'
     - '@ELSE'
     - '  @CALL Shop:msgNotEnoughMoney'
     - '@ENDIF'
@@ -154,3 +171,13 @@ Scripts:
     - '@COOLDOWN 1'
     - '@SETINT $<this>.amount 64'
     - '@CALL Shop:money2token'
+  1_coin_lv1:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETINT $<this>.amount 1'
+    - '@CALL Shop:money2coin_lv1'
+  64_coin_lv1:
+    Script:
+    - '@COOLDOWN 1'
+    - '@SETINT $<this>.amount 64'
+    - '@CALL Shop:money2coin_lv1'

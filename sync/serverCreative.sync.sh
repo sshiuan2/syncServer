@@ -17,7 +17,7 @@ sync_conf(){
 local to=$thisServerPath/server.properties
 sed -i "s/^level-name=.*$/level-name=$thisWorldName/g" $to
 sed -i "s/^server-port=.*$/server-port=$thisServerPort/g" $to
-sed -i 's/^max-build-height=.*$/max-build-height=128/g' $to
+#sed -i 's/^max-build-height=.*$/max-build-height=128/g' $to
 sed -i "s/^server-name=$/server-name=up9cloud - $thisServerName/g" $to
 
 sed -i 's/^allow-flight=.*$/allow-flight=true/g' $to

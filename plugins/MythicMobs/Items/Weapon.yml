@@ -13,25 +13,20 @@
 #280	stick	NA	Infinite	0
 #369	blaze_rod	NA	Infinite	0
 #262	arrow	NA	Infinite	0
-DiamondSword:
-  Id: 276
-  Amount: 1
 DiamondSwordFormSlime:
   Id: 276
-  Amount: 1
   Display: '&a很有彈性之劍'
   Lore:
-  - '&6很黏'
+  - '&8&o很黏'
   Enchantments:
   - DAMAGE_ALL:5
   - LOOT_BONUS_MOBS:1
   - DURABILITY:10
 DiamondSwordFormSlime_f:
   Id: 276
-  Amount: 1
   Display: '&5史萊姆火焰刀'
   Lore:
-  - '&6很黏'
+  - '&4&o很火'
   Enchantments:
   - DAMAGE_ALL:3
   - FIRE_ASPECT:10
@@ -40,29 +35,26 @@ DiamondSwordFormSlime_f:
   - DURABILITY:2
 Sword_Zombie_lv3:
   Id: 267
-  Amount: 1
   Display: '&f殭屍長老之劍'
   Lore:
-  - '&6很黏'
+  - '&7&o很老'
   Enchantments:
   - DAMAGE_ALL:2
   - DURABILITY:1
 Sword_Zombie_lv4:
   Id: 276
-  Amount: 1
   Display: '&9殭屍教主之劍'
   Lore:
-  - '&6很黏'
+  - '&8&o很威武'
   Enchantments:
   - DAMAGE_ALL:4
   - FIRE_ASPECT:1
   - DURABILITY:2
 Sword_ZombieKing:
   Id: 276
-  Amount: 1
   Display: '&5進擊的巨劍'
   Lore:
-  - '&6很黏'
+  - '&5&o第二季等很久'
   Enchantments:
   - KNOCKBACK:2
   - DAMAGE_ALL:8
@@ -70,10 +62,9 @@ Sword_ZombieKing:
   - DURABILITY:4
 Sword_ZombieKing_lv1:
   Id: 276
-  Amount: 1
   Display: '&6進擊的雙手巨劍'
   Lore:
-  - '&6很黏'
+  - '&6&o很愛爬牆'
   Enchantments:
   - KNOCKBACK:10
   - DAMAGE_ALL:10
@@ -81,10 +72,9 @@ Sword_ZombieKing_lv1:
   - DURABILITY:8
 Bow_GhastKing:
   Id: 261
-  Amount: 1
   Display: '&5飛天水母之弓'
   Lore:
-  - '&6很黏'
+  - '&5&o反彈三下'
   Enchantments:
   - ARROW_DAMAGE:9
   - ARROW_INFINITE:1
@@ -92,3 +82,8 @@ Bow_GhastKing:
   - ARROW_FIRE:1
   - LOOT_BONUS_BLOCKS:1
   - DURABILITY:2
+Bow_lv1:
+  Id: 261
+  Enchantments:
+  - ARROW_KNOCKBACK:1
+  - ARROW_FIRE:1

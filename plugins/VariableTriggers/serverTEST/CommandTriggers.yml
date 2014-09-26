@@ -1,4 +1,8 @@
 Commands:
+  spawn:
+    Override: true
+    Script:
+    - '@CMD tp 256 68 256'
   signedit:
     Override: true
     Permission: vtriggers.admin
@@ -14,7 +18,57 @@ Commands:
     Permission: vtriggers.admin
     Script:
     - '@PLAYER please execute in console'
-  spawn:
+  'minecraft:op':
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@PLAYER please execute in console'
+  'minecraft:deop':
+    Override: true
+    Permission: vtriggers.admin
+    Script:
+    - '@PLAYER please execute in console'
+  plugins:
     Override: true
     Script:
-    - '@CMD tp 256 68 256'
+    - '@CMD minecraft:stopusewhatever'
+  pl:
+    Override: true
+    Script:
+    - '@CMD minecraft:stopusewhatever'
+  co:
+    Override: true
+    Script:
+    - '@CMD minecraft:stopusewhatever'
+  core:
+    Override: true
+    Script:
+    - '@CMD minecraft:stopusewhatever'
+  coreprotect:
+    Override: true
+    Script:
+    - '@CMD minecraft:stopusewhatever'
+  'coreprotect:co':
+    Override: true
+    Script:
+    - '@CMD minecraft:stopusewhatever'
+  'coreprotect:core':
+    Override: true
+    Script:
+    - '@CMD minecraft:stopusewhatever'
+  'coreprotect:coreprotect':
+    Override: true
+    Script:
+    - '@CMD minecraft:stopusewhatever'
+  'bukkit:pl':
+    Override: true
+    Script:
+    - '@CMD minecraft:stopusewhatever'
+  'bukkit:plugins':
+    Override: true
+    Script:
+    - '@CMD minecraft:stopusewhatever'
+  mmmmm:
+    Override: true
+    Script:
+    - '@CMD coreprotect:co <cmdline>'

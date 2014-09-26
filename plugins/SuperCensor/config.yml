@@ -1,0 +1,143 @@
+# SuperCensor by Wruczek. All rights reserved
+# Dev bukkit page: http://dev.bukkit.org/bukkit-plugins/supercensor/
+
+Logger:
+  Use: true
+  Log running commands: true
+  Running command format: "[%date% %time%] Running command: %command%"
+  File name: "Log.txt"
+  Time format: "HH:mm:ss"
+  Date format: "dd-MM-yyyy"
+
+Updater:
+  Enabled: false
+  Check on enable: true
+  Auto download: true
+  Information on admin join: true
+
+Censoring:
+  Enabled: true
+  #Plugin skip this charters in checking. For example:
+  #You added here charter "."
+  #Player typed "Fuc.k you"
+  #SuperCensor detect it, because charter "." is escaped and SuperCensor get word Fuck and censored it.
+  #Simple? Simple!
+  Special charters: ",. -_+-"
+  Command checker:
+    Enabled: true
+    Log on found:
+      Enabled: true
+      Format: "[%date% %time%] Player %player% wrote %word% on command. (Command: %command%)"
+    Cancel: true
+    #Replace function not works perfectly
+    Replace to charters: true
+    Charters: "****"
+    Send message: false
+    Sound:
+      Enabled: true
+      Sound: GHAST_SCREAM
+      Pitch: 1.0
+      Volume: 1.0
+    Check all commands: true
+    #If "Checked all commands" is set to false, you can change the checked commands here.
+    CheckedCommands:
+      - "msg"
+      - "emsg"
+      - "m"
+      - "whisper"
+      - "ewhisper"
+      - "w"
+      - "reply"
+      - "ereply"
+      - "er"
+      - "r"
+      - "rc"
+      - "tell"
+      - "etell"
+      - "t"
+      - "pm"
+      - "party"
+      - "p"
+      - "helpop"
+      - "mail"
+      - "email"
+    Commands:
+      Enabled: true
+      Commands:
+        - 'minecraft:tell %player% &7你輸入了禁止的關鍵字！請再檢查一次！Q_Q要乖乖！'
+  ChatCensoring:
+    Enabled: true
+    Log on found:
+      Enabled: true
+      Format: "[%date% %time%] Player %player% wrote %word% on chat. (Full message: %message%)"
+    Cancel: true
+    #Replace function not works perfectly
+    Replace to charters: false
+    Charters: "****"
+    Send message: false
+    Sound:
+      Enabled: true
+      Sound: GHAST_SCREAM
+      Pitch: 1.0
+      Volume: 1.0
+    Commands:
+      Enabled: true
+      Commands:
+        - 'minecraft:tell %player% &7你輸入了禁止的關鍵字！請再檢查一次！Q_Q要乖乖！'
+
+SlowChat:
+  Enabled: true
+  Time: 3
+  Log on found:
+    Enabled: false
+    Format: '[%date% %time%] Player %player% want to bypass SlowChat. (Full message: %message%)'
+  Commands:
+    Enabled: true
+    Commands:
+      - 'minecraft:tell %player% &7你說話太快了！要慢慢說別人才聽的清楚喔！要乖乖。'
+
+CapsBlock:
+  Enabled: true
+  Minimum message lenght: 4
+  Precentage: 70
+  Put to lower case: true
+  Cancel: false
+  Send message: false
+  Log on found:
+    Enabled: false
+    Format: "[%date% %time%] Player %player% want to use capital letters on chat. (Full message: %message%)"
+  Commands:
+    Enabled: false
+    Commands:
+      - "minecraft:tell %player% &7打字不能都用大寫喔！"
+
+IPBlocker:
+  Enabled: true
+  Censor IP: true
+  Censor sites: false
+  Log on found:
+    Enabled: true
+    Format: "[%date% %time%] Player %player% want to advertise. (Full message: %message%)"
+  Whitelist:
+    - "example.com"
+    - "google.com"
+    - "123.456.789"
+  Cancel: true
+  Send message: false
+  Commands:
+    Enabled: true
+    Commands:
+      - "kick %player% &f請不要亂放連結喔^^!"
+
+AntiSpam:
+  Enabled: true
+  #After X repreats, plugin stop it.
+  Allow Repreats: 3
+  Log on found:
+    Enabled: true
+    Format: "[%date% %time%] Player %player% want to spam on chat. (Full message: %message%)"
+  Send message: false
+  Commands:
+    Enabled: true
+    Commands:
+      - "minecraft:tell %player% &7不能一直說同樣的話喔！要乖乖！"

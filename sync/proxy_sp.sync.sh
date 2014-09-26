@@ -14,7 +14,7 @@ sed -i 's/^session=.*$/session=proxy/g' $varPath
 sed -i 's/^window=.*$/window=2/g' $varPath
 sed -i 's/^pane=.*$/pane=0/g' $varPath
 }
-sync_start(){
+sync_conf_start(){
 local to=$thisServerPath/start.sh
 sed -i 's/^local Xmx=.*/Xmx=768M/g' $to
 sed -i 's/$arg/-server/g' $to
@@ -22,26 +22,33 @@ sed -i 's/$arg/-server/g' $to
 sync_conf(){
 local to=$thisServerPath/config.yml
 local port=25566
+local query_port=25578
 sed -i 's/^stats:.*$/stats: 48722903-7477-4339-ac76-31e4dc5c9466/g' $to
 sed -i '/^permissions:.*$/{n;n;d}' $to
 sed -i 's/^- fallback_server:.*$/- fallback_server: auth/g' $to
 sed -i "s/^  host:.*$/\  host: $thisServerIp:$port/g" $to
-sed -i 's/^  query_port:.*$/\  query_port: 25578/g' $to
+sed -i "s/^  query_port:.*$/\  query_port: $query_port/g" $to
 sed -i 's/^  default_server:.*$/\  default_server: auth/g' $to
 sed -i 's/^online_mode:.*$/online_mode: false/g' $to
+
+sync_conf_start;
+}
+sync_scp(){
+scp_getControllers;
+scp_getServer proxy;
+scp_getServer icon;
+
+scp_getPlugin BungeeSuite;
 }
 sync_var;
 source_all;
 
+msg_startSync;
+
 purge_plugins all;
 purge_logs
 
-msg_startSync;
-scp_getControllers;
-sync_start;
-scp_getServer proxy;
+sync_scp;
 sync_conf;
-scp_getServer icon;
 
-scp_getPlugin BungeeSuite;
 msg_endSync;

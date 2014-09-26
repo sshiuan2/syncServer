@@ -1,0 +1,116 @@
+#zombies
+zombie:
+  Mobtype: zombie
+babyzombie:
+  Mobtype: babyzombie
+chickenjockey:
+  Mobtype: chickenjockey
+villagezombie:
+  Mobtype: villagezombie
+babyvillagezombie:
+  Mobtype: babyvillagezombie
+pigzombie:
+  Mobtype: pigzombie
+angrypigzombie:
+  Mobtype: angrypigzombie
+babypigzombie:
+  Mobtype: babypigzombie
+angrybabypigzombie:
+  Mobtype: angrybabypigzombie
+pigzombievillager:
+  Mobtype: pigzombievillager
+angrypigzombievillager:
+  Mobtype: angrypigzombievillager
+babypigzombievillager:
+  Mobtype: babypigzombievillager
+angrybabypigzombievillager:
+  Mobtype: angrybabypigzombievillager
+giant:
+  Mobtype: giant
+  Display: '巨大殭屍'
+#skeletons
+skeleton:
+  Mobtype: skeleton
+witherskeleton:
+  Mobtype: witherskeleton
+#spiders
+spider:
+  Mobtype: spider
+cavespider:
+  Mobtype: cavespider
+#creepers
+creeper:
+  Mobtype: creeper
+poweredcreeper:
+  Mobtype: poweredcreeper
+#wolf
+wolf:
+  Mobtype: wolf
+babywolf:
+  Mobtype: babywolf
+angrywolf:
+  Mobtype: angrywolf
+angrybabywolf:
+  Mobtype: angrybabywolf
+#others
+enderman:
+  Mobtype: enderman
+blaze:
+  Mobtype: blaze
+slime:
+  Mobtype: slime
+magmacube:
+  Mobtype: magmacube
+silverfish:
+  Mobtype: silverfish
+witch:
+  Mobtype: witch
+#bosses
+wither:
+  Mobtype: wither
+enderdragon:
+  Mobtype: enderdragon
+#animals
+bat:
+  Mobtype: bat
+chicken:
+  Mobtype: chicken
+babychicken:
+  Mobtype: babychicken
+cow:
+  Mobtype: cow
+babycow:
+  Mobtype: babycow
+mushroomcow:
+  Mobtype: mushroomcow
+babymushroomcow:
+  Mobtype: babymushroomcow
+horse:
+  Mobtype: horse
+babyhorse:
+  Mobtype: babyhorse
+ocelot:
+  Mobtype: ocelot
+babyocelot:
+  Mobtype: babyocelot
+pig:
+  Mobtype: pig
+babypig:
+  Mobtype: babypig
+sheep:
+  Mobtype: sheep
+babysheep:
+  Mobtype: babysheep
+squid:
+  Mobtype: squid
+#villages
+village:
+  Mobtype: village
+babyvillager:
+  Mobtype: babyvillager
+snowgolem:
+  Mobtype: snowgolem
+irongolem:
+  Mobtype: irongolem
+ghast:
+  Mobtype: ghast

@@ -28,7 +28,7 @@ bringbacktheend:
   autoReset: true
   interval: 1200
   tpPlayersAfterTimeout: false
-  dragonAmount: 2
+  dragonAmount: 1
   saveRate: 300
   autohookworld: true
   worldName: 'world_the_end'

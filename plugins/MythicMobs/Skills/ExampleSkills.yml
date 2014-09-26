@@ -14,3 +14,9 @@ Example:
   - effect boss particles happyVillager:30:1:1000:1:0.5 >0
   - delay 100
   - skill SheepStatic >0
+test:
+  Cooldown: 1
+  Conditions:
+  - targetwithin 25
+  Skills:
+  - skill Flare >0 1

@@ -44,3 +44,7 @@ buildOpData(){
 local name=$1
 echo "[{\"name\":\"$name\",\"uuid\":\"\",\"level\":\"4\"}]";
 }
+buildOpData_escaped(){
+local name=$1
+echo "[{\\\"name\\\":\\\"$name\\\",\\\"uuid\\\":\\\"\\\",\\\"level\\\":\\\"4\\\"}]";
+}

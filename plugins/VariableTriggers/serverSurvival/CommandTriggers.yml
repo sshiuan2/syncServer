@@ -79,7 +79,12 @@ Commands:
     Override: true
     Script:
     - //@CALL Command:spawn
-    - '@CMDCON mw move <playername> <worldname>'
+    - '@IF s <worldname> = world'
+    - '//@OR s <worldname> = ?'
+    - '  @CMDCON mw move <playername> <worldname>'
+    - '@ELSE'
+    - '  @CALL Tip:wrong_condition'
+    - '@ENDIF'
   delobj:
     Override: true
     Permission: vtriggers.admin
@@ -112,3 +117,35 @@ Commands:
     Override: true
     Script:
     - '@CALL Command:jail'
+  nick:
+    Override: true
+    Script:
+    - '@CALL Tip:tip_nick'
+  nicktc:
+    Override: true
+    Script:
+    - '@CALL Command:set_displayname_title_color'
+  nickt:
+    Override: true
+    Script:
+    - '@CALL Command:set_displayname_title'
+  nickpc:
+    Override: true
+    Script:
+    - '@CALL Command:set_displayname_prefix_color'
+  nickp:
+    Override: true
+    Script:
+    - '@CALL Command:set_displayname_prefix'
+  nickc:
+    Override: true
+    Script:
+    - '@CALL Command:set_displayname_color'
+  whois:
+    Override: true
+    Script:
+    - '@CALL Command:whois'
+  colors:
+    Override: true
+    Script:
+    - '@CALL Command:colors'

@@ -1,125 +1,4 @@
 objects:
-  人界_Click_-8770248:
-    Integers:
-      y: 52
-      n: 61
-    Strings:
-      up9cloud_admin: Y
-      O0oO0o0Oo0O: Y
-      a3139109: N
-      sp-35980653: N
-      sp-dddavid: Y
-      hunk8991: N
-      sp-max6527316: N
-      sp-funnytai: Y
-      qq871799: N
-      in91andy: N
-      up9cloud_Jo: Y
-      XianGerWu: N
-      LOC: -87,70,248
-      GrapefruitBear: N
-      sp-abcd21587378: N
-      sp-JackLin84911: N
-      h4359665: N
-      starwk: N
-      sp-KasuganoSora: N
-      s960409: N
-      sp-qaz20001027: N
-      tuerlala: N
-      sp-qk185445: Y
-      jk30903713: N
-      zx142539: N
-      sp-ddavid: Y
-      sp-Oscarmilk: Y
-      SP-Mercurius: Y
-      b1317669: Y
-      texyee2: N
-      sp-ivy0923: N
-      sp-kamisama0402: Y
-      sp-a12143407: N
-      sp-p07049: N
-      sp-tt1069: N
-      sp-pootiu24: Y
-      sp-Mercurius: Y
-      sp-dionneoh: N
-      Fang_Ji: Y
-      sp-love1314: N
-      up9cloud-JO: N
-      a30964137: N
-      super_hope: N
-      sp-bruce800606: Y
-      ammie890214: N
-      sp-Kane: N
-      up9cloud-admin: Y
-      ken841112: N
-      lht1226: N
-      Lin_Mcihael: Y
-      cherrychow: Y
-      sp-kenny: N
-      sp-super3: Y
-      Luminus032: N
-      e7952110: Y
-      HENRY0116: N
-      sp-bonebonekai: Y
-      jackycow: N
-      sp-kevincat1586: Y
-      sp-dog2002: Y
-      CaIMtaRdyMaxs: N
-      sp-pesp1219: Y
-      alien0512: N
-      sp-leochan0311: Y
-      TORY27695637: N
-      _Mike___: Y
-      sp-Ditzon: N
-      crazeburner: N
-      a1991102621: N
-      simonlii: Y
-      '27299272': N
-      hpprk: N
-      sp-Alive: Y
-      andylww: Y
-      Tony_cc: Y
-      AnimalYoKoCho: Y
-      Headshot8: Y
-      GUNDAM1203: N
-      sp-apple0311: Y
-      sp-jackyivy0923: Y
-      ｓｐ-PushLoli: Y
-      ahui2013: N
-      sp-AndyLau: N
-      andy25028046: N
-      Ender_KOKing: Y
-      sp-aud9i999: N
-      sp-sh9867896: Y
-      sp-smallsin: N
-      sp-Preset: Y
-      ww9876301: Y
-      Ireaaz: Y
-      KsPartNer: N
-      wfghjklee: Y
-      kinlam234: Y
-      spywalk: Y
-      Yellowhaha: Y
-      sp-john0609: N
-      Xueshuang: N
-      A129lau: N
-      x0911584816: Y
-      khc20709: N
-      TWpaomian: N
-      LanSeepinG: Y
-      TW_Smosh: N
-      TWFUCKMAN: Y
-      andywawa: N
-      sp-philip123: Y
-      npc53665: Y
-      ro24858607: N
-      JENNYHENRRY: Y
-      sp-ooxx185: Y
-      qaz70903: Y
-      AncoFinna: N
-      sp-21542: N
-    StringLists: {}
-    Booleans: {}
   人界_Click_-9370242:
     Integers:
       total: 19586
@@ -171,6 +50,7 @@ objects:
       id: '395'
       name: 鈔票
       price: '1'
+      id_name: minecraft:map
     StringLists: {}
     Booleans: {}
   world_Click_12065437:
@@ -182,6 +62,7 @@ objects:
       id: '395'
       name: 鈔票
       price: '1'
+      id_name: minecraft:map
     StringLists: {}
     Booleans: {}
   world_Click_12165436:
@@ -193,49 +74,50 @@ objects:
       id: '395'
       name: 鈔票
       price: '1'
+      id_name: minecraft:map
     StringLists: {}
     Booleans: {}
   world_Click_26266260:
     Integers:
-      total: 465
+      total: 1621
     Strings:
       LOC: 262,66,260
     StringLists: {}
     Booleans: {}
   world_Click_26266261:
     Integers:
-      total: 664
+      total: 1902
     Strings:
       LOC: 262,66,261
     StringLists: {}
     Booleans: {}
   world_Click_26266262:
     Integers:
-      total: 556
+      total: 1866
     Strings:
       LOC: 262,66,262
     StringLists: {}
     Booleans: {}
   world_Click_26266263:
     Integers:
-      total: 630
+      total: 1827
     Strings:
       LOC: 262,66,263
     StringLists: {}
     Booleans: {}
   world_Click_26266264:
     Integers:
-      total: 665
+      total: 1808
     Strings:
       LOC: 262,66,264
     StringLists: {}
     Booleans: {}
   SIGNEDIT:
     Integers:
-      up9cloud-admin: 2
-      O0oO0o0Oo0O: 1
-      susanwawa: 2
-      SmallWawa: 3
+      up9cloud-admin: 3
+      O0oO0o0Oo0O: 2
+      susanwawa: 3
+      SmallWawa: 2
       GUNDAM1203: 2
       Yellowhaha: 3
       e7952110: 1
@@ -254,8 +136,8 @@ objects:
       justplayboy: 1
       carrysimon: 1
       sp-JackLin84911: 4
-      A129lau: 4
-      sp-karta2200150: 1
+      A129lau: 2
+      sp-karta2200150: 2
       sp-aud9i999: 3
       sp-yuenwilho: 1
       azz8068513: 4
@@ -271,13 +153,13 @@ objects:
       sp-john0724: 1
       sp-Princes: 1
       BaiHuOolong: 3
-      sp-aeqaeqaeq: 1
+      sp-aeqaeqaeq: 2
       smellegg: 2
       sp-LewisChamp: 2
       sp-jackyivy0923: 2
       OZ_00MS: 3
       sean9064: 1
-      Tabloid_Moon: 3
+      Tabloid_Moon: 2
       jorldans: 2
       up9cloud-wawa: 2
       sp-qweasdzxc: 2
@@ -285,33 +167,62 @@ objects:
       sp-aeq2: 2
       sp-6305: 2
       sp-harry8952322: 4
-      sp-h2927751: 1
-      sp-Venceno: 3
+      sp-h2927751: 2
+      sp-Venceno: 4
       sp-tony7789963: 2
       sp-SilverCrow: 2
       rayr97: 2
-      sp-matthew: 3
-      sp-Yong: 4
-      XSniper_FireX: 1
-      andywawa: 4
+      sp-matthew: 2
+      sp-Yong: 3
+      XSniper_FireX: 2
+      andywawa: 2
       ldslse: 1
       sp-FunFour: 1
       t721434: 3
+      sp-elf90121: 2
+      Mrwilliedu: 4
+      Blackmilktea: 4
+      sp-yahoo: 2
+      carlccc0911: 3
+      sp-alan6716s: 1
+      SP-Assassan: 4
+      sp-calvinvg: 3
+      sp-Samy416: 3
+      sp-thinknoddles: 2
+      12345Jimmy12345: 2
+      sp-kidhouse: 3
+      sp-Satoast: 2
+      jiji1372: 2
+      Zero00R: 2
+      pdbdbqdqdobob: 2
+      Dream_Night: 1
+      kinfung831: 3
+      Phantom00Q: 1
+      sp-03213: 4
+      a521478963a: 1
+      Iam_blaze: 3
+      sp-gtjj3146: 2
+      sp-skinme: 1
+      gary90815: 2
+      Armstrong138: 1
+      sp-chinching0620: 4
+      Yangchao: 2
+      sp-Jacob97188: 2
     Strings:
       up9cloud-admin-undo: test
-      up9cloud-admin-redo: 250,67,263 2 不小心按到..
+      up9cloud-admin-redo: 250,67,260 3 不要這樣
       O0oO0o0Oo0O-undo: test
-      O0oO0o0Oo0O-redo: 250,67,263 1 hi
+      O0oO0o0Oo0O-redo: 250,67,261 2 安安
       susanwawa-undo: test
-      susanwawa-redo: 250,67,261 2 歡迎來東疆 兒童市完唷
+      susanwawa-redo: 250,67,263 3 一把$50
       SmallWawa-undo: test
-      SmallWawa-redo: 250,67,261 3 hi
+      SmallWawa-redo: 250,68,264 2 可以
       GUNDAM1203-undo: test
       GUNDAM1203-redo: 250,67,263 2 GUNDAM1203 新手執導員
       Yellowhaha-undo: test
       Yellowhaha-redo: 250,68,264 3 hahahaha
       e7952110-undo: test
-      e7952110-redo: 250,67,260 1 蛋疼之蛋 請踴躍觸摸
+      e7952110-redo: 250,67,262 1 XD
       sp-kenny-undo: test
       sp-kenny-redo: 250,68,263 1 wawawawawawa
       qaz70903-undo: test
@@ -341,11 +252,11 @@ objects:
       carrysimon-undo: test
       carrysimon-redo: 250,68,263 1 你好呀各位^^
       sp-JackLin84911-undo: test
-      sp-JackLin84911-redo: 250,68,264 4 　　　　　　　　　　
+      sp-JackLin84911-redo: 250,67,262 4 &f&l...........
       A129lau-undo: test
-      A129lau-redo: 250,67,262 4 世界真美好
+      A129lau-redo: 250,67,261 2 歐歐
       sp-karta2200150-undo: test
-      sp-karta2200150-redo: 250,68,262 1 安安
+      sp-karta2200150-redo: 250,67,261 2 by sp-karta2200150
       sp-aud9i999-undo: test
       sp-aud9i999-redo: 250,67,261 3 to 朔氣(aud9i999)
       sp-yuenwilho-undo: test
@@ -355,7 +266,7 @@ objects:
       Shiaobin-undo: test
       Shiaobin-redo: 250,67,260 4 較快，公家機關和企業
       bonr_maximum-undo: test
-      bonr_maximum-redo: 250,67,260 2 請保管好自身物品
+      bonr_maximum-redo: 250,67,262 2 &b蛙媽吃太飽
       FiltErr_Inc-undo: test
       FiltErr_Inc-redo: 250,67,263 3 for FiltErr_Inc
       MeCblackcat-undo: test
@@ -377,23 +288,23 @@ objects:
       BaiHuOolong-undo: test
       BaiHuOolong-redo: 250,67,262 3 Raton
       sp-aeqaeqaeq-undo: test
-      sp-aeqaeqaeq-redo: 250,67,263 1 我是喇賽
+      sp-aeqaeqaeq-redo: 250,67,261 2 嗨~我是sp-aeqaeqaeq
       smellegg-undo: test
       smellegg-redo: 250,67,263 2 kevinegg 到此一遊
       sp-LewisChamp-undo: test
       sp-LewisChamp-redo: 250,67,260 2 LewisChamp ;)
       sp-jackyivy0923-undo: test
-      sp-jackyivy0923-redo: 250,67,260 2 sp-jackyivy0923
+      sp-jackyivy0923-redo: 250,67,263 2 I can,t !!!!!!!
       OZ_00MS-undo: test
       OZ_00MS-redo: 250,67,263 3 改名為OZ_00MS
       sean9064-undo: test
       sean9064-redo: 250,67,262 1 123
       Tabloid_Moon-undo: test
-      Tabloid_Moon-redo: 250,67,262 3 By.Tabloid_Moon
+      Tabloid_Moon-redo: 250,67,263 2 By.Tabloid_Moon
       jorldans-undo: test
       jorldans-redo: 250,67,261 2 1234
       up9cloud-wawa-undo: test
-      up9cloud-wawa-redo: 527,81,820 2 johnyang0724
+      up9cloud-wawa-redo: 598,34,1672 2 andywawa
       sp-qweasdzxc-undo: test
       sp-qweasdzxc-redo: 250,67,263 2 sp-qweasdzxc
       pig0581648-undo: test
@@ -405,9 +316,9 @@ objects:
       sp-harry8952322-undo: test
       sp-harry8952322-redo: 250,67,264 4 九天真好玩XD
       sp-h2927751-undo: test
-      sp-h2927751-redo: 250,67,263 1 ...
+      sp-h2927751-redo: 250,67,262 2 2套完整
       sp-Venceno-undo: test
-      sp-Venceno-redo: 250,67,260 3 &fsp-Venceno
+      sp-Venceno-redo: 250,67,261 4 &fBy sp-Venceno
       sp-tony7789963-undo: test
       sp-tony7789963-redo: 250,67,263 2 又打到新年許願劍了
       sp-SilverCrow-undo: test
@@ -415,19 +326,77 @@ objects:
       rayr97-undo: test
       rayr97-redo: 250,67,263 2 &3偶會蓋也會設計
       sp-matthew-undo: test
-      sp-matthew-redo: 250,67,263 3 Hi~
+      sp-matthew-redo: 250,67,263 2 hi~
       sp-Yong-undo: test
-      sp-Yong-redo: 250,67,261 4 Hi
+      sp-Yong-redo: 250,67,263 3 XDDD
       XSniper_FireX-undo: test
-      XSniper_FireX-redo: 250,67,261 1 &4烈火到此流言
+      XSniper_FireX-redo: 250,67,261 2 by XSniper_FireX
       andywawa-undo: test
-      andywawa-redo: 250,67,264 4 &l^_^y
+      andywawa-redo: 250,67,264 2 &1&lmoha大師
       ldslse-undo: test
       ldslse-redo: 250,67,263 1 &basdadsd
       sp-FunFour-undo: test
       sp-FunFour-redo: 250,68,264 1 &fHi~~
       t721434-undo: test
       t721434-redo: 250,67,264 3 a12262008
+      sp-elf90121-undo: test
+      sp-elf90121-redo: 250,67,263 2 重生時間有點慢...
+      Mrwilliedu-undo: test
+      Mrwilliedu-redo: 250,67,260 4 = 3 =
+      Blackmilktea-undo: test
+      Blackmilktea-redo: 250,67,261 4 黑商
+      sp-yahoo-undo: test
+      sp-yahoo-redo: 250,67,263 2 sp-yahoo
+      carlccc0911-undo: test
+      carlccc0911-redo: 250,67,264 3 123.241.136.101
+      sp-alan6716s-undo: test
+      sp-alan6716s-redo: 250,67,261 1 12312
+      SP-Assassan-undo: test
+      SP-Assassan-redo: 250,67,264 4 孫悟空
+      sp-calvinvg-undo: test
+      sp-calvinvg-redo: 250,67,263 3 &l&5SSS
+      sp-Samy416-undo: test
+      sp-Samy416-redo: 250,68,260 3 &3
+      sp-thinknoddles-undo: test
+      sp-thinknoddles-redo: 250,67,264 2 誰可幫召喚年獸ㄋ
+      12345Jimmy12345-undo: test
+      12345Jimmy12345-redo: 250,67,261 2 服器
+      sp-kidhouse-undo: test
+      sp-kidhouse-redo: 250,67,261 3 &5 60$
+      sp-Satoast-undo: test
+      sp-Satoast-redo: 250,67,262 2 &5帥哥吐司
+      jiji1372-undo: test
+      jiji1372-redo: 250,67,264 2 _
+      Zero00R-undo: test
+      Zero00R-redo: 250,67,261 2 0
+      pdbdbqdqdobob-undo: test
+      pdbdbqdqdobob-redo: 250,67,260 2 蛙媽愛網購
+      Dream_Night-undo: test
+      Dream_Night-redo: 250,67,261 1 早安~
+      kinfung831-undo: test
+      kinfung831-redo: 250,67,260 3 1.7.10
+      Phantom00Q-undo: test
+      Phantom00Q-redo: 250,67,261 1 如果遇到喇叭
+      sp-03213-undo: test
+      sp-03213-redo: 250,67,261 4 02 1.5.2
+      a521478963a-undo: test
+      a521478963a-redo: 250,67,262 1 OAO
+      Iam_blaze-undo: test
+      Iam_blaze-redo: 250,67,263 3 &6
+      sp-gtjj3146-undo: test
+      sp-gtjj3146-redo: 250,67,264 2 :23333
+      sp-skinme-undo: test
+      sp-skinme-redo: 250,67,260 1 kinfung831
+      gary90815-undo: test
+      gary90815-redo: 250,67,263 2 &3大家來為他慶祝吧!
+      Armstrong138-undo: test
+      Armstrong138-redo: 250,67,263 1 喔是喔SO?
+      sp-chinching0620-undo: test
+      sp-chinching0620-redo: 250,67,261 4 1顆50收
+      Yangchao-undo: test
+      Yangchao-redo: 250,67,262 2 minecraft.net
+      sp-Jacob97188-undo: test
+      sp-Jacob97188-redo: 250,67,263 2 Hellow
     StringLists: {}
     Booleans: {}
   VOTE:
@@ -453,15 +422,15 @@ objects:
   SIGNPOINT:
     Integers:
       index: 12
-      up9cloud-admin-index: 2
-      O0oO0o0Oo0O-index: 4
+      up9cloud-admin-index: 1
+      O0oO0o0Oo0O-index: 2
       Shiaobin-index: 1
       sp-vickyjan-index: 5
-      bonr_maximum-index: 1
+      bonr_maximum-index: 3
       misakamikoto6-index: 3
-      SmallWawa-index: 2
+      SmallWawa-index: 11
       sp-aud9i999-index: 2
-      e7952110-index: 1
+      e7952110-index: 12
       FiltErr_Inc-index: 4
       sp-ha1234567-index: 12
       MeCblackcat-index: 1
@@ -472,43 +441,80 @@ objects:
       sp-0odusto0-index: 3
       mike_cheng-index: 12
       sp-john0724-index: 4
-      Mrwilliedu-index: 4
+      Mrwilliedu-index: 12
       sp-Princes-index: 3
       LEWIS900116-index: 4
       BaiHuOolong-index: 3
-      sp-aeqaeqaeq-index: 4
+      sp-aeqaeqaeq-index: 2
       sp-qweasdzxc-index: 4
       smellegg-index: 4
-      susanwawa-index: 2
+      susanwawa-index: 4
       sp-LewisChamp-index: 1
-      sp-jackyivy0923-index: 1
+      sp-jackyivy0923-index: 4
       OZ_00MS-index: 4
       sean9064-index: 12
-      Tabloid_Moon-index: 3
+      Tabloid_Moon-index: 4
       jorldans-index: 2
       HENRY0116-index: 3
       pig0581648-index: 2
       sp-aeq2-index: 4
       sp-6305-index: 3
       sp-matthew-index: 4
-      sp-karta2200150-index: 12
-      A129lau-index: 3
+      sp-karta2200150-index: 2
+      A129lau-index: 2
       sp-harry8952322-index: 5
-      sp-h2927751-index: 4
+      sp-h2927751-index: 3
       GUNDAM1203-index: 4
-      sp-Venceno-index: 1
+      sp-Venceno-index: 2
       sp-tony7789963-index: 4
       sp-SilverCrow-index: 6
       rayr97-index: 4
       sp-CHASING-index: 2
-      sp-Yong-index: 2
+      sp-Yong-index: 4
       sp-xXlXx-index: 12
       XSniper_FireX-index: 2
       sp-qwe932521-index: 4
-      andywawa-index: 5
+      andywawa-index: 12
       ldslse-index: 4
       sp-FunFour-index: 11
       t721434-index: 5
+      sp-elf90121-index: 4
+      sp-yahoo-index: 4
+      Blackmilktea-index: 2
+      carlccc0911-index: 12
+      sp-alan6716s-index: 2
+      sp-268711321-index: 3
+      SP-Assassan-index: 5
+      sp-calvinvg-index: 4
+      sp-Samy416-index: 6
+      sp-thinknoddles-index: 5
+      12345Jimmy12345-index: 2
+      sp-booboo-index: 1
+      sp-kidhouse-index: 2
+      sp-gn0000-index: 2
+      sp-Satoast-index: 12
+      sp-JackLin84911-index: 3
+      jiji1372-index: 5
+      Zero00R-index: 12
+      pdbdbqdqdobob-index: 1
+      Dream_Night-index: 2
+      kinfung831-index: 1
+      Phantom00Q-index: 2
+      sp-03213-index: 2
+      a521478963a-index: 3
+      Iam_blaze-index: 4
+      sp-gtjj3146-index: 5
+      sp-fireman0928-index: 8
+      sp-skinme-index: 1
+      gary90815-index: 4
+      Armstrong138-index: 4
+      sp-Emma4421-index: 2
+      sp-chinching0620-index: 2
+      sp-s8804288-index: 12
+      Yangchao-index: 3
+      sp-seanliu1013-index: 4
+      sp-Jacob97188-index: 4
+      sp-a32754589-index: 3
     Strings:
       publicP1: 250,67,260
       publicP2: 250,67,261
@@ -532,7 +538,7 @@ objects:
       misakamikoto6-check: true
       SmallWawa-check: true
       sp-aud9i999-check: true
-      e7952110-check: true
+      e7952110-check: false
       FiltErr_Inc-check: true
       sp-ha1234567-check: false
       MeCblackcat-check: true
@@ -543,7 +549,7 @@ objects:
       sp-0odusto0-check: true
       mike_cheng-check: false
       sp-john0724-check: true
-      Mrwilliedu-check: true
+      Mrwilliedu-check: false
       sp-Princes-check: true
       LEWIS900116-check: true
       BaiHuOolong-check: true
@@ -562,7 +568,7 @@ objects:
       sp-aeq2-check: true
       sp-6305-check: true
       sp-matthew-check: true
-      sp-karta2200150-check: false
+      sp-karta2200150-check: true
       A129lau-check: true
       sp-harry8952322-check: true
       sp-h2927751-check: true
@@ -576,22 +582,97 @@ objects:
       sp-xXlXx-check: false
       XSniper_FireX-check: true
       sp-qwe932521-check: true
-      andywawa-check: true
+      andywawa-check: false
       ldslse-check: true
       sp-FunFour-check: true
       t721434-check: true
+      sp-elf90121-check: true
+      sp-yahoo-check: true
+      Blackmilktea-check: true
+      carlccc0911-check: false
+      sp-alan6716s-check: true
+      sp-268711321-check: true
+      SP-Assassan-check: true
+      sp-calvinvg-check: true
+      sp-Samy416-check: true
+      sp-thinknoddles-check: true
+      12345Jimmy12345-check: true
+      sp-booboo-check: true
+      sp-kidhouse-check: true
+      sp-gn0000-check: true
+      sp-Satoast-check: false
+      sp-JackLin84911-check: true
+      jiji1372-check: true
+      Zero00R-check: false
+      pdbdbqdqdobob-check: true
+      Dream_Night-check: true
+      kinfung831-check: true
+      Phantom00Q-check: true
+      sp-03213-check: true
+      a521478963a-check: true
+      Iam_blaze-check: true
+      sp-gtjj3146-check: true
+      sp-fireman0928-check: true
+      sp-skinme-check: true
+      gary90815-check: true
+      Armstrong138-check: true
+      sp-Emma4421-check: true
+      sp-chinching0620-check: true
+      sp-s8804288-check: false
+      Yangchao-check: true
+      sp-seanliu1013-check: true
+      sp-Jacob97188-check: true
+      sp-a32754589-check: true
+  Cmd_nickp:
+    Integers:
+      count: 4
+    Strings: {}
+    StringLists: {}
+    Booleans: {}
+  world_Join:
+    Integers:
+      count: 3
+    Strings: {}
+    StringLists: {}
+    Booleans: {}
+  Cmd_nickpc:
+    Integers:
+      length: 1
+    Strings: {}
+    StringLists: {}
+    Booleans: {}
+  world_Click_25765260:
+    Integers:
+      amount: 64
+      total: 64
+    Strings:
+      LOC: 257,65,260
+      id: '125'
+      id_name: minecraft:double_wooden_slab
+      name: 木錢
+      price: '1'
+      damage: '4'
+    StringLists: {}
+    Booleans: {}
+  world_Click_25965260:
+    Integers:
+      amount: 1
+      total: 1
+    Strings:
+      LOC: 259,65,260
+      id: '125'
+      damage: '4'
+      id_name: minecraft:double_wooden_slab
+      name: 木錢
+      price: '1'
+    StringLists: {}
+    Booleans: {}
   VAR:
     Integers: {}
     Strings:
       subfix: 全域變數...
       prefix: 設置
       this: SIGNPOINT
-    StringLists: {}
-    Booleans: {}
-  MSG:
-    Integers: {}
-    Strings:
-      NoPermission: 你沒有權限，再亂用射射你喔！
     StringLists: {}
     Booleans: {}
   SIGNTEXT:
@@ -605,46 +686,3230 @@ objects:
       newbieBook4: '&0'
     StringLists: {}
     Booleans: {}
-  TEMP:
-    Integers: {}
-    Strings:
-      tmp: ie
-      s: 'null'
-    StringLists: {}
-    Booleans: {}
   BlockBreak:
     Integers: {}
     Strings:
-      diamond_block_cur_finder: jw910731
-      diamond_block_last_finder: jw910731
+      diamond_block_cur_finder: sp-sharren
+      diamond_block_last_finder: sp-sharren
     StringLists: {}
     Booleans: {}
-  Cmd_co:
+  andywawa:
+    Integers: {}
+    Strings:
+      displayname: '&r&a虫圭&r&4❤&r&2andywawa'
+      displayname_color: '2'
+      displayname_prefix: ❤
+      displayname_prefix_color: '4'
+      displayname_title: 虫圭
+      displayname_title_color: a
+    StringLists: {}
+    Booleans:
+      official: true
+  in91andy:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&b✫&r&rin91andy'
+      displayname_color: r
+      displayname_prefix: ✫
+      displayname_prefix_color: b
+    StringLists: {}
+    Booleans:
+      official: true
+  carlccc0911:
+    Integers: {}
+    Strings:
+      displayname: '&r&d魔具祭司卡爾&r&3✡&r&9carlccc0911'
+      displayname_prefix: ✡
+      displayname_prefix_color: '3'
+      displayname_title: 魔具祭司卡爾
+      displayname_color: '9'
+      displayname_title_color: d
+    StringLists: {}
+    Booleans:
+      official: true
+  TEMP:
+    Integers: {}
+    Strings:
+      s: 'null'
+    StringLists: {}
+    Booleans: {}
+  gtjjames3146:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&rgtjjames3146'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-moha:
+    Integers: {}
+    Strings:
+      displayname: '&r&5不正常小屁孩研究院&r&r&rsp-moha'
+      displayname_title: 不正常小屁孩研究院
+      displayname_title_color: '5'
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-yahoo:
+    Integers: {}
+    Strings:
+      displayname: '&r&6雅虎哥&r&r&r&rsp-yahoo'
+      displayname_title: 雅虎哥
+      displayname_title_color: '6'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-zxc860512:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-zxc860512'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-karta2863580:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-karta2863580'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-jj97283:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rsp-jj97283'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-annie72127:
+    Integers: {}
+    Strings:
+      displayname: '&r&1安妮&r&r&r&rsp-annie72127'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_title: 安妮
+      displayname_title_color: '1'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-joanchen:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-joanchen'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-kkccgg25:
+    Integers: {}
+    Strings:
+      displayname: '&r&d粉紅Q豬仔&r&r&r&rsp-kkccgg25'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_title: 粉紅Q豬仔
+      displayname_title_color: d
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-kidhouse:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-kidhouse'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-Venceno:
+    Integers: {}
+    Strings:
+      displayname: '&r&e搗蛋我就(╯-_-)╯~╩╩&r&r&r&csp-Venceno'
+      displayname_color: c
+      displayname_title: 搗蛋我就(╯-_-)╯~╩╩
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_title_color: e
+    StringLists: {}
+    Booleans:
+      official: false
+  GUNDAM1203:
+    Integers: {}
+    Strings:
+      displayname: '&r&9藍翼天使&r&r&rGUNDAM1203'
+      displayname_color: r
+      displayname_title: 藍翼天使
+      displayname_title_color: '9'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-gn0000:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-gn0000'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-30765705:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-30765705'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-ServantGrunt:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-ServantGrunt'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-calvinvg:
+    Integers: {}
+    Strings:
+      displayname: '&r&9喵源&r&r&r&rsp-calvinvg'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_title: 喵源
+      displayname_title_color: '9'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-thinknoddles:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rsp-thinknoddles'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-imstr:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-imstr'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  Space_Rain:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&rSpace_Rain'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-max6527316:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rsp-max6527316'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-jason900602:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rsp-jason900602'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-tony7789963:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-tony7789963'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  SP-long:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rSP-long'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-Yong:
+    Integers: {}
+    Strings:
+      displayname: '&r羊羊&r&r&r&rsp-Yong'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_title: 羊羊
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-wei20001022:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-wei20001022'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-hanklan:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rsp-hanklan'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-JackLin84911:
+    Integers: {}
+    Strings:
+      displayname: '&r&6小吉&r&r&r&rsp-JackLin84911'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_title: 小吉
+      displayname_title_color: '6'
+    StringLists: {}
+    Booleans:
+      official: false
+  zz4040609:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&rzz4040609'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-momo:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-momo'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-Rex0830:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rsp-Rex0830'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-h2927751:
+    Integers: {}
+    Strings:
+      displayname: '&r&9龍の傳人&r&r☻&r&rsp-h2927751'
+      displayname_prefix: ☻
+      displayname_prefix_color: r
+      displayname_color: r
+      displayname_title: 龍の傳人
+      displayname_title_color: '9'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-fireman0928:
+    Integers: {}
+    Strings:
+      displayname: '&r&c火の嗩吶&r&r☻&r&rsp-fireman0928'
+      displayname_prefix: ☻
+      displayname_prefix_color: r
+      displayname_color: r
+      displayname_title: 火の嗩吶
+      displayname_title_color: c
+    StringLists: {}
+    Booleans:
+      official: false
+  xxxx12357:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&rxxxx12357'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-z559870000:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-z559870000'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-elf90121:
+    Integers: {}
+    Strings:
+      displayname: '&r&b小興&r&r&r&rsp-elf90121'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_title: 小興
+      displayname_title_color: b
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-gtjj3146:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-gtjj3146'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-Sroczkaa:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rsp-Sroczkaa'
+    StringLists: {}
+    Booleans:
+      official: false
+  jiji1372:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&rjiji1372'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-l124491479:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-l124491479'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-Brontosaurus:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-Brontosaurus'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-Jochito:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rsp-Jochito'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-aids575582:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-aids575582'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  smile4922:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&rsmile4922'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-ab47396314:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-ab47396314'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-26871132:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-26871132'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  HanekawaNatsune:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&rHanekawaNatsune'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  Hoimas:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rHoimas'
+    StringLists: {}
+    Booleans:
+      official: true
+  yahoowu:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&ryahoowu'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-zx2296472:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-zx2296472'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-funnytai:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rsp-funnytai'
+    StringLists: {}
+    Booleans:
+      official: false
+  alan6716_s:
+    Integers: {}
+    Strings:
+      displayname: '&r&r★&r&ralan6716_s'
+      displayname_color: r
+      displayname_prefix: ★
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-Satoast:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rsp-Satoast'
+    StringLists: {}
+    Booleans:
+      official: false
+  A129lau:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r✟&r&rA129lau'
+      displayname_color: r
+      displayname_prefix: ✟
+      displayname_prefix_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-susanwawaTwo:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rsp-susanwawaTwo'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-Samy416:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-Samy416'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-333333333333:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-333333333333'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-matthew:
+    Integers: {}
+    Strings:
+      displayname: '&r&9暗影刺客&r&r☻&r&rsp-matthew'
+      displayname_prefix: ☻
+      displayname_prefix_color: r
+      displayname_color: r
+      displayname_title: 暗影刺客
+      displayname_title_color: '9'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-wingzero:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-wingzero'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  Super_LIHALONG:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rSuper_LIHALONG'
+    StringLists: {}
+    Booleans:
+      official: true
+  pdbdbqdqdobob:
+    Integers: {}
+    Strings:
+      displayname_prefix: ✪
+      displayname: '&r泰迪&r✪&r&rpdbdbqdqdobob'
+      displayname_color: r
+      displayname_title: 泰迪
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-zxcvbnm:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-zxcvbnm'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-a5202020:
+    Integers: {}
+    Strings:
+      displayname: '&r&dの優&r&r&r&rsp-a5202020'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_title: の優
+      displayname_title_color: d
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-268711321:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-268711321'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  Paiwolf:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&rPaiwolf'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-jackyivy0923:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-jackyivy0923'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-cs11111179:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rsp-cs11111179'
+    StringLists: {}
+    Booleans:
+      official: false
+  SmallWawa:
+    Integers: {}
+    Strings:
+      displayname: '&r&a翔空院長&r&r&rSmallWawa'
+      displayname_color: r
+      displayname_title: 翔空院長
+      displayname_title_color: a
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-2687113210:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-2687113210'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-268711323:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-268711323'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-268711322:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-268711322'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-harry8952322:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-harry8952322'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-qaz426:
+    Integers: {}
+    Strings:
+      displayname: '&r&5汪星人&r&r&r&rsp-qaz426'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_title: 汪星人
+      displayname_title_color: '5'
+    StringLists: {}
+    Booleans:
+      official: false
+  Black_teaTW:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&rBlack_teaTW'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  jam09jam:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&rjam09jam'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-booboo:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-booboo'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  Yangchao:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&rYangchao'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-boy1220:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rsp-boy1220'
+    StringLists: {}
+    Booleans:
+      official: false
+  Pluto_Hardee:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rPluto_Hardee'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-Alive:
+    Integers: {}
+    Strings:
+      displayname: '&r&d粉紅執事&r&r&r&rsp-Alive'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_title: 粉紅執事
+      displayname_title_color: d
+    StringLists: {}
+    Booleans:
+      official: false
+  Sniper_Bear:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&rSniper_Bear'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  Zero00R:
+    Integers: {}
+    Strings:
+      displayname: '&r&oガンダム&r&r&r&rZero00R'
+      displayname_color: r
+      displayname_title: ガンダム
+      displayname_title_color: o
+      displayname_prefix: '&r'
+      displayname_prefix_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-bonebonekai:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&rsp-bonebonekai'
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  funnytai:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&rfunnytai'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-RxZxY:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-RxZxY'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  Phantom00Q:
+    Integers: {}
+    Strings:
+      displayname: '&r&d粉紅Q喔喔&r✟&r&rPhantom00Q'
+      displayname_color: r
+      displayname_prefix: ✟
+      displayname_title: 粉紅Q喔喔
+      displayname_title_color: d
+    StringLists: {}
+    Booleans:
+      official: true
+  chen2001517:
+    Integers: {}
+    Strings:
+      displayname: '&r&2巴龍&r&r&rchen2001517'
+      displayname_color: r
+      displayname_title: 巴龍
+      displayname_title_color: '2'
+    StringLists: {}
+    Booleans:
+      official: true
+  mingzran:
+    Integers: {}
+    Strings:
+      displayname_prefix: ✟
+      displayname: '&r&r&4✟&r&rmingzran'
+      displayname_prefix_color: '4'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-26595741:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&rsp-26595741'
+    StringLists: {}
+    Booleans:
+      official: false
+  Mrwilliedu:
+    Integers: {}
+    Strings:
+      displayname_prefix: ✟
+      displayname: '&r&3超神D.U&r&a✟&r&rMrwilliedu'
+      displayname_prefix_color: a
+      displayname_color: r
+      displayname_title: 超神D.U
+      displayname_title_color: '3'
+    StringLists: {}
+    Booleans:
+      official: true
+  12345Jimmy12345:
+    Integers: {}
+    Strings:
+      displayname_prefix: ♫
+      displayname: '&r&3吉米&r♫&r&r12345Jimmy12345'
+      displayname_color: r
+      displayname_title: 吉米
+      displayname_title_color: '3'
+    StringLists: {}
+    Booleans:
+      official: true
+  V_Destiny00:
+    Integers: {}
+    Strings:
+      displayname: '&r&d命運の吉他&r❤&r&rV_Destiny00'
+      displayname_color: r
+      displayname_prefix: ❤
+      displayname_title: 命運の吉他
+      displayname_title_color: d
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-qweasdzxc:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-qweasdzxc'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  milesDJ:
+    Integers: {}
+    Strings:
+      displayname: '&r&b音震天下&r★&r&rmilesDJ'
+      displayname_color: r
+      displayname_prefix: ★
+      displayname_title: 音震天下
+      displayname_title_color: b
+    StringLists: {}
+    Booleans:
+      official: true
+  e7952110:
+    Integers: {}
+    Strings:
+      displayname_prefix: ☻
+      displayname: '&r&r&5☻&r&re7952110'
+      displayname_prefix_color: '5'
+      displayname_color: r
+    StringLists: {}
+    Booleans:
+      official: true
+  O0oO0o0Oo0O:
+    Integers: {}
+    Strings:
+      displayname_prefix: '&r'
+      displayname: '&r&f321&r&r&r&rO0oO0o0Oo0O'
+      displayname_prefix_color: r
+      displayname_color: r
+      displayname_title: '321'
+      displayname_title_color: f
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-Ruiz:
+    Integers: {}
+    Strings:
+      displayname: '&r&r&r&r&rsp-Ruiz'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+    StringLists: {}
+    Booleans:
+      official: false
+  susanwawa:
+    Integers: {}
+    Strings:
+      displayname: '&r&3혼자&r&d✟&r&rsusanwawa'
+      displayname_prefix: ✟
+      displayname_prefix_color: d
+      displayname_color: r
+      displayname_title: 혼자
+      displayname_title_color: '3'
+    StringLists: {}
+    Booleans:
+      official: true
+  bonr_maximum:
+    Integers: {}
+    Strings:
+      displayname: '&r&c粉紅DJ&r♪&r&rbonr_maximum'
+      displayname_prefix: ♪
+      displayname_color: r
+      displayname_title: 粉紅DJ
+      displayname_title_color: c
+    StringLists: {}
+    Booleans:
+      official: true
+  kinfung831:
+    Integers: {}
+    Strings:
+      displayname: '&r&6我是0923&r&r&rkinfung831'
+      displayname_color: r
+      displayname_title: 我是0923
+      displayname_title_color: '6'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-z44118390:
+    Integers: {}
+    Strings:
+      displayname: '&r&3煞氣の&r&r&r&rsp-z44118390'
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_title: 煞氣の
+      displayname_title_color: '3'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-x44118390:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-x44118390'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-mmad4:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-mmad4'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-hank901031:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-hank901031'
+    StringLists: {}
+    Booleans:
+      official: false
+  jw910731:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rjw910731'
+    StringLists: {}
+    Booleans:
+      official: true
+  Dream_Night:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rDream_Night'
+    StringLists: {}
+    Booleans:
+      official: true
+  Dream_ivane:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rDream_ivane'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-MARY:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-MARY'
+    StringLists: {}
+    Booleans:
+      official: false
+  Poiu07311:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rPoiu07311'
+    StringLists: {}
+    Booleans:
+      official: true
+  Ken_Tai:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rKen_Tai'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-6311:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-6311'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-IVY105:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-IVY105'
+    StringLists: {}
+    Booleans:
+      official: false
+  ji3g42841p4:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rji3g42841p4'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-kirito:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-kirito'
+    StringLists: {}
+    Booleans:
+      official: false
+  qazwsx2245:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r水水&r&r&rqazwsx2245'
+      displayname_title: 水水
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-45150342:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-45150342'
+    StringLists: {}
+    Booleans:
+      official: false
+  enderman922:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&renderman922'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-ryan2723:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-ryan2723'
+    StringLists: {}
+    Booleans:
+      official: false
+  GaBaTaLa:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rGaBaTaLa'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-qaz0417:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-qaz0417'
+    StringLists: {}
+    Booleans:
+      official: false
+  OYuHungO:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rOYuHungO'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-LewisChamp:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&c汪羊&r&r&r&rsp-LewisChamp'
+      displayname_title: 汪羊
+      displayname_title_color: c
+    StringLists: {}
+    Booleans:
+      official: false
+  Shiaobin:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r喵喵&r♪&r&rShiaobin'
+      displayname_title: 喵喵
+      displayname_prefix: ♪
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-dreamyoyo:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-dreamyoyo'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-test:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-test'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-vu84wu0:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-vu84wu0'
+    StringLists: {}
+    Booleans:
+      official: false
+  thunderball987:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rthunderball987'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-37589376:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-37589376'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-x20a:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-x20a'
+    StringLists: {}
+    Booleans:
+      official: false
+  Rickyasd123:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rRickyasd123'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-mcsxz14:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-mcsxz14'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-laock:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-laock'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-you920520:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-you920520'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-wang0605:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-wang0605'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-33160515:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-33160515'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-kenny:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-kenny'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-erokl2007:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-erokl2007'
+    StringLists: {}
+    Booleans:
+      official: false
+  SP-DosenLP:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rSP-DosenLP'
+    StringLists: {}
+    Booleans:
+      official: false
+  SP-DoesnLP:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-DoesnLP'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-ddavid:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-ddavid'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-WelcomeNorth:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-WelcomeNorth'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-23731099:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-23731099'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-kelly:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-kelly'
+    StringLists: {}
+    Booleans:
+      official: false
+  HJK115230:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rHJK115230'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-one445d7:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-one445d7'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-susanwawa:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-susanwawa'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-MMJStudio:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-MMJStudio'
+    StringLists: {}
+    Booleans:
+      official: false
+  XSniper_FireX:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&c熱心助人&r&r&rXSniper_FireX'
+      displayname_title: 熱心助人
+      displayname_title_color: c
+    StringLists: {}
+    Booleans:
+      official: true
+  liu5311:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rliu5311'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-kevinegg:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-kevinegg'
+    StringLists: {}
+    Booleans:
+      official: false
+  smellegg:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&rvirago&r&r&rsmellegg'
+      displayname_title: virago
+    StringLists: {}
+    Booleans:
+      official: true
+  sscca:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rsscca'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-zeda:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-zeda'
+    StringLists: {}
+    Booleans:
+      official: false
+  _Mike___:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&r_Mike___'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-abcd21587378:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-abcd21587378'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-susan:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-susan'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-GaoZheWei:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-GaoZheWei'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-Hatbyrisk:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-Hatbyrisk'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-sciry4482:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-sciry4482'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-qaz456:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-qaz456'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-qazyaya:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-qazyaya'
+    StringLists: {}
+    Booleans:
+      official: false
+  chin7521:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rchin7521'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-03213:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-03213'
+    StringLists: {}
+    Booleans:
+      official: false
+  a521478963a:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&ra521478963a'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-fireman0929:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-fireman0929'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-futh:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-futh'
+    StringLists: {}
+    Booleans:
+      official: false
+  Yellowhaha:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rYellowhaha'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-chris:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-chris'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-mcsxz15:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-mcsxz15'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-20020417:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-20020417'
+    StringLists: {}
+    Booleans:
+      official: false
+  qw582699:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rqw582699'
+    StringLists: {}
+    Booleans:
+      official: true
+  gary90815:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&5小蝸&r&r&rgary90815'
+      displayname_title: 小蝸
+      displayname_title_color: '5'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-LG4TE:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-LG4TE'
+    StringLists: {}
+    Booleans:
+      official: false
+  SP-33843085:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rSP-33843085'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-jack2:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-jack2'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-0426888160:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-0426888160'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-james910417:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-james910417'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-Coldbow:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-Coldbow'
+    StringLists: {}
+    Booleans:
+      official: false
+  HKsJack:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r✢&r&rHKsJack'
+      displayname_prefix: ✢
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-ccctest:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-ccctest'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-Venceno2:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-Venceno2'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-seanliu1013:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-seanliu1013'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-Great:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-Great'
+    StringLists: {}
+    Booleans:
+      official: false
+  ChuMiRabbit:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&d粉紅兔&r&r&rChuMiRabbit'
+      displayname_title: 粉紅兔
+      displayname_title_color: d
+    StringLists: {}
+    Booleans:
+      official: true
+  MysteriousIceGX:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r✯&r&rMysteriousIceGX'
+      displayname_prefix: ✯
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-5417:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-5417'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-2926716:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-2926716'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-zero00r:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-zero00r'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-Phantom:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-Phantom'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-aaaqqq5566tp:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-aaaqqq5566tp'
+    StringLists: {}
+    Booleans:
+      official: false
+  mike_angle:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&d明亮之星&r&r&rmike_angle'
+      displayname_title: 明亮之星
+      displayname_title_color: d
+    StringLists: {}
+    Booleans:
+      official: true
+  mike_cheng:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rmike_cheng'
+    StringLists: {}
+    Booleans:
+      official: true
+  qaz70903:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rqaz70903'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-amy885335:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-amy885335'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-mcsxz13:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-mcsxz13'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-8523:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-8523'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-mike:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-mike'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-375893766:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-375893766'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-anna:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-anna'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-aeqaeqaeq:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-aeqaeqaeq'
+    StringLists: {}
+    Booleans:
+      official: false
+  Aetingot:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rAetingot'
+    StringLists: {}
+    Booleans:
+      official: true
+  mobsteve1234:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rmobsteve1234'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-byebyron:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&b九天金城武&r&r&r&rsp-byebyron'
+      displayname_title: 九天金城武
+      displayname_title_color: b
+    StringLists: {}
+    Booleans:
+      official: false
+  rayr97:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&c骷髏頭煤炭&r✡&r&rrayr97'
+      displayname_title: 骷髏頭煤炭
+      displayname_title_color: c
+      displayname_prefix: ✡
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-graffiti:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&7九天鄭伊健&r&r&r&rsp-graffiti'
+      displayname_title: 九天鄭伊健
+      displayname_title_color: '7'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-mcsxz16:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-mcsxz16'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-36000:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-36000'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-beast:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-beast'
+    StringLists: {}
+    Booleans:
+      official: false
+  Iam_blaze:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rIam_blaze'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-bilibalabone:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-bilibalabone'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-bulinean:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-bulinean'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-0426911:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-0426911'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-vincent:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-vincent'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-xXlXx:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-xXlXx'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-kingmusic030:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-kingmusic030'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-love1314520:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-love1314520'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-qwe0316:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-qwe0316'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-qiu54678:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-qiu54678'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-tammy0210:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-tammy0210'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-dog2002:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-dog2002'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-84911:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-84911'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-leochan0311:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-leochan0311'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-44555:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-44555'
+    StringLists: {}
+    Booleans:
+      official: false
+  up9cloud-kai:
+    Integers: {}
+    Strings:
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_color: r
+    StringLists: {}
+    Booleans: {}
+  sp-Trainer:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-Trainer'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-testaaa:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-testaaa'
+    StringLists: {}
+    Booleans:
+      official: false
+  HENRY0116:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rHENRY0116'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-mmjMrwilliedu:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-mmjMrwilliedu'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-erfansafi:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-erfansafi'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-ujm98765:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-ujm98765'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-093333677:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-093333677'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-35980653:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-35980653'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-hank888865:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-hank888865'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-Emma4421:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-Emma4421'
+    StringLists: {}
+    Booleans:
+      official: false
+  billcheng:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rbillcheng'
+    StringLists: {}
+    Booleans:
+      official: true
+  BILLY_STAR:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rBILLY_STAR'
+    StringLists: {}
+    Booleans:
+      official: true
+  kirk2099:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rkirk2099'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-pesp1219:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-pesp1219'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-bibi5566:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-bibi5566'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-pigsix9175:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-pigsix9175'
+    StringLists: {}
+    Booleans:
+      official: false
+  up9cloud-jo:
+    Integers: {}
+    Strings:
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_color: r
+    StringLists: {}
+    Booleans: {}
+  sp-skinme:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-skinme'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-aaab:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-aaab'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-kevincat1586:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&3貓咪&r&r&r&rsp-kevincat1586'
+      displayname_title: 貓咪
+      displayname_title_color: '3'
+    StringLists: {}
+    Booleans:
+      official: false
+  Kouve:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rKouve'
+    StringLists: {}
+    Booleans:
+      official: true
+  Loveyunyan:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rLoveyunyan'
+    StringLists: {}
+    Booleans:
+      official: true
+  kimikotaku:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&e柳橙秦始皇&r&r&rkimikotaku'
+      displayname_title: 柳橙秦始皇
+      displayname_title_color: e
+    StringLists: {}
+    Booleans:
+      official: true
+  chungchung1115:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rchungchung1115'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-thatchevyguy1:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-thatchevyguy1'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-35218:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-35218'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-GueYue:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-GueYue'
+    StringLists: {}
+    Booleans:
+      official: false
+  Blackmilktea:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rBlackmilktea'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-0002:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-0002'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-0007:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-0007'
+    StringLists: {}
+    Booleans:
+      official: false
+  armies5250:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rarmies5250'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-gary90815:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-gary90815'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-choco:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-choco'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-000a:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-000a'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-annie9457:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-annie9457'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-yusensun:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-yusensun'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-parepare:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-parepare'
+    StringLists: {}
+    Booleans:
+      official: false
+  Dotodowo:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rDotodowo'
+    StringLists: {}
+    Booleans:
+      official: true
+  Armstrong138:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rArmstrong138'
+    StringLists: {}
+    Booleans:
+      official: true
+  DJ_Jill32:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rDJ_Jill32'
+    StringLists: {}
+    Booleans:
+      official: true
+  hanshuang:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rhanshuang'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-chinching0620:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-chinching0620'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-ccaaww25:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-ccaaww25'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-james:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-james'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-s8804288:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-s8804288'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-000t:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-000t'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-000s:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-000s'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-000o:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-000o'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-000n:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-000n'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-000m:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-000m'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-000j:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-000j'
+    StringLists: {}
+    Booleans:
+      official: false
+  Sniper_Rain:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rSniper_Rain'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-000i:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-000i'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-000g:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-000g'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-000e:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-000e'
+    StringLists: {}
+    Booleans:
+      official: false
+  William082233:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rWilliam082233'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-chesterccj:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-chesterccj'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-OokoukioO:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-OokoukioO'
+    StringLists: {}
+    Booleans:
+      official: false
+  MrNeverLose:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rMrNeverLose'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-sharren:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-sharren'
+    StringLists: {}
+    Booleans:
+      official: false
+  FrenchFries1231:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r✟&r&rFrenchFries1231'
+      displayname_prefix: ✟
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-jasoncat:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-jasoncat'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-skaty00o:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-skaty00o'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-qwe932521:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-qwe932521'
+    StringLists: {}
+    Booleans:
+      official: false
+  zo6m0699:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rzo6m0699'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-SilverCrow:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-SilverCrow'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-qqq3891007:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-qqq3891007'
+    StringLists: {}
+    Booleans:
+      official: false
+  SP-michelle:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rSP-michelle'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-p07049:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-p07049'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-ming0419:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-ming0419'
+    StringLists: {}
+    Booleans:
+      official: false
+  BurningFameCrazy:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rBurningFameCrazy'
+    StringLists: {}
+    Booleans:
+      official: true
+  Tabloid_Moon:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rTabloid_Moon'
+    StringLists: {}
+    Booleans:
+      official: true
+  goyounglin:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rgoyounglin'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-momohan2005:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-momohan2005'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-lynn:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-Lynn'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-wilbur520mm:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-wilbur520mm'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-mimi2008:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-mimi2008'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-n172456126122:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-n172456126122'
+    StringLists: {}
+    Booleans:
+      official: false
+  up9cloud-admin:
+    Integers: {}
+    Strings:
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_color: r
+    StringLists: {}
+    Booleans: {}
+  sp-qaz425:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-qaz425'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-qaz426_2:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-qaz426_2'
+    StringLists: {}
+    Booleans:
+      official: false
+  a22558920:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&ra22558920'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-wawa:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-wawa'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-sp-153656:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-sp-153656'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-SanchezGamers:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-SanchezGamers'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-firefrog:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-firefrog'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-Jacob97188:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-Jacob97188'
+    StringLists: {}
+    Booleans:
+      official: false
+  pateanco:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname: '&r&r&r&rpateanco'
+    StringLists: {}
+    Booleans:
+      official: true
+  sp-0010:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-0010'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-0011:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-0011'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-0017:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-0017'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-0012:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-0012'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-001e:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-001e'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-001a:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-001a'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-001g:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-001g'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-001m:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-001m'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-001i:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-001i'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-001j:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-001j'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-001n:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-001n'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-001t:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-001t'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-001o:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-001o'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-001s:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-001s'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-a32754589:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-a32754589'
+    StringLists: {}
+    Booleans:
+      official: false
+  sp-qoq12345:
+    Integers: {}
+    Strings:
+      displayname_color: r
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname: '&r&r&r&r&rsp-qoq12345'
+    StringLists: {}
+    Booleans:
+      official: false
+  up9cloud-wawa:
+    Integers: {}
+    Strings:
+      displayname_prefix_color: r
+      displayname_prefix: '&r'
+      displayname_color: r
+    StringLists: {}
+    Booleans: {}
+  global_ops:
     Integers: {}
     Strings: {}
     StringLists: {}
     Booleans:
-      O0oO0o0Oo0O: true
-      sp-Venceno: true
-      andywawa: true
-      in91andy: true
+      up9cloud-admin: true
       up9cloud-wawa: true
+      up9cloud-jo: true
+      up9cloud-kai: true
+  ops:
+    Integers: {}
+    Strings: {}
+    StringLists: {}
+    Booleans:
+      andywawa: true
+      sp-Venceno: true
+      carlccc0911: true
+      O0oO0o0Oo0O: true
+      sp-moha: true
       sp-bonebonekai: true
-      carlccc0911: true
-  Cmd_jail:
+  goodkidslist:
     Integers: {}
     Strings: {}
     StringLists: {}
     Booleans:
-      andywawa: true
+      susanwawa: true
+      sp-h2927751: true
+      SmallWawa: true
+      Mrwilliedu: true
+      sp-fireman0928: true
+      e7952110: true
+      sp-matthew: true
+      mingzran: true
       O0oO0o0Oo0O: true
-      sp-Venceno: true
-      carlccc0911: true
-  Cmd_mute:
-    Integers: {}
-    Strings: {}
-    StringLists: {}
-    Booleans:
-      O0oO0o0Oo0O: true
-      andywawa: true
-      sp-Venceno: true

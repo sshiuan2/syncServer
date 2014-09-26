@@ -2,4 +2,20 @@ world:
   Join:
     CoolDown: 1
     Script:
-    - '@CMDOP tp -166 5 -488'
+    - '@CALL Function:Check_global_ops'
+    - '@IF b $global_ops.<playername> = true'
+    - '  @CMDCON minecraft:op <playername>'
+    - '@ELSE'
+    - '  @CALL Function:Check_ops'
+    - '  @IF b $ops.<playername> = true'
+    - '    @CMDCON minecraft:op <playername>'
+    - '  @ELSE'
+    - '    @CALL Function:Check_event_ops'
+    - '    @IF b $event_ops.<playername> = true'
+    - '      @CMDCON minecraft:op <playername>'
+    - '    @ELSE'
+    - '      @CMDCON minecraft:deop <playername>'
+    - '    @ENDIF'
+    - '  @ENDIF'
+    - '@ENDIF'
+    - '//@CMDOP minecraft:tp -166 5 -488'

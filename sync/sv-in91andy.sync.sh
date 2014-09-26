@@ -29,17 +29,21 @@ sed -i 's/^gamemode=.*$/gamemode=2/g' $to
 sed -i 's/^force-gamemode=.*$/force-gamemode=true/g' $to
 sed -i 's/^max-build-height=.*$/max-build-height=128/g' $to
 sed -i 's/^max-players=.*$/max-players=8/g' $to
-sed -i 's/^spawn-protection=.*$/spawn-protection=0/g' $to
+sed -i 's/^spawn-protection=.*$/spawn-protection=100000/g' $to
 
-sed -i 's/^white-list=.*$/white-list=true/g' $to
+#use variabletrigger control white list
+#sed -i 's/^white-list=.*$/white-list=true/g' $to
+
+sync_conf_start;
+#sync_conf_op;
 }
-sync_op(){
+sync_conf_op(){
 local to=$thisServerPath/ops.txt
 echo 'in91andy' >> $to
 echo 'sp-Mercurius' >> $to
 echo 'O0oO0o0Oo0O' >> $to
 }
-sync_start(){
+sync_conf_start(){
 local to=$thisServerPath/start.sh
 sed -i 's/^local Xms=.*$/Xms=64M/g' $to
 sed -i 's/^local Xmx=.*$/Xmx=512M/g' $to
@@ -51,11 +55,10 @@ purge_plugins all;
 
 msg_startSync;
 scp_getControllers;
-sync_start;
 scp_getServer spigot;
 sync_conf;
-sync_op;
 
+scp_getPlugin VariableTriggers
 scp_getPlugin WorldEdit;
 scp_getPlugin MythicMobs;
 scp_getPlugin HealthBar;

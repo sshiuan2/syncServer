@@ -1,0 +1,30 @@
+#following not support
+#bat
+#chicken/babychicken
+#cow/babycow
+#enderdragon
+#ghast
+#horse/babyhorse
+#irongolem
+#magmacube
+#mushroomcow/babymushroomcow
+#pig/babypig
+#sheep/babysheep
+#slime
+#snowman
+#squid
+#villager/babyvillager
+giant:
+  Mobname: giant
+  Worlds: world
+  Chance: 0.01
+  Priority: 10
+  Conditions:
+  - outside true 
+Firespider_lv0:
+  Mobname: Firespider_lv0
+  Worlds: world
+  Chance: 0.01
+  Priority: 1
+  Conditions:
+  - outside true

@@ -6,15 +6,18 @@ else echo "source var.sh failed!";exit;fi
 
 main(){
 local name='Essentials'
-local f=jail.yml
 local from=$thisServerPath/plugins/$name
 local to=$syncServerScpPath/plugins/$name
+local backup_fs=(
+jail.yml
+
+)
 mkdir -p $from/$thisServerName
-cp $from/$f $from/$thisServerName
-
+local backup_f;
+for backup_f in ${backup_fs[@]};do
+cp $from/$backup_f $from/$thisServerName
+done
 scp -r $from/$thisServerName $to
-
-scp $from/*.sh $to
 }
 
-main $name
+main

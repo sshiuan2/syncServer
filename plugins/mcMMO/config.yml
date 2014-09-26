@@ -1,9 +1,8 @@
 #
 #  mcMMO configuration
-#  Last updated on 1.4.08-SNAPSHOT-b3511
+#  Last updated on 1.5.01-SNAPSHOT-b3562
 #
 #####
-
 #
 #  Settings for mcMMO in general
 ###
@@ -26,20 +25,16 @@ General:
     Config_Update_Overwrite: false
     # Play level-up sounds
     LevelUp_Sounds: true
-
 #
 #  Settings for the mcMMO scoreboards
 ###
 Scoreboard:
     # Display player's power levels below their names?
     Power_Level_Tags: false
-
     # Allow players to use "/mcscoreboard keep" to keep the scoreboard up
     Allow_Keep: true
-
     # Add some more color on the board :-)
     Rainbows: true
-
     # Settings for each type of scoreboard
     # Print: Should the command output be printed in chat?
     # Board: Should the command output be displayed in the scoreboard sidebar?
@@ -78,18 +73,17 @@ Scoreboard:
         Skill:
             Board: true
             Display_Time: 30
-
             # Should the board be shown when a player levels up, and for how long?
             # It is recommended to NOT have LevelUp_Time be -1, as this may confuse players.
             LevelUp_Board: true
             LevelUp_Time: 5
-
+    # Show the /mcstats scoreboard automatically after logging in
+    Show_Stats_After_Login: false
 Mob_Healthbar:
     # Display_Type: Default display for mob health bars - HEARTS, BAR, or DISABLED
     # Display_Time: Amount of time (in seconds) to display. To display permanently, set to -1
     Display_Type: HEARTS
     Display_Time: 3
-
 Database_Purging:
     # Amount of time (in hours) to wait between database purging
     # To only run at server start, set to 0
@@ -98,19 +92,16 @@ Database_Purging:
     # Any user who hasn't connected in this many months will be purged from the database
     # To never purge old users, set to -1
     Old_User_Cutoff: -1
-
 #
 #  Settings for Backups
 #  Allow mcMMO to create zip backups for config files and flatfile data on shutdown.
 ###
 Backups:
     Enabled: true
-
     Keep:
         Last_24_Hours: true
         Daily_Last_Week: true
         Weekly_Past_Months: true
-
 #
 #  Settings for using a mySQL database
 ###
@@ -124,7 +115,6 @@ MySQL:
     Server:
         Port: 3306
         Address: 10.0.0.200
-
 #
 #  Settings for Hardcore mode
 #  Players will not lose stats when their level is below the Level_Threshold
@@ -164,7 +154,6 @@ Hardcore:
             Taming: false
             Unarmed: false
             Woodcutting: false
-
 #
 #  Settings for SMP Mods
 ###
@@ -173,7 +162,6 @@ Mods:
     Armor_Mods_Enabled: false
     Block_Mods_Enabled: false
     Entity_Mods_Enabled: false
-
 #
 #  Settings for mcMMO items
 ###
@@ -188,7 +176,6 @@ Items:
         Recipe_Cost: 5
         Item_Name: FEATHER
         Sound_Enabled: true
-
 #
 #  Settings for Parties
 ###
@@ -199,31 +186,26 @@ Party:
     AutoKick_Interval: 12
     # Any user who hasn't connected in this many days will get kicked from their party
     Old_Party_Member_Cutoff: 7
-
     # Settings for party share modes
     Sharing:
         ExpShare_bonus_base: 1.1
         ExpShare_bonus_increase: 1.05
         ExpShare_bonus_cap: 1.5
         Range: 75.0
-
     # Party members level up their party by earning individual experience
     # Newly created parties will not immediately have access to all the party features
     # and have to level up the party a bit before they can use them.
     Leveling:
         Level_Cap: 10
-
         # Uses the regular XP formula but is multiplied by <amount of party members> + <Xp_Curve_Modifier>
         Xp_Curve_Modifier: 3
         Near_Members_Needed: false
         Inform_All_Party_Members_On_LevelUp: false
-
         Chat_UnlockLevel: 1
         Teleport_UnlockLevel: 2
         Alliance_UnlockLevel: 5
         ItemShare_UnlockLevel: 8
         XpShare_UnlockLevel: 10
-
 #
 #  Settings for Abilities
 ###
@@ -255,7 +237,6 @@ Abilities:
     Tools:
         # Use more tool durability while using abilities. Set Durability_Loss to 0 to disable the extra durability damage.
         Durability_Loss: 1
-
 #
 #  Settings for Skills
 #  Level cap of 0 for no limit
@@ -267,8 +248,9 @@ Skills:
         Prevent_AFK_Leveling: true
         Max_Tries_At_Same_Location: 3
         Prevent_Dodge_Lightning: false
-        Prevent_XP_After_Teleport: true
         Level_Cap: 0
+        # Prevent earning Acrobatics XP a few seconds after teleporting
+        XP_After_Teleport_Cooldown: 5
     Alchemy:
         # Allow Hoppers to transfer ingredients and brew Rank 1 Alchemy potions
         Enabled_for_Hoppers: true
@@ -288,6 +270,9 @@ Skills:
     Fishing:
         Drops_Enabled: true
         Level_Cap: 0
+        # Always catch fish, even when treasure is found
+        Extra_Fish: false
+        Override_Vanilla_Treasures: true
     Herbalism:
         Level_Cap: 0
         Prevent_AFK_Leveling: true
@@ -316,16 +301,23 @@ Skills:
         Enabled_For_PVE: true
         Level_Cap: 0
         Call_Of_The_Wild:
-            Bones_Required: 10
-            Fish_Required: 10
-            Apples_Required: 10
-
             # Range to check for nearby pets when using Call Of The Wild, 0 will disable the check
             Range: 40.0
-            # Amount of pets to summon when using Call Of The Wild
-            Wolf_Amount: 1
-            Ocelot_Amount: 1
-            Horse_Amount: 1
+            Horse:
+                Item_Material: APPLE
+                Item_Amount: 10
+                Summon_Amount: 1
+            # Item_Material: Material of the item needed to summon the pet
+            # Item_Amount: Amount of items required to summon the pet
+            # Summon_Amount: Amount of pets to summon when using Call Of The Wild
+            Wolf:
+                Item_Material: BONE
+                Item_Amount: 10
+                Summon_Amount: 1
+            Ocelot:
+                Item_Material: RAW_FISH
+                Item_Amount: 10
+                Summon_Amount: 1
     Unarmed:
         Enabled_For_PVP: true
         Enabled_For_PVE: true
@@ -335,7 +327,6 @@ Skills:
     Woodcutting:
         Tree_Feller_Sounds: true
         Level_Cap: 0
-
 #
 #  Settings for Double Drops
 ###
@@ -373,11 +364,12 @@ Double_Drops:
         Sandstone: true
         Stone: true
     Woodcutting:
-        Oak: true
         Birch: true
-        Spruce: true
         Jungle: true
-
+        Dark_Oak: true
+        Acacia: true
+        Redwood: true
+        Generic: true
 #
 #  Settings for commands
 ###
@@ -406,7 +398,10 @@ Commands:
     adminchat:
         Chat_Prefix_Format: '[[AQUA]][[[WHITE]]{0}[[AQUA]]]'
         Use_Display_Names: true
-
+    Database:
+        # Database command cooldown in milliseconds, cannot be changed below the default value. (1750)
+        # Prevents players from spamming /mctop or /mcrank
+        Player_Cooldown: 1750
 #
 #  Settings for particles
 ###
@@ -414,15 +409,12 @@ Particles:
     # These settings determine if fireworks should get launched when a player activates/deactivates an ability
     Ability_Activation: true
     Ability_Deactivation: true
-
     # Determines if the fireworks should be a large ball or a small one
     LargeFireworks: true
-
     # Use particle effect when these abilities trigger
     Dodge: true
     Bleed: true
     Greater_Impact: true
-
     # These settings determine if fireworks should get launched when a player levels-up,
     # this will happen by default for every 100 levels.
     LevelUp_Enabled: true

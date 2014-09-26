@@ -1,22 +1,22 @@
 #mushroomcowbaby
 #chicken
-噴火牛:
+FireCow:
   Mobtype: mushroomcowbaby
   Display: '噴火牛'
   Health: 100
   Showhp: true
   Damage: 1
   Skills:
-  - fire 10:2 >0 1
-  - msg 10:'&c噴火牛 &2周圍燃起了火焰' >0 1
+  - fire 10:2 ~onDamaged >0 1
+  - msg 10:'&c$boss &2周圍燃起了火焰' ~onDamaged >0 1
   Drops:
-  - 噴火牛
-農場小雞:
+  - FireCow
+FarmChicken:
   Mobtype: chicken
   Display: '農場小雞'
   Health: 10
   Showhp: false
   Damage: 0
   Skills:
-  - summon $農場小雞:1 =0 0.9
-  
+  - cmd 'summon Chicken $boss_x $boss_y $boss_z' ~onDeath 0.9
+#  - summon $FarmChicken:1 ~onDeath 0.9

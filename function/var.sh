@@ -2,6 +2,8 @@
 varDir="$(cd $(dirname ${BASH_SOURCE[0]}) && pwd)"
 varPath="$varDir/var.sh"
 
+version="1.7.5"
+
 thisServerIp=`hostname --ip-address`
 thisServerPort="25565"
 thisServerPath="$(dirname "$varDir")"

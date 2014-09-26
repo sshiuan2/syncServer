@@ -23,8 +23,8 @@ sed -i "s/^server-port=$/server-port=$thisServerPort/g" $to
 sed -i "s/^server-name=$/server-name=up9cloud - $thisWorldName/g" $to
 sed -i 's/^enable-command-block=.*$/enable-command-block=true/g' $to
 
-#sed -i 's/^spawn-animals=.*$/spawn-animals=true/g' $to
-#sed -i 's/^spawn-monsters=.*$/spawn-monsters=true/g' $to
+sed -i 's/^spawn-animals=.*$/spawn-animals=true/g' $to
+sed -i 's/^spawn-monsters=.*$/spawn-monsters=true/g' $to
 #sed -i 's/^spawn-npcs=.*$/spawn-npcs=true/g' $to
 
 sed -i 's/^gamemode=.*$/gamemode=1/g' $to
@@ -35,7 +35,7 @@ sed -i 's/^spawn-protection=.*$/spawn-protection=100000/g' $to
 sed -i 's/^white-list=.*$/white-list=true/g' $to
 
 sync_conf_start;
-sync_conf_op;
+#sync_conf_op;
 }
 sync_conf_start(){
 local to=$thisServerPath/start.sh
@@ -47,6 +47,7 @@ local f="$thisServerPath/ops.json"
 local ops=(
 "sp-bonebonekai"
 "O0oO0o0Oo0O"
+"up9cloud-jo"
 )
 local op;
 local args=();
@@ -62,23 +63,31 @@ done;
 sync_scp(){
 scp_getControllers;
 scp_getServer spigot;
+#test
+#cp -f $thisServerPath/spigot-1.7.2-R0.4-SNAPSHOT.jar $thisServerPath/spigot.jar
+cp -f $thisServerPath/spigot-1.7.5-R0.1-SNAPSHOT.jar $thisServerPath/spigot.jar
 
 local plugins=(
-SuperCensor
-VariableTriggers
-BungeeSuiteWarps
+#SuperCensor
+##Vault
+##VariableTriggers
 #TeleportSigns
-ChatColors
-PermissionsEx
-#Vault
+##ChatColors
 #iConomy
-WorldEdit
-dynmap
+##MythicMobs
+##HealthBar
+##WorldEdit
+##dynmap
+#mcMMO
+#PermissionsEx
+#Residence
 )
 local p
 for p in ${plugins[@]};do
 scp_getPlugin $p;
 done
+#test
+#cp -f $thisServerPath/mcMMO.jar $thisServerPath/plugins/mcMMO.jar
 }
 main(){
 sync_var;
@@ -90,6 +99,11 @@ purge_plugins all;
 
 sync_scp;
 sync_conf;
+
+rm -fr $thisServerPath/plugins/WorldEdit/schematics
+ln -s $thisServerPath/plugins_backup/WorldEdit/schematics $thisServerPath/plugins/WorldEdit/schematics
+
+cp $thisServerPath/spigot.yml.moha $thisServerPath/spigot.yml
 
 msg_endSync;
 }

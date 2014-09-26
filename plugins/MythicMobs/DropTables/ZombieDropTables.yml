@@ -35,6 +35,7 @@ Zombie_lv4:
   - 367 9-17 1
 ZombieKing:
   Drops:
+  - money 10-16 1
   - Sword_ZombieKing 1 0.4
   - Boots_ZombieKing 1 0.2
   - Leggings_ZombieKing 1 0.2
@@ -43,6 +44,7 @@ ZombieKing:
   - 367 21-43 1
 ZombieKing_lv1:
   Drops:
+  - money 20-30 1
   - Sword_ZombieKing_lv1 1 0.3
   - Boots_ZombieKing_lv1 1 0.2
   - Leggings_ZombieKing_lv1 1 0.2

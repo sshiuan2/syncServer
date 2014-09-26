@@ -17,7 +17,7 @@ player-bars:
   below-name:
     enable: true
     text: '&4<3&r'
-    use-proportion: true
+    use-proportion: false
     proportional-to: 10
   world-disabling: false
   disabled-worlds: world_nether,world_the_end,exampleWorld
@@ -29,7 +29,7 @@ mob-bars:
   custom-text-enable: true
   custom-text: '{name} &c{health}/{max}&r &4<3&r'
   hide-delay-seconds: 60
-  show-only-if-looking: true
+  show-only-if-looking: false
   use-custom-file: false
   world-disabling: false
   disabled-worlds: world_nether,world_the_end,exampleWorld

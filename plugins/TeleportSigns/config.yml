@@ -41,6 +41,9 @@ servers:
   sp-kenny:
     address: 10.0.0.3:25567
     displayname: '&c[sp-kenny]'
+  smallwawa:
+    address: 10.0.0.3:25568
+    displayname: '&a[smallwawa]'
   music:
     address: 10.0.0.3:25599
     displayname: '&f&l<音樂>'
@@ -53,6 +56,9 @@ servers:
   zoo:
     address: 10.0.0.4:25566
     displayname: '&a&l[動物園]'
+  latest:
+    address: 10.0.0.4:25600
+    displayname: '&f&l[原味]'
 layouts:
   default:
     teleport: true
@@ -88,7 +94,7 @@ layouts:
     teleport: true
     layout:
       - '&l不定期更換地圖'
-      - '&l[孤兒院]'
+      - '&a&l[活動場地]'
       - '&f&l%numpl%/%maxpl%'
       - '%isonline%'
     online: '&a&l活動上線中'

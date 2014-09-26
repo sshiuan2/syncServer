@@ -55,15 +55,14 @@ sed -i 's/^max-players=.*$/max-players=8/g' $to
 #sed -i 's/^spawn-protection=.*$/spawn-protection=500/g' $to
 
 sed -i "s/^op-permission-level=.*$/op-permission-level=2/g" $to
-sed -i 's/^white-list=.*$/white-list=true/g' $to
+sed -i 's/^white-list=.*$/white-list=false/g' $to
 
 sync_conf_spigot;
 sync_conf_start;
-sync_conf_ops;
+#sync_conf_ops;
 }
 sync_conf_spigot(){
 local to=$thisServerPath/spigot.yml
-sed -i 's/\  whitelist:.*$/  whitelist: "你不在白名單內！若想加入請FB問op...\\n近期有人搗亂，待1.8有觀察者模式後再拿掉白名單。"/g' $to
 }
 sync_conf_start(){
 local to=$thisServerPath/start.sh
@@ -91,16 +90,20 @@ local ops=(
 "OZ_00MS"
 "carlccc0911"
 )
+echo "start sync ops.json:"
 local op;
 local args=();
 for op in ${ops[@]};do
 args+=(`buildOpData "$op"`);
 done;
 local arg;
+local json=$(cat $f);
 for arg in ${args[@]};do
-echo $arg;
-cat $f|$varDir/jq ". + $arg" > $f;
+echo "add $arg";
+json=$(echo $json | $varDir/jq ". + $arg");
 done;
+echo $json > $f;
+
 sync_conf_whitelist
 }
 sync_conf_whitelist(){
@@ -108,32 +111,42 @@ local f=$thisServerPath/whitelist.json
 local whites=(
 "sp-JackLin84911"
 )
+echo "start sync whitelist.json"
 local white;
 local args=();
 for white in ${whites[@]};do
 args+=(`buildOpData "$white"`);
 done;
 local arg;
+local json=$(cat $f);
 for arg in ${args[@]};do
-echo $arg;
-cat $f|$varDir/jq ". + $arg" > $f;
+echo "add $arg";
+json=$(echo $json | $varDir/jq ". + $arg");
 done;
+echo $json > $f;
 }
 sync_scp(){
 scp_getControllers;
 scp_getServer spigot;
+#use old version to avoid Head img error(probably spigot had uuid problem..)
+cp -f $thisServerPath/spigot-1.7.5-R0.1-SNAPSHOT.jar $thisServerPath/spigot.jar
 
 local plugins=(
+Vault
 VariableTriggers
 WorldEdit
 dynmap
 
+CoreProtect
 #iConomy
-#Vault
 #KillerMoney
 #GriefPrevention
 #Residence
 )
+local p;
+for p in ${plugins[@]};do
+scp_getPlugin $p;
+done;
 }
 sync_dynmap_port(){
 local to=$thisServerPath/plugins/dynmap/configuration.txt
@@ -142,10 +155,11 @@ sed -i "s/^webserver-port:.*$/webserver-port: 8888/g" $to
 sync_var;
 source_all;
 
-msg_startSync;
-
 sync_backup_region;
 #sync_backup_score;
+
+msg_startSync;
+
 purge_plugins all;
 
 sync_scp;

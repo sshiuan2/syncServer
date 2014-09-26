@@ -1,0 +1,22 @@
+#$mobuuid	Returns the UUID of the mob
+#$level	Returns the level of the mob
+#$boss	Returns the name of the mob
+#$mobhp	Returns current hp of the mob
+#$mobmaxhp	Returns the max hp of the mob
+#$money	Returns the money dropped through the vault plug-in
+#$percent	Returns the percent hp of the mob
+#$player	Returns the name of the player
+#$xp	Returns the xp dropped via Heroes or SkillAPI mods
+#Character	Function
+#&colon	Returns a colon
+#&apos	Returns an apostrophe
+#&dash
+onDeath_broadcast:
+  Cooldown: 0.25
+  Skills:
+  - message 0:'&c[恭喜] &f$player &2成功擊殺了&r $boss &2獲得了獎勵！'
+#  - message 5:'$mobuuid $level $boss $mobhp $mobmaxhp $money $percent $player $xp $colon $apos $dash'
+onSpawn_broadcast:
+  Cooldown: 0.25
+  Skills:
+  - message 0:'&7[提示]&r $boss &7出生了！'

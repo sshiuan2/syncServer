@@ -20,7 +20,7 @@ sed -i 's/^allow-flight=.*$/allow-flight=true/g' $to
 sed -i "s/^server-port=.*$/server-port=$thisServerPort/g" $to
 sed -i 's/^server-name=.*$/server-name=up9cloud Server/g' $to
 sed -i 's/^max-players=.*$/max-players=100/g' $to
-sed -i 's/^spawn-protection=.*$/spawn-protection=1000/g' $to
+sed -i 's/^spawn-protection=.*$/spawn-protection=100000/g' $to
 
 #sed -i 's/^enable-query=.*$/enable-query=true/g' $to
 #sed -i "s/^query.port=.*$/query.port=$thisServerPort/g" $to
@@ -32,9 +32,15 @@ local to=$thisServerPath/start.sh
 sed -i 's/^local Xms=.*$/Xms=64M/g' $to
 sed -i 's/^local Xmx=.*$/Xmx=512M/g' $to
 }
+sync_world_purge(){
+cd $thisServerPath/$thisWorldName
+./purge_regions.sh
+}
+main(){
 sync_var;
 source_all;
 
+sync_world_purge;
 purge_plugins all;
 
 msg_startSync;
@@ -42,14 +48,17 @@ scp_getControllers;
 scp_getServer spigot;
 sync_conf;
 
+scp_getPlugin Vault;
 scp_getPlugin VariableTriggers;
 scp_getPlugin BungeeSuiteBans;
-scp_getPlugin BungeeSuitePortals;
-scp_getPlugin BungeeSuiteWarps;
+#scp_getPlugin BungeeSuitePortals;
+#scp_getPlugin BungeeSuiteWarps;
 scp_getPlugin TeleportSigns;
 
-scp_getPlugin PermissionsEx;
+#scp_getPlugin PermissionsEx; //use vt to controll oplist
 
-scp_getPlugin WorldBorder
+#scp_getPlugin WorldBorder
 scp_getPlugin WorldEdit;
 msg_endSync
+}
+main

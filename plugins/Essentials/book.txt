@@ -226,6 +226,41 @@ You can use this content by using the book:<section> meta option in kits or item
 &6admin &0讓人可設權限
 請領主打&c/res pset <領地> <玩家> admin t
 
+&l領地交易I：
+ &0
+&7/res market ?
+ &0
+出售
+&6/res market sell ?
+ &0
+出租
+&6/res market rentable ?
+ &0
+&4取消
+&6/res market release ?
+ &0
+
+&l領地交易II：
+ &0
+&5&l消費指令
+ &0
+買別人領地
+&6/res market buy ?
+ &0
+租下
+&6/res market rent ?
+ &0
+
+&l領地交易III：
+ &0
+舉例(領地名=f1)：
+ &0
+領地賣100元
+&6/res market sell f1 100
+ &0
+租3天2元
+&6/res market rentable f1 2 3 t
+
 #boss_list
 &6&l>>> 怪物種類百科 <<<
  &0

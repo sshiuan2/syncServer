@@ -2,5 +2,5 @@
   Join:
     CoolDown: 1
     Script:
-    - '@CMDOP tp 0.5 172 41'
-    - '@CMDOP warp 天界-重生點'
+    - '@CMDCON minecraft:tp <playername> 0.5 172 41'
+    - '@CALL Event:Join_global_ops'

@@ -1,6 +1,8 @@
 #ghast
 GhastKing:
   Drops:
+  - money 15-25 1
   - HeadFormSlime 1 0.9
   - 370 1-3 1
   - 385 1-10 1
+  - Bow_GhastKing 1 0.5

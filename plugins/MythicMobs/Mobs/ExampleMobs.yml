@@ -33,6 +33,17 @@
 #wither
 #enderdragon
 #zombie
+test:
+  Mobtype: giant
+  Display: '&4&o&l測試怪物'
+  Health: 100
+  Skills:
+  - skill test >0 1
+  Equipment: []
+  Drops: []
+  LevelModifiers: []
+  DamageModifiers: []
+  Options: []
 Example:
   Mobtype: slime
   Display: '&6Skeleton King'
@@ -55,12 +66,31 @@ Example:
   DamageModifiers:
   - LIGHTNING 0
   - FIRE 0.5
+#http://xikage.elseland.net/mythicmobs/doku.php/databases/mobs/options
   Options:
-    Size: 20
-    AlwaysShowName: true
-    MovementSpeed: 0.2
-    MaxCombatDistance: 25
-    PreventOtherDrops: true
-    PreventSlimeSplit: true
-    MaxCombatDistance: 30
-    KnockbackResistance: 1
+  - AlwaysShowName: [true/false]
+  - Color: [number]
+  - Disguise: [disguise_type]
+  - ExplosionRadius: [number]
+  - FollowRange: [number]
+  - FuseTicks: [number]
+  - HorseArmor: [armor_type]
+  - HorseColor: [horse_color]
+  - HorseSaddled: [true/false]
+  - HorseStyle: [horse_style]
+  - HorseTamed: [true/false]
+  - KnockbackResistance: [number]
+  - MaxCombatDistance: [number]
+  - MovementSpeed:[number]
+  - Ocelot: [type]
+  - PreventBlockInfection [true/false]
+  - PreventItemPickup [true/false]
+  - PreventLeashing: [true/false]
+  - PreventOtherDrops: [true/false]
+  - PreventRenaming: [true/false]
+  - PreventSlimeSplit: [true/false]
+  - PreventSuicide: [true/false]
+  - PreventTeleporting: [true/false]
+  - RepeatAllSkills: [true/false]
+  - ShowHealth: [true/false]
+  - Size: [number]

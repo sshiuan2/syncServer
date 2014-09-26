@@ -45,7 +45,7 @@ worlds:
       CanSellToBank: true
       RefundClaimPriceOnReset: true
       RefundClaimPriceOnSetOwner: false
-      ClaimPrice: 150.0
+      ClaimPrice: 15.0
       ClearPrice: 15.0
       AddPlayerPrice: 15.0
       DenyPlayerPrice: 15.0

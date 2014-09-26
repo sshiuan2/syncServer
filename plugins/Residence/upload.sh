@@ -8,6 +8,15 @@ main(){
 local name='Residence'
 local from=$thisServerPath/plugins/$name
 local to=$syncServerScpPath/plugins/$name
-#scp $from/upload.sh $to/upload.sh
+local fs=(
+download.sh
+upload.sh
+Language/zh_TW.yml
+config.yml
+)
+local f;
+for f in ${fs[@]};do
+scp $from/$f $to
+done
 }
 main

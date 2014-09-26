@@ -3,6 +3,7 @@
 # To prevent such accidents, add word Grass to whitelist.
 Whitelist:
   - 體操
+  - 他媽咪
   - 操場
   - 操作
   - 樹幹
@@ -14,6 +15,8 @@ Whitelist:
   - 幹什麼
   - grass
 Words:
+  - 肛
+  - 月工
   - 肏
   - 幹
   - 操

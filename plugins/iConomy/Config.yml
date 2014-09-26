@@ -38,7 +38,7 @@ System:
 
     Account:
       # Default account balance when created
-      Holdings: 150.0
+      Holdings: 0.0
 
   # Controls how money is formatted through methods
   Formatting:
@@ -63,12 +63,14 @@ System:
 
   # Purges Default Balances at Loading
   # Good way to keep unused accounts or default accounts wiped out and lower database usage.
+#Cant purge because pay money to non exist user. dbhandler won't initiate money
   Purging:
-    Enabled: true
+    Enabled: false
 
   # Controls amount of money gained at a set interval.
+#use new feature on website. (salary system)
   Interest:
-    Enabled: true
+    Enabled: false
 
     # Only give interest to players who are currently online?
     Online: true

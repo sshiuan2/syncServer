@@ -4,9 +4,13 @@ scp_$1 $@ #todo
 }
 scp_getPlugin(){
 local name=$1
+local version=$2
+#if [ "$2" != "" ];then
+
+#fi;
 msg_$FUNCNAME $name;
 mkdir -p $thisServerPath/plugins/$name
-scp_getPlugin_jar $name
+scp_getPlugin_jar $name $version
 scp_getPlugin_$name $@
 }
 scp_getPlugin_whole(){
@@ -18,9 +22,14 @@ scp $from $thisServerPath/plugins
 }
 scp_getPlugin_jar(){
 local name=$1
+local version=$2
 local from=$syncServerScpPath/plugins
 local to=$thisServerPath/plugins
+if [ "$2" == "" ];then
 scp $from/$name.jar $to/$name.jar
+else
+scp $from/$version/$name.jar $to/$name.jar
+fi;
 }
 scp_getWorld(){
 local name=$1
@@ -55,6 +64,7 @@ fix_start_jar $jar
 scp_getVanillaConf(){
 local files=(
 server.properties
+eula.txt
 #usercache.json
 ops.json
 whitelist.json
@@ -125,7 +135,7 @@ local files=(
 run.sh
 start.sh
 restart.sh
-logsChat.sh
+logs.sh
 )
 echo "getController need before getServer!"
 for f in ${files[@]};do
@@ -165,6 +175,15 @@ local from=$syncServerScpPath/plugins/$name
 local to=$thisServerPath/plugins/$name
 scp $from/config.yml $to/config.yml
 scp -r $from/schematics $to
+scp $from/$thisServerName.config.yml $to
+
+if [ -f $to/$thisServerName.config.yml ];then
+  mv $to/$thisServerName.config.yml $to/config.yml
+fi
+
+local dname="logs"
+mkdir -p $thisServerPath/plugins_backup/$name/$dname
+ln -s ../../plugins_backup/$name/$dname $to/$dname
 }
 scp_getPlugin_EpicBossRecoded(){
 local name=$1
@@ -221,6 +240,13 @@ local files=(
 #scp $from/$f $to/$f
 #done
 scp -r $from $to/../
+
+local dname="SavedData"
+mkdir -p $thisServerPath/plugins_backup/$name/$dname
+ln -s ../../plugins_backup/$name/$dname $to/$dname
+local dname="Spawners"
+mkdir -p $thisServerPath/plugins_backup/$name/$dname
+ln -s ../../plugins_backup/$name/$dname $to/$dname
 }
 scp_getPlugin_VariableTriggers(){
 local name=$1
@@ -346,7 +372,7 @@ motd.txt
 rules.txt
 info.txt
 book.txt
-messages_zh_TW.properties
+#worth.yml use default
 #spawn.yml: every server's spawn point is different!
 #userdata/: homes and logout location
 #warp/: warp location, replaced by bungeesuite warp
@@ -450,7 +476,7 @@ scp_getPlugin_CoreProtect(){
 local name=$1
 local from=$syncServerScpPath/plugins/$name
 local to=$thisServerPath/plugins/$name
-scp $from/config.yml $to/config.yml
+scp $from/$thisServerName.config.yml $to/config.yml
 }
 scp_getPlugin_dynmap(){
 local name=$1
@@ -542,6 +568,8 @@ local name=$1
 local from=$syncServerScpPath/plugins/$name
 local to=$thisServerPath/plugins/$name
 scp $from/config.yml $to/config.yml
+scp $from/zh_TW_messages.yml $to/zh_TW_messages.yml
+scp $from/version.yml $to/version.yml
 }
 scp_getPlugin_Quicksand(){
 local name=$1
@@ -561,10 +589,17 @@ scp_getPlugin_SuperCensor(){
 local name=$1
 local from=$syncServerScpPath/plugins/$name
 local to=$thisServerPath/plugins/$name
-scp $from/*.yml $to
+scp $from/config.yml $to
+scp $from/words.yml $to
 }
 scp_getPlugin_ChatControl(){
 local name=$1
 local from=$syncServerScpPath/plugins/$name
 local to=$thisServerPath/plugins/$name
+}
+scp_getPlugin_VanillaPod(){
+local name=$1
+local from=$syncServerScpPath/plugins/$name
+local to=$thisServerPath/plugins/$name
+scp $from/config.yml $to
 }

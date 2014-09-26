@@ -37,8 +37,8 @@ use-inventory:
     creative-mode-overrides: false
 
 logging:
-    log-commands: false
-    file: worldedit.log
+    log-commands: true
+    file: logs/worldedit.log
 
 super-pickaxe:
     drop-items: true

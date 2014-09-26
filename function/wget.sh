@@ -60,9 +60,9 @@ wget_plugin_jar(){
 local name=$1
 local url=$2
 local uname=`basename $url`
-cd $thisServerPath/plugins
+cd $thisServerPath/plugins/
 rm $name.jar
-wget -N $url --no-check-certificate
+wget $url --no-check-certificate
 cp -f $uname $name.jar
 }
 wget_server(){
@@ -85,7 +85,13 @@ wget -N $url --no-check-certificate
 cp -f $uname $name.jar
 }
 wget_server_vanilla(){
-wget_server_vanilla_1_7_9 minecraft_server;
+wget_server_vanilla_1_7_10 minecraft_server;
+}
+wget_server_vanilla_1_7_10(){
+local name=$1
+local url
+url="https://s3.amazonaws.com/Minecraft.Download/versions/1.8/minecraft_server.1.8.jar"
+wget_server_jar $name $url
 }
 wget_server_vanilla_1_7_9(){
 local name=$1
@@ -128,7 +134,7 @@ url="http://dl.bukkit.org/downloads/craftbukkit/get/02566_1.7.5-R0.1/craftbukkit
 wget_server_jar $name $url
 }
 wget_server_spigot(){
-wget_server_spigot_1_7_9 spigot
+wget_server_spigot_1_7_10 spigot
 }
 wget_server_spigot_latest(){
 local name=$1
@@ -137,6 +143,16 @@ if [ "$2" == "dev" ];then
 url="http://ci.md-5.net/job/Spigot/lastSuccessfulBuild/artifact/Spigot-Server/target/spigot.jar"
 else
 url="http://ci.md-5.net/job/Spigot/lastSuccessfulBuild/artifact/Spigot-Server/target/spigot.jar"
+fi
+wget_server_jar $name $url
+}
+wget_server_spigot_1_7_10(){
+local name=$1
+local url
+if [ "$2" == "dev" ];then
+url="http://ci.md-5.net/job/Spigot/lastSuccessfulBuild/artifact/Spigot-Server/target/spigot-1.7.10-R0.1-SNAPSHOT.jar"
+else
+url="http://ci.md-5.net/job/Spigot/lastSuccessfulBuild/artifact/Spigot-Server/target/spigot-1.7.10-R0.1-SNAPSHOT.jar"
 fi
 wget_server_jar $name $url
 }
@@ -175,7 +191,57 @@ else
 url="http://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar"
 fi
 wget_server_jar $name $url
+wget_server_BungeeCord_cmd;
 }
+wget_server_BungeeCord_cmd(){
+wget_server_BungeeCord_cmd_alert;
+wget_server_BungeeCord_cmd_find;
+wget_server_BungeeCord_cmd_list;
+wget_server_BungeeCord_cmd_send;
+wget_server_BungeeCord_cmd_server;
+wget_server_BungeeCord_reconnect_yaml;
+}
+wget_server_BungeeCord_cmd_alert(){
+local name="cmd_alert"
+url="http://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/module/cmd-alert/target/cmd_alert.jar"
+wget_server_jar $name $url
+}
+wget_server_BungeeCord_cmd_find(){
+local name="cmd_find"
+url="http://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/module/cmd-find/target/cmd_find.jar"
+wget_server_jar $name $url
+}
+wget_server_BungeeCord_cmd_list(){
+local name="cmd_list"
+url="http://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/module/cmd-list/target/cmd_list.jar"
+wget_server_jar $name $url
+}
+wget_server_BungeeCord_cmd_send(){
+local name="cmd_send"
+url="http://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/module/cmd-send/target/cmd_send.jar"
+wget_server_jar $name $url
+}
+wget_server_BungeeCord_cmd_server(){
+local name="cmd_server"
+url="http://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/module/cmd-server/target/cmd_server.jar"
+wget_server_jar $name $url
+}
+wget_server_BungeeCord_reconnect_yaml(){
+local name="reconnect_yaml"
+url="http://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/module/reconnect-yaml/target/reconnect_yaml.jar"
+wget_server_jar $name $url
+}
+wget_plugin_VanillaPod(){
+local name=$1
+local url
+if [ "$2" == "dev" ];then
+url="http://www.spigotmc.org/resources/vanillapod.1022/download?version=3667"
+else
+url="http://www.spigotmc.org/resources/vanillapod.1022/download?version=3667"
+fi
+wget_plugin_jar $name $url
+}
+
 function wget_structuresaver(){ #1.6 to 1.7 fix .mca files
 cd $thisServerPath/plugins
 wget https://github.com/Bukkit/StructureSaver/releases/download/v1.2/structuresaver-1.2.jar
@@ -623,9 +689,9 @@ wget_plugin_MythicMobs(){
 local name=$1
 local url
 if [ "$2" == "dev" ];then
-url="http://dev.bukkit.org/media/files/793/678/MythicMobs.jar"
+url="http://dev.bukkit.org/media/files/796/652/MythicMobs.jar"
 else
-url="http://dev.bukkit.org/media/files/793/678/MythicMobs.jar"
+url="http://dev.bukkit.org/media/files/796/652/MythicMobs.jar"
 fi
 wget_plugin_jar $name $url
 }
@@ -671,6 +737,36 @@ if [ "$2" == "dev" ];then
 url="http://www.spigotmc.org/resources/chatcontrol.271/download?version=1388"
 else
 url="http://www.spigotmc.org/resources/chatcontrol.271/download?version=1388"
+fi
+wget_plugin_jar $name $url
+}
+wget_plugin_ProtocolLib(){
+local name=$1
+local url
+if [ "$2" == "dev" ];then
+url="http://assets.comphenix.net/job/ProtocolLib/261/artifact/ProtocolLib/target/ProtocolLib-3.4.1-SNAPSHOT.jar"
+else
+url="http://dev.bukkit.org/media/files/795/545/ProtocolLib-3.4.0.jar"
+fi
+wget_plugin_jar $name $url
+}
+wget_plugin_LibsDisguises(){
+local name=$1
+local url
+if [ "$2" == "dev" ];then
+url="http://ci.md-5.net/job/LibsDisguises/lastSuccessfulBuild/artifact/target/LibsDisguises.jar"
+else
+url="http://www.spigotmc.org/resources/libs-disguises.81/download?version=2340"
+fi
+wget_plugin_jar $name $url
+}
+wget_plugin_VanillaCord(){
+local name=$1
+local url
+if [ "$2" == "dev" ];then
+url="http://www.spigotmc.org/resources/vanillacord.952/download?version=3197"
+else
+url="http://www.spigotmc.org/resources/vanillacord.952/download?version=3197"
 fi
 wget_plugin_jar $name $url
 }

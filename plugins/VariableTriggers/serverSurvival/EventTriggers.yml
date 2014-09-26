@@ -1,6 +1,16 @@
+world_dungeon:
+  Join:
+    CoolDown: 0
+    Script:
+    - '@CMDCON multiworld:mw move <playername> world'
+    - '@CALL Event:serverSurvival_Join'
 world:
+  Join:
+    CoolDown: 0
+    Script:
+    - '@CALL Event:serverSurvival_Join'
   BlockBreak:
-    CoolDown: 1403034170530
+    CoolDown: 0
     Script:
     - '@COOLDOWN 5'
     - '@IF s <blockid> = 56'

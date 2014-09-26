@@ -1,38 +1,34 @@
-#Prefix of the Message
-MessagePrefix: "&8[&8金錢&8] "
+# Locale settings. Supported at the moment: en (english), hu (hungarian)
+Locale: zh_TW
+
+# Update Check when starting the server
+CheckUpdate: false
 
 # %currency value (e.g. Dollar, Forint, Euro or symbol)
 Currency: "$"
 
-#If you reloaded the config, you will get this message /killermoney reload
-MessageConfigReload: "The configuration file reloaded"
-
-# Command permission
-MessageNoPermission: "You have not permission for this command!"
-
-# Player message, if  the config is bad
-MessageConfigError: "Config Error! Please report to admin!"
-
-# Set True, if you want give money if the player kill mobs in the MobArena
+# Set True, if you want give money if the player kill mobs in the MobArena - RESTART REQUIRED
 EarnMoneyInMobArena: false
 
-# Multiworld support, you can disable this plugin on some worlds. Use "," if you would like add more worlds. ( E.g.: world_nether,world_the_end )
-# Use "nothing" if you wouldn't like this feature.
-DisableOnThisWorlds: nothing
+# Multiworld support, you can disable this plugin on some worlds. ( e.g.: world_the_end )
+DisableOnTheseWorlds:
+    - nothing
 
-# This option disable that the player get cash, if the mob spawned from spawner or spawner egg.
-DisableSpawnerFarming: true
+# This option disable that the player earn money, if the mob spawned from spawner or spawner egg.
+AllowSpawnerFarming: false
 
 # You can enable or disable that, the players get message if he/she earn money.
 SendMessageWhenEarnMoney: true
+
+# The money multiplier. You can change it on double coins weekend. Money * Multiplier.
+GlobalMultiplier: 1
 
 # 1st line: The mob's name, do not change it!
 # 2nd line (Enabled): If you want give money for this mob kill
 # 3rd line (Negative): If you want negative cash (withdraw) then set true
 # 4th line (MinMoney): The minimum money for kill
 # 5th line (MaxMoney): The maximum money for kill
-# 6th line (Message): The player get this message, if he/she killed a mob
-# 7th line (MessageNegative): If you set Negative to true, then this message will be send to player
+# 6th line (Chance): Chance for earn money - Min 1, max 100 (in percent)
 
 # String List:
 # %currency = Currency value
@@ -42,229 +38,199 @@ SendMessageWhenEarnMoney: true
 
 # If you would like give fix money, then must MinMoney equal with MaxMoney!
 
-Pig:
+PIG:
    Enabled: true
    Negative: false
    MinMoney: 0.01
    MaxMoney: 0.05
-   Message: "&7%playername &7擊殺 &6豬 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Sheep:
+SHEEP:
    Enabled: true
    Negative: false
    MinMoney: 0.01
    MaxMoney: 0.05
-   Message: "&7%playername &7擊殺 &6羊 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Chicken:
+CHICKEN:
    Enabled: true
    Negative: false
    MinMoney: 0.01
    MaxMoney: 0.05
-   Message: "&7%playername &7擊殺 &6雞 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Cow:
+COW:
    Enabled: true
    Negative: false
    MinMoney: 0.01
    MaxMoney: 0.05
-   Message: "&7%playername &7擊殺 &6牛 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
 
-Horse:
+HORSE:
    Enabled: true
    Negative: false
    MinMoney: 0.01
    MaxMoney: 0.05
-   Message: "&7%playername &7擊殺 &6馬 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Wolf:
+WOLF:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.25
-   Message: "&7%playername &7擊殺 &6狼 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Ocelot:
+OCELOT:
    Enabled: true
    Negative: false
    MinMoney: 0.01
    MaxMoney: 0.05
-   Message: "&7%playername &7擊殺n &6貓 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Bat:
+BAT:
+   Enabled: true
+   Negative: false
+   MinMoney: 0.05
+   MaxMoney: 0.10
+   Chance: 100
+   
+BLAZE:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.25
-   Message: "&7%playername &7擊殺 &6蝙蝠 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Blaze:
+CAVE_SPIDER:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.25
-   Message: "&7%playername &7擊殺 &6烈焰 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-CaveSpider:
+CREEPER:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.25
-   Message: "&7%playername &7擊殺 &6毒蜘蛛 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Creeper:
-   Enabled: true
-   Negative: false
-   MinMoney: 0.05
-   MaxMoney: 0.25
-   Message: "&7%playername &7擊殺 &6苦力帕 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
-   
-Enderdragon:
+ENDER_DRAGON:
    Enabled: true
    Negative: false
    MinMoney: 0.5
    MaxMoney: 2.5
-   Message: "&7%playername &7擊殺 &6終界龍 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Enderman:
+ENDERMAN:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.35
-   Message: "&7%playername &7擊殺 &6終界人 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Ghast:
+GHAST:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.35
-   Message: "&7%playername &7擊殺 &6水母 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Giant:
+GIANT:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.35
-   Message: "&7%playername &7擊殺 &6殭屍大大 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-MagmaCube:
+MAGMA_CUBE:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.25
-   Message: "&7%playername &7擊殺 &6火史萊姆 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-MushroomCow:
+MUSHROOM_COW:
    Enabled: true
    Negative: false
    MinMoney: 0.01
    MaxMoney: 0.05
-   Message: "&7%playername &7擊殺 &6哞牛 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-PigZombie:
+PIG_ZOMBIE:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.35
-   Message: "&7%playername &7擊殺 &6豬殭屍 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Player:
+PLAYER:
    Enabled: true
    Negative: true
    MinMoney: 1
    MaxMoney: 10
-   # The killer take percent of victim money ( 0 disabled, max 100, default 10 )
-   CashTransmissionPercent: 0
-   Message: "&7%playername &7擊殺 &6PLAYER&7 (&6%victim&7) &7You earned: &6%currency%money"
-   MessageNegative: "&7%playername &7你擊殺 &6玩家 &7(&6%victim&7) &7失去 &6%currency%money"
-   MessageToVictimIfLostCash: "&7Ops &7You lost &6%currency%lostmoney&7, because you killed by &6%playername&7!"
+   CashTransferPercent: 0
+   Chance: 100
    
-Silverfish:
+SILVERFISH:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.15
-   Message: "&7%playername &7擊殺 &6蟲 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Skeleton:
+SKELETON:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.25
-   Message: "&7%playername &7擊殺 &6骷顱 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Slime:
+SLIME:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.25
-   Message: "&7%playername &7擊殺 &6史萊姆 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Spider:
+SPIDER:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.25
-   Message: "&7%playername &7擊殺 &6蜘蛛 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Squid:
+SQUID:
    Enabled: true
    Negative: false
    MinMoney: 0.01
    MaxMoney: 0.05
-   Message: "&7%playername &7擊殺 &6烏賊 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Villager:
+VILLAGER:
    Enabled: true
    Negative: true
    MinMoney: 1
    MaxMoney: 10
-   Message: "&7%playername &7擊殺 &6村民 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &7你失手擊殺 &6村民 &7失去 &6%currency%money"
+   Chance: 100
    
-Witch:
+WITCH:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.35
-   Message: "&7%playername &7擊殺 &6女巫 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100
    
-Wither:
+WITHER:
    Enabled: true
    Negative: false
-   MinMoney: 0.5
-   MaxMoney: 3.5
-   Message: "&7%playername &7擊殺 &6凋零 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   MinMoney: 0.05
+   MaxMoney: 0.35
+   Chance: 100
    
-Zombie:
+ZOMBIE:
    Enabled: true
    Negative: false
    MinMoney: 0.05
    MaxMoney: 0.25
-   Message: "&7%playername &7擊殺 &6殭屍 &7獲得 &6%currency%money"
-   MessageNegative: "&7%playername &6您失手了！ &7失去 &6%currency%money"
+   Chance: 100

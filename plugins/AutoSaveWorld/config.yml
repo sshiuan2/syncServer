@@ -25,7 +25,7 @@ backup:
     toextfolders: false
     disableintfolder: true
     extfolders: []
-    zip: true
+    zip: false
   ftp:
     enabled: false
     hostname: 127.0.0.1

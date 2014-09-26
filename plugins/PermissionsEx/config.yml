@@ -23,4 +23,16 @@ permissions:
       uri: mysql://10.0.0.200/PermissionsEx
       user: PermissionsEx
       password: xEsnoissimreP
+      type: sql
   superperms: {}
+  debug: false
+  allowOps: true
+  user-add-groups-last: false
+  log-players: false
+  createUserRecords: false
+  informplayers:
+    changes: false
+multiserver:
+  use-netevents: true
+updater: false
+alwaysUpdate: false

@@ -1,6 +1,7 @@
 EnchantedEarth:
   Cooldown: 0.25
   Skills:
+  - msg 10:'$boss &e噴出一堆黏黏的東西！'
   - skill EnchantedEarthEffectOne >0 1
   - skill EnchantedEarthSoundOne >0 1
   - delay 4

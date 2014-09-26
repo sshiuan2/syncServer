@@ -4,7 +4,7 @@
 general:
   check-for-updates: false
   compatibility-mode: false
-  debug-level: 1
+  debug-level: 0
   clock-interval: 5
   save-interval: 1
   spawns-interval: 1
@@ -12,7 +12,7 @@ general:
   use-volatile-features: true
 mobs:
   enable-timer-skills: true
-  show-health-radius: 25
+  show-health-radius: 10
   show-health-format: $mobname - $percent ($mobhp / $mobmaxhp)
 metrics:
   allow: true
@@ -22,4 +22,4 @@ compatibility:
   skillapi-show-xp-message: false
   skillapi-xp-message-format: You receive $xp experience for slaying $mobname
   vault-show-money-message: true
-  vault-money-message-format: You receive $money for slaying $mobname
+  vault-money-message-format: '&6[額外獎勵] &7擊殺 &7$mobname &7獲得 &6$money'
